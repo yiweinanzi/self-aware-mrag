@@ -1,0 +1,902 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "The image features a black and silver motorcycle parked on a paved surface, possibly a parking lot or a street. The motorcycle is positioned in such a way that it is facing the camera, giving a clear view of its design",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "The plant in the image is a pothos plant, which is a type of ivy plant.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "The toy in the image is a teddy bear.",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "In the image, the man is holding a white frisbee, which is a disc-shaped object used in the game of frisbee. The dog, which is sitting on the man's back, is not involved in",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "The gentleman in the image is carrying a red bag while walking across the street. It is not possible to determine the exact contents of the bag from the image alone, but it could potentially contain various items such as groceries, personal belongings,",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "5723996",
+    "question": "Who leaves a toilet like this?",
+    "prediction": "A person who leaves a toilet like this is likely someone who is not concerned about cleanliness or hygiene. The toilet is dirty, with toilet paper on the floor, and there is a toothbrush",
+    "golden_answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "5759705",
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "prediction": "A center affixed unit like the one in the kitchen is called a range hood.",
+    "golden_answers": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3045575",
+    "question": "Why might someone go to this place?",
+    "prediction": "In the image, a group of people is walking down a busy city street at night, surrounded by tall buildings and neon signs. The street is bustling with activity, and many people are engaged in various activities such as walking, talking on",
+    "golden_answers": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "2183655",
+    "question": "What does this grow from?",
+    "prediction": "The flower in the image is an orange lily, which is a type of lily flower. It is commonly found in various parts of the world and is known for its distinctive orange color and large, showy blooms. The orange l",
+    "golden_answers": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "2863135",
+    "question": "What is that man doing with the bat?",
+    "prediction": "The man is holding a baseball bat and preparing to swing it, likely in the process of hitting a baseball during a game.",
+    "golden_answers": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "299845",
+    "question": "Is this at a salt water beach or a lake?",
+    "prediction": "This is at a salt water beach.",
+    "golden_answers": [
+      "salt water beach",
+      "salt water beach",
+      "salt water beach",
+      "salt water beach",
+      "salt water",
+      "salt water",
+      "lake",
+      "lake",
+      "beach",
+      "beach"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "115115",
+    "question": "Who designed the statues?",
+    "prediction": "The statues were designed by the artist John W. Mills.",
+    "golden_answers": [
+      "artist",
+      "artist",
+      "artist",
+      "artist",
+      "guell",
+      "guell",
+      "toscano",
+      "toscano",
+      "aritect",
+      "aritect"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3234605",
+    "question": "What is the name of the items the hot dog are topped with?",
+    "prediction": "The hot dog is topped with onions, tomatoes, and pickles.",
+    "golden_answers": [
+      "condiment",
+      "condiment",
+      "condiment",
+      "condiment",
+      "onion relish",
+      "onion relish",
+      "vegetable",
+      "vegetable",
+      "relish",
+      "relish"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "5169165",
+    "question": "What is this desk used for?",
+    "prediction": "This desk is used for work, as it is filled with various electronic devices and equipment, such as computers, a keyboard, a mouse, and a telephone. The presence of multiple computers and laptops on the desk suggests that the",
+    "golden_answers": [
+      "work",
+      "work",
+      "work",
+      "work",
+      "compute",
+      "compute",
+      "work",
+      "work",
+      "office",
+      "office"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "217115",
+    "question": "What type of bike is on the ground?",
+    "prediction": "There is a mountain bike on the ground.",
+    "golden_answers": [
+      "bmx",
+      "bmx",
+      "bmx",
+      "bmx",
+      "bicycle",
+      "bicycle",
+      "bicycle",
+      "bicycle",
+      "10 speed",
+      "10 speed"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3133865",
+    "question": "What type of plane is that?",
+    "prediction": "The image shows a large commercial airplane, likely a jumbo jet, parked at an airport. It is a passenger plane, possibly a Qantas airplane, which is a well-known Australian airline. The airplane",
+    "golden_answers": [
+      "commercial",
+      "commercial",
+      "commercial",
+      "commercial",
+      "passenger",
+      "passenger",
+      "quanta",
+      "quanta",
+      "md 80",
+      "md 80"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "4026395",
+    "question": "Is this a room for a boy or girl?",
+    "prediction": "This is a room for a boy, as indicated by the presence of a bed, toys, and a teddy bear.",
+    "golden_answers": [
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "4575845",
+    "question": "In what year was this desert first introduced?",
+    "prediction": "The Mojave Desert was first introduced in 1994.",
+    "golden_answers": [
+      "1847",
+      "1847",
+      "1847",
+      "1847",
+      "1860",
+      "1860",
+      "1934",
+      "1934",
+      "1900s",
+      "1900s"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "4883775",
+    "question": "What is this surf trick called?",
+    "prediction": "The surf trick being performed in the image is called a \"cutback.\" A cutback is a maneuver in which the surfer rides up the face of a wave, turns their board around, and then rides back down the",
+    "golden_answers": [
+      "ride",
+      "ride",
+      "ride",
+      "ride",
+      "tube ride",
+      "tube ride",
+      "ollie",
+      "ollie",
+      "wave runner",
+      "wave runner"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3017535",
+    "question": "What do they call running around the bases on a single hit?",
+    "prediction": "When a baseball player hits the ball and runs around the bases on a single hit, it is called a \"single.\"",
+    "golden_answers": [
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "home run",
+      "home run",
+      "home run",
+      "home run"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "1833195",
+    "question": "Why is this plugged in?",
+    "prediction": "The laptop is plugged in to charge its battery. It is common for laptops to be connected to a power source when not in use to ensure that they have enough battery life for when they are needed. In the image, the laptop is",
+    "golden_answers": [
+      "charge",
+      "charge",
+      "charge",
+      "charge",
+      "to have power and work",
+      "to have power and work",
+      "power",
+      "power",
+      "outlet",
+      "outlet"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3970635",
+    "question": "What is the shape?",
+    "prediction": "The shape is a circle.",
+    "golden_answers": [
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "round",
+      "round",
+      "round",
+      "round"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "4976605",
+    "question": "What is the horsepower of the truck pulling the load?",
+    "prediction": "The horsepower of the truck pulling the load is 500.",
+    "golden_answers": [
+      "510",
+      "510",
+      "510",
+      "510",
+      "510",
+      "510",
+      "420",
+      "420",
+      "500",
+      "500"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "2357845",
+    "question": "What kind of skiing is this person engaged in?",
+    "prediction": "The person in the image is engaged in cross-country skiing, as they are standing in the snow with their skis on and holding ski poles. Cross-country skiing is a form of skiing where skiers rely on their own",
+    "golden_answers": [
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3190735",
+    "question": "What is the person in the photo wearing?",
+    "prediction": "The person in the photo is wearing a wetsuit.",
+    "golden_answers": [
+      "wetsuit",
+      "wetsuit",
+      "wetsuit",
+      "wetsuit",
+      "suit",
+      "suit",
+      "wet suit",
+      "wet suit",
+      "trunk",
+      "trunk"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "5144685",
+    "question": "What is the name of the board he is on?",
+    "prediction": "The name of the board the man is on is the \"board of directors.\"",
+    "golden_answers": [
+      "surf board",
+      "surf board",
+      "surf board",
+      "surf board",
+      "surfboard",
+      "surfboard",
+      "surfboard",
+      "surfboard",
+      "surf",
+      "surf"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "4371265",
+    "question": "Name the material used to make this car seat shown in this picture?",
+    "prediction": "The car seat shown in the picture is made of cloth.",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "nylon",
+      "nylon",
+      "polyester",
+      "polyester",
+      "leather",
+      "leather"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "5182875",
+    "question": "What part of the face is the toothbrush in?",
+    "prediction": "The toothbrush is in the mouth of the object, which is a white cup with a face drawn on it.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "happy",
+      "happy"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3804595",
+    "question": "What flavor is this pastry?",
+    "prediction": "The pastry in the image is described as having a sweet flavor.",
+    "golden_answers": [
+      "blueberry",
+      "blueberry",
+      "blueberry",
+      "blueberry",
+      "cream cheese",
+      "cream cheese",
+      "chocolate",
+      "chocolate",
+      "strawberry",
+      "strawberry"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "5002005",
+    "question": "What kind of container are the flowers in?",
+    "prediction": "The flowers are in a variety of containers, including vases, pots, and a bucket.",
+    "golden_answers": [
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "trolley",
+      "trolley",
+      "pot",
+      "pot"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3156685",
+    "question": "What country does this appear to be?",
+    "prediction": "The image appears to be from the United Kingdom, as the man is shearing sheep in a field, and there is a truck, which is a common mode of transportation in the country. The presence of sheep and the man's att",
+    "golden_answers": [
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "usa",
+      "usa",
+      "england",
+      "england"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3736625",
+    "question": "Which of the foods in the picture is best for you to eat when you have a cold?",
+    "prediction": "The foods in the picture that are best for you to eat when you have a cold are the sandwiches and the soup. The sandwiches provide a source of protein and carbohydrates, which can help you feel full",
+    "golden_answers": [
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "chicken soup",
+      "chicken soup",
+      "fruit",
+      "fruit"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "4293695",
+    "question": "What do teenage pranksters do to this animal?",
+    "prediction": "In the image, there is a herd of cows grazing in a lush green field. The cows are peacefully eating grass, and there are no signs of any harm or distress towards them. It is important to note",
+    "golden_answers": [
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "4273415",
+    "question": "How many watts is that microwave?",
+    "prediction": "The microwave in the image is a 1000 watt microwave.",
+    "golden_answers": [
+      "800",
+      "800",
+      "800",
+      "800",
+      "120",
+      "120",
+      "1000",
+      "1000",
+      "100",
+      "100"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3938365",
+    "question": "What is this type of blanket called?",
+    "prediction": "The type of blanket in the image is a quilt.",
+    "golden_answers": [
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "patchwork",
+      "patchwork"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "179845",
+    "question": "What south american country usually has this climate?",
+    "prediction": "Chile is a high-income economy, as ranked by the World Bank. It is considered one of the most stable and prosperous countries in Latin America. Chile is located in South America, and its climate can be described as a Mediterranean",
+    "golden_answers": [
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "africa",
+      "africa",
+      "ecuador",
+      "ecuador"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3268375",
+    "question": "What american restaurant features an open kitchen with visible cooking area such as this?",
+    "prediction": "In the image, a man is working in a restaurant kitchen, preparing food on an open grill. This type of kitchen design is commonly found in American restaurants, particularly those serving a variety of cuisines or showcasing the cook",
+    "golden_answers": [
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "denny's",
+      "denny's",
+      "waffle house",
+      "waffle house"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "2780325",
+    "question": "What other big vehicle is often painted about the same shade as this vehicle?",
+    "prediction": "The train in the image is painted red and yellow, which is a color scheme often associated with the Big Bang theory or the beginning of the universe. The train's color scheme may be a creative way to represent the concept of the universe'",
+    "golden_answers": [
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "fire truck",
+      "fire truck"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "1110325",
+    "question": "What brand is this wine?",
+    "prediction": "The wine in the image is a bottle of Beckett Vineyard Claret.",
+    "golden_answers": [
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker",
+      "becker"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "5096415",
+    "question": "What would happen if these items fall to the ground?",
+    "prediction": "If the items on the table, such as the vases, cups, and bowls, were to fall to the ground, they could potentially break or get damaged. The vases and cups are made of glass, which is a",
+    "golden_answers": [
+      "shatter",
+      "shatter",
+      "shatter",
+      "shatter",
+      "they would shatter",
+      "they would shatter",
+      "break",
+      "break",
+      "they would break",
+      "they would break"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3413095",
+    "question": "What brand of suit is the man in the image wearing?",
+    "prediction": "The man in the image is wearing a Trump suit.",
+    "golden_answers": [
+      "brook brother",
+      "brook brother",
+      "brook brother",
+      "brook brother",
+      "gorgio armani",
+      "gorgio armani",
+      "name brand",
+      "name brand",
+      "gucchi",
+      "gucchi"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "1121605",
+    "question": "Where might i buy a print that resembles this photo?",
+    "prediction": "To buy a print that resembles this photo, you can visit an art gallery or an online art marketplace that offers prints of black and white photographs. You can also search for local artists or photography studios that specialize in creating",
+    "golden_answers": [
+      "gallery",
+      "gallery",
+      "gallery",
+      "gallery",
+      "store",
+      "store",
+      "target",
+      "target",
+      "walmart",
+      "walmart"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "2645405",
+    "question": "What are the rolled black food items called?",
+    "prediction": "The rolled black food items are called \"nigiri\" in Japanese cuisine. Nigiri is a traditional Japanese dish consisting of a small mound of sushi rice topped with a variety of ingredients such as fish",
+    "golden_answers": [
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "1089825",
+    "question": "What type of bird is this?",
+    "prediction": "This is a blue and yellow bird perched on a tree branch.",
+    "golden_answers": [
+      "blue jay",
+      "blue jay",
+      "blue jay",
+      "blue jay",
+      "bluebird",
+      "bluebird",
+      "songbird",
+      "songbird",
+      "goldfinch",
+      "goldfinch"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "2929715",
+    "question": "How can you tell that the people are not upset?",
+    "prediction": "The image shows a group of people sitting around a table, smiling and enjoying a meal together. They are eating pizza and drinking from cups, and there are also wine glasses on the table. The atmosphere appears to",
+    "golden_answers": [
+      "they are smile",
+      "they are smile",
+      "they are smile",
+      "they are smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "1902045",
+    "question": "How fast is the vehicle pictured capable of reaching?",
+    "prediction": "The vehicle pictured is a train, and it is moving along the tracks. The speed of the train cannot be determined from the image alone, but it is likely to be a moderate to high speed, as trains are designed to transport passengers",
+    "golden_answers": [
+      "80 mph",
+      "80 mph",
+      "80 mph",
+      "80 mph",
+      "100 mph",
+      "100 mph",
+      "100 mph",
+      "100 mph",
+      "10mph",
+      "10mph"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "3774865",
+    "question": "Name the type of hat the man is wearing?",
+    "prediction": "The man is wearing a cowboy hat.",
+    "golden_answers": [
+      "cowboy",
+      "cowboy",
+      "cowboy",
+      "cowboy",
+      "sombrero",
+      "sombrero",
+      "sombrero",
+      "sombrero",
+      "stetson",
+      "stetson"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "1282805",
+    "question": "What sates are these grown in?",
+    "prediction": "The citrus fruit in the image is an orange, which is grown in various parts of the world, including the United States. The specific cultivar of the orange in the image is the navel orange, which is commonly grown in Florida, California",
+    "golden_answers": [
+      "florida california",
+      "florida california",
+      "florida california",
+      "florida california",
+      "california",
+      "california",
+      "california",
+      "california",
+      "florida",
+      "florida"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "1318415",
+    "question": "How does the bread taste?",
+    "prediction": "The bread tastes delicious and moist, with a soft and fluffy texture. It is likely a cake or a similar type of baked good, as it is described as a piece of cake on a plate. The",
+    "golden_answers": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "like bread",
+      "like bread",
+      "sweet",
+      "sweet",
+      "delicious",
+      "delicious"
+    ],
+    "has_image": true
+  },
+  {
+    "id": "1305165",
+    "question": "What is this type of mack truck used for?",
+    "prediction": "The Mack truck in the image is a specialized vehicle designed for transporting large, heavy loads, such as construction equipment or oversized items. It is equipped with a hydraulic lift gate, which allows it to load and",
+    "golden_answers": [
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "road work",
+      "road work"
+    ],
+    "has_image": true
+  }
+]

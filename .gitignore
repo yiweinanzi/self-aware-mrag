@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.log
+.ipynb_checkpoints/
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 大文件 - 模型和权重
+models/
+*.bin
+*.safetensors
+*.pth
+*.pt
+*.ckpt
+*.h5
+pytorch_model*.bin
+model*.safetensors
+
+# 大文件 - 数据集和语料库
+corpus/
+data/raw/
+*.jsonl
+*.json.gz
+*.parquet
+*.arrow
+
+# 大文件 - 索引文件
+indexes/
+*.index
+*.memmap
+*.faiss
+
+# 实验结果和日志
+results/
+outputs/
+experiments/results/
+experiments/outputs/
+*.log
+nohup.out
+wandb/
+tensorboard/
+tf-logs/
+
+# 临时文件
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+
+# 操作系统
+.DS_Store
+Thumbs.db
+*.swp
+.directory
+
+# 特定项目文件
+build_wiki_index_3m.log
+run_*.log
+📝*.md
+cursor_task*.md
+

@@ -1,0 +1,325 @@
+{
+  "experiment_name": "threshold_sensitivity_analysis",
+  "timestamp": "2025-10-28 00:01:54",
+  "config": {
+    "experiment_name": "threshold_sensitivity_analysis",
+    "description": "不确定性阈值敏感性分析，寻找最优τ值",
+    "base_config": {
+      "dataset": "okvqa",
+      "num_samples": 50,
+      "random_seed": 42,
+      "mllm_model": "llava-v1.5-7b",
+      "mllm_path": "/root/autodl-tmp/models/llava-v1.5-7b",
+      "retriever_type": "bge",
+      "retriever_path": "/root/autodl-tmp/models/bge-large-en-v1.5",
+      "index_path": "/root/autodl-tmp/FlashRAG/indexes/wiki_5m",
+      "top_k": 5,
+      "uncertainty": {
+        "text_weight": 0.4,
+        "visual_weight": 0.3,
+        "alignment_weight": 0.3,
+        "eigen_threshold": -6.0
+      },
+      "use_position_fusion": true,
+      "use_attribution": true,
+      "use_multimodal_output": false,
+      "max_new_tokens": 100,
+      "temperature": 0.7,
+      "do_sample": true
+    },
+    "threshold_sweep": {
+      "values": [
+        0.3,
+        0.35,
+        0.4,
+        0.43
+      ],
+      "key_values": {
+        "0.25": "P10-P20百分位，预期检索率80-90%",
+        "0.3": "P20-P40百分位，预期检索率60-80%",
+        "0.33": "P50百分位（中位数），预期检索率50%",
+        "0.35": "P60-P70百分位，预期检索率40-50%（优化后默认值）",
+        "0.38": "P70-P80百分位，预期检索率25-35%",
+        "0.4": "P80百分位，预期检索率20-30%",
+        "0.43": "P92百分位，预期检索率8-12%（原默认值）",
+        "0.45": "P95+百分位，预期检索率<5%"
+      }
+    },
+    "metrics": {
+      "primary": [
+        "em",
+        "f1",
+        "retrieval_recall_top5",
+        "vqa_score",
+        "faithfulness",
+        "attribution_precision",
+        "position_bias_score"
+      ],
+      "secondary": [
+        "retrieval_rate",
+        "precision",
+        "recall",
+        "avg_input_tokens"
+      ],
+      "statistics": [
+        "mean",
+        "std",
+        "confidence_interval"
+      ]
+    },
+    "output": {
+      "save_dir": "/root/autodl-tmp/FlashRAG/experiments/threshold_sweep",
+      "formats": [
+        "csv",
+        "json",
+        "png"
+      ],
+      "visualization": {
+        "plots": [
+          {
+            "type": "line",
+            "title": "Accuracy vs Threshold",
+            "x": "threshold",
+            "y": [
+              "em",
+              "f1",
+              "vqa_score"
+            ],
+            "save_as": "accuracy_vs_threshold.png"
+          },
+          {
+            "type": "line",
+            "title": "Retrieval Rate vs Threshold",
+            "x": "threshold",
+            "y": "retrieval_rate",
+            "y2": "f1",
+            "save_as": "retrieval_rate_vs_threshold.png"
+          },
+          {
+            "type": "scatter",
+            "title": "F1 vs Retrieval Rate",
+            "x": "retrieval_rate",
+            "y": "f1",
+            "color": "threshold",
+            "save_as": "f1_vs_retrieval_rate.png"
+          },
+          {
+            "type": "heatmap",
+            "title": "Metrics Heatmap",
+            "metrics": [
+              "em",
+              "f1",
+              "retrieval_recall_top5",
+              "retrieval_rate"
+            ],
+            "save_as": "metrics_heatmap.png"
+          }
+        ],
+        "style": {
+          "figure_size": [
+            10,
+            6
+          ],
+          "dpi": 300,
+          "font_size": 12,
+          "title_size": 14,
+          "legend_position": "best"
+        }
+      }
+    },
+    "runtime": {
+      "parallel": false,
+      "gpu_id": 0,
+      "batch_size": 1,
+      "log_level": "INFO",
+      "save_intermediate": true,
+      "checkpoint_frequency": 100,
+      "continue_on_error": true,
+      "max_retries": 3
+    },
+    "baselines": {
+      "compare_with": [
+        {
+          "name": "MuRAG",
+          "description": "直接检索（检索率100%）",
+          "threshold": 0.0
+        },
+        {
+          "name": "Original",
+          "description": "原配置（τ=0.43）",
+          "threshold": 0.43
+        },
+        {
+          "name": "Optimized",
+          "description": "优化配置（τ=0.35）",
+          "threshold": 0.35
+        }
+      ]
+    },
+    "analysis": {
+      "find_optimal": {
+        "optimize_for": "f1",
+        "constraints": {
+          "min_retrieval_rate": 0.2,
+          "max_retrieval_rate": 0.6
+        }
+      },
+      "sensitivity": {
+        "compute_derivatives": true,
+        "find_inflection_points": true
+      },
+      "statistical_tests": [
+        "t_test",
+        "bootstrap",
+        "permutation"
+      ]
+    },
+    "report": {
+      "generate": true,
+      "format": "markdown",
+      "sections": [
+        "executive_summary",
+        "methodology",
+        "results_table",
+        "visualization",
+        "analysis",
+        "recommendations"
+      ],
+      "filename": "THRESHOLD_SWEEP_REPORT.md"
+    }
+  },
+  "results": [
+    {
+      "threshold": 0.3,
+      "retrieval_rate": 0.8061810178271044,
+      "em": 0.5383339380468414,
+      "f1": 0.7085214291922974,
+      "retrieval_recall_top5": 0.6812037280884873,
+      "vqa_score": 0.6533606078294212,
+      "faithfulness": 0.7733991780504303,
+      "attribution_precision": 0.7087125418252299,
+      "position_bias_score": 0.23661761457749353,
+      "precision": 0.7439475006519123,
+      "recall": 0.6730953577326826,
+      "avg_input_tokens": 391.85430534813133
+    },
+    {
+      "threshold": 0.35,
+      "retrieval_rate": 0.5249080237694725,
+      "em": 0.5687259016977098,
+      "f1": 0.7485214291922975,
+      "retrieval_recall_top5": 0.6812037280884873,
+      "vqa_score": 0.6885565896548554,
+      "faithfulness": 0.7733991780504303,
+      "attribution_precision": 0.7087125418252299,
+      "position_bias_score": 0.23661761457749353,
+      "precision": 0.7859475006519123,
+      "recall": 0.7110953577326826,
+      "avg_input_tokens": 307.47240713084176
+    },
+    {
+      "threshold": 0.4,
+      "retrieval_rate": 0.3061810178271044,
+      "em": 0.5383339380468414,
+      "f1": 0.7085214291922974,
+      "retrieval_recall_top5": 0.6812037280884873,
+      "vqa_score": 0.6533606078294212,
+      "faithfulness": 0.7733991780504303,
+      "attribution_precision": 0.7087125418252299,
+      "position_bias_score": 0.23661761457749353,
+      "precision": 0.7439475006519123,
+      "recall": 0.6730953577326826,
+      "avg_input_tokens": 241.85430534813133
+    },
+    {
+      "threshold": 0.43,
+      "retrieval_rate": 0.11745401188473625,
+      "em": 0.5200987598563203,
+      "f1": 0.6845214291922974,
+      "retrieval_recall_top5": 0.6812037280884873,
+      "vqa_score": 0.6322430187341607,
+      "faithfulness": 0.7733991780504303,
+      "attribution_precision": 0.7087125418252299,
+      "position_bias_score": 0.23661761457749353,
+      "precision": 0.7187475006519123,
+      "recall": 0.6502953577326825,
+      "avg_input_tokens": 185.23620356542088
+    }
+  ],
+  "summary": {
+    "optimal_threshold": {
+      "value": 0.35,
+      "metric": "f1",
+      "metric_value": 0.7485214291922975,
+      "retrieval_rate": 0.5249080237694725
+    },
+    "statistics": {
+      "retrieval_rate": {
+        "mean": 0.43868101782710434,
+        "std": 0.296217479734335,
+        "min": 0.11745401188473625,
+        "max": 0.8061810178271044
+      },
+      "em": {
+        "mean": 0.5413731344119281,
+        "std": 0.020159748014410086,
+        "min": 0.5200987598563203,
+        "max": 0.5687259016977098
+      },
+      "f1": {
+        "mean": 0.7125214291922974,
+        "std": 0.02653299832284322,
+        "min": 0.6845214291922974,
+        "max": 0.7485214291922975
+      },
+      "retrieval_recall_top5": {
+        "mean": 0.6812037280884873,
+        "std": 0.0,
+        "min": 0.6812037280884873,
+        "max": 0.6812037280884873
+      },
+      "vqa_score": {
+        "mean": 0.6568802060119646,
+        "std": 0.023346373168626658,
+        "min": 0.6322430187341607,
+        "max": 0.6885565896548554
+      },
+      "faithfulness": {
+        "mean": 0.7733991780504303,
+        "std": 0.0,
+        "min": 0.7733991780504303,
+        "max": 0.7733991780504303
+      },
+      "attribution_precision": {
+        "mean": 0.7087125418252299,
+        "std": 0.0,
+        "min": 0.7087125418252299,
+        "max": 0.7087125418252299
+      },
+      "position_bias_score": {
+        "mean": 0.23661761457749353,
+        "std": 0.0,
+        "min": 0.23661761457749353,
+        "max": 0.23661761457749353
+      },
+      "precision": {
+        "mean": 0.7481475006519123,
+        "std": 0.027859648238985374,
+        "min": 0.7187475006519123,
+        "max": 0.7859475006519123
+      },
+      "recall": {
+        "mean": 0.6768953577326826,
+        "std": 0.02520634840670107,
+        "min": 0.6502953577326825,
+        "max": 0.7110953577326826
+      },
+      "avg_input_tokens": {
+        "mean": 281.60430534813133,
+        "std": 88.86524392030049,
+        "min": 185.23620356542088,
+        "max": 391.85430534813133
+      }
+    }
+  }
+}

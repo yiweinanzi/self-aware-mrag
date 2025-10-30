@@ -1,0 +1,952 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "This text does not provide enough information to determine the specific sport that can be used. However, it appears to be related to a game or activity where players engage in strategic thinking and decision-making. The reference to \"Lycurgus",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "eigen_score": 8.924674987792969,
+    "retrieved": true
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "Asteraceae",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "eigen_score": 8.36859130859375,
+    "retrieved": true
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "I'm sorry, but I am not able to identify the specific toy based on the information provided. Could you please provide more context or details about the toy?",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "eigen_score": 8.485751152038574,
+    "retrieved": true
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "A.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "eigen_score": 9.099387168884277,
+    "retrieved": true
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "It is not possible to determine what the gentleman is carrying in the red bag based on the provided information. The information provided is a collection of unrelated statements that do not provide any context or context clues about the gentleman or the red bag.",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "eigen_score": 8.935297966003418,
+    "retrieved": true
+  },
+  {
+    "id": "5723996",
+    "question": "Who leaves a toilet like this?",
+    "prediction": "A composting toilet is a type of toilet that uses composting as a means of waste treatment. It is an eco-friendly alternative to traditional toilets, as it reduces the need for water and chemical",
+    "golden_answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "5759705",
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "prediction": "A center affixed unit like the one described in the kitchen is called a \"center-mounted\" unit.",
+    "golden_answers": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3045575",
+    "question": "Why might someone go to this place?",
+    "prediction": "A person might go to this place to seek guidance and wisdom from the teachings of Islam, as it is a mosque. The mosque serves as a place of worship, prayer, and reflection for Muslims. Additionally, the mosque may",
+    "golden_answers": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "2183655",
+    "question": "What does this grow from?",
+    "prediction": "A: The passage you provided discusses various topics related to the Methodist faith and its teachings. It mentions the belief in the resurrection of the dead and the possibility of continuing to grow in holiness after death. However, the",
+    "golden_answers": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "2863135",
+    "question": "What is that man doing with the bat?",
+    "prediction": "The man is swinging the bat at a ball, attempting to hit it.",
+    "golden_answers": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "299845",
+    "question": "Is this at a salt water beach or a lake?",
+    "prediction": "A: Salt water beach",
+    "golden_answers": [
+      "salt water beach",
+      "salt water beach",
+      "salt water beach",
+      "salt water beach",
+      "salt water",
+      "salt water",
+      "lake",
+      "lake",
+      "beach",
+      "beach"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "115115",
+    "question": "Who designed the statues?",
+    "prediction": "Seymour Chwast",
+    "golden_answers": [
+      "artist",
+      "artist",
+      "artist",
+      "artist",
+      "guell",
+      "guell",
+      "toscano",
+      "toscano",
+      "aritect",
+      "aritect"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3234605",
+    "question": "What is the name of the items the hot dog are topped with?",
+    "prediction": "The hot dog is topped with pickle relish, yellow mustard, pickled sport peppers, tomato wedges, dill pickle spear.",
+    "golden_answers": [
+      "condiment",
+      "condiment",
+      "condiment",
+      "condiment",
+      "onion relish",
+      "onion relish",
+      "vegetable",
+      "vegetable",
+      "relish",
+      "relish"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "5169165",
+    "question": "What is this desk used for?",
+    "prediction": "It is not possible to determine the specific purpose of the desk based on the given information. The given text does not provide any context or information about the desk's location, size, or function.",
+    "golden_answers": [
+      "work",
+      "work",
+      "work",
+      "work",
+      "compute",
+      "compute",
+      "work",
+      "work",
+      "office",
+      "office"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "217115",
+    "question": "What type of bike is on the ground?",
+    "prediction": "A road bicycle.",
+    "golden_answers": [
+      "bmx",
+      "bmx",
+      "bmx",
+      "bmx",
+      "bicycle",
+      "bicycle",
+      "bicycle",
+      "bicycle",
+      "10 speed",
+      "10 speed"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3133865",
+    "question": "What type of plane is that?",
+    "prediction": "The plane in question is a CIA plane that is known for its involvement in the \"extraordinary rendition\" program following the events of 9/11. The plane is equipped with a special analyzer that takes the form of",
+    "golden_answers": [
+      "commercial",
+      "commercial",
+      "commercial",
+      "commercial",
+      "passenger",
+      "passenger",
+      "quanta",
+      "quanta",
+      "md 80",
+      "md 80"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "4026395",
+    "question": "Is this a room for a boy or girl?",
+    "prediction": "This is a room for a boy.",
+    "golden_answers": [
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "4575845",
+    "question": "In what year was this desert first introduced?",
+    "prediction": "I'm sorry, but I cannot determine the year in which the Mojave Desert was first introduced based on the provided information. The Mojave Desert is a natural region in the southwestern United States and northwestern Mexico, and",
+    "golden_answers": [
+      "1847",
+      "1847",
+      "1847",
+      "1847",
+      "1860",
+      "1860",
+      "1934",
+      "1934",
+      "1900s",
+      "1900s"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "4883775",
+    "question": "What is this surf trick called?",
+    "prediction": "This is a description of a bridge game, not a surf trick. In bridge, the goal is to make a contract by taking tricks from the opponents while following specific rules and strategies. The declarer must plan their moves carefully to",
+    "golden_answers": [
+      "ride",
+      "ride",
+      "ride",
+      "ride",
+      "tube ride",
+      "tube ride",
+      "ollie",
+      "ollie",
+      "wave runner",
+      "wave runner"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3017535",
+    "question": "What do they call running around the bases on a single hit?",
+    "prediction": "A single hit is called a \"bunt\" in baseball.",
+    "golden_answers": [
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "home run",
+      "home run",
+      "home run",
+      "home run"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "1833195",
+    "question": "Why is this plugged in?",
+    "prediction": "A: To charge the device.",
+    "golden_answers": [
+      "charge",
+      "charge",
+      "charge",
+      "charge",
+      "to have power and work",
+      "to have power and work",
+      "power",
+      "power",
+      "outlet",
+      "outlet"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3970635",
+    "question": "What is the shape?",
+    "prediction": "The shape is a circle.",
+    "golden_answers": [
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "round",
+      "round",
+      "round",
+      "round"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "4976605",
+    "question": "What is the horsepower of the truck pulling the load?",
+    "prediction": "I'm sorry, but I cannot answer your question as it is incomplete and does not provide enough information for me to give a useful response. Please provide more context or clarify your question.",
+    "golden_answers": [
+      "510",
+      "510",
+      "510",
+      "510",
+      "510",
+      "510",
+      "420",
+      "420",
+      "500",
+      "500"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "2357845",
+    "question": "What kind of skiing is this person engaged in?",
+    "prediction": "The person is engaged in cross-country skiing, as they are using their own locomotion to move across snow-covered terrain and are not relying on ski lifts or other forms of assistance.",
+    "golden_answers": [
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3190735",
+    "question": "What is the person in the photo wearing?",
+    "prediction": "The person in the photo is wearing a dress.",
+    "golden_answers": [
+      "wetsuit",
+      "wetsuit",
+      "wetsuit",
+      "wetsuit",
+      "suit",
+      "suit",
+      "wet suit",
+      "wet suit",
+      "trunk",
+      "trunk"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "5144685",
+    "question": "What is the name of the board he is on?",
+    "prediction": "I'm sorry, but I cannot provide an answer to your question as it is incomplete and does not contain enough information. Can you please provide more context or clarify your question?",
+    "golden_answers": [
+      "surf board",
+      "surf board",
+      "surf board",
+      "surf board",
+      "surfboard",
+      "surfboard",
+      "surfboard",
+      "surfboard",
+      "surf",
+      "surf"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "4371265",
+    "question": "Name the material used to make this car seat shown in this picture?",
+    "prediction": "The car seat shown in the picture is made of leather.",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "nylon",
+      "nylon",
+      "polyester",
+      "polyester",
+      "leather",
+      "leather"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "5182875",
+    "question": "What part of the face is the toothbrush in?",
+    "prediction": "The toothbrush is in the mouth.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "happy",
+      "happy"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3804595",
+    "question": "What flavor is this pastry?",
+    "prediction": "Based on the given information, it is not possible to determine the flavor of the pastry. The information provided focuses on the uses and origins of dill, a type of herb, and its presence in certain regional dishes.",
+    "golden_answers": [
+      "blueberry",
+      "blueberry",
+      "blueberry",
+      "blueberry",
+      "cream cheese",
+      "cream cheese",
+      "chocolate",
+      "chocolate",
+      "strawberry",
+      "strawberry"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "5002005",
+    "question": "What kind of container are the flowers in?",
+    "prediction": "The flowers are in a vase.",
+    "golden_answers": [
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "trolley",
+      "trolley",
+      "pot",
+      "pot"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3156685",
+    "question": "What country does this appear to be?",
+    "prediction": "This appears to be a description of the country of Scotland.",
+    "golden_answers": [
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "usa",
+      "usa",
+      "england",
+      "england"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3736625",
+    "question": "Which of the foods in the picture is best for you to eat when you have a cold?",
+    "prediction": "There is no picture provided in the question. Please provide a picture for me to answer the question.",
+    "golden_answers": [
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "chicken soup",
+      "chicken soup",
+      "fruit",
+      "fruit"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "4293695",
+    "question": "What do teenage pranksters do to this animal?",
+    "prediction": "It is not clear what you are asking. Could you please provide more context or clarify your question?",
+    "golden_answers": [
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "4273415",
+    "question": "How many watts is that microwave?",
+    "prediction": "I'm sorry, but your question is incomplete and does not provide enough information for me to give a useful response. Could you please provide more context or clarify your question?",
+    "golden_answers": [
+      "800",
+      "800",
+      "800",
+      "800",
+      "120",
+      "120",
+      "1000",
+      "1000",
+      "100",
+      "100"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3938365",
+    "question": "What is this type of blanket called?",
+    "prediction": "A: A plaid blanket.",
+    "golden_answers": [
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "patchwork",
+      "patchwork"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "179845",
+    "question": "What south american country usually has this climate?",
+    "prediction": "Chile",
+    "golden_answers": [
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "africa",
+      "africa",
+      "ecuador",
+      "ecuador"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3268375",
+    "question": "What american restaurant features an open kitchen with visible cooking area such as this?",
+    "prediction": "A: Chef Gordon Ramsay's restaurant in London, called \"Ramsay's Kitchen Nightmares.\"",
+    "golden_answers": [
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "denny's",
+      "denny's",
+      "waffle house",
+      "waffle house"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "2780325",
+    "question": "What other big vehicle is often painted about the same shade as this vehicle?",
+    "prediction": "A train.",
+    "golden_answers": [
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "fire truck",
+      "fire truck"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "1110325",
+    "question": "What brand is this wine?",
+    "prediction": "This wine is from the Atari Intera brand.",
+    "golden_answers": [
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker",
+      "becker"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "5096415",
+    "question": "What would happen if these items fall to the ground?",
+    "prediction": "A: If the string passed in to the function is terminated by NULL (codice\\_32), then it would cause a segmentation fault or access violation when the function tries to access memory beyond the end of the string. This is because",
+    "golden_answers": [
+      "shatter",
+      "shatter",
+      "shatter",
+      "shatter",
+      "they would shatter",
+      "they would shatter",
+      "break",
+      "break",
+      "they would break",
+      "they would break"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3413095",
+    "question": "What brand of suit is the man in the image wearing?",
+    "prediction": "The man in the image is wearing a suit by the brand \"David Lynch Signature Cup\".",
+    "golden_answers": [
+      "brook brother",
+      "brook brother",
+      "brook brother",
+      "brook brother",
+      "gorgio armani",
+      "gorgio armani",
+      "name brand",
+      "name brand",
+      "gucchi",
+      "gucchi"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "1121605",
+    "question": "Where might i buy a print that resembles this photo?",
+    "prediction": "It is not clear what specific print you are referring to based on the provided information. However, if you are looking to purchase a print that resembles a photo, there are a few options you can consider.\n\nIf you have a photo",
+    "golden_answers": [
+      "gallery",
+      "gallery",
+      "gallery",
+      "gallery",
+      "store",
+      "store",
+      "target",
+      "target",
+      "walmart",
+      "walmart"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "2645405",
+    "question": "What are the rolled black food items called?",
+    "prediction": "The rolled black food items are called \"fish balls\" in Cantonese cuisine.",
+    "golden_answers": [
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "1089825",
+    "question": "What type of bird is this?",
+    "prediction": "It is not possible for me to accurately identify the species of the bird based on the information provided. The information given describes some characteristics of the bird, such as its preference for perching at night and its tendency to engage in fighting",
+    "golden_answers": [
+      "blue jay",
+      "blue jay",
+      "blue jay",
+      "blue jay",
+      "bluebird",
+      "bluebird",
+      "songbird",
+      "songbird",
+      "goldfinch",
+      "goldfinch"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "2929715",
+    "question": "How can you tell that the people are not upset?",
+    "prediction": "I'm sorry, but I cannot see any text or context in your question that would allow me to provide a meaningful answer. Could you please provide more information or context so I can better understand your question?",
+    "golden_answers": [
+      "they are smile",
+      "they are smile",
+      "they are smile",
+      "they are smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "1902045",
+    "question": "How fast is the vehicle pictured capable of reaching?",
+    "prediction": "The vehicle pictured is capable of reaching speeds of up to 88 mph.",
+    "golden_answers": [
+      "80 mph",
+      "80 mph",
+      "80 mph",
+      "80 mph",
+      "100 mph",
+      "100 mph",
+      "100 mph",
+      "100 mph",
+      "10mph",
+      "10mph"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "3774865",
+    "question": "Name the type of hat the man is wearing?",
+    "prediction": "Top hat",
+    "golden_answers": [
+      "cowboy",
+      "cowboy",
+      "cowboy",
+      "cowboy",
+      "sombrero",
+      "sombrero",
+      "sombrero",
+      "sombrero",
+      "stetson",
+      "stetson"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "1282805",
+    "question": "What sates are these grown in?",
+    "prediction": "The states in which these crops are grown include:\n\n* Salina, Kansas\n* Irlanda\n* Argovia\n* San Francisco\n* Linda Vista in the Soconusco region\n\nIt is not clear",
+    "golden_answers": [
+      "florida california",
+      "florida california",
+      "florida california",
+      "florida california",
+      "california",
+      "california",
+      "california",
+      "california",
+      "florida",
+      "florida"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "1318415",
+    "question": "How does the bread taste?",
+    "prediction": "I'm sorry, but I am an AI language model and do not have the ability to taste or smell anything. I can only provide information and answer questions based on my programming and the data I have been trained on.",
+    "golden_answers": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "like bread",
+      "like bread",
+      "sweet",
+      "sweet",
+      "delicious",
+      "delicious"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  },
+  {
+    "id": "1305165",
+    "question": "What is this type of mack truck used for?",
+    "prediction": "The type of Mack truck you are referring to is a TMM bridging truck, which is used for launching and carrying bridges to cross larger gaps. These bridges can be daisy-chained together to create longer sp",
+    "golden_answers": [
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "road work",
+      "road work"
+    ],
+    "eigen_score": null,
+    "retrieved": true
+  }
+]

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "Based on the given context, it is not possible to determine the specific sport that the documents are referring to. However, we can infer that the documents are related to a sport that is currently popular or has gained significant attention recently. The use of phrases such as \"the more I look at this the better it gets\" and \"the new spirit of sport\" suggests that the sport may be exciting and engaging, possibly involving a lot of action or high-stakes gameplay.",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "retrieved_docs": [
+      "i like the style of this one",
+      "i 've seen this a couple times now i think .",
+      "i also have this one .",
+      "the more i look at this the better it gets .",
+      "the new spirit of sport"
+    ],
+    "retrieved": true,
+    "context_length": 234
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "Based on the given context, it is not possible to definitively determine the type of plant without more specific information or a clear image of the plant in question. The phrases provided offer limited information about the plant's appearance, growth habit, or characteristics. To accurately identify the type of plant, one would need to provide more detailed information or a clear image of the plant.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "retrieved_docs": [
+      "different angle of the same plant .",
+      "plant , grown from a cutting .",
+      "flower who knows the name ?",
+      "maybe this with name in a flower or branch ? could this be added on to ... ?",
+      "what is the name of this unassuming vegetable ?"
+    ],
+    "retrieved": true,
+    "context_length": 288
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "Based on the given context, it is difficult to determine the exact toy being referred to in the question. However, we can narrow down the possibilities based on the clues provided in the documents.\n\nFrom Document 2, we know that the toy was one of the speaker's favorite toys. From Document 3, we know that the toy is being compared to an insect. From Document 4, we know that the toy is being compared to a dog.",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "retrieved_docs": [
+      "what 's the name of this model ?",
+      "this was one of my favorite toys .",
+      "what kind of insect is this thing ?",
+      "what kind of dog is this one ?",
+      "does anyone know what kind of coin this is ?"
+    ],
+    "retrieved": true,
+    "context_length": 248
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "If the animal were playing the game that is played with the items the man is holding (a guitar and money), it would be using its feet to play the guitar and its beak to hold the money.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "retrieved_docs": [
+      "film character is holding a small gift in his hand .",
+      "the man is holding a guitar .",
+      "he finally takes the animal and runs away from it .",
+      "this is a photo of a man holding money",
+      "person enjoys mounting feathered game ."
+    ],
+    "retrieved": true,
+    "context_length": 282
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "Based on the given context, it is difficult to determine exactly what the gentleman is carrying in the red bag. However, we can make some educated guesses based on the information provided.\n\nIn Document 1, it is mentioned that the red bag could be a \"laws of style,\" which could refer to a fashionable or stylish accessory. In Document 2, there is a mention of money in the red purse, which suggests that the bag may contain some form of",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "retrieved_docs": [
+      "laws of style : with what to wear a red bag",
+      "money in the red purse",
+      "fashion model carrying a bag .",
+      "bag that will never go out of style .",
+      "the hand holding the bag ."
+    ],
+    "retrieved": true,
+    "context_length": 231
+  },
+  {
+    "id": "5723996",
+    "question": "Who leaves a toilet like this?",
+    "prediction": "Based on the context provided, it seems that the answer to the question \"Who leaves a toilet like this?\" could be someone who is careless or irresponsible. The documents suggest that there are toilets in a bathroom that are not in proper working condition, with one toilet being described as \"loose\" and another as being in a state where no one is allowed to use it. This could indicate that the toilets have not been properly maintained or that",
+    "golden_answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "retrieved_docs": [
+      "that 's one of those bathrooms that no one is allowed to use .",
+      "photo of a luxury toilet",
+      "that would be the toilet for freshman !",
+      "photograph of a loose toilet",
+      "toilet bowl in the bathroom"
+    ],
+    "retrieved": true,
+    "context_length": 253
+  },
+  {
+    "id": "5759705",
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "prediction": "A center affixed unit like the one described in the documents is typically referred to as a kitchen island or a kitchen cart. These types of units are designed to provide additional workspace, storage, and seating options in a kitchen, and they can be a great solution for smaller kitchens where space is limited. They can also serve as a focal point in the kitchen and can be customized with various features and finishes to match the overall design and style of the space.",
+    "golden_answers": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "retrieved_docs": [
+      "l - shaped kitchen space can be opted for relatively smaller sized kitchens .",
+      "idea , may be putting something like this in my kitchen .",
+      "example of a classic kitchen design in other",
+      "interest in the small , but complete , kitchen",
+      "consumer product - an elegant touch to the kitchen"
+    ],
+    "retrieved": true,
+    "context_length": 347
+  },
+  {
+    "id": "3045575",
+    "question": "Why might someone go to this place?",
+    "prediction": "Based on the given documents, it can be inferred that someone might go to this place because it is a popular destination for tourists and travelers. The city is likely to offer various attractions, activities, and experiences that cater to different interests and preferences. The person in the documents is likely excited about visiting this city and staying there for an extended period. The city might also be known for its unique culture, history, or natural beauty, which could be another reason for",
+    "golden_answers": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "retrieved_docs": [
+      "going here to visit a city",
+      "when i go , this is where i 'd like to stay .",
+      "the funny thing about this is , i 'm going .",
+      "here 's way to enjoy a favorite destination of mine ...",
+      "of all the places i 've been , adventures i 've experienced , nothing compares to this one ."
+    ],
+    "retrieved": true,
+    "context_length": 335
+  },
+  {
+    "id": "2183655",
+    "question": "What does this grow from?",
+    "prediction": "Based on the given context, it is not possible to definitively determine what is being referred to in each of the five documents. However, some possible interpretations can be made.\n\nIn Document 1, the phrase \"looks like mine growing out\" suggests that the subject of the document may be a plant or a flower that is growing out of the ground.\n\nIn Document 2, the phrase \"i 've seen this a couple times now i think\" implies that the",
+    "golden_answers": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "retrieved_docs": [
+      "looks like mine growing out .",
+      "i 've seen this a couple times now i think .",
+      "the more i look at this the better it gets .",
+      "maybe this with name in a flower or branch ? could this be added on to ... ?",
+      "reminds me of the landscape"
+    ],
+    "retrieved": true,
+    "context_length": 293
+  },
+  {
+    "id": "2863135",
+    "question": "What is that man doing with the bat?",
+    "prediction": "Based on the given context, it is not possible to determine the exact action the man is taking with the bat. However, we can make some educated guesses based on the different scenarios provided:\n\n1. If the man is preparing to strike with a baseball bat, he is likely getting ready to hit a ball during a baseball game.\n2. If the man is flying with a bat in his bill, it is likely that he is a bird, such as a bat, prepar",
+    "golden_answers": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "retrieved_docs": [
+      "person with a baseball bat preparing to strike",
+      "biological species flying with a bat in it 's bill",
+      "the man is holding a guitar .",
+      "Baseball is a bat-and-ball game between two teams.",
+      "a man with a hammer in his back pocket"
+    ],
+    "retrieved": true,
+    "context_length": 286
+  },
+  {
+    "id": "299845",
+    "question": "Is this at a salt water beach or a lake?",
+    "prediction": "Based on the given context, it is most likely that the location is a salt water beach. The phrases \"at the beach\" and \"ocean\" are commonly associated with salt water beaches, while \"lake\" is not mentioned in any of the given documents. Additionally, the presence of the ocean is a key feature of salt water beaches, which are known for their salty water and waves.",
+    "golden_answers": [
+      "salt water beach",
+      "salt water beach",
+      "salt water beach",
+      "salt water beach",
+      "salt water",
+      "salt water",
+      "lake",
+      "lake",
+      "beach",
+      "beach"
+    ],
+    "retrieved_docs": [
+      "preferred place to be : at the beach .",
+      "look at that water and sand",
+      "just another day at the beach",
+      "the beach and ocean is waiting for you",
+      "having fun at the beach !"
+    ],
+    "retrieved": true,
+    "context_length": 230
+  },
+  {
+    "id": "115115",
+    "question": "Who designed the statues?",
+    "prediction": "Based on the given context, it can be inferred that the statues were designed by the person who is also credited with creating the statue in front of which they are located. Therefore, the answer to the question is the same as the answer to the previous question: the person who is credited with creating the statue in front of which they are located.",
+    "golden_answers": [
+      "artist",
+      "artist",
+      "artist",
+      "artist",
+      "guell",
+      "guell",
+      "toscano",
+      "toscano",
+      "aritect",
+      "aritect"
+    ],
+    "retrieved_docs": [
+      "this statue is located in front .",
+      "a closer look at the structure and the beautiful statues",
+      "another image of the statue .",
+      "statue by person , located next",
+      "most statues are of people -- often the sculptor 's ancestors ."
+    ],
+    "retrieved": true,
+    "context_length": 285
+  },
+  {
+    "id": "3234605",
+    "question": "What is the name of the items the hot dog are topped with?",
+    "prediction": "The hot dog is typically topped with a variety of ingredients, such as mustard, ketchup, onions, relish, sauerkraut, cheese, chili, and mayonnaise. The specific toppings can vary depending on personal preferences and regional variations.",
+    "golden_answers": [
+      "condiment",
+      "condiment",
+      "condiment",
+      "condiment",
+      "onion relish",
+      "onion relish",
+      "vegetable",
+      "vegetable",
+      "relish",
+      "relish"
+    ],
+    "retrieved_docs": [
+      "where are the best sandwiches according to you ?",
+      "bacon - wrapped hot dogs may be the quintessential street food but they originated .",
+      "hotdog is a sandwich suggests that “sandwich” is vague. Vagueness is commonly introduced by the Sorites paradox. A standard form of this paradox features a 2000-man sequence of progressively taller men, starting with a paradigm case of a short man at one extreme, say George Costanza, and at the other extreme, a paradigm case of a tall one, say Kramer. Sorites paradoxes exploit the intuition that some vague predicates are \"tolerant\" with respect to small enough differences on a dimension decisive of their application. This principle may seem to hold on the basis that (for example) no particular height is",
+      "how to find the list ?",
+      "while hot dogs are German; a popular meal, especially among young children, is spaghetti containing slices of hot dogs. Since the 1960s Asian cooking has played a particularly large role in American fusion cuisine. Some dishes that are typically considered American have their origins in other countries. American cooks and chefs have substantially altered these dishes over the years, to the degree that the dishes now enjoyed around the world are considered to be American. Hot dogs and hamburgers are both based on traditional German dishes, but in their modern popular form they can be reasonably considered American dishes. Pizza"
+    ],
+    "retrieved": true,
+    "context_length": 1471
+  },
+  {
+    "id": "5169165",
+    "question": "What is this desk used for?",
+    "prediction": "Based on the given context, it can be inferred that the desk is used for working on a computer. This is supported by the reference to a \"computer desk\" in Document 4, which suggests that the desk is designed for use with a computer. Additionally, the reference to the desk being \"tired\" in Document 3 suggests that it may have been used for some time and could benefit from being updated with paint and hardware to give it a fresh look.",
+    "golden_answers": [
+      "work",
+      "work",
+      "work",
+      "work",
+      "compute",
+      "compute",
+      "work",
+      "work",
+      "office",
+      "office"
+    ],
+    "retrieved_docs": [
+      "i 'd like to build a desk similar to this .",
+      "the desk in the room",
+      "updating a tired desk with paint and hardware",
+      "if you choose computer desk for small spaces with use simple computer desk which will save the use of space",
+      "here is a closer look at the desk ."
+    ],
+    "retrieved": true,
+    "context_length": 323
+  },
+  {
+    "id": "217115",
+    "question": "What type of bike is on the ground?",
+    "prediction": "The type of bike on the ground is a bicycle.",
+    "golden_answers": [
+      "bmx",
+      "bmx",
+      "bmx",
+      "bmx",
+      "bicycle",
+      "bicycle",
+      "bicycle",
+      "bicycle",
+      "10 speed",
+      "10 speed"
+    ],
+    "retrieved_docs": [
+      "bike with a wide rear tire .",
+      "when you think you can afford a bicycle and a motorcycle at the same time .",
+      "how would you like it if a bike was parked in your lane ?",
+      "empty place for a parking of bicycles",
+      "what to do with a broken bicycle"
+    ],
+    "retrieved": true,
+    "context_length": 302
+  },
+  {
+    "id": "3133865",
+    "question": "What type of plane is that?",
+    "prediction": "Based on the given context, it is not possible to definitively determine the type of plane from the documents. However, we can make some educated guesses based on the information provided.\n\nDocument 1 asks \"what kind of insect is this thing?\", which suggests that the object in question might have a unique or unusual appearance. However, there is no further information provided about the size, shape, or wingspan of the object, which would be necessary to determine if it is a type",
+    "golden_answers": [
+      "commercial",
+      "commercial",
+      "commercial",
+      "commercial",
+      "passenger",
+      "passenger",
+      "quanta",
+      "quanta",
+      "md 80",
+      "md 80"
+    ],
+    "retrieved_docs": [
+      "what kind of insect is this thing ?",
+      "the aircraft flies in the sky",
+      "a plane on the airport",
+      "view of a plane flying the sky",
+      "a jet of the airline"
+    ],
+    "retrieved": true,
+    "context_length": 209
+  },
+  {
+    "id": "4026395",
+    "question": "Is this a room for a boy or girl?",
+    "prediction": "Based on the given context, it is not possible to definitively determine whether the room is for a boy or a girl. The documents provide conflicting information about the nature of the room, with some describing it as a \"boy\" or \"girl,\" while others simply refer to it as a \"room\" or a \"new style\" room. Without additional information or context, it is not possible to provide a definitive answer to the question.",
+    "golden_answers": [
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl"
+    ],
+    "retrieved_docs": [
+      "it 's a boy ... or a girl !",
+      "again , this is a room and is in no way .",
+      "a room for the gods",
+      "room in a new style",
+      "a room of one 's own ."
+    ],
+    "retrieved": true,
+    "context_length": 201
+  },
+  {
+    "id": "4575845",
+    "question": "In what year was this desert first introduced?",
+    "prediction": "I'm sorry, but I cannot provide an answer to your question as it is not clear what desert you are referring to. The phrases you have provided do not give enough information to determine the origin or introduction of a specific dessert.",
+    "golden_answers": [
+      "1847",
+      "1847",
+      "1847",
+      "1847",
+      "1860",
+      "1860",
+      "1934",
+      "1934",
+      "1900s",
+      "1900s"
+    ],
+    "retrieved_docs": [
+      "there 's no need to wonder why this dessert has become such a standby during the warm spring and summer months .",
+      "a classic dessert only fit for after a classic meal .",
+      "what ; s better than a dessert ? desserts !",
+      "there is always room for dessert !",
+      "no celebration is complete without dessert"
+    ],
+    "retrieved": true,
+    "context_length": 357
+  },
+  {
+    "id": "4883775",
+    "question": "What is this surf trick called?",
+    "prediction": "The surf trick being performed in the image is called \"getting barreled\" or \"tube riding.\" It occurs when a surfer rides inside the hollow, curling part of a breaking wave, also known as the barrel or tube. This trick requires precise timing, balance, and skill to successfully ride inside the wave and maintain control of the surfboard. The image shows a surfer successfully performing this trick, which adds an element of excitement and challenge to",
+    "golden_answers": [
+      "ride",
+      "ride",
+      "ride",
+      "ride",
+      "tube ride",
+      "tube ride",
+      "ollie",
+      "ollie",
+      "wave runner",
+      "wave runner"
+    ],
+    "retrieved_docs": [
+      "surfers make one of attempts for most riding a single wave .",
+      "sometimes you just have to put down the short board , and rethink the beauty of surfing .",
+      "a surfer rides on a nice wave and performs tricks",
+      "a surfer gets barreled on a nice little wave",
+      "a surfer gets barreled on a fast wave"
+    ],
+    "retrieved": true,
+    "context_length": 352
+  },
+  {
+    "id": "3017535",
+    "question": "What do they call running around the bases on a single hit?",
+    "prediction": "On a single hit, the player runs around the bases to score a run. This is called \"hitting a single\" or \"getting a base hit.\" In the context of the given documents, it is mentioned that a person has hit a single that would drive in a pair of runs, and that a player has hit a single in the third inning. These examples illustrate the concept of hitting a single and running the bases to score runs in the game of baseball.",
+    "golden_answers": [
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "home run",
+      "home run",
+      "home run",
+      "home run"
+    ],
+    "retrieved_docs": [
+      "hits a run home run against sports team starting person during the fifth inning .",
+      "person hits a single that would drive in a pair of runs on errors from private school during the first inning .",
+      "Baseball is a bat-and-ball game between two teams.",
+      "# hits a single in the 3rd inning against sports team .",
+      "what does this player do on the field that makes them so good ."
+    ],
+    "retrieved": true,
+    "context_length": 433
+  },
+  {
+    "id": "1833195",
+    "question": "Why is this plugged in?",
+    "prediction": "Based on the given context, it is not possible to determine the exact reason why the plug is plugged in. However, we can make some educated guesses.\n\nDocument 1 suggests that technology can have a mind of its own, which could imply that the plug might be plugged in for no apparent reason. Alternatively, Document 2 talks about the right tool for the job, which could imply that the plug is plugged in to perform a specific task or function.",
+    "golden_answers": [
+      "charge",
+      "charge",
+      "charge",
+      "charge",
+      "to have power and work",
+      "to have power and work",
+      "power",
+      "power",
+      "outlet",
+      "outlet"
+    ],
+    "retrieved_docs": [
+      "technology has a mind of its own",
+      "the right tool for the job",
+      "believe it or not , but this is one of most advanced pieces of technology .",
+      "i 've seen this a couple times now i think .",
+      "it should look close to this when it 's time to take it out ."
+    ],
+    "retrieved": true,
+    "context_length": 311
+  },
+  {
+    "id": "3970635",
+    "question": "What is the shape?",
+    "prediction": "The shape in question can be described as a combination of different shapes, such as triangles, hearts, and a landscape-like shape. It can also be compared to the shape of long hair and a shape that resembles a plate. However, without a specific image or more information, it is difficult to provide a definitive answer to the question.",
+    "golden_answers": [
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "round",
+      "round",
+      "round",
+      "round"
+    ],
+    "retrieved_docs": [
+      "are the triangles below similar",
+      "in the form of heart",
+      "reminds me of the landscape",
+      "like the shape of this for long hair",
+      "shape on a white plate ."
+    ],
+    "retrieved": true,
+    "context_length": 211
+  },
+  {
+    "id": "4976605",
+    "question": "What is the horsepower of the truck pulling the load?",
+    "prediction": "Based on the given context, it is not possible to determine the horsepower of the truck pulling the load. The information regarding the horsepower of the truck is not present in the given documents.",
+    "golden_answers": [
+      "510",
+      "510",
+      "510",
+      "510",
+      "510",
+      "510",
+      "420",
+      "420",
+      "500",
+      "500"
+    ],
+    "retrieved_docs": [
+      "a truck has lost its load .",
+      "pick up truck full with a load .",
+      "a large truck for the transport of goods .",
+      "the truck on the road",
+      "truck in the photo #"
+    ],
+    "retrieved": true,
+    "context_length": 215
+  },
+  {
+    "id": "2357845",
+    "question": "What kind of skiing is this person engaged in?",
+    "prediction": "Based on the given context, it is not possible to definitively determine the type of skiing the person is engaged in. However, we can make some educated guesses based on the given statements.\n\nIf the person is a beginner trying out skiing for the first time in years, it is more likely that they are engaged in downhill skiing, which is generally considered more accessible and beginner-friendly compared to cross-country skiing.\n\nIf the person is skiing",
+    "golden_answers": [
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country"
+    ],
+    "retrieved_docs": [
+      "people click into their skis .",
+      "person tries out skiing for the first time in years !",
+      "person 's even trendy on the ski slopes",
+      "skiing means fun in the mountains !",
+      "olympic athlete of skiing in event"
+    ],
+    "retrieved": true,
+    "context_length": 264
+  },
+  {
+    "id": "3190735",
+    "question": "What is the person in the photo wearing?",
+    "prediction": "Based on the given context, it is not possible to definitively determine what the person in the photo is wearing. The statements provided suggest that the person may be wearing different things, such as an outfit or a specific type of clothing. However, without more specific information or a clear description of the person's attire in the photo, it is not possible to provide a definitive answer.",
+    "golden_answers": [
+      "wetsuit",
+      "wetsuit",
+      "wetsuit",
+      "wetsuit",
+      "suit",
+      "suit",
+      "wet suit",
+      "wet suit",
+      "trunk",
+      "trunk"
+    ],
+    "retrieved_docs": [
+      "found another image on the same site .",
+      "love this photo of person .",
+      "makes me think of what person might look like .",
+      "one of outfits , an example , according to person .",
+      "one of my favorite images ."
+    ],
+    "retrieved": true,
+    "context_length": 263
+  },
+  {
+    "id": "5144685",
+    "question": "What is the name of the board he is on?",
+    "prediction": "Based on the given context, it is not possible to determine the name of the board he is on without more specific information. The context only provides general descriptions of the board and its characteristics, but does not provide any specific details about the name of the board.",
+    "golden_answers": [
+      "surf board",
+      "surf board",
+      "surf board",
+      "surf board",
+      "surfboard",
+      "surfboard",
+      "surfboard",
+      "surfboard",
+      "surf",
+      "surf"
+    ],
+    "retrieved_docs": [
+      "must create a new board .",
+      "the board have less skin in the game than any other top board .",
+      "person turning the board on a right wave in the middle of the longboard",
+      "what 's the name of this model ?",
+      "the same with my dog and cat ; check out my board"
+    ],
+    "retrieved": true,
+    "context_length": 313
+  },
+  {
+    "id": "4371265",
+    "question": "Name the material used to make this car seat shown in this picture?",
+    "prediction": "Leather",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "nylon",
+      "nylon",
+      "polyester",
+      "polyester",
+      "leather",
+      "leather"
+    ],
+    "retrieved_docs": [
+      "car seat of the late 's .",
+      "can you guess what car this interior belongs to ?",
+      "which car does this interior go in ?",
+      "leather seats inside of a car",
+      "you need a car seat in a taxi by law"
+    ],
+    "retrieved": true,
+    "context_length": 248
+  },
+  {
+    "id": "5182875",
+    "question": "What part of the face is the toothbrush in?",
+    "prediction": "The toothbrush is in the mouth.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "happy",
+      "happy"
+    ],
+    "retrieved_docs": [
+      "toothbrush with toothpaste at the sink",
+      "but you brush your teeth on your cat 's schedule .",
+      "my hands are too small for this average sized toothbrush .",
+      "a man is brushing his teeth in the bathroom",
+      "makes me think of what person might look like ."
+    ],
+    "retrieved": true,
+    "context_length": 309
+  },
+  {
+    "id": "3804595",
+    "question": "What flavor is this pastry?",
+    "prediction": "Based on the given documents, it can be inferred that the pastry has a cream filling inside. However, the specific flavor of the pastry cannot be determined from the given documents.",
+    "golden_answers": [
+      "blueberry",
+      "blueberry",
+      "blueberry",
+      "blueberry",
+      "cream cheese",
+      "cream cheese",
+      "chocolate",
+      "chocolate",
+      "strawberry",
+      "strawberry"
+    ],
+    "retrieved_docs": [
+      "cream filling inside the pastry",
+      "this is my kind of tart !",
+      "if you are hungry , there are cakes and pastries too .",
+      "what are the pastries available at kitchen ?",
+      "now that 's my kind of cake !"
+    ],
+    "retrieved": true,
+    "context_length": 256
+  },
+  {
+    "id": "5002005",
+    "question": "What kind of container are the flowers in?",
+    "prediction": "Based on the given documents, it is not possible to determine the specific type of container the flowers are in. However, we can infer that the flowers are in a container that is suitable for holding a floral arrangement or bouquet. This could include a vase, a basket, or a box. Without more specific information or a clear visual of the container, it is not possible to provide a more accurate answer.",
+    "golden_answers": [
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "trolley",
+      "trolley",
+      "pot",
+      "pot"
+    ],
+    "retrieved_docs": [
+      "what do i do with all those flowers ?",
+      "these flowers , look at them .",
+      "it is a floral arrangement , but i think it would be lovely if smaller as a bouquet .",
+      "not sure what kind of flowers these are but really like them .",
+      "also like this amount of flowers"
+    ],
+    "retrieved": true,
+    "context_length": 319
+  },
+  {
+    "id": "3156685",
+    "question": "What country does this appear to be?",
+    "prediction": "Based on the given context, it is not possible to determine the specific country that these documents are referring to. The statements made in the documents do not provide enough information to identify the country.",
+    "golden_answers": [
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "usa",
+      "usa",
+      "england",
+      "england"
+    ],
+    "retrieved_docs": [
+      "i 've seen this a couple times now i think .",
+      "which part of the world do you represent .",
+      "i also have this one .",
+      "the more i look at this the better it gets .",
+      "reminds me of the landscape"
+    ],
+    "retrieved": true,
+    "context_length": 252
+  },
+  {
+    "id": "3736625",
+    "question": "Which of the foods in the picture is best for you to eat when you have a cold?",
+    "prediction": "Based on the provided documents, it is recommended to consume foods that are rich in vitamins, minerals, and antioxidants when you have a cold. Foods such as fruits, vegetables, and lean proteins can help boost your immune system and provide relief from cold symptoms. It is also important to avoid foods that are high in sugar and unhealthy fats, as they can worsen your symptoms and slow down your",
+    "golden_answers": [
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "chicken soup",
+      "chicken soup",
+      "fruit",
+      "fruit"
+    ],
+    "retrieved_docs": [
+      "here are some food items that will help you with your everyday health .",
+      "what type of food do you prefer ?",
+      "foods to person off the flu",
+      "when u have a cold avoid certain foods n eat more of the others",
+      "foods to avoid on disease"
+    ],
+    "retrieved": true,
+    "context_length": 292
+  },
+  {
+    "id": "4293695",
+    "question": "What do teenage pranksters do to this animal?",
+    "prediction": "Based on the given context, it is not possible to determine what teenage pranksters do to the animal in question. The documents provide information about funny animals, the internet running on awesome animals, and people preferring to hang out with animals rather than humans. However, there is no specific information about teenage pranksters and their actions towards any particular animal.",
+    "golden_answers": [
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip"
+    ],
+    "retrieved_docs": [
+      "funny animals of the day",
+      "funny animals of the day",
+      "the internet runs on awesome animals",
+      "what kind of dog is this one ?",
+      "when you 'd rather hang out with an animal than a human"
+    ],
+    "retrieved": true,
+    "context_length": 242
+  },
+  {
+    "id": "4273415",
+    "question": "How many watts is that microwave?",
+    "prediction": "The answer to the question \"How many watts is that microwave?\" is not provided in the given documents. The documents mainly discuss the widespread adoption of microwave ovens in different countries and the percentage of households that own and use them. There is no information about the wattage of specific microwave ovens.",
+    "golden_answers": [
+      "800",
+      "800",
+      "800",
+      "800",
+      "120",
+      "120",
+      "1000",
+      "1000",
+      "100",
+      "100"
+    ],
+    "retrieved_docs": [
+      "interest in the microwave oven",
+      "some number divided by twelve",
+      "of Labor Statistics reported that over 90% of American households owned a microwave oven in 1997. In Australia, a 2008 market research study found that 95% of kitchens contained a microwave oven and that 83% of them were used daily. In Canada, fewer than 5% of households had a microwave oven in 1979, but more than 88% of households owned one by 1998. In France, 40% of households owned a microwave oven in 1994, but that number had increased to 65% by 2004. Adoption has been slower in less-developed countries, as households with disposable income concentrate on more important household",
+      "which had a tv in front of it",
+      "put 1 + 2 + 3 in your calculator and get the wrong answer"
+    ],
+    "retrieved": true,
+    "context_length": 808
+  },
+  {
+    "id": "3938365",
+    "question": "What is this type of blanket called?",
+    "prediction": "Based on the given context, it seems that the person is referring to a weighted blanket. Document 2 mentions being advised to look into a weighted blanket to help a person, and Document 3 mentions making a blanket for a grandson. While Document 1 describes a large blanket, it does not provide enough information to determine if it is a weighted blanket or not. Document 4 asks about the country of origin of a flag, and Document 5",
+    "golden_answers": [
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "patchwork",
+      "patchwork"
+    ],
+    "retrieved_docs": [
+      "this is how my blanket turned out - it 's huge .",
+      "last year , i was advised to look into a weighted blanket to help person .",
+      "made a blanket for our grandson",
+      "what country does this flag come from ?",
+      "what 's the name of this model ?"
+    ],
+    "retrieved": true,
+    "context_length": 297
+  },
+  {
+    "id": "179845",
+    "question": "What south american country usually has this climate?",
+    "prediction": "The answer to the question is not provided in the given context. However, based on the information provided in the context, it can be inferred that the south American country with a climate that is typically associated with cold weather and snow is Argentina. This is because Document 4 mentions that the speaker will eventually move to live in a country with cold weather and snow, and Document 5 warns that if you go unprepared for their winter weather, you will freeze. Argentina is known for",
+    "golden_answers": [
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "africa",
+      "africa",
+      "ecuador",
+      "ecuador"
+    ],
+    "retrieved_docs": [
+      "each year , thousands of square miles of tropical rain forest are",
+      "climate change due to global warming degrades the health",
+      "the coldest winters in years",
+      "i will eventually move to live where there is cold weather and snow .",
+      "country is amazing , but if you go unprepared for their winter weather you will freeze !"
+    ],
+    "retrieved": true,
+    "context_length": 379
+  },
+  {
+    "id": "3268375",
+    "question": "What american restaurant features an open kitchen with visible cooking area such as this?",
+    "prediction": "The answer to this question is \"The Cheesecake Factory.\"",
+    "golden_answers": [
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "denny's",
+      "denny's",
+      "waffle house",
+      "waffle house"
+    ],
+    "retrieved_docs": [
+      "here 's another view of the kitchen .",
+      "interior of a restaurant kitchen",
+      "example of a classic kitchen design in other",
+      "view of the whole kitchen .",
+      "i think every kitchen should have a huge space like this ."
+    ],
+    "retrieved": true,
+    "context_length": 271
+  },
+  {
+    "id": "2780325",
+    "question": "What other big vehicle is often painted about the same shade as this vehicle?",
+    "prediction": "Answers may vary, but one possible answer is a large tractor trailer or semi-truck, which is often painted in a similar shade to the vehicle described in the context.",
+    "golden_answers": [
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "fire truck",
+      "fire truck"
+    ],
+    "retrieved_docs": [
+      "i know a lot of people that would love to get their hands on that vehicle !",
+      "a large truck for the transport of goods .",
+      "on the lookout for this vehicle .",
+      "i want a truck just like this !",
+      "i would by this simply to have a truck that no one else does ."
+    ],
+    "retrieved": true,
+    "context_length": 316
+  },
+  {
+    "id": "1110325",
+    "question": "What brand is this wine?",
+    "prediction": "Based on the given documents, it is not possible to determine the specific brand of the wine. However, we can infer that the wine has a pleasant taste, as one person described it as an \"explosion of all good things\" and another person noted that it was \"lovely.\" Additionally, one person received the wine as a gift, which suggests that it may have been a thoughtful present.",
+    "golden_answers": [
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker",
+      "becker"
+    ],
+    "retrieved_docs": [
+      "this wine seriously taste like an explosion of all good things .",
+      "was not too impressed with the wine unfortunately - a little too bitter",
+      "that was a lovely bottle of local wine",
+      "a bottle of red wine",
+      "bottle of wine - a gift"
+    ],
+    "retrieved": true,
+    "context_length": 289
+  },
+  {
+    "id": "5096415",
+    "question": "What would happen if these items fall to the ground?",
+    "prediction": "If these items were to fall to the ground, they would likely cause damage to the surrounding area and potentially injure someone. The items mentioned in the documents include a vase, a side table, and hanging objects, which are all fragile and could break upon impact with the ground. Additionally, the items may scatter and create a tripping hazard, increasing the risk of accidents. It is important to handle these items with care and ensure they are placed in a safe location to",
+    "golden_answers": [
+      "shatter",
+      "shatter",
+      "shatter",
+      "shatter",
+      "they would shatter",
+      "they would shatter",
+      "break",
+      "break",
+      "they would break",
+      "they would break"
+    ],
+    "retrieved_docs": [
+      "my favorite things in the world !",
+      "would look like on a side table in a dining room .",
+      "hanging objects creates more room in any space .",
+      "how high can you go !",
+      "what a creative storage solution !"
+    ],
+    "retrieved": true,
+    "context_length": 259
+  },
+  {
+    "id": "3413095",
+    "question": "What brand of suit is the man in the image wearing?",
+    "prediction": "Based on the given context, it is not possible to definitively determine the brand of suit the man in the image is wearing. The image only provides limited information about the suit, such as the fact that it is a dapper suit, a mysterious guy is wearing it, and an actor is stunning in it. Additionally, one of the documents mentions the man wearing one of his own designs, but it does not provide enough information to determine the brand of the suit.",
+    "golden_answers": [
+      "brook brother",
+      "brook brother",
+      "brook brother",
+      "brook brother",
+      "gorgio armani",
+      "gorgio armani",
+      "name brand",
+      "name brand",
+      "gucchi",
+      "gucchi"
+    ],
+    "retrieved_docs": [
+      "person wore a dapper suit while he was .",
+      "a mysterious guy in a suit",
+      "him in this suit = automatic pin",
+      "actor is stunning in this suit",
+      "man wearing one of his own designs that helped redefine the traditional suit ."
+    ],
+    "retrieved": true,
+    "context_length": 279
+  },
+  {
+    "id": "1121605",
+    "question": "Where might i buy a print that resembles this photo?",
+    "prediction": "Based on the provided context, it seems that the images in question are likely high-quality, visually appealing photographs that have been praised for their aesthetic qualities. To buy a print that resembles these photos, you may want to consider contacting the photographer or the organization that owns the rights to the images. Alternatively, you can search for print-on-demand services or online marketplaces that offer a wide range of art prints, including",
+    "golden_answers": [
+      "gallery",
+      "gallery",
+      "gallery",
+      "gallery",
+      "store",
+      "store",
+      "target",
+      "target",
+      "walmart",
+      "walmart"
+    ],
+    "retrieved_docs": [
+      "one of my favorite images .",
+      "can i have a movie - size poster of this ?",
+      "i need a poster of this !",
+      "another timeless and natural photograph .",
+      "pictures like this make it obvious why so many people are obsessed ."
+    ],
+    "retrieved": true,
+    "context_length": 276
+  },
+  {
+    "id": "2645405",
+    "question": "What are the rolled black food items called?",
+    "prediction": "The rolled black food items are called \"sushi.\"",
+    "golden_answers": [
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi"
+    ],
+    "retrieved_docs": [
+      "what type of food do you prefer ?",
+      "a hint of black for your home",
+      "everybody dresses in black once in a while",
+      "black is the most beautiful colour , because it does not reflect - it absorbs all into itself .",
+      "the planet rotates in black space"
+    ],
+    "retrieved": true,
+    "context_length": 305
+  },
+  {
+    "id": "1089825",
+    "question": "What type of bird is this?",
+    "prediction": "Based on the given documents, it is difficult to determine the exact species of the bird without more specific information or a clear visual of the bird. However, we can narrow it down to a few possibilities based on the given descriptions:\n\n* If the bird is described as a \"person I've seen this type of bird when I traveled!\", it could be a common or widespread species that is found in various locations.\n* If the bird is described as",
+    "golden_answers": [
+      "blue jay",
+      "blue jay",
+      "blue jay",
+      "blue jay",
+      "bluebird",
+      "bluebird",
+      "songbird",
+      "songbird",
+      "goldfinch",
+      "goldfinch"
+    ],
+    "retrieved_docs": [
+      "what kind of dog is this one ?",
+      "what kind of insect is this thing ?",
+      "person i 've seen this type of bird when i traveled !",
+      "some type of chicken , maybe ?",
+      "what breed of dog is this ?"
+    ],
+    "retrieved": true,
+    "context_length": 248
+  },
+  {
+    "id": "2929715",
+    "question": "How can you tell that the people are not upset?",
+    "prediction": "Based on the given context, it can be inferred that the people are not upset because there is no one left to blame, as stated in Document 1. Additionally, the other documents suggest that the situation is under control and that people are in a state of stillness, which implies that there is no longer any need for comment or reaction. The fact that Document 5 reminds the author of crowds could also indicate that the people are not actively expressing their emotions",
+    "golden_answers": [
+      "they are smile",
+      "they are smile",
+      "they are smile",
+      "they are smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile"
+    ],
+    "retrieved_docs": [
+      "there is no one left to blame",
+      "be still : there is no longer any need of comment .",
+      "we live in a reactionary age .",
+      "it 's true , all of it .",
+      "reminds me of the crowds"
+    ],
+    "retrieved": true,
+    "context_length": 231
+  },
+  {
+    "id": "1902045",
+    "question": "How fast is the vehicle pictured capable of reaching?",
+    "prediction": "Based on the given context, it is not possible to determine the exact speed at which the vehicle is capable of reaching. However, we can infer that the vehicle is designed for high-speed performance, as it is described as \"fast\" and \"capable of reaching high speeds.\" Additionally, the fact that it is a sports car suggests that it may be optimized for high-speed driving and performance.",
+    "golden_answers": [
+      "80 mph",
+      "80 mph",
+      "80 mph",
+      "80 mph",
+      "100 mph",
+      "100 mph",
+      "100 mph",
+      "100 mph",
+      "10mph",
+      "10mph"
+    ],
+    "retrieved_docs": [
+      "an example of a car that could meet all your expectations",
+      "i know a lot of people that would love to get their hands on that vehicle !",
+      "driving on wheels is another specialty",
+      "test drive the car on rough terrain",
+      "A car is a road vehicle with four wheels powered by an engine."
+    ],
+    "retrieved": true,
+    "context_length": 340
+  },
+  {
+    "id": "3774865",
+    "question": "Name the type of hat the man is wearing?",
+    "prediction": "Based on the given context, it is not possible to definitively determine the type of hat the man is wearing. The statements provided offer varying descriptions and contexts, making it difficult to identify a specific type of hat.",
+    "golden_answers": [
+      "cowboy",
+      "cowboy",
+      "cowboy",
+      "cowboy",
+      "sombrero",
+      "sombrero",
+      "sombrero",
+      "sombrero",
+      "stetson",
+      "stetson"
+    ],
+    "retrieved_docs": [
+      "person looks best in a hat ?",
+      "this hat is based on one from the collection .",
+      "man wearing a ceremonial hat",
+      "the baseball hat - get on the trend",
+      "actor might be just the hat talking , but our man 's looking actor ."
+    ],
+    "retrieved": true,
+    "context_length": 278
+  },
+  {
+    "id": "1282805",
+    "question": "What sates are these grown in?",
+    "prediction": "Based on the given documents, it is not possible to determine the exact state where these flowers or branches are grown. However, we can infer that they are likely grown in a controlled environment such as a nursery, garden, or greenhouse. The use of the word \"growing out\" in Document 4 suggests that the plants are being cultivated and cared for, which is typical in a controlled environment. Additionally, the reference to fans in Document 5 may indicate that the",
+    "golden_answers": [
+      "florida california",
+      "florida california",
+      "florida california",
+      "florida california",
+      "california",
+      "california",
+      "california",
+      "california",
+      "florida",
+      "florida"
+    ],
+    "retrieved_docs": [
+      "maybe this with name in a flower or branch ? could this be added on to ... ?",
+      "i love these so much !",
+      "wish i could spend the extra money on these .",
+      "looks like mine growing out .",
+      "fans , are there still some of those ?"
+    ],
+    "retrieved": true,
+    "context_length": 283
+  },
+  {
+    "id": "1318415",
+    "question": "How does the bread taste?",
+    "prediction": "Based on the given context, it is not possible to determine how the bread tastes. The statements in the documents do not provide any information about the taste of the bread.",
+    "golden_answers": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "like bread",
+      "like bread",
+      "sweet",
+      "sweet",
+      "delicious",
+      "delicious"
+    ],
+    "retrieved_docs": [
+      "all the breads are made with % whole wheat .",
+      "man can not live by bread alone .",
+      "do people outside region eat this kind of bread ?",
+      "bread and toothpick will do the trick for you .",
+      "instant food on the other side"
+    ],
+    "retrieved": true,
+    "context_length": 276
+  },
+  {
+    "id": "1305165",
+    "question": "What is this type of mack truck used for?",
+    "prediction": "Based on the given context, it appears that these documents are referring to different types of Mack trucks, which are commonly used for transportation of goods and cargo. The specific purpose of each truck may vary depending on its size, configuration, and the needs of its owner or operator.\n\nFor example, Document 1 and Document 4 both mention a desire for a truck like the one in the image, which suggests that the truck may be used for personal or recreational",
+    "golden_answers": [
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "road work",
+      "road work"
+    ],
+    "retrieved_docs": [
+      "i want a truck just like this !",
+      "an old truck awaiting the return of its owner",
+      "a large truck for the transport of goods .",
+      "i want 1 of these trucks",
+      "a truck traveling along a road"
+    ],
+    "retrieved": true,
+    "context_length": 245
+  }
+]

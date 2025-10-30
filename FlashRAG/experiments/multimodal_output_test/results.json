@@ -1,0 +1,559 @@
+{
+  "total_samples": 5,
+  "multimodal_count": 0,
+  "multimodal_ratio": 0.0,
+  "scenarios": {},
+  "config": {
+    "use_multimodal_output": true,
+    "insertion_confidence_threshold": 0.7,
+    "max_images_per_answer": 3,
+    "pure_image_threshold": 0.9,
+    "mixed_threshold": 0.5,
+    "uncertainty_threshold": 0.15,
+    "text_weight": 0.4,
+    "visual_weight": 0.3,
+    "alignment_weight": 0.3,
+    "use_position_fusion": true,
+    "position_importance_weight": 0.3,
+    "use_attribution": true,
+    "attribution_threshold": 0.6,
+    "retrieval_topk": 5,
+    "dataset_name": "okvqa",
+    "data_dir": "flashrag/data/VQA",
+    "max_samples": 5,
+    "llava_model_path": "/root/autodl-tmp/models/llava-v1.5-7b",
+    "clip_model_path": "/root/autodl-tmp/models/clip-vit-large-patch14-336",
+    "bge_model_path": "/root/autodl-tmp/models/bge-large-en-v1.5",
+    "output_dir": "experiments/multimodal_output_test",
+    "save_samples": true,
+    "save_intermediate_results": true,
+    "verbose": true,
+    "log_level": "INFO"
+  },
+  "samples": [
+    {
+      "question": "What sport can you use this for?",
+      "answer": {
+        "text": "Auto racing",
+        "images": [],
+        "insertion_points": [],
+        "num_images": 0
+      },
+      "uncertainty": {
+        "text": 0.4,
+        "visual": 0.0,
+        "alignment": 0.0,
+        "total": 0.2,
+        "original_query": "What sport can you use this for?",
+        "enhanced_query": null,
+        "selected_modality": "both",
+        "modality_weights": {
+          "text": 0.5,
+          "image": 0.5
+        }
+      },
+      "retrieved": true,
+      "n_retrieved_docs": 5,
+      "n_fused_docs": 3,
+      "attributions": [
+        {
+          "token": "racing",
+          "source_span": "at colleges and universities can also take part in single-seater racing through the Formula SAE competition, which involves designing and building",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 1
+        }
+      ],
+      "golden_answers": [
+        "race",
+        "race",
+        "race",
+        "race",
+        "race",
+        "race",
+        "motocross",
+        "motocross",
+        "ride",
+        "ride"
+      ],
+      "selected_modality": "both",
+      "modality_weights": {
+        "text": 0.5,
+        "image": 0.5
+      },
+      "query_enhanced": false,
+      "attribution_stats": {
+        "total_sources": 1,
+        "high_confidence": 1,
+        "avg_confidence": 0.9
+      }
+    },
+    {
+      "question": "Name the type of plant this is?",
+      "answer": {
+        "text": "Acacia",
+        "images": [],
+        "insertion_points": [],
+        "num_images": 0
+      },
+      "uncertainty": {
+        "text": 0.4,
+        "visual": 0.0,
+        "alignment": 0.0,
+        "total": 0.2,
+        "original_query": "Name the type of plant this is?",
+        "enhanced_query": null,
+        "selected_modality": "both",
+        "modality_weights": {
+          "text": 0.5,
+          "image": 0.5
+        }
+      },
+      "retrieved": true,
+      "n_retrieved_docs": 5,
+      "n_fused_docs": 3,
+      "attributions": [
+        {
+          "token": "Acacia",
+          "source_span": "cultivated, through confusion with the related genus \"\"Mimosa\"\". Another ornamental acacia is the fever tree. Southern European florists use \"\"A. baileyana\"\",",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 0
+        }
+      ],
+      "golden_answers": [
+        "vine",
+        "vine",
+        "vine",
+        "vine",
+        "climb",
+        "climb",
+        "look like some kind of ivy",
+        "look like some kind of ivy",
+        "ficus",
+        "ficus"
+      ],
+      "selected_modality": "both",
+      "modality_weights": {
+        "text": 0.5,
+        "image": 0.5
+      },
+      "query_enhanced": false,
+      "attribution_stats": {
+        "total_sources": 1,
+        "high_confidence": 1,
+        "avg_confidence": 0.9
+      }
+    },
+    {
+      "question": "What toy is this?",
+      "answer": "This is a stuffed animal, specifically a teddy bear.",
+      "uncertainty": {
+        "text": 0.3,
+        "visual": 0.0,
+        "alignment": 0.0,
+        "total": 0.15
+      },
+      "retrieved": false,
+      "n_retrieved_docs": 0,
+      "n_fused_docs": 0,
+      "attributions": null,
+      "golden_answers": [
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "teddy bear",
+        "teddy bear",
+        "teddy bear",
+        "teddy bear"
+      ]
+    },
+    {
+      "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+      "answer": {
+        "text": "The man is holding a goat carcass, which is being used in the game of polo. Polo is a sport played on horseback where players use mallets to hit a small ball into the opposing team's goal.",
+        "images": [],
+        "insertion_points": [
+          75
+        ],
+        "num_images": 0
+      },
+      "uncertainty": {
+        "text": 0.8,
+        "visual": 0.0,
+        "alignment": 0.0,
+        "total": 0.4,
+        "original_query": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+        "enhanced_query": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding? (\u9700\u8981\u4e8b\u5b9e\u6027\u77e5\u8bc6)",
+        "selected_modality": "text",
+        "modality_weights": {
+          "text": 1.0,
+          "image": 0.0
+        }
+      },
+      "retrieved": true,
+      "n_retrieved_docs": 5,
+      "n_fused_docs": 3,
+      "attributions": [
+        {
+          "token": "The",
+          "source_span": "teams, each trying to grab and hold a goat carcass. The Afghan Hound (a type of running dog) originated in Afghanistan",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 0
+        },
+        {
+          "token": "is",
+          "source_span": "The Afghan Hound (a type of running dog) originated in Afghanistan and was originally used in hunting. Books Articles Afghanistan Afghanistan",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 2
+        },
+        {
+          "token": "a",
+          "source_span": "\"to polo, played by horsemen in two teams, each trying to grab and",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 4
+        },
+        {
+          "token": "goat",
+          "source_span": "in two teams, each trying to grab and hold a goat carcass. The Afghan Hound (a type of running dog) originated",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 5
+        },
+        {
+          "token": "which",
+          "source_span": "popular from the earliest times; another similar game was mehen, which had a circular gaming board. Juggling and ball games were",
+          "source_text_id": "doc_1",
+          "confidence": 0.9,
+          "position": 7
+        },
+        {
+          "token": "is",
+          "source_span": "The Afghan Hound (a type of running dog) originated in Afghanistan and was originally used in hunting. Books Articles Afghanistan Afghanistan",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 8
+        },
+        {
+          "token": "used",
+          "source_span": "type of running dog) originated in Afghanistan and was originally used in hunting. Books Articles Afghanistan Afghanistan (; Pashto/Dari: , Pashto:",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 10
+        },
+        {
+          "token": "in",
+          "source_span": "\"to polo, played by horsemen in two teams, each trying to grab and hold a goat",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 11
+        },
+        {
+          "token": "the",
+          "source_span": "teams, each trying to grab and hold a goat carcass. The Afghan Hound (a type of running dog) originated in Afghanistan",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 12
+        },
+        {
+          "token": "game",
+          "source_span": "The ancient Egyptians enjoyed a variety of leisure activities, including games and music. Senet, a board game where pieces moved according",
+          "source_text_id": "doc_1",
+          "confidence": 0.9,
+          "position": 13
+        },
+        {
+          "token": "of",
+          "source_span": "and hold a goat carcass. The Afghan Hound (a type of running dog) originated in Afghanistan and was originally used in",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 14
+        },
+        {
+          "token": "Polo",
+          "source_span": "\"to polo, played by horsemen in two teams, each trying to grab",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 16
+        },
+        {
+          "token": "is",
+          "source_span": "The Afghan Hound (a type of running dog) originated in Afghanistan and was originally used in hunting. Books Articles Afghanistan Afghanistan",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 17
+        },
+        {
+          "token": "a",
+          "source_span": "\"to polo, played by horsemen in two teams, each trying to grab and",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 18
+        },
+        {
+          "token": "played",
+          "source_span": "\"to polo, played by horsemen in two teams, each trying to grab and",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 20
+        },
+        {
+          "token": "on",
+          "source_span": "and became popular. In the New Kingdom, the Egyptians played on bells, cymbals, tambourines, drums, and imported lutes and lyres from",
+          "source_text_id": "doc_1",
+          "confidence": 0.9,
+          "position": 21
+        },
+        {
+          "token": "where",
+          "source_span": "leisure activities, including games and music. Senet, a board game where pieces moved according to random chance, was particularly popular from",
+          "source_text_id": "doc_1",
+          "confidence": 0.9,
+          "position": 23
+        },
+        {
+          "token": "use",
+          "source_span": "type of running dog) originated in Afghanistan and was originally used in hunting. Books Articles Afghanistan Afghanistan (; Pashto/Dari: , Pashto:",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 25
+        },
+        {
+          "token": "to",
+          "source_span": "\"to polo, played by horsemen in two teams, each trying to",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 27
+        },
+        {
+          "token": "a",
+          "source_span": "\"to polo, played by horsemen in two teams, each trying to grab and",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 29
+        },
+        {
+          "token": "ball",
+          "source_span": "was mehen, which had a circular gaming board. Juggling and ball games were popular\"",
+          "source_text_id": "doc_1",
+          "confidence": 0.9,
+          "position": 31
+        },
+        {
+          "token": "the",
+          "source_span": "teams, each trying to grab and hold a goat carcass. The Afghan Hound (a type of running dog) originated in Afghanistan",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 33
+        }
+      ],
+      "golden_answers": [
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth"
+      ],
+      "selected_modality": "text",
+      "modality_weights": {
+        "text": 1.0,
+        "image": 0.0
+      },
+      "query_enhanced": true,
+      "attribution_stats": {
+        "total_sources": 22,
+        "high_confidence": 22,
+        "avg_confidence": 0.8999999999999997
+      }
+    },
+    {
+      "question": "What could this gentleman be carrying in that red bag?",
+      "answer": {
+        "text": "It is not possible to determine what the gentleman is carrying in the red bag based on the provided evidence. The evidence includes information about anchors, Andy Warhol's wigs, and the Ainu people's betrothal gifts",
+        "images": [],
+        "insertion_points": [
+          109
+        ],
+        "num_images": 0
+      },
+      "uncertainty": {
+        "text": 0.55,
+        "visual": 0.0,
+        "alignment": 0.0,
+        "total": 0.275,
+        "original_query": "What could this gentleman be carrying in that red bag?",
+        "enhanced_query": null,
+        "selected_modality": "text",
+        "modality_weights": {
+          "text": 1.0,
+          "image": 0.0
+        }
+      },
+      "retrieved": true,
+      "n_retrieved_docs": 5,
+      "n_fused_docs": 3,
+      "attributions": [
+        {
+          "token": "It",
+          "source_span": "may be more difficult to retrieve. A grapnel is often quite light, and may have additional uses as a tool to",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 0
+        },
+        {
+          "token": "is",
+          "source_span": "structure, but may be more difficult to retrieve. A grapnel is often quite light, and may have additional uses as a",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 1
+        },
+        {
+          "token": "not",
+          "source_span": "easy to move and carry, however its shape is generally not very compact and it may be awkward to stow unless",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 2
+        },
+        {
+          "token": "to",
+          "source_span": "\"by hooking into the structure, but may be more difficult to retrieve. A",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 4
+        },
+        {
+          "token": "what",
+          "source_span": "entry for that day that he wrote: \"\"I don't know what held me back from\"",
+          "source_text_id": "doc_1",
+          "confidence": 0.9,
+          "position": 6
+        },
+        {
+          "token": "the",
+          "source_span": "\"by hooking into the structure, but may be more difficult to retrieve. A grapnel",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 7
+        },
+        {
+          "token": "is",
+          "source_span": "structure, but may be more difficult to retrieve. A grapnel is often quite light, and may have additional uses as a",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 9
+        },
+        {
+          "token": "in",
+          "source_span": "\"by hooking into the structure, but may be more difficult to retrieve.",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 11
+        },
+        {
+          "token": "the",
+          "source_span": "\"by hooking into the structure, but may be more difficult to retrieve. A grapnel",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 12
+        },
+        {
+          "token": "red",
+          "source_span": "girl snatched Warhol's wig off his head. It was later discovered in Warhol's diary entry for that day that he wrote:",
+          "source_text_id": "doc_1",
+          "confidence": 0.9,
+          "position": 13
+        },
+        {
+          "token": "on",
+          "source_span": "retrieve. A grapnel is often quite light, and may have additional uses as a tool to recover gear lost overboard. Its",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 16
+        },
+        {
+          "token": "the",
+          "source_span": "\"by hooking into the structure, but may be more difficult to retrieve. A grapnel",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 17
+        },
+        {
+          "token": "The",
+          "source_span": "\"by hooking into the structure, but may be more difficult to retrieve. A grapnel",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 20
+        },
+        {
+          "token": "Warhol's",
+          "source_span": "from hair imported from Italy. In 1985 a girl snatched Warhol's wig off his head. It was later discovered in Warhol's",
+          "source_text_id": "doc_1",
+          "confidence": 0.9,
+          "position": 27
+        },
+        {
+          "token": "and",
+          "source_span": "more difficult to retrieve. A grapnel is often quite light, and may have additional uses as a tool to recover gear",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 29
+        },
+        {
+          "token": "the",
+          "source_span": "\"by hooking into the structure, but may be more difficult to retrieve. A grapnel",
+          "source_text_id": "doc_0",
+          "confidence": 0.9,
+          "position": 30
+        },
+        {
+          "token": "betrothal",
+          "source_span": "\"man and his father would bring betrothal gifts to the house of a woman, including a sword,",
+          "source_text_id": "doc_2",
+          "confidence": 0.9,
+          "position": 33
+        },
+        {
+          "token": "gifts",
+          "source_span": "\"man and his father would bring betrothal gifts to the house of a woman, including a sword, a",
+          "source_text_id": "doc_2",
+          "confidence": 0.9,
+          "position": 34
+        }
+      ],
+      "golden_answers": [
+        "cloth",
+        "cloth",
+        "cloth",
+        "cloth",
+        "food",
+        "food",
+        "lunch",
+        "lunch",
+        "shoe",
+        "shoe"
+      ],
+      "selected_modality": "text",
+      "modality_weights": {
+        "text": 1.0,
+        "image": 0.0
+      },
+      "query_enhanced": false,
+      "attribution_stats": {
+        "total_sources": 18,
+        "high_confidence": 18,
+        "avg_confidence": 0.8999999999999999
+      }
+    }
+  ]
+}
