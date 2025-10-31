@@ -212,6 +212,9 @@ D. {sample.get('D', '')}
 
 Answer with the letter only (A/B/C/D):"""
         
+        # ⚠️ 保存原始question用于生成（避免被query改写破坏Options格式）
+        question_for_generation = question
+        
         # ========== 阶段1: 不确定性估计 ==========
         uncertainty = self.uncertainty_estimator.estimate(question, image)
         
@@ -311,8 +314,8 @@ Answer with the letter only (A/B/C/D):"""
         else:
             context = ""
         
-        # ✅ 使用Qwen3-VL生成
-        text_answer = self._generate_answer_qwen3vl(question, context, image)
+        # ✅ 使用Qwen3-VL生成（传入sample以获取选项）
+        text_answer = self._generate_answer_qwen3vl(question_for_generation, context, image, sample)
         
         # ========== 阶段4: 细粒度归因 ==========
         attributions = None
@@ -386,7 +389,25 @@ Answer with the letter only (A/B/C/D):"""
             'n_retrieved_docs': len(retrieved_docs) if should_retrieve else 0,
             'n_fused_docs': len(fused_docs),
             'attributions': attributions,
-            'golden_answers': golden_answers
+            'golden_answers': golden_answers,
+            
+            # ✅ Task 1: 添加evaluator需要的字段
+            # 1. retrieval_result - 用于Faithfulness计算
+            'retrieval_result': [{
+                'retrieved_docs': retrieved_docs if should_retrieve else [],
+                'retrieval_scores': [1.0] * len(retrieved_docs) if should_retrieve else [],
+                'retrieval_used': should_retrieve
+            }],
+            
+            # 2. attributions - 确保格式正确（已有，但可能需要调整格式）
+            # attributions字段已在上面定义
+            
+            # 3. position_bias_results - 用于Position Bias Score计算
+            'position_bias_results': {
+                'average_bias': position_bias_stats.get('bias_score', 0.0) if position_bias_stats else 0.0,
+                'individual_scores': [position_bias_stats.get('bias_score', 0.0)] if position_bias_stats else [0.0],
+                'position_weights': position_bias_stats.get('position_weights', []) if position_bias_stats else []
+            }
         }
         
         if should_retrieve:
@@ -423,8 +444,8 @@ Answer with the letter only (A/B/C/D):"""
         
         k = len(docs)
         
-        # 计算位置权重
-        position_weights = np.exp(np.arange(k) * 0.5)
+        # 计算位置权重 - ✅ 修复Bug: 添加负号让前面文档权重更高
+        position_weights = np.exp(-np.arange(k) * 0.5)  # 修复: 添加负号
         position_weights = position_weights / position_weights.sum()
         
         # 综合权重
@@ -448,39 +469,31 @@ Answer with the letter only (A/B/C/D):"""
             'top1_changed': int(sorted_indices[0] != 0) if len(sorted_indices) > 0 else 0,
         }
         
-        return reordered_docs[:3], reordered_scores[:3], position_bias_stats
+        return reordered_docs[:3], reordered_scores[:3], position_bias_stats  # 优化：使用top3减少噪声
     
     def _format_context_with_attribution_preview(self, docs: List[str], 
                                                   scores: List[float],
                                                   attributions: Optional[List] = None) -> str:
-        """使用归因信息格式化上下文"""
+        """
+        ✅ 优化：简化Context格式，避免复杂标签干扰LLM理解
+        
+        修改前: [Evidence 1] **HIGHLY RELEVANT** [Confidence: 0.95]\ntext...
+        修改后: Document 1:\ntext...
+        
+        效果: 与baseline保持一致的简洁格式
+        """
         context_parts = []
         
-        for i, (doc, score) in enumerate(zip(docs, scores)):
-            if attributions and i < len(attributions):
-                attr = attributions[i]
-                attr_conf = attr.get('confidence', 0) if isinstance(attr, dict) else 0
-                combined_score = (score + attr_conf) / 2
-            else:
-                combined_score = score
-            
-            if combined_score > 0.6:
-                importance = "**HIGH RELEVANCE**"
-            elif combined_score > 0.3:
-                importance = "**RELEVANT**"
-            else:
-                importance = "**REFERENCE**"
-            
-            doc_text = doc[:300] if len(doc) > 300 else doc
-            citation = f" [Confidence: {combined_score:.2f}]" if attributions else ""
-            
+        for i, doc in enumerate(docs):
+            # 简化格式：只保留Document编号和内容
+            doc_text = doc[:512] if len(doc) > 512 else doc  # 优化：512字符平衡信息与噪声
             context_parts.append(
-                f"[Evidence {i+1}] {importance}{citation}\n{doc_text}"
+                f"Document {i+1}:\n{doc_text}"
             )
         
         return "\n\n".join(context_parts)
     
-    def _generate_answer_qwen3vl(self, question: str, context: str, image=None) -> str:
+    def _generate_answer_qwen3vl(self, question: str, context: str, image=None, sample: Dict = None) -> str:
         """
         ✅ 使用Qwen3-VL生成答案
         
@@ -488,10 +501,34 @@ Answer with the letter only (A/B/C/D):"""
         - 单图像生成
         - 多图像生成（如果context包含多图像）
         - 高分辨率图像
+        - 多选题格式（与baseline完全一致）
         """
+        # 检查是否是多选题
+        has_choices = sample and all(k in sample and sample.get(k) for k in ['A', 'B', 'C', 'D'])
+        
         # 构建prompt
         if context:
-            prompt = f"""Based on the following evidence, answer the question concisely.
+            if has_choices:
+                # 多选题格式 - 与baseline完全一致！
+                # 提取纯问题（去除Options部分）
+                core_question = question.split('\nOptions:')[0] if '\nOptions:' in question else question.split('\n')[0]
+                
+                prompt = f"""Based on the following evidence, answer the question.
+
+{context}
+
+Question: {core_question}
+
+Choices:
+A. {sample['A']}
+B. {sample['B']}
+C. {sample['C']}
+D. {sample['D']}
+
+Answer with the letter only (A/B/C/D):"""
+            else:
+                # 普通问题格式
+                prompt = f"""Based on the following evidence, answer the question concisely.
 
 {context}
 
@@ -499,7 +536,19 @@ Question: {question}
 
 Answer:"""
         else:
-            prompt = f"""Question: {question}
+            if has_choices:
+                core_question = question.split('\nOptions:')[0] if '\nOptions:' in question else question.split('\n')[0]
+                prompt = f"""Question: {core_question}
+
+Choices:
+A. {sample['A']}
+B. {sample['B']}
+C. {sample['C']}
+D. {sample['D']}
+
+Answer with the letter only (A/B/C/D):"""
+            else:
+                prompt = f"""Question: {question}
 
 Answer:"""
         
