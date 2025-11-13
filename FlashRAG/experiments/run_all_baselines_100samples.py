@@ -49,7 +49,7 @@ CONFIG = {
     # 数据集配置
     'dataset_name': 'mragbench',
     'dataset_path': '/root/autodl-tmp/FlashRAG/flashrag/data/MRAG-Bench/raw',
-    'max_samples': None,  # None = 全部样本(1353)
+    'max_samples': 20,  # ✅ 快速测试：验证Visual Uncertainty + 答案支持度
     
     # 模型配置
     'qwen3_vl_path': '/root/autodl-tmp/models/Qwen3-VL-8B-Instruct',
@@ -72,9 +72,9 @@ CONFIG = {
     'max_new_tokens': 10,
     'retrieval_topk': 5,
     
-    # 不确定性估计器配置（✅ 使用论文完整实现）
-    'use_improved_estimator': False,  # ✅ 修改: 使用CrossModalUncertaintyEstimator（论文承诺的完整实现）
-    'uncertainty_threshold': 0.35,  # ✅ 优化：恢复合理阈值 (平衡检索与直接回答)
+    # 不确定性估计器配置（✅ 使用论文完整方法 - 正确实现的SeaKR Gram矩阵）
+    'use_improved_estimator': False,  # ✅ 使用CrossModalUncertaintyEstimator（修复后：单次forward的Gram矩阵方法）
+    'uncertainty_threshold': 0.5,  # ✅ 调整：提高阈值，减少检索率（更保守）
 }
 
 
@@ -1334,9 +1334,9 @@ def main():
             qwen3_vl_wrapper=qwen3_vl,
             retriever=multimodal_retriever,  # ✅ 使用BGE+CLIP多模态融合检索器
             config={
-                # 核心创新点 - 全部启用（✅ 论文完整实现）
-                'uncertainty_threshold': 0.35,  # ✅ 优化：恢复合理阈值
-                'use_improved_estimator': False,  # ✅ 修改：使用CrossModalUncertaintyEstimator（Gram矩阵+eigen_score+JS散度）
+                # 核心创新点 - 全部启用（✅ 优化C: threshold+文档过滤+visual优化+答案验证）
+                'uncertainty_threshold': 0.45,  # ✅ 优化C-Step2: 降低检索率（0.35→0.45），扫参显示0.45最优
+                'use_improved_estimator': False,  # ✅ 使用CrossModalUncertaintyEstimator（修复后：单次forward Gram矩阵）
                 'use_position_fusion': True,     # ✅ 位置感知跨模态融合
                 'use_attribution': True,          # ✅ 启用Attribution（为evaluator提供数据）
                 'enable_multimodal_output': False,  # 可选：多模态输出增强

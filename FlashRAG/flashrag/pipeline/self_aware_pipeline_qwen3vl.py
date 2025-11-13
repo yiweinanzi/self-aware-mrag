@@ -107,6 +107,105 @@ class SelfAwarePipelineQwen3VL:
         threshold = tau if tau is not None else self.uncertainty_threshold
         return u > threshold
     
+    def _relevance_judgment(self, question: str, document: str, image=None) -> bool:
+        """
+        ✅ 优化C-Step1: 判断文档是否与问题相关（借鉴Self-RAG）
+        
+        Args:
+            question: 问题文本
+            document: 文档内容
+            image: 图像（可选）
+        
+        Returns:
+            bool: True表示相关
+        """
+        doc_preview = document[:300] + "..." if len(document) > 300 else document
+        
+        prompt = f"""Task: Is this document relevant to answering the question?
+
+Question: {question}
+
+Document: {doc_preview}
+
+Answer ONLY 'RELEVANT' or 'IRRELEVANT':"""
+        
+        try:
+            response = self.qwen3_vl.generate(
+                text=prompt,
+                image=None,
+                max_new_tokens=5,
+                temperature=0.05
+            )
+            
+            response_upper = response.strip().upper()
+            is_relevant = 'RELEVANT' in response_upper and 'IRRELEVANT' not in response_upper[:15]
+            return is_relevant
+        except Exception as e:
+            print(f"[WARN] Relevance judgment failed: {e}, defaulting to True")
+            return True
+    
+    def _verify_answer_support(self, question: str, answer: str, documents: list, image=None) -> float:
+        """
+        ✅ 最终优化-Step4: 验证答案的支持度（借鉴Self-RAG）
+        
+        Args:
+            question: 问题文本
+            answer: 生成的答案
+            documents: 检索的文档列表
+            image: 图像（可选）
+        
+        Returns:
+            float: 支持度分数 [0, 1]
+        """
+        # 提取文档内容
+        doc_texts = []
+        for doc in documents[:3]:  # 只用前3个
+            if isinstance(doc, dict):
+                doc_texts.append(doc.get('contents', doc.get('text', '')))
+            else:
+                doc_texts.append(str(doc))
+        
+        combined_docs = " ".join(doc_texts)[:500]  # 限制长度
+        
+        prompt = f"""Task: Is the answer supported by the provided documents?
+
+Question: {question}
+
+Answer: {answer}
+
+Documents: {combined_docs}
+
+Rate the support level:
+- FULLY_SUPPORTED: Answer is directly supported by documents
+- PARTIALLY_SUPPORTED: Answer is somewhat related to documents  
+- NOT_SUPPORTED: Answer is not supported by documents
+
+Answer with ONE word only:"""
+        
+        try:
+            response = self.qwen3_vl.generate(
+                text=prompt,
+                image=None,
+                max_new_tokens=10,
+                temperature=0.05
+            )
+            
+            response_upper = response.strip().upper()
+            
+            # 映射到分数
+            if 'FULLY' in response_upper or 'FULL' in response_upper:
+                return 0.9
+            elif 'PARTIALLY' in response_upper or 'PARTIAL' in response_upper:
+                return 0.6
+            elif 'NOT' in response_upper:
+                return 0.2
+            else:
+                return 0.5  # 默认中等支持度
+        
+        except Exception as e:
+            print(f"[WARN] Support verification failed: {e}, defaulting to 0.5")
+            return 0.5
+    
     def _init_modules(self):
         """初始化各个模块"""
         from flashrag.modules.position_aware_fusion import PositionAwareCrossModalFusion
@@ -133,7 +232,7 @@ class SelfAwarePipelineQwen3VL:
             print("  ℹ️  使用原始不确定性估计器 (CrossModalUncertaintyEstimator)")
             from flashrag.modules.uncertainty_estimator import CrossModalUncertaintyEstimator
             self.uncertainty_estimator = CrossModalUncertaintyEstimator(
-                mllm_model=None,
+                mllm_model=self.qwen3_vl,  # ✅ 修复：传入qwen3_vl完整wrapper
                 config={
                     'eigen_threshold': -6.0,
                     'use_clip_for_alignment': True,
@@ -225,8 +324,11 @@ Answer with the letter only (A/B/C/D):"""
             total_unc = uncertainty
             uncertainty_info = {'total': total_unc}
         
-        # 🔍 DEBUG: 输出不确定性值
-        print(f"[DEBUG] uncertainty={total_unc:.4f}, threshold={self.uncertainty_threshold:.4f}, should_retrieve={total_unc > self.uncertainty_threshold}")
+        # 🔍 DEBUG: 输出不确定性值（包含三个分量）
+        text_unc = uncertainty_info.get('text', 0.0)
+        visual_unc = uncertainty_info.get('visual', 0.0)
+        align_unc = uncertainty_info.get('alignment', 0.0)
+        print(f"[DEBUG] uncertainty={total_unc:.4f} [text={text_unc:.4f}, visual={visual_unc:.4f}, align={align_unc:.4f}], threshold={self.uncertainty_threshold:.4f}, should_retrieve={total_unc > self.uncertainty_threshold}")
         
         # ========== 阶段2: 自适应检索 ==========
         retrieved_docs = []
@@ -293,11 +395,42 @@ Answer with the letter only (A/B/C/D):"""
                 retrieved_docs, retrieval_scores = [], []
                 modality = 'both'
             
+            # ✅ 优化C-Step1: 文档相关性过滤（借鉴Self-RAG）
+            if retrieved_docs:
+                relevant_docs = []
+                relevant_scores = []
+                
+                print(f"[FILTER] 开始过滤{len(retrieved_docs)}个检索文档...")
+                for idx, doc in enumerate(retrieved_docs):
+                    doc_text = doc.get('contents', '') if isinstance(doc, dict) else str(doc)
+                    is_relevant = self._relevance_judgment(question, doc_text, image)
+                    
+                    if is_relevant:
+                        relevant_docs.append(doc)
+                        relevant_scores.append(retrieval_scores[idx] if idx < len(retrieval_scores) else 1.0)
+                        print(f"[FILTER] 文档{idx+1}: ✅ RELEVANT")
+                    else:
+                        print(f"[FILTER] 文档{idx+1}: ❌ IRRELEVANT (过滤)")
+                
+                print(f"[FILTER] 过滤完成: {len(retrieved_docs)} → {len(relevant_docs)} 个相关文档")
+                
+                # 如果没有相关文档，回退到直接回答（避免使用噪声）
+                if not relevant_docs:
+                    print(f"[FILTER] ⚠️  无相关文档，回退到直接回答")
+                    should_retrieve = False
+                    retrieved_docs, retrieval_scores = [], []
+                else:
+                    # 使用过滤后的文档
+                    retrieved_docs = relevant_docs
+                    retrieval_scores = relevant_scores
+            
             # 位置感知融合
             position_bias_stats = None
             if self.use_position_fusion and retrieved_docs:
+                # ✅ 修复P0-2: 传递不确定性到位置融合（创新点1和2的关联）
                 fused_docs, fused_scores, position_bias_stats = self._apply_position_fusion(
-                    retrieved_docs, retrieval_scores, question
+                    retrieved_docs, retrieval_scores, question,
+                    uncertainty_scores=uncertainty_info  # ✅ 传入不确定性
                 )
             else:
                 fused_docs = retrieved_docs[:3] if retrieved_docs else []
@@ -316,6 +449,21 @@ Answer with the letter only (A/B/C/D):"""
         
         # ✅ 使用Qwen3-VL生成（传入sample以获取选项）
         text_answer = self._generate_answer_qwen3vl(question_for_generation, context, image, sample)
+        
+        # ========== 新增：答案支持度验证（借鉴Self-RAG）==========
+        support_score = None
+        if fused_docs and text_answer:
+            try:
+                support_score = self._verify_answer_support(question_for_generation, text_answer, fused_docs, image)
+                
+                # 如果支持度过低，回退到直接回答（不使用检索）
+                if support_score < 0.4:  # 支持度阈值
+                    print(f"[SUPPORT] ⚠️  答案支持度过低 ({support_score:.2f})，回退到直接回答")
+                    # 重新生成（不使用检索结果）
+                    text_answer = self._generate_answer_qwen3vl(question_for_generation, "", image, sample)
+                    fused_docs = []  # 清空检索结果
+            except Exception as e:
+                print(f"[SUPPORT] 验证失败: {e}")
         
         # ========== 阶段4: 细粒度归因 ==========
         attributions = None
@@ -429,11 +577,24 @@ Answer with the letter only (A/B/C/D):"""
     # 辅助方法
     # =========================================================================
     
-    def _apply_position_fusion(self, docs: List[str], scores: List[float], 
-                               query: str) -> Tuple[List[str], List[float], Dict]:
+    def _apply_position_fusion(self, docs: List[str], scores: List[float],
+                               query: str,
+                               uncertainty_scores: Optional[Dict] = None) -> Tuple[List[str], List[float], Dict]:
         """
-        应用位置感知融合
-        
+        应用位置感知融合（不确定性调制版）
+
+        ✅ 修复P0-3: 实现不确定性驱动的位置权重调制
+
+        理论依据：
+        - 高不确定性 → 模型不确定 → 增强位置偏差缓解
+        - 低不确定性 → 模型有信心 → 保持检索器原序
+
+        Args:
+            docs: 检索到的文档
+            scores: 检索分数
+            query: 查询
+            uncertainty_scores: 不确定性分数字典（包含total, text, visual, alignment）
+
         Returns:
             fused_docs: 融合后的文档
             fused_scores: 融合后的分数
@@ -441,34 +602,60 @@ Answer with the letter only (A/B/C/D):"""
         """
         if not docs:
             return [], [], None
-        
+
         k = len(docs)
-        
-        # 计算位置权重 - ✅ 修复Bug: 添加负号让前面文档权重更高
-        position_weights = np.exp(-np.arange(k) * 0.5)  # 修复: 添加负号
-        position_weights = position_weights / position_weights.sum()
-        
+
+        # 基础位置权重（指数衰减）
+        base_position_weights = np.exp(-np.arange(k) * 0.5)
+        base_position_weights = base_position_weights / base_position_weights.sum()
+
+        # ✅ 核心创新：不确定性调制位置权重
+        if uncertainty_scores is not None:
+            total_unc = uncertainty_scores.get('total', 0.5)
+
+            # 调制因子：不确定性越高，位置偏差缓解越强
+            # total_unc ∈ [0, 1]
+            # modulation ∈ [0.75, 1.25]
+            # 公式: modulation = 1.0 + (U_total - 0.5) × α
+            # 其中 α=0.5 是调制强度超参数
+            modulation = 1.0 + (total_unc - 0.5) * 0.5
+
+            # 应用调制
+            position_weights = base_position_weights * modulation
+            position_weights = position_weights / position_weights.sum()
+
+            print(f"[DEBUG] 位置融合（不确定性调制）: total_unc={total_unc:.4f}, "
+                  f"modulation={modulation:.4f}, "
+                  f"weights_range=[{position_weights.min():.4f}, {position_weights.max():.4f}]")
+        else:
+            position_weights = base_position_weights
+            modulation = 1.0
+            print(f"[DEBUG] 位置融合（无调制）: 使用基础权重")
+
         # 综合权重
         scores_norm = np.array(scores) / (np.sum(scores) + 1e-10)
         combined_weights = scores_norm * position_weights
-        
+
         # 排序
         sorted_indices = np.argsort(combined_weights)[::-1]
-        
+
         reordered_docs = [docs[i] for i in sorted_indices]
         reordered_scores = [combined_weights[i] for i in sorted_indices]
-        
+
         # 计算位置偏差统计信息
         position_bias_stats = {
             'original_positions': list(range(k)),
             'reordered_positions': sorted_indices.tolist(),
             'position_weights': position_weights.tolist(),
+            'base_position_weights': base_position_weights.tolist(),  # ✅ 新增：基础权重
+            'uncertainty_modulation': float(modulation),  # ✅ 新增：调制因子
+            'total_uncertainty': uncertainty_scores.get('total', 0.0) if uncertainty_scores else 0.0,  # ✅ 新增
             'original_scores': scores,
             'combined_scores': combined_weights.tolist(),
             'reordering_magnitude': float(np.mean(np.abs(np.array(sorted_indices) - np.arange(k)))),
             'top1_changed': int(sorted_indices[0] != 0) if len(sorted_indices) > 0 else 0,
         }
-        
+
         return reordered_docs[:3], reordered_scores[:3], position_bias_stats  # 优化：使用top3减少噪声
     
     def _format_context_with_attribution_preview(self, docs: List[str], 
