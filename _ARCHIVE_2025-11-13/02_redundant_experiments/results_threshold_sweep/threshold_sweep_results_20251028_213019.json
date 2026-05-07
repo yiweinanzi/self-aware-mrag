@@ -1,0 +1,82 @@
+{
+  "tau_0.15": {
+    "metrics": {
+      "em": 0.62,
+      "f1": 0.6816872571872571,
+      "retrieval_recall_top5": 0.0,
+      "vqa_score": 0.2066666666666666,
+      "faithfulness": 0.0,
+      "attribution_precision": 0.0,
+      "position_bias_score": 0.0,
+      "runtime_seconds": 2383.6598150730133,
+      "seconds_per_sample": 23.836598150730133,
+      "threshold": 0.15,
+      "retrieval_trigger_rate": 0.0
+    },
+    "threshold": 0.15
+  },
+  "tau_0.2": {
+    "metrics": {
+      "em": 0.61,
+      "f1": 0.6750205905205905,
+      "retrieval_recall_top5": 0.0,
+      "vqa_score": 0.20333333333333328,
+      "faithfulness": 0.0,
+      "attribution_precision": 0.0,
+      "position_bias_score": 0.0,
+      "runtime_seconds": 2476.96093082428,
+      "seconds_per_sample": 24.7696093082428,
+      "threshold": 0.2,
+      "retrieval_trigger_rate": 0.0
+    },
+    "threshold": 0.2
+  },
+  "tau_0.25": {
+    "metrics": {
+      "em": 0.62,
+      "f1": 0.6816872571872571,
+      "retrieval_recall_top5": 0.0,
+      "vqa_score": 0.2066666666666666,
+      "faithfulness": 0.0,
+      "attribution_precision": 0.0,
+      "position_bias_score": 0.0,
+      "runtime_seconds": 2388.712568998337,
+      "seconds_per_sample": 23.887125689983367,
+      "threshold": 0.25,
+      "retrieval_trigger_rate": 0.0
+    },
+    "threshold": 0.25
+  },
+  "tau_0.3": {
+    "metrics": {
+      "em": 0.61,
+      "f1": 0.6716872571872571,
+      "retrieval_recall_top5": 0.0,
+      "vqa_score": 0.20333333333333328,
+      "faithfulness": 0.0,
+      "attribution_precision": 0.0,
+      "position_bias_score": 0.0,
+      "runtime_seconds": 2343.646373271942,
+      "seconds_per_sample": 23.43646373271942,
+      "threshold": 0.3,
+      "retrieval_trigger_rate": 0.0
+    },
+    "threshold": 0.3
+  },
+  "tau_0.35": {
+    "metrics": {
+      "em": 0.63,
+      "f1": 0.6916872571872571,
+      "retrieval_recall_top5": 0.0,
+      "vqa_score": 0.20999999999999994,
+      "faithfulness": 0.0,
+      "attribution_precision": 0.0,
+      "position_bias_score": 0.0,
+      "runtime_seconds": 2314.0798721313477,
+      "seconds_per_sample": 23.140798721313477,
+      "threshold": 0.35,
+      "retrieval_trigger_rate": 0.0
+    },
+    "threshold": 0.35
+  }
+}

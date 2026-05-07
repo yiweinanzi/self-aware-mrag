@@ -1,0 +1,58 @@
+{
+  "config": {
+    "dataset_name": "okvqa",
+    "data_dir": "/data0/home/zqwang/ACL/FlashRAG/flashrag/data/VQA",
+    "split": "val",
+    "max_samples": null,
+    "load_images": true,
+    "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_stable_4gpu",
+    "num_variants": 6,
+    "model_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+    "device": "cuda",
+    "torch_dtype": "bfloat16",
+    "use_all_gpus": true,
+    "batch_size_per_gpu": 1,
+    "memory_limit_gb": 25,
+    "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+    "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl"
+  },
+  "timestamp": "2025-11-24T23:28:33.241099",
+  "variants": [
+    {
+      "name": "Baseline_MuRAG",
+      "accuracy": 0.012881490289338089,
+      "correct": 65,
+      "total": 5046
+    },
+    {
+      "name": "Uncertainty_Only",
+      "accuracy": 0.013079667063020214,
+      "correct": 66,
+      "total": 5046
+    },
+    {
+      "name": "Position_Fusion_Only",
+      "accuracy": 0.014070550931430836,
+      "correct": 71,
+      "total": 5046
+    },
+    {
+      "name": "Attribution_Only",
+      "accuracy": 0.011494252873563218,
+      "correct": 58,
+      "total": 5046
+    },
+    {
+      "name": "Multimodal_Output_Only",
+      "accuracy": 0.010899722552516845,
+      "correct": 55,
+      "total": 5046
+    },
+    {
+      "name": "Full_Self_Aware_RAG",
+      "accuracy": 0.010503369005152596,
+      "correct": 53,
+      "total": 5046
+    }
+  ]
+}

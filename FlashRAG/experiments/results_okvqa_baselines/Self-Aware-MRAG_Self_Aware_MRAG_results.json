@@ -1,0 +1,1644 @@
+{
+  "method": "Self-Aware-MRAG (Ours)",
+  "config": {
+    "dataset_name": "okvqa",
+    "data_dir": "/data0/home/zqwang/ACL/FlashRAG/flashrag/data/VQA",
+    "split": "val",
+    "max_samples": 10,
+    "load_images": true,
+    "qwen3_vl_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+    "torch_dtype": "bfloat16",
+    "temperature": 0.01,
+    "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+    "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+    "retrieval_model_path": "/data0/home/zqwang/ACL/models/bge-large-en-v1.5",
+    "retrieval_topk": 5,
+    "uncertainty_threshold": 0.43,
+    "use_improved_estimator": true,
+    "text_weight": 0.4,
+    "visual_weight": 0.3,
+    "alignment_weight": 0.3,
+    "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_okvqa_baselines"
+  },
+  "metrics": {
+    "avg_accuracy": 10.0,
+    "avg_retrieved": 0.9,
+    "avg_F1": 0.29999999999999993,
+    "avg_VQA_Score": 10.0,
+    "avg_Recall@5": 0.3,
+    "avg_Faithfulness": 0.45,
+    "avg_Attribution_Precision": 0.3,
+    "avg_Position_Bias_Score": 0.4600948258997327,
+    "accuracy": 10.0,
+    "retrieval_rate": 0.9
+  },
+  "results": [
+    {
+      "question": "What sport can you use this for?",
+      "answer": "motorcycle riding",
+      "uncertainty": {
+        "text": 0.39,
+        "visual": 0.3271274925146751,
+        "alignment": 0.1,
+        "total": 0.3131382477544026,
+        "original_query": "What sport can you use this for?",
+        "enhanced_query": null,
+        "selected_modality": "both",
+        "modality_weights": {
+          "text": 0.5,
+          "image": 0.5
+        }
+      },
+      "retrieved": true,
+      "retrieved_docs": [
+        {
+          "id": 636978,
+          "source": "wikipedia",
+          "title": "Squash (sport)",
+          "contents": "Squash (sport)\nis appropriate for one's skill level. The four different ball types are Intro (Blue dot, 140% of Pro bounce), Progress (Red dot, 120% of Pro bounce), Competition (single yellow dot, 110% of Pro bounce) and Pro (double yellow dot). The \"double-yellow dot\" ball, introduced in 2000, is the competition standard, replacing the earlier \"yellow-dot\" ball. There is also an \"orange dot\" ball for use at high altitudes. Players wear comfortable sports clothing. In competition, men usually wear shorts and a T-shirt, tank top or a polo shirt. Women normally wear a skirt or skort and a T-shirt or a tank",
+          "image_url": ""
+        },
+        {
+          "id": 352754,
+          "source": "wikipedia",
+          "title": "Roller hockey",
+          "contents": "Roller hockey\nfootball or basketball. The stick is more or less the same as in bandy and shinty. Roller hockey (inline) bears close resemblance to ice hockey and is played on inline skates, uses an ice hockey stick and includes a lot of fast \"racing back and forth\" action. Inline hockey goalies use a glove called a catcher to catch shots made on goal, and a flat, usually square, mitt called a blocker which is used to deflect shots on goal. The Quad hockey goalie uses a flat batting glove that provides rebound characteristics when blocking a shot on goal. Quad hockey",
+          "image_url": ""
+        },
+        {
+          "id": 248638,
+          "source": "wikipedia",
+          "title": "Lacrosse",
+          "contents": "Lacrosse\nprotect against concussions. Women goalies wear a helmet, gloves, and chest protector. Lacrosse Lacrosse is a team sport played with a lacrosse stick and a lacrosse ball, commonly played indoors or outdoors. Players use the head of the lacrosse stick to carry, pass, catch, and shoot the ball into the goal. The sport is governed by the Federation of International Lacrosse; the most prominent international competition is the World Lacrosse Championship, which has been dominated by the United States. The sport has four versions that have different sticks, fields, rules and equipment: field lacrosse, women's lacrosse, box lacrosse and intercrosse.",
+          "image_url": ""
+        },
+        {
+          "id": 248589,
+          "source": "wikipedia",
+          "title": "Lacrosse",
+          "contents": "Lacrosse\nLacrosse Lacrosse is a team sport played with a lacrosse stick and a lacrosse ball, commonly played indoors or outdoors. Players use the head of the lacrosse stick to carry, pass, catch, and shoot the ball into the goal. The sport is governed by the Federation of International Lacrosse; the most prominent international competition is the World Lacrosse Championship, which has been dominated by the United States. The sport has four versions that have different sticks, fields, rules and equipment: field lacrosse, women's lacrosse, box lacrosse and intercrosse. The men's games, field lacrosse (outdoor) and box lacrosse (indoor), are contact",
+          "image_url": ""
+        },
+        {
+          "id": 637059,
+          "source": "wikipedia",
+          "title": "Racket (sports equipment)",
+          "contents": "Racket (sports equipment)\ninjury rate in tennis (when compared with the wood era) is, in part, due to the increase in stiffness, both of the racket and of the strings. Real tennis uses wooden rackets and cork-filled balls. It is a very different sport from today's lawn tennis. Racket (sports equipment) A racket or racquet is a sports implement consisting of a handled frame with an open hoop across which a network of strings or catgut is stretched tightly. It is used for striking a ball or shuttlecock in games such as squash, tennis, racquetball, and badminton. Collectively, these games are known as",
+          "image_url": ""
+        }
+      ],
+      "raw_retrieved_docs": [
+        {
+          "id": 636978,
+          "source": "wikipedia",
+          "title": "Squash (sport)",
+          "contents": "Squash (sport)\nis appropriate for one's skill level. The four different ball types are Intro (Blue dot, 140% of Pro bounce), Progress (Red dot, 120% of Pro bounce), Competition (single yellow dot, 110% of Pro bounce) and Pro (double yellow dot). The \"double-yellow dot\" ball, introduced in 2000, is the competition standard, replacing the earlier \"yellow-dot\" ball. There is also an \"orange dot\" ball for use at high altitudes. Players wear comfortable sports clothing. In competition, men usually wear shorts and a T-shirt, tank top or a polo shirt. Women normally wear a skirt or skort and a T-shirt or a tank",
+          "image_url": ""
+        },
+        {
+          "id": 352754,
+          "source": "wikipedia",
+          "title": "Roller hockey",
+          "contents": "Roller hockey\nfootball or basketball. The stick is more or less the same as in bandy and shinty. Roller hockey (inline) bears close resemblance to ice hockey and is played on inline skates, uses an ice hockey stick and includes a lot of fast \"racing back and forth\" action. Inline hockey goalies use a glove called a catcher to catch shots made on goal, and a flat, usually square, mitt called a blocker which is used to deflect shots on goal. The Quad hockey goalie uses a flat batting glove that provides rebound characteristics when blocking a shot on goal. Quad hockey",
+          "image_url": ""
+        },
+        {
+          "id": 248638,
+          "source": "wikipedia",
+          "title": "Lacrosse",
+          "contents": "Lacrosse\nprotect against concussions. Women goalies wear a helmet, gloves, and chest protector. Lacrosse Lacrosse is a team sport played with a lacrosse stick and a lacrosse ball, commonly played indoors or outdoors. Players use the head of the lacrosse stick to carry, pass, catch, and shoot the ball into the goal. The sport is governed by the Federation of International Lacrosse; the most prominent international competition is the World Lacrosse Championship, which has been dominated by the United States. The sport has four versions that have different sticks, fields, rules and equipment: field lacrosse, women's lacrosse, box lacrosse and intercrosse.",
+          "image_url": ""
+        },
+        {
+          "id": 248589,
+          "source": "wikipedia",
+          "title": "Lacrosse",
+          "contents": "Lacrosse\nLacrosse Lacrosse is a team sport played with a lacrosse stick and a lacrosse ball, commonly played indoors or outdoors. Players use the head of the lacrosse stick to carry, pass, catch, and shoot the ball into the goal. The sport is governed by the Federation of International Lacrosse; the most prominent international competition is the World Lacrosse Championship, which has been dominated by the United States. The sport has four versions that have different sticks, fields, rules and equipment: field lacrosse, women's lacrosse, box lacrosse and intercrosse. The men's games, field lacrosse (outdoor) and box lacrosse (indoor), are contact",
+          "image_url": ""
+        },
+        {
+          "id": 637059,
+          "source": "wikipedia",
+          "title": "Racket (sports equipment)",
+          "contents": "Racket (sports equipment)\ninjury rate in tennis (when compared with the wood era) is, in part, due to the increase in stiffness, both of the racket and of the strings. Real tennis uses wooden rackets and cork-filled balls. It is a very different sport from today's lawn tennis. Racket (sports equipment) A racket or racquet is a sports implement consisting of a handled frame with an open hoop across which a network of strings or catgut is stretched tightly. It is used for striking a ball or shuttlecock in games such as squash, tennis, racquetball, and badminton. Collectively, these games are known as",
+          "image_url": ""
+        }
+      ],
+      "n_retrieved_docs": 5,
+      "n_fused_docs": 0,
+      "attributions": null,
+      "golden_answers": [
+        "race",
+        "race",
+        "race",
+        "race",
+        "race",
+        "race",
+        "motocross",
+        "motocross",
+        "ride",
+        "ride"
+      ],
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            {
+              "id": 636978,
+              "source": "wikipedia",
+              "title": "Squash (sport)",
+              "contents": "Squash (sport)\nis appropriate for one's skill level. The four different ball types are Intro (Blue dot, 140% of Pro bounce), Progress (Red dot, 120% of Pro bounce), Competition (single yellow dot, 110% of Pro bounce) and Pro (double yellow dot). The \"double-yellow dot\" ball, introduced in 2000, is the competition standard, replacing the earlier \"yellow-dot\" ball. There is also an \"orange dot\" ball for use at high altitudes. Players wear comfortable sports clothing. In competition, men usually wear shorts and a T-shirt, tank top or a polo shirt. Women normally wear a skirt or skort and a T-shirt or a tank",
+              "image_url": ""
+            },
+            {
+              "id": 352754,
+              "source": "wikipedia",
+              "title": "Roller hockey",
+              "contents": "Roller hockey\nfootball or basketball. The stick is more or less the same as in bandy and shinty. Roller hockey (inline) bears close resemblance to ice hockey and is played on inline skates, uses an ice hockey stick and includes a lot of fast \"racing back and forth\" action. Inline hockey goalies use a glove called a catcher to catch shots made on goal, and a flat, usually square, mitt called a blocker which is used to deflect shots on goal. The Quad hockey goalie uses a flat batting glove that provides rebound characteristics when blocking a shot on goal. Quad hockey",
+              "image_url": ""
+            },
+            {
+              "id": 248638,
+              "source": "wikipedia",
+              "title": "Lacrosse",
+              "contents": "Lacrosse\nprotect against concussions. Women goalies wear a helmet, gloves, and chest protector. Lacrosse Lacrosse is a team sport played with a lacrosse stick and a lacrosse ball, commonly played indoors or outdoors. Players use the head of the lacrosse stick to carry, pass, catch, and shoot the ball into the goal. The sport is governed by the Federation of International Lacrosse; the most prominent international competition is the World Lacrosse Championship, which has been dominated by the United States. The sport has four versions that have different sticks, fields, rules and equipment: field lacrosse, women's lacrosse, box lacrosse and intercrosse.",
+              "image_url": ""
+            },
+            {
+              "id": 248589,
+              "source": "wikipedia",
+              "title": "Lacrosse",
+              "contents": "Lacrosse\nLacrosse Lacrosse is a team sport played with a lacrosse stick and a lacrosse ball, commonly played indoors or outdoors. Players use the head of the lacrosse stick to carry, pass, catch, and shoot the ball into the goal. The sport is governed by the Federation of International Lacrosse; the most prominent international competition is the World Lacrosse Championship, which has been dominated by the United States. The sport has four versions that have different sticks, fields, rules and equipment: field lacrosse, women's lacrosse, box lacrosse and intercrosse. The men's games, field lacrosse (outdoor) and box lacrosse (indoor), are contact",
+              "image_url": ""
+            },
+            {
+              "id": 637059,
+              "source": "wikipedia",
+              "title": "Racket (sports equipment)",
+              "contents": "Racket (sports equipment)\ninjury rate in tennis (when compared with the wood era) is, in part, due to the increase in stiffness, both of the racket and of the strings. Real tennis uses wooden rackets and cork-filled balls. It is a very different sport from today's lawn tennis. Racket (sports equipment) A racket or racquet is a sports implement consisting of a handled frame with an open hoop across which a network of strings or catgut is stretched tightly. It is used for striking a ball or shuttlecock in games such as squash, tennis, racquetball, and badminton. Collectively, these games are known as",
+              "image_url": ""
+            }
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": [
+          0.42865552877716695,
+          0.2599927206586828,
+          0.1576935563815933,
+          0.09564597678455912,
+          0.058012217397997876
+        ]
+      },
+      "selected_modality": "both",
+      "modality_weights": {
+        "text": 0.5,
+        "image": 0.5
+      },
+      "query_enhanced": false,
+      "position_bias_stats": {
+        "original_positions": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reordered_positions": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "position_weights": [
+          0.42865552877716695,
+          0.2599927206586828,
+          0.1576935563815933,
+          0.09564597678455912,
+          0.058012217397997876
+        ],
+        "base_position_weights": [
+          0.42865552877716695,
+          0.2599927206586828,
+          0.1576935563815933,
+          0.09564597678455912,
+          0.058012217397997876
+        ],
+        "uncertainty_modulation": 0.9065691238772013,
+        "total_uncertainty": 0.3131382477544026,
+        "original_scores": [
+          0.6707054376602173,
+          0.6694952249526978,
+          0.6670773029327393,
+          0.662424623966217,
+          0.662158727645874
+        ],
+        "combined_scores": [
+          0.08628858366487682,
+          0.05224223592436622,
+          0.031572080067091085,
+          0.019015872562648996,
+          0.01152908011543223
+        ],
+        "reordering_magnitude": 0.0,
+        "top1_changed": 0
+      }
+    },
+    {
+      "question": "Name the type of plant this is?",
+      "answer": "houseplant",
+      "uncertainty": {
+        "text": 0.39,
+        "visual": 0.44008690655411487,
+        "alignment": 0.1,
+        "total": 0.3470260719662345,
+        "original_query": "Name the type of plant this is?",
+        "enhanced_query": null,
+        "selected_modality": "image",
+        "modality_weights": {
+          "text": 0.0,
+          "image": 1.0
+        }
+      },
+      "retrieved": true,
+      "retrieved_docs": [
+        {
+          "id": 1441102,
+          "source": "wikipedia",
+          "title": "Asclepias tuberosa",
+          "contents": "Asclepias tuberosa\nCommon names include butterfly weed, Canada root, chieger flower, chiggerflower, fluxroot, Indian paintbrush, Indian posy, orange milkweed, orange root, orange Swallow-wort, pleurisy root, silky swallow-wort, tuber root, yellow milkweed, white-root, windroot, butterfly love, butterflyweed, and butterfly milkweed. Asclepias tuberosa Asclepias tuberosa is a species of milkweed native to eastern North America. It is a perennial plant growing to tall, with clustered orange or yellow flowers from early summer to early autumn. The leaves are spirally arranged, lanceolate, 5–12 cm long, and 2–3 cm broad. This plant favors dry, sand or gravel soil, but has also been reported on stream margins.",
+          "image_url": ""
+        },
+        {
+          "id": 2820794,
+          "source": "wikipedia",
+          "title": "Aegopodium podagraria",
+          "contents": "Aegopodium podagraria\nAegopodium podagraria Aegopodium podagraria (commonly called ground elder, herb gerard, bishop's weed, goutweed, gout wort, and snow-in-the-mountain, and sometimes called English masterwort and wild masterwort) is a perennial plant in the carrot family (Apiaceae) that grows in shady places. The name \"ground elder\" comes from the superficial similarity of its leaves and flowers to those of elder (\"Sambucus\"), which is unrelated. It is the type species of the genus \"Aegopodium\". This species is native to Eurasia, and has been introduced around the world as an ornamental plant, where it occasionally poses an ecological threat as an invasive exotic plant. \"A.",
+          "image_url": ""
+        },
+        {
+          "id": 2483675,
+          "source": "wikipedia",
+          "title": "Pachypodium lamerei",
+          "contents": "Pachypodium lamerei\nPachypodium lamerei Pachypodium lamerei is a species of flowering plant in the dogbane family Apocynaceae. It is a stem succulent, photosynthesizing mainly through its trunk, and comes from the island of Madagascar, off the east coast of Africa. It has large thorns and leaves mostly just at the top of the plant, and large, fragrant flowers. The species has become one of the best known pachypodiums in cultivation, being relatively easy to propagate and grow. In cultivation it is often marketed as the Madagascar palm, despite its not being a palm at all. A variety called \"Ramosum\" has been described.",
+          "image_url": ""
+        },
+        {
+          "id": 1441100,
+          "source": "wikipedia",
+          "title": "Asclepias tuberosa",
+          "contents": "Asclepias tuberosa\nAsclepias tuberosa Asclepias tuberosa is a species of milkweed native to eastern North America. It is a perennial plant growing to tall, with clustered orange or yellow flowers from early summer to early autumn. The leaves are spirally arranged, lanceolate, 5–12 cm long, and 2–3 cm broad. This plant favors dry, sand or gravel soil, but has also been reported on stream margins. It requires full sun. It is commonly known as butterfly weed because of the butterflies that are attracted to the plant by its color and its copious production of nectar. It is also the larval food plant",
+          "image_url": ""
+        },
+        {
+          "id": 2137371,
+          "source": "wikipedia",
+          "title": "Eutrochium fistulosum",
+          "contents": "Eutrochium fistulosum\nEutrochium fistulosum Eutrochium fistulosum (\"Eupatorium fistulosum\"), also called hollow Joe-Pye weed, trumpetweed, or purple thoroughwort, is a North American flowering plant in the sunflower family. It is native to southern Canada and throughout the eastern and south central United States from Maine west to Ontario, Wisconsin, and Missouri and south as far as Florida and Texas. The species name \"fistulosum\" refers to the tubular stem; see fistula. \"Eutrochium fistulosum\" is a herbaceous perennial plant sometimes as much as tall. It is found in moist, rich soil alongside ditches and marshes, or in wet forests. It flowers from mid-summer to the",
+          "image_url": ""
+        }
+      ],
+      "raw_retrieved_docs": [
+        {
+          "id": 1441102,
+          "source": "wikipedia",
+          "title": "Asclepias tuberosa",
+          "contents": "Asclepias tuberosa\nCommon names include butterfly weed, Canada root, chieger flower, chiggerflower, fluxroot, Indian paintbrush, Indian posy, orange milkweed, orange root, orange Swallow-wort, pleurisy root, silky swallow-wort, tuber root, yellow milkweed, white-root, windroot, butterfly love, butterflyweed, and butterfly milkweed. Asclepias tuberosa Asclepias tuberosa is a species of milkweed native to eastern North America. It is a perennial plant growing to tall, with clustered orange or yellow flowers from early summer to early autumn. The leaves are spirally arranged, lanceolate, 5–12 cm long, and 2–3 cm broad. This plant favors dry, sand or gravel soil, but has also been reported on stream margins.",
+          "image_url": ""
+        },
+        {
+          "id": 2820794,
+          "source": "wikipedia",
+          "title": "Aegopodium podagraria",
+          "contents": "Aegopodium podagraria\nAegopodium podagraria Aegopodium podagraria (commonly called ground elder, herb gerard, bishop's weed, goutweed, gout wort, and snow-in-the-mountain, and sometimes called English masterwort and wild masterwort) is a perennial plant in the carrot family (Apiaceae) that grows in shady places. The name \"ground elder\" comes from the superficial similarity of its leaves and flowers to those of elder (\"Sambucus\"), which is unrelated. It is the type species of the genus \"Aegopodium\". This species is native to Eurasia, and has been introduced around the world as an ornamental plant, where it occasionally poses an ecological threat as an invasive exotic plant. \"A.",
+          "image_url": ""
+        },
+        {
+          "id": 2483675,
+          "source": "wikipedia",
+          "title": "Pachypodium lamerei",
+          "contents": "Pachypodium lamerei\nPachypodium lamerei Pachypodium lamerei is a species of flowering plant in the dogbane family Apocynaceae. It is a stem succulent, photosynthesizing mainly through its trunk, and comes from the island of Madagascar, off the east coast of Africa. It has large thorns and leaves mostly just at the top of the plant, and large, fragrant flowers. The species has become one of the best known pachypodiums in cultivation, being relatively easy to propagate and grow. In cultivation it is often marketed as the Madagascar palm, despite its not being a palm at all. A variety called \"Ramosum\" has been described.",
+          "image_url": ""
+        },
+        {
+          "id": 1441100,
+          "source": "wikipedia",
+          "title": "Asclepias tuberosa",
+          "contents": "Asclepias tuberosa\nAsclepias tuberosa Asclepias tuberosa is a species of milkweed native to eastern North America. It is a perennial plant growing to tall, with clustered orange or yellow flowers from early summer to early autumn. The leaves are spirally arranged, lanceolate, 5–12 cm long, and 2–3 cm broad. This plant favors dry, sand or gravel soil, but has also been reported on stream margins. It requires full sun. It is commonly known as butterfly weed because of the butterflies that are attracted to the plant by its color and its copious production of nectar. It is also the larval food plant",
+          "image_url": ""
+        },
+        {
+          "id": 2137371,
+          "source": "wikipedia",
+          "title": "Eutrochium fistulosum",
+          "contents": "Eutrochium fistulosum\nEutrochium fistulosum Eutrochium fistulosum (\"Eupatorium fistulosum\"), also called hollow Joe-Pye weed, trumpetweed, or purple thoroughwort, is a North American flowering plant in the sunflower family. It is native to southern Canada and throughout the eastern and south central United States from Maine west to Ontario, Wisconsin, and Missouri and south as far as Florida and Texas. The species name \"fistulosum\" refers to the tubular stem; see fistula. \"Eutrochium fistulosum\" is a herbaceous perennial plant sometimes as much as tall. It is found in moist, rich soil alongside ditches and marshes, or in wet forests. It flowers from mid-summer to the",
+          "image_url": ""
+        }
+      ],
+      "n_retrieved_docs": 5,
+      "n_fused_docs": 0,
+      "attributions": null,
+      "golden_answers": [
+        "vine",
+        "vine",
+        "vine",
+        "vine",
+        "climb",
+        "climb",
+        "look like some kind of ivy",
+        "look like some kind of ivy",
+        "ficus",
+        "ficus"
+      ],
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            {
+              "id": 1441102,
+              "source": "wikipedia",
+              "title": "Asclepias tuberosa",
+              "contents": "Asclepias tuberosa\nCommon names include butterfly weed, Canada root, chieger flower, chiggerflower, fluxroot, Indian paintbrush, Indian posy, orange milkweed, orange root, orange Swallow-wort, pleurisy root, silky swallow-wort, tuber root, yellow milkweed, white-root, windroot, butterfly love, butterflyweed, and butterfly milkweed. Asclepias tuberosa Asclepias tuberosa is a species of milkweed native to eastern North America. It is a perennial plant growing to tall, with clustered orange or yellow flowers from early summer to early autumn. The leaves are spirally arranged, lanceolate, 5–12 cm long, and 2–3 cm broad. This plant favors dry, sand or gravel soil, but has also been reported on stream margins.",
+              "image_url": ""
+            },
+            {
+              "id": 2820794,
+              "source": "wikipedia",
+              "title": "Aegopodium podagraria",
+              "contents": "Aegopodium podagraria\nAegopodium podagraria Aegopodium podagraria (commonly called ground elder, herb gerard, bishop's weed, goutweed, gout wort, and snow-in-the-mountain, and sometimes called English masterwort and wild masterwort) is a perennial plant in the carrot family (Apiaceae) that grows in shady places. The name \"ground elder\" comes from the superficial similarity of its leaves and flowers to those of elder (\"Sambucus\"), which is unrelated. It is the type species of the genus \"Aegopodium\". This species is native to Eurasia, and has been introduced around the world as an ornamental plant, where it occasionally poses an ecological threat as an invasive exotic plant. \"A.",
+              "image_url": ""
+            },
+            {
+              "id": 2483675,
+              "source": "wikipedia",
+              "title": "Pachypodium lamerei",
+              "contents": "Pachypodium lamerei\nPachypodium lamerei Pachypodium lamerei is a species of flowering plant in the dogbane family Apocynaceae. It is a stem succulent, photosynthesizing mainly through its trunk, and comes from the island of Madagascar, off the east coast of Africa. It has large thorns and leaves mostly just at the top of the plant, and large, fragrant flowers. The species has become one of the best known pachypodiums in cultivation, being relatively easy to propagate and grow. In cultivation it is often marketed as the Madagascar palm, despite its not being a palm at all. A variety called \"Ramosum\" has been described.",
+              "image_url": ""
+            },
+            {
+              "id": 1441100,
+              "source": "wikipedia",
+              "title": "Asclepias tuberosa",
+              "contents": "Asclepias tuberosa\nAsclepias tuberosa Asclepias tuberosa is a species of milkweed native to eastern North America. It is a perennial plant growing to tall, with clustered orange or yellow flowers from early summer to early autumn. The leaves are spirally arranged, lanceolate, 5–12 cm long, and 2–3 cm broad. This plant favors dry, sand or gravel soil, but has also been reported on stream margins. It requires full sun. It is commonly known as butterfly weed because of the butterflies that are attracted to the plant by its color and its copious production of nectar. It is also the larval food plant",
+              "image_url": ""
+            },
+            {
+              "id": 2137371,
+              "source": "wikipedia",
+              "title": "Eutrochium fistulosum",
+              "contents": "Eutrochium fistulosum\nEutrochium fistulosum Eutrochium fistulosum (\"Eupatorium fistulosum\"), also called hollow Joe-Pye weed, trumpetweed, or purple thoroughwort, is a North American flowering plant in the sunflower family. It is native to southern Canada and throughout the eastern and south central United States from Maine west to Ontario, Wisconsin, and Missouri and south as far as Florida and Texas. The species name \"fistulosum\" refers to the tubular stem; see fistula. \"Eutrochium fistulosum\" is a herbaceous perennial plant sometimes as much as tall. It is found in moist, rich soil alongside ditches and marshes, or in wet forests. It flowers from mid-summer to the",
+              "image_url": ""
+            }
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": [
+          0.42865552877716695,
+          0.25999272065868284,
+          0.1576935563815933,
+          0.09564597678455913,
+          0.05801221739799788
+        ]
+      },
+      "selected_modality": "image",
+      "modality_weights": {
+        "text": 0.0,
+        "image": 1.0
+      },
+      "query_enhanced": false,
+      "position_bias_stats": {
+        "original_positions": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reordered_positions": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "position_weights": [
+          0.42865552877716695,
+          0.25999272065868284,
+          0.1576935563815933,
+          0.09564597678455913,
+          0.05801221739799788
+        ],
+        "base_position_weights": [
+          0.42865552877716695,
+          0.2599927206586828,
+          0.1576935563815933,
+          0.09564597678455912,
+          0.058012217397997876
+        ],
+        "uncertainty_modulation": 0.9235130359831172,
+        "total_uncertainty": 0.3470260719662345,
+        "original_scores": [
+          0.7113412618637085,
+          0.7069803476333618,
+          0.7027391195297241,
+          0.7026859521865845,
+          0.701015055179596
+        ],
+        "combined_scores": [
+          0.08650807842932134,
+          0.05214813305829402,
+          0.03143969415571663,
+          0.019067695717936605,
+          0.01153764163952001
+        ],
+        "reordering_magnitude": 0.0,
+        "top1_changed": 0
+      }
+    },
+    {
+      "question": "What toy is this?",
+      "answer": "teddy bear",
+      "uncertainty": {
+        "text": 0.35,
+        "visual": 0.3675284959259098,
+        "alignment": 0.1,
+        "total": 0.3052585487777729,
+        "original_query": "What toy is this?",
+        "enhanced_query": null,
+        "selected_modality": "both",
+        "modality_weights": {
+          "text": 0.5,
+          "image": 0.5
+        }
+      },
+      "retrieved": true,
+      "retrieved_docs": [
+        {
+          "id": 990298,
+          "source": "wikipedia",
+          "title": "Yo-yo",
+          "contents": "Yo-yo\nYo-yo A yo-yo (also spelled yoyo) is a toy consisting of an axle connected to two disks, and a string looped around the axle. It has some similarities to a slender spool. A yo-yo is played by holding the free end of the string known as the handle (by inserting one fingerusually the middle or index fingerinto a slip knot) allowing gravity (or the force of a throw and gravity) to spin the yo-yo and unwind the string (similar to how a pullstring works). The player then allows the yo-yo to wind itself back to the player's hand, exploiting its",
+          "image_url": ""
+        },
+        {
+          "id": 1327296,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nToy A toy is an item that is used in play, especially one designed for such use. Playing with toys can be an enjoyable means of training young children for life in society. Different materials like wood, clay, paper, and plastic are used to make toys. Many items are designed to serve as toys, but goods produced for other purposes can also be used. For instance, a small child may fold an ordinary piece of paper into an airplane shape and \"fly it\". Newer forms of toys include interactive digital entertainment. Some toys are produced primarily as collectors' items and",
+          "image_url": ""
+        },
+        {
+          "id": 2349108,
+          "source": "wikipedia",
+          "title": "Stuffed toy",
+          "contents": "Stuffed toy\nStuffed toy A stuffed toy is a toy with an outer fabric sewn from a textile and then stuffed with a flexible material. In North American English, they are variously referred to as plush toys, stuffed animals, plushies, snuggies, stuffies, or snuggled animals. In British English, they are soft toys or cuddly toys. The toys developed in their current form in the early years of the 20th century and have remained consistently popular with children throughout. Different fads have caused specific toys to surge in popularity among adults and collectors. Noticeable examples include Tickle Me Elmo and Beanie Babies. Textiles",
+          "image_url": ""
+        },
+        {
+          "id": 1327336,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nto work with their hands, puzzle solvers, and imaginative sorts. Some other examples include Bayko, Konstruk-Tubes, K'Nex, Erector Sets, Tinkertoys, and Meccano, and generic construction toys such as Neodymium magnet toys. A doll is a model of a human (often a baby), a humanoid (like Bert and Ernie), or an animal. Modern dolls are often made of cloth or plastic. Other materials that are, or have been, used in the manufacture of dolls include cornhusks, bone, stone, wood, porcelain (sometimes called china), bisque, celluloid, wax, and even apples. Often people will make dolls out of whatever materials are available to",
+          "image_url": ""
+        },
+        {
+          "id": 1327337,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nthem. Sometimes intended as decorations, keepsakes, or collectibles for older children and adults, most dolls are intended as toys for children, usually girls, to play with. Dolls have been found in Egyptian tombs which date to as early as 2000 BCE. Dolls are usually miniatures, but baby dolls may be of true size and weight. A doll or stuffed animal of soft material is sometimes called a plush toy or plushie. A popular toy of this type is the Teddy Bear. A distinction is often made between dolls and action figures, which are generally of plastic or semi-metallic construction and",
+          "image_url": ""
+        }
+      ],
+      "raw_retrieved_docs": [
+        {
+          "id": 990298,
+          "source": "wikipedia",
+          "title": "Yo-yo",
+          "contents": "Yo-yo\nYo-yo A yo-yo (also spelled yoyo) is a toy consisting of an axle connected to two disks, and a string looped around the axle. It has some similarities to a slender spool. A yo-yo is played by holding the free end of the string known as the handle (by inserting one fingerusually the middle or index fingerinto a slip knot) allowing gravity (or the force of a throw and gravity) to spin the yo-yo and unwind the string (similar to how a pullstring works). The player then allows the yo-yo to wind itself back to the player's hand, exploiting its",
+          "image_url": ""
+        },
+        {
+          "id": 1327296,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nToy A toy is an item that is used in play, especially one designed for such use. Playing with toys can be an enjoyable means of training young children for life in society. Different materials like wood, clay, paper, and plastic are used to make toys. Many items are designed to serve as toys, but goods produced for other purposes can also be used. For instance, a small child may fold an ordinary piece of paper into an airplane shape and \"fly it\". Newer forms of toys include interactive digital entertainment. Some toys are produced primarily as collectors' items and",
+          "image_url": ""
+        },
+        {
+          "id": 2349108,
+          "source": "wikipedia",
+          "title": "Stuffed toy",
+          "contents": "Stuffed toy\nStuffed toy A stuffed toy is a toy with an outer fabric sewn from a textile and then stuffed with a flexible material. In North American English, they are variously referred to as plush toys, stuffed animals, plushies, snuggies, stuffies, or snuggled animals. In British English, they are soft toys or cuddly toys. The toys developed in their current form in the early years of the 20th century and have remained consistently popular with children throughout. Different fads have caused specific toys to surge in popularity among adults and collectors. Noticeable examples include Tickle Me Elmo and Beanie Babies. Textiles",
+          "image_url": ""
+        },
+        {
+          "id": 1327336,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nto work with their hands, puzzle solvers, and imaginative sorts. Some other examples include Bayko, Konstruk-Tubes, K'Nex, Erector Sets, Tinkertoys, and Meccano, and generic construction toys such as Neodymium magnet toys. A doll is a model of a human (often a baby), a humanoid (like Bert and Ernie), or an animal. Modern dolls are often made of cloth or plastic. Other materials that are, or have been, used in the manufacture of dolls include cornhusks, bone, stone, wood, porcelain (sometimes called china), bisque, celluloid, wax, and even apples. Often people will make dolls out of whatever materials are available to",
+          "image_url": ""
+        },
+        {
+          "id": 1327337,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nthem. Sometimes intended as decorations, keepsakes, or collectibles for older children and adults, most dolls are intended as toys for children, usually girls, to play with. Dolls have been found in Egyptian tombs which date to as early as 2000 BCE. Dolls are usually miniatures, but baby dolls may be of true size and weight. A doll or stuffed animal of soft material is sometimes called a plush toy or plushie. A popular toy of this type is the Teddy Bear. A distinction is often made between dolls and action figures, which are generally of plastic or semi-metallic construction and",
+          "image_url": ""
+        }
+      ],
+      "n_retrieved_docs": 5,
+      "n_fused_docs": 0,
+      "attributions": null,
+      "golden_answers": [
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "teddy bear",
+        "teddy bear",
+        "teddy bear",
+        "teddy bear"
+      ],
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            {
+              "id": 990298,
+              "source": "wikipedia",
+              "title": "Yo-yo",
+              "contents": "Yo-yo\nYo-yo A yo-yo (also spelled yoyo) is a toy consisting of an axle connected to two disks, and a string looped around the axle. It has some similarities to a slender spool. A yo-yo is played by holding the free end of the string known as the handle (by inserting one fingerusually the middle or index fingerinto a slip knot) allowing gravity (or the force of a throw and gravity) to spin the yo-yo and unwind the string (similar to how a pullstring works). The player then allows the yo-yo to wind itself back to the player's hand, exploiting its",
+              "image_url": ""
+            },
+            {
+              "id": 1327296,
+              "source": "wikipedia",
+              "title": "Toy",
+              "contents": "Toy\nToy A toy is an item that is used in play, especially one designed for such use. Playing with toys can be an enjoyable means of training young children for life in society. Different materials like wood, clay, paper, and plastic are used to make toys. Many items are designed to serve as toys, but goods produced for other purposes can also be used. For instance, a small child may fold an ordinary piece of paper into an airplane shape and \"fly it\". Newer forms of toys include interactive digital entertainment. Some toys are produced primarily as collectors' items and",
+              "image_url": ""
+            },
+            {
+              "id": 2349108,
+              "source": "wikipedia",
+              "title": "Stuffed toy",
+              "contents": "Stuffed toy\nStuffed toy A stuffed toy is a toy with an outer fabric sewn from a textile and then stuffed with a flexible material. In North American English, they are variously referred to as plush toys, stuffed animals, plushies, snuggies, stuffies, or snuggled animals. In British English, they are soft toys or cuddly toys. The toys developed in their current form in the early years of the 20th century and have remained consistently popular with children throughout. Different fads have caused specific toys to surge in popularity among adults and collectors. Noticeable examples include Tickle Me Elmo and Beanie Babies. Textiles",
+              "image_url": ""
+            },
+            {
+              "id": 1327336,
+              "source": "wikipedia",
+              "title": "Toy",
+              "contents": "Toy\nto work with their hands, puzzle solvers, and imaginative sorts. Some other examples include Bayko, Konstruk-Tubes, K'Nex, Erector Sets, Tinkertoys, and Meccano, and generic construction toys such as Neodymium magnet toys. A doll is a model of a human (often a baby), a humanoid (like Bert and Ernie), or an animal. Modern dolls are often made of cloth or plastic. Other materials that are, or have been, used in the manufacture of dolls include cornhusks, bone, stone, wood, porcelain (sometimes called china), bisque, celluloid, wax, and even apples. Often people will make dolls out of whatever materials are available to",
+              "image_url": ""
+            },
+            {
+              "id": 1327337,
+              "source": "wikipedia",
+              "title": "Toy",
+              "contents": "Toy\nthem. Sometimes intended as decorations, keepsakes, or collectibles for older children and adults, most dolls are intended as toys for children, usually girls, to play with. Dolls have been found in Egyptian tombs which date to as early as 2000 BCE. Dolls are usually miniatures, but baby dolls may be of true size and weight. A doll or stuffed animal of soft material is sometimes called a plush toy or plushie. A popular toy of this type is the Teddy Bear. A distinction is often made between dolls and action figures, which are generally of plastic or semi-metallic construction and",
+              "image_url": ""
+            }
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": [
+          0.4286555287771669,
+          0.25999272065868273,
+          0.15769355638159327,
+          0.0956459767845591,
+          0.05801221739799787
+        ]
+      },
+      "selected_modality": "both",
+      "modality_weights": {
+        "text": 0.5,
+        "image": 0.5
+      },
+      "query_enhanced": false,
+      "position_bias_stats": {
+        "original_positions": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reordered_positions": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "position_weights": [
+          0.4286555287771669,
+          0.25999272065868273,
+          0.15769355638159327,
+          0.0956459767845591,
+          0.05801221739799787
+        ],
+        "base_position_weights": [
+          0.42865552877716695,
+          0.2599927206586828,
+          0.1576935563815933,
+          0.09564597678455912,
+          0.058012217397997876
+        ],
+        "uncertainty_modulation": 0.9026292743888864,
+        "total_uncertainty": 0.3052585487777729,
+        "original_scores": [
+          0.6826239824295044,
+          0.6807940006256104,
+          0.6765081882476807,
+          0.6757111549377441,
+          0.6724339127540588
+        ],
+        "combined_scores": [
+          0.08636493258107808,
+          0.05224255097955433,
+          0.03148723111104173,
+          0.01907547063724494,
+          0.011513743241980755
+        ],
+        "reordering_magnitude": 0.0,
+        "top1_changed": 0
+      }
+    },
+    {
+      "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+      "answer": "paws and mouth",
+      "uncertainty": {
+        "text": 0.45000000000000007,
+        "visual": 0.4094701758579834,
+        "alignment": 0.1,
+        "total": 0.3678410527573951,
+        "original_query": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+        "enhanced_query": null,
+        "selected_modality": "text",
+        "modality_weights": {
+          "text": 1.0,
+          "image": 0.0
+        }
+      },
+      "retrieved": true,
+      "retrieved_docs": [
+        {
+          "id": 1538472,
+          "source": "wikipedia",
+          "title": "Learning",
+          "contents": "Learning\nin itself, but that improves performance in similar future situations. This is seen in a wide variety of vertebrates besides humans, but is mostly limited to mammals and birds. Cats are known to play with a ball of string when young, which gives them experience with catching prey. Besides inanimate objects, animals may play with other members of their own species or other animals, such as orcas playing with seals they have caught. Play involves a significant cost to animals, such as increased vulnerability to predators and the risk of injury and possibly infection. It also consumes energy, so there",
+          "image_url": ""
+        }
+      ],
+      "raw_retrieved_docs": [
+        {
+          "id": 1538472,
+          "source": "wikipedia",
+          "title": "Learning",
+          "contents": "Learning\nin itself, but that improves performance in similar future situations. This is seen in a wide variety of vertebrates besides humans, but is mostly limited to mammals and birds. Cats are known to play with a ball of string when young, which gives them experience with catching prey. Besides inanimate objects, animals may play with other members of their own species or other animals, such as orcas playing with seals they have caught. Play involves a significant cost to animals, such as increased vulnerability to predators and the risk of injury and possibly infection. It also consumes energy, so there",
+          "image_url": ""
+        }
+      ],
+      "n_retrieved_docs": 1,
+      "n_fused_docs": 1,
+      "attributions": [],
+      "golden_answers": [
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth"
+      ],
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            {
+              "id": 1538472,
+              "source": "wikipedia",
+              "title": "Learning",
+              "contents": "Learning\nin itself, but that improves performance in similar future situations. This is seen in a wide variety of vertebrates besides humans, but is mostly limited to mammals and birds. Cats are known to play with a ball of string when young, which gives them experience with catching prey. Besides inanimate objects, animals may play with other members of their own species or other animals, such as orcas playing with seals they have caught. Play involves a significant cost to animals, such as increased vulnerability to predators and the risk of injury and possibly infection. It also consumes energy, so there",
+              "image_url": ""
+            }
+          ],
+          "retrieval_scores": [
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": [
+          1.0
+        ]
+      },
+      "selected_modality": "text",
+      "modality_weights": {
+        "text": 1.0,
+        "image": 0.0
+      },
+      "query_enhanced": false,
+      "position_bias_stats": {
+        "original_positions": [
+          0
+        ],
+        "reordered_positions": [
+          0
+        ],
+        "position_weights": [
+          1.0
+        ],
+        "base_position_weights": [
+          1.0
+        ],
+        "uncertainty_modulation": 0.9339205263786976,
+        "total_uncertainty": 0.3678410527573951,
+        "original_scores": [
+          0.7121644616127014
+        ],
+        "combined_scores": [
+          0.999999999859583
+        ],
+        "reordering_magnitude": 0.0,
+        "top1_changed": 0
+      }
+    },
+    {
+      "question": "What could this gentleman be carrying in that red bag?",
+      "answer": "diplomatic bag",
+      "uncertainty": {
+        "text": 0.44999999999999996,
+        "visual": 0.39254752989811614,
+        "alignment": 0.1,
+        "total": 0.3627642589694348,
+        "original_query": "What could this gentleman be carrying in that red bag?",
+        "enhanced_query": null,
+        "selected_modality": "text",
+        "modality_weights": {
+          "text": 1.0,
+          "image": 0.0
+        }
+      },
+      "retrieved": true,
+      "retrieved_docs": [
+        {
+          "id": 2938753,
+          "source": "wikipedia",
+          "title": "Diplomatic bag",
+          "contents": "Diplomatic bag\nexactly this purpose. Diplomatic bag A diplomatic bag, also known as a diplomatic pouch, is a container with certain legal protections used for carrying official correspondence or other items between a diplomatic mission and its home government or other diplomatic, consular, or otherwise official entity. The physical concept of a \"diplomatic bag\" is flexible and therefore can take many forms (e.g., a cardboard box, briefcase, duffel bag, large suitcase, crate or even a shipping container). Additionally, a diplomatic bag usually has some form of lock and/or tamper-evident seal attached to it in order to deter or detect interference by unauthorized",
+          "image_url": ""
+        }
+      ],
+      "raw_retrieved_docs": [
+        {
+          "id": 2938753,
+          "source": "wikipedia",
+          "title": "Diplomatic bag",
+          "contents": "Diplomatic bag\nexactly this purpose. Diplomatic bag A diplomatic bag, also known as a diplomatic pouch, is a container with certain legal protections used for carrying official correspondence or other items between a diplomatic mission and its home government or other diplomatic, consular, or otherwise official entity. The physical concept of a \"diplomatic bag\" is flexible and therefore can take many forms (e.g., a cardboard box, briefcase, duffel bag, large suitcase, crate or even a shipping container). Additionally, a diplomatic bag usually has some form of lock and/or tamper-evident seal attached to it in order to deter or detect interference by unauthorized",
+          "image_url": ""
+        }
+      ],
+      "n_retrieved_docs": 1,
+      "n_fused_docs": 1,
+      "attributions": [],
+      "golden_answers": [
+        "cloth",
+        "cloth",
+        "cloth",
+        "cloth",
+        "food",
+        "food",
+        "lunch",
+        "lunch",
+        "shoe",
+        "shoe"
+      ],
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            {
+              "id": 2938753,
+              "source": "wikipedia",
+              "title": "Diplomatic bag",
+              "contents": "Diplomatic bag\nexactly this purpose. Diplomatic bag A diplomatic bag, also known as a diplomatic pouch, is a container with certain legal protections used for carrying official correspondence or other items between a diplomatic mission and its home government or other diplomatic, consular, or otherwise official entity. The physical concept of a \"diplomatic bag\" is flexible and therefore can take many forms (e.g., a cardboard box, briefcase, duffel bag, large suitcase, crate or even a shipping container). Additionally, a diplomatic bag usually has some form of lock and/or tamper-evident seal attached to it in order to deter or detect interference by unauthorized",
+              "image_url": ""
+            }
+          ],
+          "retrieval_scores": [
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": [
+          1.0
+        ]
+      },
+      "selected_modality": "text",
+      "modality_weights": {
+        "text": 1.0,
+        "image": 0.0
+      },
+      "query_enhanced": false,
+      "position_bias_stats": {
+        "original_positions": [
+          0
+        ],
+        "reordered_positions": [
+          0
+        ],
+        "position_weights": [
+          1.0
+        ],
+        "base_position_weights": [
+          1.0
+        ],
+        "uncertainty_modulation": 0.9313821294847174,
+        "total_uncertainty": 0.3627642589694348,
+        "original_scores": [
+          0.6073606014251709
+        ],
+        "combined_scores": [
+          0.9999999998353531
+        ],
+        "reordering_magnitude": 0.0,
+        "top1_changed": 0
+      }
+    },
+    {
+      "question": "Who leaves a toilet like this?",
+      "answer": "unhygienic person",
+      "uncertainty": {
+        "text": 0.37,
+        "visual": 0.36393388203819665,
+        "alignment": 0.1,
+        "total": 0.31418016461145903,
+        "original_query": "Who leaves a toilet like this?",
+        "enhanced_query": null,
+        "selected_modality": "both",
+        "modality_weights": {
+          "text": 0.5,
+          "image": 0.5
+        }
+      },
+      "retrieved": false,
+      "retrieved_docs": [],
+      "raw_retrieved_docs": [],
+      "n_retrieved_docs": 0,
+      "n_fused_docs": 0,
+      "attributions": null,
+      "golden_answers": [
+        "man",
+        "man",
+        "man",
+        "man",
+        "man",
+        "man",
+        "men",
+        "men",
+        "men",
+        "men"
+      ],
+      "retrieval_result": [
+        {
+          "retrieved_docs": [],
+          "retrieval_scores": [],
+          "retrieval_used": false
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": []
+      }
+    },
+    {
+      "question": "A center affixed unit like this one in a kitchen is called a what?",
+      "answer": "kitchen island",
+      "uncertainty": {
+        "text": 0.63,
+        "visual": 0.2890945564142007,
+        "alignment": 0.1,
+        "total": 0.4217283669242602,
+        "original_query": "A center affixed unit like this one in a kitchen is called a what?",
+        "enhanced_query": "A center affixed unit like this one in a kitchen is called a what? [需要事实知识]",
+        "selected_modality": "text",
+        "modality_weights": {
+          "text": 1.0,
+          "image": 0.0
+        }
+      },
+      "retrieved": true,
+      "retrieved_docs": [
+        {
+          "id": 2948852,
+          "source": "wikipedia",
+          "title": "Kitchen stove",
+          "contents": "Kitchen stove\n\"drop-in range\" is a combination stovetop-and-oven unit that installs in a kitchen's lower cabinets flush with the countertop. Most modern stoves come in a unit with built-in extractor hoods. Professional chefs often prefer gas stovetops, for they allow them to control the heat more finely and more quickly. Today's major brands offer both gas and electric stoves, and many also offer dual-fuel ranges combining a gas stovetop and an electric oven. Early clay stoves that enclosed the fire completely, were known from the Chinese Qin Dynasty (221 BC–206/207 BC), and a similar design known as \"kamado\" (かまど) appeared in the",
+          "image_url": ""
+        }
+      ],
+      "raw_retrieved_docs": [
+        {
+          "id": 2948852,
+          "source": "wikipedia",
+          "title": "Kitchen stove",
+          "contents": "Kitchen stove\n\"drop-in range\" is a combination stovetop-and-oven unit that installs in a kitchen's lower cabinets flush with the countertop. Most modern stoves come in a unit with built-in extractor hoods. Professional chefs often prefer gas stovetops, for they allow them to control the heat more finely and more quickly. Today's major brands offer both gas and electric stoves, and many also offer dual-fuel ranges combining a gas stovetop and an electric oven. Early clay stoves that enclosed the fire completely, were known from the Chinese Qin Dynasty (221 BC–206/207 BC), and a similar design known as \"kamado\" (かまど) appeared in the",
+          "image_url": ""
+        }
+      ],
+      "n_retrieved_docs": 1,
+      "n_fused_docs": 0,
+      "attributions": null,
+      "golden_answers": [
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island"
+      ],
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            {
+              "id": 2948852,
+              "source": "wikipedia",
+              "title": "Kitchen stove",
+              "contents": "Kitchen stove\n\"drop-in range\" is a combination stovetop-and-oven unit that installs in a kitchen's lower cabinets flush with the countertop. Most modern stoves come in a unit with built-in extractor hoods. Professional chefs often prefer gas stovetops, for they allow them to control the heat more finely and more quickly. Today's major brands offer both gas and electric stoves, and many also offer dual-fuel ranges combining a gas stovetop and an electric oven. Early clay stoves that enclosed the fire completely, were known from the Chinese Qin Dynasty (221 BC–206/207 BC), and a similar design known as \"kamado\" (かまど) appeared in the",
+              "image_url": ""
+            }
+          ],
+          "retrieval_scores": [
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": [
+          1.0
+        ]
+      },
+      "selected_modality": "text",
+      "modality_weights": {
+        "text": 1.0,
+        "image": 0.0
+      },
+      "query_enhanced": true,
+      "position_bias_stats": {
+        "original_positions": [
+          0
+        ],
+        "reordered_positions": [
+          0
+        ],
+        "position_weights": [
+          1.0
+        ],
+        "base_position_weights": [
+          1.0
+        ],
+        "uncertainty_modulation": 0.9608641834621301,
+        "total_uncertainty": 0.4217283669242602,
+        "original_scores": [
+          0.6841076016426086
+        ],
+        "combined_scores": [
+          0.9999999998538242
+        ],
+        "reordering_magnitude": 0.0,
+        "top1_changed": 0
+      }
+    },
+    {
+      "question": "Why might someone go to this place?",
+      "answer": "explore culture and",
+      "uncertainty": {
+        "text": 0.49,
+        "visual": 0.2585272618025742,
+        "alignment": 0.1,
+        "total": 0.34255817854077225,
+        "original_query": "Why might someone go to this place?",
+        "enhanced_query": null,
+        "selected_modality": "text",
+        "modality_weights": {
+          "text": 1.0,
+          "image": 0.0
+        }
+      },
+      "retrieved": true,
+      "retrieved_docs": [
+        {
+          "id": 694012,
+          "source": "wikipedia",
+          "title": "Louisville, Kentucky",
+          "contents": "Louisville, Kentucky\nMuseum, which opened its doors in 2004 as an armaments museum, featuring the only collection of Royal Armouries artifacts outside of the United Kingdom. Since then the Frazier has expanded its focus to broader history. The Frazier Museum has three floors of exhibits, an education center and a tournament ring, which presents daily performances, as well as event spaces available for rent, including a rooftop garden featuring native plants and 4th floor loft-style space that accommodates up to 360 people seated. Also nearby is the Kentucky Science Center, which is Kentucky's largest hands-on science center and features interactive exhibits, IMAX",
+          "image_url": ""
+        },
+        {
+          "id": 527821,
+          "source": "wikipedia",
+          "title": "Ljubljana",
+          "contents": "Ljubljana\nare located the Celica Hostel with rooms all artistically decorated by the Metelkova artists, and a new part of the Museum of Modern Art, Museum of Contemporary Art. Another alternative culture centre is located in the former Rog factory. Both Metelkova and Rog factory factory located in Tabor neighbourhood are walking distance from the city centre and visited by various tours. The Šiška Cultural Quarter hosts a number of art groups and cultural organisations dedicated to contemporary and avant-garde arts. Part of it is also Kino Šiška Centre for Urban Culture, a venue where music concerts of indie, punk, and",
+          "image_url": ""
+        },
+        {
+          "id": 2547423,
+          "source": "wikipedia",
+          "title": "Arashiyama",
+          "contents": "Arashiyama\nis known for its moss garden that is punctuated with tall maple trees. The temple's entrance gate and small main hall have thatched roofs. The latter has an attractive round window looking into the gardens. Adashino Nenbutsuji Temple Hours: 9:00 to 16:30 (until 15:30 from December to February) Closed: No closing days Admission: 500 yen Adashino Nenbutsuji is located at the end of the Saga-Toriimoto Preserved Street. The temple was founded in the early 9th century when the famous monk Kobo Daishi placed stone statues for the souls of the dead here. Today, the temple grounds are covered by hundreds",
+          "image_url": ""
+        }
+      ],
+      "raw_retrieved_docs": [
+        {
+          "id": 694012,
+          "source": "wikipedia",
+          "title": "Louisville, Kentucky",
+          "contents": "Louisville, Kentucky\nMuseum, which opened its doors in 2004 as an armaments museum, featuring the only collection of Royal Armouries artifacts outside of the United Kingdom. Since then the Frazier has expanded its focus to broader history. The Frazier Museum has three floors of exhibits, an education center and a tournament ring, which presents daily performances, as well as event spaces available for rent, including a rooftop garden featuring native plants and 4th floor loft-style space that accommodates up to 360 people seated. Also nearby is the Kentucky Science Center, which is Kentucky's largest hands-on science center and features interactive exhibits, IMAX",
+          "image_url": ""
+        },
+        {
+          "id": 527821,
+          "source": "wikipedia",
+          "title": "Ljubljana",
+          "contents": "Ljubljana\nare located the Celica Hostel with rooms all artistically decorated by the Metelkova artists, and a new part of the Museum of Modern Art, Museum of Contemporary Art. Another alternative culture centre is located in the former Rog factory. Both Metelkova and Rog factory factory located in Tabor neighbourhood are walking distance from the city centre and visited by various tours. The Šiška Cultural Quarter hosts a number of art groups and cultural organisations dedicated to contemporary and avant-garde arts. Part of it is also Kino Šiška Centre for Urban Culture, a venue where music concerts of indie, punk, and",
+          "image_url": ""
+        },
+        {
+          "id": 2547423,
+          "source": "wikipedia",
+          "title": "Arashiyama",
+          "contents": "Arashiyama\nis known for its moss garden that is punctuated with tall maple trees. The temple's entrance gate and small main hall have thatched roofs. The latter has an attractive round window looking into the gardens. Adashino Nenbutsuji Temple Hours: 9:00 to 16:30 (until 15:30 from December to February) Closed: No closing days Admission: 500 yen Adashino Nenbutsuji is located at the end of the Saga-Toriimoto Preserved Street. The temple was founded in the early 9th century when the famous monk Kobo Daishi placed stone statues for the souls of the dead here. Today, the temple grounds are covered by hundreds",
+          "image_url": ""
+        },
+        {
+          "id": 1111848,
+          "source": "wikipedia",
+          "title": "Taylors Falls, Minnesota",
+          "contents": "Taylors Falls, Minnesota\nincludes a ski and snowboard resort, Wild Mountain. The Resort, which is also a water park in the summer months, is located 7.4 miles north of downtown Taylors Falls and 61 miles from Downtown Minneapolis. The site has 26 ski hills spread over 100 acres of land. It also boasts as being the first ski resort to open in Minnesota every year. During the summer, Wild Mountain also operates Taylors Falls Scenic Boat Tours. Leaving multiple times a day, the tours range from 45-80 mins long. On the outskirts of Taylors Falls is Franconia Sculpture Park. It is an outdoor",
+          "image_url": ""
+        },
+        {
+          "id": 1935666,
+          "source": "wikipedia",
+          "title": "Brussels Airport",
+          "contents": "Brussels Airport\nchains have a branch in both piers, however several only operate in pier A. The airport also features places of worship (for Catholics, Jews, Muslims, Orthodox Christians and Protestants), as well as a place for meditation for humanists. The airport provides meeting facilities and can host congresses up to 600 participants, either in the Regus Skyport Meeting Center or in the Sheraton Brussels Airport Hotel. The latter is the only hotel located on the airport grounds, opposite the terminal. Shuttle services are provided to 14 nearby hotels. All passengers now have unlimited free Wi-Fi access. There is a small smoking",
+          "image_url": ""
+        }
+      ],
+      "n_retrieved_docs": 5,
+      "n_fused_docs": 3,
+      "attributions": [],
+      "golden_answers": [
+        "shop",
+        "shop",
+        "shop",
+        "shop",
+        "nyc",
+        "nyc",
+        "shop",
+        "shop",
+        "business",
+        "business"
+      ],
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            {
+              "id": 694012,
+              "source": "wikipedia",
+              "title": "Louisville, Kentucky",
+              "contents": "Louisville, Kentucky\nMuseum, which opened its doors in 2004 as an armaments museum, featuring the only collection of Royal Armouries artifacts outside of the United Kingdom. Since then the Frazier has expanded its focus to broader history. The Frazier Museum has three floors of exhibits, an education center and a tournament ring, which presents daily performances, as well as event spaces available for rent, including a rooftop garden featuring native plants and 4th floor loft-style space that accommodates up to 360 people seated. Also nearby is the Kentucky Science Center, which is Kentucky's largest hands-on science center and features interactive exhibits, IMAX",
+              "image_url": ""
+            },
+            {
+              "id": 527821,
+              "source": "wikipedia",
+              "title": "Ljubljana",
+              "contents": "Ljubljana\nare located the Celica Hostel with rooms all artistically decorated by the Metelkova artists, and a new part of the Museum of Modern Art, Museum of Contemporary Art. Another alternative culture centre is located in the former Rog factory. Both Metelkova and Rog factory factory located in Tabor neighbourhood are walking distance from the city centre and visited by various tours. The Šiška Cultural Quarter hosts a number of art groups and cultural organisations dedicated to contemporary and avant-garde arts. Part of it is also Kino Šiška Centre for Urban Culture, a venue where music concerts of indie, punk, and",
+              "image_url": ""
+            },
+            {
+              "id": 2547423,
+              "source": "wikipedia",
+              "title": "Arashiyama",
+              "contents": "Arashiyama\nis known for its moss garden that is punctuated with tall maple trees. The temple's entrance gate and small main hall have thatched roofs. The latter has an attractive round window looking into the gardens. Adashino Nenbutsuji Temple Hours: 9:00 to 16:30 (until 15:30 from December to February) Closed: No closing days Admission: 500 yen Adashino Nenbutsuji is located at the end of the Saga-Toriimoto Preserved Street. The temple was founded in the early 9th century when the famous monk Kobo Daishi placed stone statues for the souls of the dead here. Today, the temple grounds are covered by hundreds",
+              "image_url": ""
+            }
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": [
+          0.4286555287771669,
+          0.25999272065868273,
+          0.15769355638159327,
+          0.0956459767845591,
+          0.05801221739799787
+        ]
+      },
+      "selected_modality": "text",
+      "modality_weights": {
+        "text": 1.0,
+        "image": 0.0
+      },
+      "query_enhanced": false,
+      "position_bias_stats": {
+        "original_positions": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reordered_positions": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "position_weights": [
+          0.4286555287771669,
+          0.25999272065868273,
+          0.15769355638159327,
+          0.0956459767845591,
+          0.05801221739799787
+        ],
+        "base_position_weights": [
+          0.42865552877716695,
+          0.2599927206586828,
+          0.1576935563815933,
+          0.09564597678455912,
+          0.058012217397997876
+        ],
+        "uncertainty_modulation": 0.9212790892703862,
+        "total_uncertainty": 0.34255817854077225,
+        "original_scores": [
+          0.6579518914222717,
+          0.6539904475212097,
+          0.6533737778663635,
+          0.6519215106964111,
+          0.6517555713653564
+        ],
+        "combined_scores": [
+          0.08627571204989838,
+          0.05201379916890592,
+          0.03151821628464597,
+          0.01907427329522722,
+          0.011566186772214116
+        ],
+        "reordering_magnitude": 0.0,
+        "top1_changed": 0
+      }
+    },
+    {
+      "question": "What does this grow from?",
+      "answer": "rhizome division",
+      "uncertainty": {
+        "text": 0.35,
+        "visual": 0.322429143857881,
+        "alignment": 0.1,
+        "total": 0.2917287431573643,
+        "original_query": "What does this grow from?",
+        "enhanced_query": null,
+        "selected_modality": "both",
+        "modality_weights": {
+          "text": 0.5,
+          "image": 0.5
+        }
+      },
+      "retrieved": true,
+      "retrieved_docs": [
+        {
+          "id": 747680,
+          "source": "wikipedia",
+          "title": "Canna (plant)",
+          "contents": "Canna (plant)\npropagation method is rhizome division. This uses material from a single parent, and as there is no exchange of genetic material, it almost always produces plants that are identical to the parent. After a summer’s growth, the horticultural cultivars can be separated into typically four or five separate smaller rhizomes, each with a growing nodal point ('growing eye'). Without the growing point, which is composed of meristem material, the rhizome will not grow. Micropropagation, also known as tissue culture, is the practice of rapidly multiplying stock plant material to produce a large number of progeny plants. Micropropagation uses \"in vitro\"",
+          "image_url": ""
+        },
+        {
+          "id": 188094,
+          "source": "wikipedia",
+          "title": "Hydroponics",
+          "contents": "Hydroponics\nhave both more air and water retention space than perlite and peat. This aggregate holds more water than parboiled rice hulls. Growstones by volume consist of 0.5 to 5% calcium carbonate – for a standard 5.1 kg bag of Growstones that corresponds to 25.8 to 258 grams of calcium carbonate. The remainder is soda-lime glass. Coco peat, also known as coir or coco, is the leftover material after the fibres have been removed from the outermost shell (bolster) of the coconut. Coir is a 100% natural grow and flowering medium. Coconut coir is colonized with trichoderma fungi, which protects roots",
+          "image_url": ""
+        },
+        {
+          "id": 343834,
+          "source": "wikipedia",
+          "title": "Rosemary",
+          "contents": "Rosemary\nfor many years, can be pruned into formal shapes and low hedges, and has been used for topiary. It is easily grown in pots. The groundcover cultivars spread widely, with a dense and durable texture. Rosemary grows on loam soil with good drainage in an open, sunny position. It will not withstand waterlogging and some varieties are susceptible to frost. It grows best in neutral to alkaline conditions (pH 7–7.8) with average fertility. It can be propagated from an existing plant by clipping a shoot (from a soft new growth) long, stripping a few leaves from the bottom, and planting",
+          "image_url": ""
+        }
+      ],
+      "raw_retrieved_docs": [
+        {
+          "id": 747680,
+          "source": "wikipedia",
+          "title": "Canna (plant)",
+          "contents": "Canna (plant)\npropagation method is rhizome division. This uses material from a single parent, and as there is no exchange of genetic material, it almost always produces plants that are identical to the parent. After a summer’s growth, the horticultural cultivars can be separated into typically four or five separate smaller rhizomes, each with a growing nodal point ('growing eye'). Without the growing point, which is composed of meristem material, the rhizome will not grow. Micropropagation, also known as tissue culture, is the practice of rapidly multiplying stock plant material to produce a large number of progeny plants. Micropropagation uses \"in vitro\"",
+          "image_url": ""
+        },
+        {
+          "id": 188094,
+          "source": "wikipedia",
+          "title": "Hydroponics",
+          "contents": "Hydroponics\nhave both more air and water retention space than perlite and peat. This aggregate holds more water than parboiled rice hulls. Growstones by volume consist of 0.5 to 5% calcium carbonate – for a standard 5.1 kg bag of Growstones that corresponds to 25.8 to 258 grams of calcium carbonate. The remainder is soda-lime glass. Coco peat, also known as coir or coco, is the leftover material after the fibres have been removed from the outermost shell (bolster) of the coconut. Coir is a 100% natural grow and flowering medium. Coconut coir is colonized with trichoderma fungi, which protects roots",
+          "image_url": ""
+        },
+        {
+          "id": 343834,
+          "source": "wikipedia",
+          "title": "Rosemary",
+          "contents": "Rosemary\nfor many years, can be pruned into formal shapes and low hedges, and has been used for topiary. It is easily grown in pots. The groundcover cultivars spread widely, with a dense and durable texture. Rosemary grows on loam soil with good drainage in an open, sunny position. It will not withstand waterlogging and some varieties are susceptible to frost. It grows best in neutral to alkaline conditions (pH 7–7.8) with average fertility. It can be propagated from an existing plant by clipping a shoot (from a soft new growth) long, stripping a few leaves from the bottom, and planting",
+          "image_url": ""
+        },
+        {
+          "id": 623983,
+          "source": "wikipedia",
+          "title": "Shoot",
+          "contents": "Shoot\nof some genera such as \"Picea\" are so small that they can be mistaken for part of the leaf that they have produced. A related phenomenon is seasonal heterophylly, which involves visibly different leaves from spring growth and later lammas growth. Whereas spring growth mostly comes from buds formed the previous season, and often includes flowers, lammas growth often involves long shoots. Shoot In botany, shoots consist of stems including their appendages, the leaves and lateral buds, flowering stems and flower buds. The new growth from seed germination that grows upward is a shoot where leaves will develop. In the",
+          "image_url": ""
+        }
+      ],
+      "n_retrieved_docs": 4,
+      "n_fused_docs": 3,
+      "attributions": [],
+      "golden_answers": [
+        "ground",
+        "ground",
+        "ground",
+        "ground",
+        "plant",
+        "plant",
+        "hibiscus plant stem",
+        "hibiscus plant stem",
+        "root",
+        "root"
+      ],
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            {
+              "id": 747680,
+              "source": "wikipedia",
+              "title": "Canna (plant)",
+              "contents": "Canna (plant)\npropagation method is rhizome division. This uses material from a single parent, and as there is no exchange of genetic material, it almost always produces plants that are identical to the parent. After a summer’s growth, the horticultural cultivars can be separated into typically four or five separate smaller rhizomes, each with a growing nodal point ('growing eye'). Without the growing point, which is composed of meristem material, the rhizome will not grow. Micropropagation, also known as tissue culture, is the practice of rapidly multiplying stock plant material to produce a large number of progeny plants. Micropropagation uses \"in vitro\"",
+              "image_url": ""
+            },
+            {
+              "id": 188094,
+              "source": "wikipedia",
+              "title": "Hydroponics",
+              "contents": "Hydroponics\nhave both more air and water retention space than perlite and peat. This aggregate holds more water than parboiled rice hulls. Growstones by volume consist of 0.5 to 5% calcium carbonate – for a standard 5.1 kg bag of Growstones that corresponds to 25.8 to 258 grams of calcium carbonate. The remainder is soda-lime glass. Coco peat, also known as coir or coco, is the leftover material after the fibres have been removed from the outermost shell (bolster) of the coconut. Coir is a 100% natural grow and flowering medium. Coconut coir is colonized with trichoderma fungi, which protects roots",
+              "image_url": ""
+            },
+            {
+              "id": 343834,
+              "source": "wikipedia",
+              "title": "Rosemary",
+              "contents": "Rosemary\nfor many years, can be pruned into formal shapes and low hedges, and has been used for topiary. It is easily grown in pots. The groundcover cultivars spread widely, with a dense and durable texture. Rosemary grows on loam soil with good drainage in an open, sunny position. It will not withstand waterlogging and some varieties are susceptible to frost. It grows best in neutral to alkaline conditions (pH 7–7.8) with average fertility. It can be propagated from an existing plant by clipping a shoot (from a soft new growth) long, stripping a few leaves from the bottom, and planting",
+              "image_url": ""
+            }
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": [
+          0.4550542339234113,
+          0.27600434470659363,
+          0.16740509727844333,
+          0.1015363240915518
+        ]
+      },
+      "selected_modality": "both",
+      "modality_weights": {
+        "text": 0.5,
+        "image": 0.5
+      },
+      "query_enhanced": false,
+      "position_bias_stats": {
+        "original_positions": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "reordered_positions": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "position_weights": [
+          0.4550542339234113,
+          0.27600434470659363,
+          0.16740509727844333,
+          0.1015363240915518
+        ],
+        "base_position_weights": [
+          0.45505423392341127,
+          0.27600434470659363,
+          0.16740509727844333,
+          0.1015363240915518
+        ],
+        "uncertainty_modulation": 0.8958643715786822,
+        "total_uncertainty": 0.2917287431573643,
+        "original_scores": [
+          0.666549801826477,
+          0.6643199324607849,
+          0.6636339426040649,
+          0.6629209518432617
+        ],
+        "combined_scores": [
+          0.11413919557709838,
+          0.06899732381677284,
+          0.04180577823862169,
+          0.025329243916489334
+        ],
+        "reordering_magnitude": 0.0,
+        "top1_changed": 0
+      }
+    },
+    {
+      "question": "What is that man doing with the bat?",
+      "answer": "waiting to hit",
+      "uncertainty": {
+        "text": 0.31000000000000005,
+        "visual": 0.3165915707521258,
+        "alignment": 0.1,
+        "total": 0.26997747122563776,
+        "original_query": "What is that man doing with the bat?",
+        "enhanced_query": null,
+        "selected_modality": "both",
+        "modality_weights": {
+          "text": 0.5,
+          "image": 0.5
+        }
+      },
+      "retrieved": true,
+      "retrieved_docs": [
+        {
+          "id": 41671,
+          "source": "wikipedia",
+          "title": "Baseball",
+          "contents": "Baseball\nholding a bat. The batter waits for the pitcher to throw a pitch (the ball) toward home plate, and attempts to hit the ball with the bat. The catcher catches pitches that the batter does not hit—as a result of either electing not to swing or failing to connect—and returns them to the pitcher. A batter who hits the ball into the field of play must drop the bat and begin running toward first base, at which point the player is referred to as a \"runner\" (or, until the play is over, a \"batter-runner\"). A batter-runner who reaches first base",
+          "image_url": ""
+        },
+        {
+          "id": 1806869,
+          "source": "wikipedia",
+          "title": "Corked bat",
+          "contents": "Corked bat\nreported that Pete Rose used corked bats during his 1985 pursuit of Ty Cobb's all-time hits record. Two sports memorabilia collectors who owned Rose's game-used bats from that season had the bats x-rayed and found the telltale signs of corking. Rose had previously denied using corked bats. Corked bat In baseball, a corked bat is a specially modified baseball bat that has been filled with cork or other lighter, less dense substances to make the bat lighter. A lighter bat gives a hitter a quicker swing and may improve the hitter's timing. In Major League Baseball, modifying a bat with",
+          "image_url": ""
+        },
+        {
+          "id": 2062766,
+          "source": "wikipedia",
+          "title": "Tony Gwynn",
+          "contents": "Tony Gwynn\nbats light like his aluminum ones in college. Instead of having the barrel of his bats shaved, as many batters do, he had them \"cupped\", with the end of the barrel hollowed out like the bottom of a wine bottle. His small hands required that he use thin-handled bats. His bat control made him a good hit-and-run batter, although some former teammates complained he would swing for a hit even when a player was trying to steal, depriving his teammate of a stolen base. Gwynn was able to hit the ball to all fields, but liked to hit balls the",
+          "image_url": ""
+        }
+      ],
+      "raw_retrieved_docs": [
+        {
+          "id": 41671,
+          "source": "wikipedia",
+          "title": "Baseball",
+          "contents": "Baseball\nholding a bat. The batter waits for the pitcher to throw a pitch (the ball) toward home plate, and attempts to hit the ball with the bat. The catcher catches pitches that the batter does not hit—as a result of either electing not to swing or failing to connect—and returns them to the pitcher. A batter who hits the ball into the field of play must drop the bat and begin running toward first base, at which point the player is referred to as a \"runner\" (or, until the play is over, a \"batter-runner\"). A batter-runner who reaches first base",
+          "image_url": ""
+        },
+        {
+          "id": 1806869,
+          "source": "wikipedia",
+          "title": "Corked bat",
+          "contents": "Corked bat\nreported that Pete Rose used corked bats during his 1985 pursuit of Ty Cobb's all-time hits record. Two sports memorabilia collectors who owned Rose's game-used bats from that season had the bats x-rayed and found the telltale signs of corking. Rose had previously denied using corked bats. Corked bat In baseball, a corked bat is a specially modified baseball bat that has been filled with cork or other lighter, less dense substances to make the bat lighter. A lighter bat gives a hitter a quicker swing and may improve the hitter's timing. In Major League Baseball, modifying a bat with",
+          "image_url": ""
+        },
+        {
+          "id": 2062766,
+          "source": "wikipedia",
+          "title": "Tony Gwynn",
+          "contents": "Tony Gwynn\nbats light like his aluminum ones in college. Instead of having the barrel of his bats shaved, as many batters do, he had them \"cupped\", with the end of the barrel hollowed out like the bottom of a wine bottle. His small hands required that he use thin-handled bats. His bat control made him a good hit-and-run batter, although some former teammates complained he would swing for a hit even when a player was trying to steal, depriving his teammate of a stolen base. Gwynn was able to hit the ball to all fields, but liked to hit balls the",
+          "image_url": ""
+        },
+        {
+          "id": 1806866,
+          "source": "wikipedia",
+          "title": "Corked bat",
+          "contents": "Corked bat\nor other similar material is compacted into the hole and the end is typically patched up with glue and sawdust. However, this weakens the bat's structural integrity and makes it more susceptible to breakage, even more so if the cork is placed beyond roughly six inches into the bat. Corked bats are typically discovered when they break during play. Corked bats were tested in the 2007 season of MythBusters where it was found that the cork was detrimental to the bat's performance. Using a corked bat in Major League Baseball is in violation of Rule 6.06 (d), which reads in",
+          "image_url": ""
+        },
+        {
+          "id": 2944197,
+          "source": "wikipedia",
+          "title": "First baseman",
+          "contents": "First baseman\nright-handed, and therefore, a majority of batted balls are hit to the left side of the infield and fielded by the third baseman or shortstop. Left-handed first basemen are also advantageous in attempting to pick off baserunners at first, as the left-hander can catch and tag in one motion, often doing both at the same time, while right-handed first baseman must sweep their glove across their body, costing them a crucial fraction of a second in applying the tag. The first baseman's mitt is similar to a catcher's mitt in that it has extra padding and has no individual fingers.",
+          "image_url": ""
+        }
+      ],
+      "n_retrieved_docs": 5,
+      "n_fused_docs": 3,
+      "attributions": [],
+      "golden_answers": [
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "hit",
+        "hit",
+        "try to hit hte ball",
+        "try to hit hte ball"
+      ],
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            {
+              "id": 41671,
+              "source": "wikipedia",
+              "title": "Baseball",
+              "contents": "Baseball\nholding a bat. The batter waits for the pitcher to throw a pitch (the ball) toward home plate, and attempts to hit the ball with the bat. The catcher catches pitches that the batter does not hit—as a result of either electing not to swing or failing to connect—and returns them to the pitcher. A batter who hits the ball into the field of play must drop the bat and begin running toward first base, at which point the player is referred to as a \"runner\" (or, until the play is over, a \"batter-runner\"). A batter-runner who reaches first base",
+              "image_url": ""
+            },
+            {
+              "id": 1806869,
+              "source": "wikipedia",
+              "title": "Corked bat",
+              "contents": "Corked bat\nreported that Pete Rose used corked bats during his 1985 pursuit of Ty Cobb's all-time hits record. Two sports memorabilia collectors who owned Rose's game-used bats from that season had the bats x-rayed and found the telltale signs of corking. Rose had previously denied using corked bats. Corked bat In baseball, a corked bat is a specially modified baseball bat that has been filled with cork or other lighter, less dense substances to make the bat lighter. A lighter bat gives a hitter a quicker swing and may improve the hitter's timing. In Major League Baseball, modifying a bat with",
+              "image_url": ""
+            },
+            {
+              "id": 2062766,
+              "source": "wikipedia",
+              "title": "Tony Gwynn",
+              "contents": "Tony Gwynn\nbats light like his aluminum ones in college. Instead of having the barrel of his bats shaved, as many batters do, he had them \"cupped\", with the end of the barrel hollowed out like the bottom of a wine bottle. His small hands required that he use thin-handled bats. His bat control made him a good hit-and-run batter, although some former teammates complained he would swing for a hit even when a player was trying to steal, depriving his teammate of a stolen base. Gwynn was able to hit the ball to all fields, but liked to hit balls the",
+              "image_url": ""
+            }
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": [
+          0.428655528777167,
+          0.2599927206586828,
+          0.15769355638159332,
+          0.09564597678455913,
+          0.05801221739799788
+        ]
+      },
+      "selected_modality": "both",
+      "modality_weights": {
+        "text": 0.5,
+        "image": 0.5
+      },
+      "query_enhanced": false,
+      "position_bias_stats": {
+        "original_positions": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reordered_positions": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "position_weights": [
+          0.428655528777167,
+          0.2599927206586828,
+          0.15769355638159332,
+          0.09564597678455913,
+          0.05801221739799788
+        ],
+        "base_position_weights": [
+          0.42865552877716695,
+          0.2599927206586828,
+          0.1576935563815933,
+          0.09564597678455912,
+          0.058012217397997876
+        ],
+        "uncertainty_modulation": 0.8849887356128189,
+        "total_uncertainty": 0.26997747122563776,
+        "original_scores": [
+          0.6832749843597412,
+          0.6767657995223999,
+          0.6751329898834229,
+          0.6738781332969666,
+          0.6730800271034241
+        ],
+        "combined_scores": [
+          0.08659910536118783,
+          0.05202463561042774,
+          0.031478406009717595,
+          0.019057131284540653,
+          0.011545044846705169
+        ],
+        "reordering_magnitude": 0.0,
+        "top1_changed": 0
+      }
+    }
+  ],
+  "elapsed_time": 102.77172946929932,
+  "samples_per_second": 0.09730302342520439,
+  "timestamp": "2025-12-05T00:19:15.361826"
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "You can use this for playing a game of tennis. The image shows a tennis court with two players on it, each holding a tennis racket. The court is marked with lines to indicate the boundaries for the game. Tennis is a popular racket",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "eigen_score": 9.132781982421875,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "The plant in the image is a flowering plant, specifically a type of orchid.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "eigen_score": 8.064146995544434,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "The toy in the image is a stuffed animal, specifically a teddy bear.",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "eigen_score": 7.418898105621338,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "The man is holding a pair of scissors and a ball in his hands. If the animal were to play the game, it would likely use its mouth to pick up the ball and its paws to hold the scissors. The animal",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "eigen_score": 8.664756774902344,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "It is impossible to know for certain what the gentleman is carrying in his red bag without more context or information. However, some possibilities could include groceries, a laptop, a book, or personal belongings. The bag's color and the",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "eigen_score": 8.075876235961914,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "5723996",
+    "question": "Who leaves a toilet like this?",
+    "prediction": "It is not appropriate to leave a toilet in a public restroom in such a state. It is the responsibility of the facility management to ensure that the restrooms are clean and functional. Leaving a toilet in a state of dis",
+    "golden_answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "eigen_score": 8.90126895904541,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "5759705",
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "prediction": "A center affixed unit, such as the one you described in a kitchen, is typically referred to as a kitchen island or a kitchen cart.",
+    "golden_answers": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "eigen_score": 7.6074090003967285,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3045575",
+    "question": "Why might someone go to this place?",
+    "prediction": "Someone might go to this place to enjoy the outdoors and engage in recreational activities such as hiking, picnicking, or simply relaxing in a natural setting. The image shows a wooded area with a dirt",
+    "golden_answers": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "eigen_score": 9.190848350524902,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "2183655",
+    "question": "What does this grow from?",
+    "prediction": "I'm sorry, but I'm not sure what you are referring to. Could you please provide more context or information about what you are asking?",
+    "golden_answers": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "eigen_score": -Infinity,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "2863135",
+    "question": "What is that man doing with the bat?",
+    "prediction": "The man is holding a baseball bat and standing next to a baseball field. It is likely that he is a baseball player, and he may be preparing to practice or play a game. The presence of the baseball field and the bat suggests that he",
+    "golden_answers": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "eigen_score": 7.509404182434082,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  }
+]

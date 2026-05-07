@@ -1,0 +1,509 @@
+{
+  "method": "Retrieval-Based",
+  "config": {
+    "dataset_name": "a-okvqa",
+    "max_samples": 10,
+    "load_images": true,
+    "qwen3_vl_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+    "torch_dtype": "bfloat16",
+    "temperature": 0.01,
+    "max_new_tokens": 30,
+    "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+    "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+    "retrieval_model_path": "/data0/home/zqwang/ACL/models/bge-large-en-v1.5",
+    "retrieval_topk": 5,
+    "uncertainty_threshold": 0.43,
+    "use_improved_estimator": true,
+    "text_weight": 0.4,
+    "visual_weight": 0.3,
+    "alignment_weight": 0.3,
+    "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_aokvqa_baselines"
+  },
+  "metrics": {
+    "avg_accuracy": 33.33333333333333,
+    "avg_retrieved": 1.0,
+    "avg_F1": 1.0,
+    "avg_VQA_Score": 33.33333333333333,
+    "avg_Recall@5": 0.0,
+    "avg_Faithfulness": 0.6,
+    "avg_Attribution_Precision": 0.0,
+    "avg_Position_Bias_Score": 0.5,
+    "accuracy": 33.33333333333333,
+    "retrieval_rate": 1.0
+  },
+  "results": [
+    {
+      "question": "Sample question 0 for a-okvqa?",
+      "answer": "Answer 0",
+      "golden_answers": [
+        "Answer 0"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 2064589,
+          "source": "wikipedia",
+          "title": "VC dimension",
+          "contents": "VC dimension\nformula_14 is a single-parametric interval classifier on real numbers; i.e, for a certain parameter formula_15, the classifier formula_29 returns 1 if the input number is in the interval formula_39 and 0 otherwise. The VC dimension of formula_14 is 2 because: (a) It can shatter some sets of two points. E.g, for every set formula_41, a classifier formula_29 labels it as (0,0) if formula_43 or if formula_44, as (1,0) if formula_45, as (1,1) if formula_46, and as (0,1) if formula_47. (b) It cannot shatter any set of three points. For every set of three numbers, if the smallest and the largest",
+          "image_url": ""
+        },
+        {
+          "id": 2490369,
+          "source": "wikipedia",
+          "title": "Item response theory",
+          "contents": "Item response theory\nmodels are sample independent, a property that does not hold for two-parameter and three-parameter models. Additionally, there is theoretically a four-parameter model (4PL), with an upper asymptote, denoted by formula_39 where formula_40 in the 3PL is replaced by formula_41. However, this is rarely used. Note that the alphabetical order of the item parameters does not match their practical or psychometric importance; the location/difficulty (formula_5) parameter is clearly most important because it is included in all three models. The 1PL uses only formula_5, the 2PL uses formula_5 and formula_4, the 3PL adds formula_6, and the 4PL adds formula_47. The 2PL is",
+          "image_url": ""
+        },
+        {
+          "id": 1936456,
+          "source": "wikipedia",
+          "title": "Questionnaire construction",
+          "contents": "Questionnaire construction\ncan be scored and coded more easily, but they diminish expressivity and spontaneity of the responder. In general, the vocabulary of a question should be very simple and direct, and preferably under twenty words. Each question should be edited for readability and should avoid leading or loaded questions. If multiple questions are being used to measure one construct, some of the questions should be worded in the opposite direction to evade response bias. A respondent's answer to an open-ended question can be coded into a response scale afterwards, or analysed using more qualitative methods. Questions should flow logically, from the",
+          "image_url": ""
+        },
+        {
+          "id": 2475067,
+          "source": "wikipedia",
+          "title": "Cross-validation (statistics)",
+          "contents": "Cross-validation (statistics)\nresults can then be averaged to produce a single estimation. The advantage of this method over repeated random sub-sampling (see below) is that all observations are used for both training and validation, and each observation is used for validation exactly once. 10-fold cross-validation is commonly used, but in general \"k\" remains an unfixed parameter. For example, setting \"k\" = \"2\" results in 2-fold cross-validation. In 2-fold cross-validation, we randomly shuffle the dataset into two sets \"d\" and \"d\", so that both sets are equal size (this is usually implemented by shuffling the data array and then splitting it in two).",
+          "image_url": ""
+        },
+        {
+          "id": 940935,
+          "source": "wikipedia",
+          "title": "YUV",
+          "contents": "YUV\narray are Y′ values that correspond to each individual pixel. However, there are only one fourth as many U and V values. The U and V values correspond to each 2 by 2 block of the image, meaning each U and V entry applies to four pixels. After the Y′ values, the next X/4 indices are the U values for each 2 by 2 block, and the next X/4 indices after that are the V values that also apply to each 2 by 2 block. Translating Y′UV420p to RGB is a more involved process compared to the previous formats. Lookup",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    },
+    {
+      "question": "Sample question 1 for a-okvqa?",
+      "answer": "Answer 1",
+      "golden_answers": [
+        "Answer 1"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 1936456,
+          "source": "wikipedia",
+          "title": "Questionnaire construction",
+          "contents": "Questionnaire construction\ncan be scored and coded more easily, but they diminish expressivity and spontaneity of the responder. In general, the vocabulary of a question should be very simple and direct, and preferably under twenty words. Each question should be edited for readability and should avoid leading or loaded questions. If multiple questions are being used to measure one construct, some of the questions should be worded in the opposite direction to evade response bias. A respondent's answer to an open-ended question can be coded into a response scale afterwards, or analysed using more qualitative methods. Questions should flow logically, from the",
+          "image_url": ""
+        },
+        {
+          "id": 1003296,
+          "source": "wikipedia",
+          "title": "Anvik, Alaska",
+          "contents": "Anvik, Alaska\nthe city was 94 Native American, nine White, and one from other races. One also reported Hispanic or Latino ethnicity. There were 39 households of which 41.0% had children under the age of 18 living with them, 30.8% were married couples living together, 25.6% had a female householder with no husband present, and 41.0% were non-families. 33.3% of all households were made up of individuals and 7.7% had someone living alone who was 65 years of age or older. The average household size was 2.67 and the average family size was 3.43. Age distribution was 34 under the age of",
+          "image_url": ""
+        },
+        {
+          "id": 940935,
+          "source": "wikipedia",
+          "title": "YUV",
+          "contents": "YUV\narray are Y′ values that correspond to each individual pixel. However, there are only one fourth as many U and V values. The U and V values correspond to each 2 by 2 block of the image, meaning each U and V entry applies to four pixels. After the Y′ values, the next X/4 indices are the U values for each 2 by 2 block, and the next X/4 indices after that are the V values that also apply to each 2 by 2 block. Translating Y′UV420p to RGB is a more involved process compared to the previous formats. Lookup",
+          "image_url": ""
+        },
+        {
+          "id": 751394,
+          "source": "wikipedia",
+          "title": "Microphone",
+          "contents": "Microphone\nhave their own characteristic responses to sound. This difference in response produces non-uniform phase and frequency responses. In addition, microphones are not uniformly sensitive to sound pressure, and can accept differing levels without distorting. Although for scientific applications microphones with a more uniform response are desirable, this is often not the case for music recording, as the non-uniform response of a microphone can produce a desirable coloration of the sound. There is an international standard for microphone specifications, but few manufacturers adhere to it. As a result, comparison of published data from different manufacturers is difficult because different measurement techniques",
+          "image_url": ""
+        },
+        {
+          "id": 582339,
+          "source": "wikipedia",
+          "title": "Calibration",
+          "contents": "Calibration\nwould be a better solution. If the calibration is performed at 100 units, the 1% standard would actually be anywhere between 99 and 101 units. The acceptable values of calibrations where the test equipment is at the 4:1 ratio would be 96 to 104 units, inclusive. Changing the acceptable range to 97 to 103 units would remove the potential contribution of all of the standards and preserve a 3.3:1 ratio. Continuing, a further change to the acceptable range to 98 to 102 restores more than a 4:1 final ratio. This is a simplified example. The mathematics of the example can",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    },
+    {
+      "question": "Sample question 2 for a-okvqa?",
+      "answer": "Answer 2",
+      "golden_answers": [
+        "Answer 2"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 1936456,
+          "source": "wikipedia",
+          "title": "Questionnaire construction",
+          "contents": "Questionnaire construction\ncan be scored and coded more easily, but they diminish expressivity and spontaneity of the responder. In general, the vocabulary of a question should be very simple and direct, and preferably under twenty words. Each question should be edited for readability and should avoid leading or loaded questions. If multiple questions are being used to measure one construct, some of the questions should be worded in the opposite direction to evade response bias. A respondent's answer to an open-ended question can be coded into a response scale afterwards, or analysed using more qualitative methods. Questions should flow logically, from the",
+          "image_url": ""
+        },
+        {
+          "id": 940935,
+          "source": "wikipedia",
+          "title": "YUV",
+          "contents": "YUV\narray are Y′ values that correspond to each individual pixel. However, there are only one fourth as many U and V values. The U and V values correspond to each 2 by 2 block of the image, meaning each U and V entry applies to four pixels. After the Y′ values, the next X/4 indices are the U values for each 2 by 2 block, and the next X/4 indices after that are the V values that also apply to each 2 by 2 block. Translating Y′UV420p to RGB is a more involved process compared to the previous formats. Lookup",
+          "image_url": ""
+        },
+        {
+          "id": 1003296,
+          "source": "wikipedia",
+          "title": "Anvik, Alaska",
+          "contents": "Anvik, Alaska\nthe city was 94 Native American, nine White, and one from other races. One also reported Hispanic or Latino ethnicity. There were 39 households of which 41.0% had children under the age of 18 living with them, 30.8% were married couples living together, 25.6% had a female householder with no husband present, and 41.0% were non-families. 33.3% of all households were made up of individuals and 7.7% had someone living alone who was 65 years of age or older. The average household size was 2.67 and the average family size was 3.43. Age distribution was 34 under the age of",
+          "image_url": ""
+        },
+        {
+          "id": 751394,
+          "source": "wikipedia",
+          "title": "Microphone",
+          "contents": "Microphone\nhave their own characteristic responses to sound. This difference in response produces non-uniform phase and frequency responses. In addition, microphones are not uniformly sensitive to sound pressure, and can accept differing levels without distorting. Although for scientific applications microphones with a more uniform response are desirable, this is often not the case for music recording, as the non-uniform response of a microphone can produce a desirable coloration of the sound. There is an international standard for microphone specifications, but few manufacturers adhere to it. As a result, comparison of published data from different manufacturers is difficult because different measurement techniques",
+          "image_url": ""
+        },
+        {
+          "id": 2475067,
+          "source": "wikipedia",
+          "title": "Cross-validation (statistics)",
+          "contents": "Cross-validation (statistics)\nresults can then be averaged to produce a single estimation. The advantage of this method over repeated random sub-sampling (see below) is that all observations are used for both training and validation, and each observation is used for validation exactly once. 10-fold cross-validation is commonly used, but in general \"k\" remains an unfixed parameter. For example, setting \"k\" = \"2\" results in 2-fold cross-validation. In 2-fold cross-validation, we randomly shuffle the dataset into two sets \"d\" and \"d\", so that both sets are equal size (this is usually implemented by shuffling the data array and then splitting it in two).",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    },
+    {
+      "question": "Sample question 3 for a-okvqa?",
+      "answer": "Answer 3",
+      "golden_answers": [
+        "Answer 3"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 2490369,
+          "source": "wikipedia",
+          "title": "Item response theory",
+          "contents": "Item response theory\nmodels are sample independent, a property that does not hold for two-parameter and three-parameter models. Additionally, there is theoretically a four-parameter model (4PL), with an upper asymptote, denoted by formula_39 where formula_40 in the 3PL is replaced by formula_41. However, this is rarely used. Note that the alphabetical order of the item parameters does not match their practical or psychometric importance; the location/difficulty (formula_5) parameter is clearly most important because it is included in all three models. The 1PL uses only formula_5, the 2PL uses formula_5 and formula_4, the 3PL adds formula_6, and the 4PL adds formula_47. The 2PL is",
+          "image_url": ""
+        },
+        {
+          "id": 1003296,
+          "source": "wikipedia",
+          "title": "Anvik, Alaska",
+          "contents": "Anvik, Alaska\nthe city was 94 Native American, nine White, and one from other races. One also reported Hispanic or Latino ethnicity. There were 39 households of which 41.0% had children under the age of 18 living with them, 30.8% were married couples living together, 25.6% had a female householder with no husband present, and 41.0% were non-families. 33.3% of all households were made up of individuals and 7.7% had someone living alone who was 65 years of age or older. The average household size was 2.67 and the average family size was 3.43. Age distribution was 34 under the age of",
+          "image_url": ""
+        },
+        {
+          "id": 940935,
+          "source": "wikipedia",
+          "title": "YUV",
+          "contents": "YUV\narray are Y′ values that correspond to each individual pixel. However, there are only one fourth as many U and V values. The U and V values correspond to each 2 by 2 block of the image, meaning each U and V entry applies to four pixels. After the Y′ values, the next X/4 indices are the U values for each 2 by 2 block, and the next X/4 indices after that are the V values that also apply to each 2 by 2 block. Translating Y′UV420p to RGB is a more involved process compared to the previous formats. Lookup",
+          "image_url": ""
+        },
+        {
+          "id": 2650285,
+          "source": "wikipedia",
+          "title": "Four Thirds system",
+          "contents": "Four Thirds system\nis equal to that of a video camera tube of 4/3 inch diameter.<ref name='Olympus-Europe 4/3'></ref> The usual size of the sensor is 18 mm × 13.5 mm (22.5 mm diagonal), with an imaging area of 17.3 mm × 13.0 mm (21.63 mm diagonal). The sensor's area is about 30–40% smaller than APS-C sensors used in most other DSLRs, but still around 9 times larger than the 1/2.5\" sensors typically used in compact digital cameras. Incidentally, the imaging area of a Four Thirds sensor is almost identical to that of 110 film. The emphasis on the 4:3 image aspect ratio sets",
+          "image_url": ""
+        },
+        {
+          "id": 2626879,
+          "source": "wikipedia",
+          "title": "Body image",
+          "contents": "Body image\nare another very commonly used method of measurement. One example of a questionnaire is BASS; it is a 9-item subscale of the Multidimensional Body-Self Relations Questionnaire. It uses a rating scale from −2 to +2 and assesses eight body areas and attributes and overall appearance (face, hair, lower torso, mid-torso, upper torso, muscle tone, height, and weight). Questionnaires can have confounding variable though. For instance, \"Acquiescent response style (ARS), or the tendency to agree with items on a survey, is more common among individuals from Asian and African cultures.\" Gender differences related to body image are increasingly prevalent between men",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    },
+    {
+      "question": "Sample question 4 for a-okvqa?",
+      "answer": "Answer 4",
+      "golden_answers": [
+        "Answer 4"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 2490369,
+          "source": "wikipedia",
+          "title": "Item response theory",
+          "contents": "Item response theory\nmodels are sample independent, a property that does not hold for two-parameter and three-parameter models. Additionally, there is theoretically a four-parameter model (4PL), with an upper asymptote, denoted by formula_39 where formula_40 in the 3PL is replaced by formula_41. However, this is rarely used. Note that the alphabetical order of the item parameters does not match their practical or psychometric importance; the location/difficulty (formula_5) parameter is clearly most important because it is included in all three models. The 1PL uses only formula_5, the 2PL uses formula_5 and formula_4, the 3PL adds formula_6, and the 4PL adds formula_47. The 2PL is",
+          "image_url": ""
+        },
+        {
+          "id": 940935,
+          "source": "wikipedia",
+          "title": "YUV",
+          "contents": "YUV\narray are Y′ values that correspond to each individual pixel. However, there are only one fourth as many U and V values. The U and V values correspond to each 2 by 2 block of the image, meaning each U and V entry applies to four pixels. After the Y′ values, the next X/4 indices are the U values for each 2 by 2 block, and the next X/4 indices after that are the V values that also apply to each 2 by 2 block. Translating Y′UV420p to RGB is a more involved process compared to the previous formats. Lookup",
+          "image_url": ""
+        },
+        {
+          "id": 582339,
+          "source": "wikipedia",
+          "title": "Calibration",
+          "contents": "Calibration\nwould be a better solution. If the calibration is performed at 100 units, the 1% standard would actually be anywhere between 99 and 101 units. The acceptable values of calibrations where the test equipment is at the 4:1 ratio would be 96 to 104 units, inclusive. Changing the acceptable range to 97 to 103 units would remove the potential contribution of all of the standards and preserve a 3.3:1 ratio. Continuing, a further change to the acceptable range to 98 to 102 restores more than a 4:1 final ratio. This is a simplified example. The mathematics of the example can",
+          "image_url": ""
+        },
+        {
+          "id": 2064589,
+          "source": "wikipedia",
+          "title": "VC dimension",
+          "contents": "VC dimension\nformula_14 is a single-parametric interval classifier on real numbers; i.e, for a certain parameter formula_15, the classifier formula_29 returns 1 if the input number is in the interval formula_39 and 0 otherwise. The VC dimension of formula_14 is 2 because: (a) It can shatter some sets of two points. E.g, for every set formula_41, a classifier formula_29 labels it as (0,0) if formula_43 or if formula_44, as (1,0) if formula_45, as (1,1) if formula_46, and as (0,1) if formula_47. (b) It cannot shatter any set of three points. For every set of three numbers, if the smallest and the largest",
+          "image_url": ""
+        },
+        {
+          "id": 2650285,
+          "source": "wikipedia",
+          "title": "Four Thirds system",
+          "contents": "Four Thirds system\nis equal to that of a video camera tube of 4/3 inch diameter.<ref name='Olympus-Europe 4/3'></ref> The usual size of the sensor is 18 mm × 13.5 mm (22.5 mm diagonal), with an imaging area of 17.3 mm × 13.0 mm (21.63 mm diagonal). The sensor's area is about 30–40% smaller than APS-C sensors used in most other DSLRs, but still around 9 times larger than the 1/2.5\" sensors typically used in compact digital cameras. Incidentally, the imaging area of a Four Thirds sensor is almost identical to that of 110 film. The emphasis on the 4:3 image aspect ratio sets",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    },
+    {
+      "question": "Sample question 5 for a-okvqa?",
+      "answer": "Answer 5",
+      "golden_answers": [
+        "Answer 5"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 1936456,
+          "source": "wikipedia",
+          "title": "Questionnaire construction",
+          "contents": "Questionnaire construction\ncan be scored and coded more easily, but they diminish expressivity and spontaneity of the responder. In general, the vocabulary of a question should be very simple and direct, and preferably under twenty words. Each question should be edited for readability and should avoid leading or loaded questions. If multiple questions are being used to measure one construct, some of the questions should be worded in the opposite direction to evade response bias. A respondent's answer to an open-ended question can be coded into a response scale afterwards, or analysed using more qualitative methods. Questions should flow logically, from the",
+          "image_url": ""
+        },
+        {
+          "id": 1864092,
+          "source": "wikipedia",
+          "title": "Altered state of consciousness",
+          "contents": "Altered state of consciousness\nconsiders Auditory Alterations (AUA) and vigilance reduction (VIR). This consists of 94 items. It assesses five primary dimensions and one global dimension of ASC. The main factors of the instrument are: This is a refined version of 5D-ASC(3D-OAV+2D), but it is analyzed in a different way. Here more dimensions of consciousness are included, such as spiritual experience, fear, anxiety, love, etc., which could be considered more basic. It is one of the most widely used types of the questionnaire in laboratory research. Altered states of consciousness can be assessed by observations and imaging of the brain such as functional magnetic",
+          "image_url": ""
+        },
+        {
+          "id": 2626879,
+          "source": "wikipedia",
+          "title": "Body image",
+          "contents": "Body image\nare another very commonly used method of measurement. One example of a questionnaire is BASS; it is a 9-item subscale of the Multidimensional Body-Self Relations Questionnaire. It uses a rating scale from −2 to +2 and assesses eight body areas and attributes and overall appearance (face, hair, lower torso, mid-torso, upper torso, muscle tone, height, and weight). Questionnaires can have confounding variable though. For instance, \"Acquiescent response style (ARS), or the tendency to agree with items on a survey, is more common among individuals from Asian and African cultures.\" Gender differences related to body image are increasingly prevalent between men",
+          "image_url": ""
+        },
+        {
+          "id": 2656216,
+          "source": "wikipedia",
+          "title": "Graeco-Latin square",
+          "contents": "Graeco-Latin square\nmay be thought of as \"dimensions\" along which a value may vary. Due to the mutually orthogonal property, there is exactly one instance somewhere in the table for any pair of elements, such as (white foreground, monospace), or (\"fjords\", navy background) etc., and also all possible such pairs of values of distinct \"dimensions\" are represented exactly once each. The above table therefore allows for testing five values in each of four different \"dimensions\" in only 25 observations instead of 625 (= 5) observations. Also note that the five 6-letter words (\"fjords\", \"jawbox\", \"phlegm\", \"qiviut\", and \"zincky\") between them cover all",
+          "image_url": ""
+        },
+        {
+          "id": 2377142,
+          "source": "wikipedia",
+          "title": "It's Academic",
+          "contents": "It's Academic\nthis round. The fourth question is always a science question and the seventh question is always a math question. Round 5 features quick-fire toss-up questions, each worth +/-20 points. Visual questions are worth +/-30 points. The number of questions varies depending on the time left in the game. The game ends when the buzzer sounds, home viewers may realize that the game will come to a close while the countdown clock appears on the television screen. If a team has buzzed in prior the buzzer sounding, the team is required to answer the question before the game is considered over.",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    },
+    {
+      "question": "Sample question 6 for a-okvqa?",
+      "answer": "Answer 6",
+      "golden_answers": [
+        "Answer 6"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 1936456,
+          "source": "wikipedia",
+          "title": "Questionnaire construction",
+          "contents": "Questionnaire construction\ncan be scored and coded more easily, but they diminish expressivity and spontaneity of the responder. In general, the vocabulary of a question should be very simple and direct, and preferably under twenty words. Each question should be edited for readability and should avoid leading or loaded questions. If multiple questions are being used to measure one construct, some of the questions should be worded in the opposite direction to evade response bias. A respondent's answer to an open-ended question can be coded into a response scale afterwards, or analysed using more qualitative methods. Questions should flow logically, from the",
+          "image_url": ""
+        },
+        {
+          "id": 2656216,
+          "source": "wikipedia",
+          "title": "Graeco-Latin square",
+          "contents": "Graeco-Latin square\nmay be thought of as \"dimensions\" along which a value may vary. Due to the mutually orthogonal property, there is exactly one instance somewhere in the table for any pair of elements, such as (white foreground, monospace), or (\"fjords\", navy background) etc., and also all possible such pairs of values of distinct \"dimensions\" are represented exactly once each. The above table therefore allows for testing five values in each of four different \"dimensions\" in only 25 observations instead of 625 (= 5) observations. Also note that the five 6-letter words (\"fjords\", \"jawbox\", \"phlegm\", \"qiviut\", and \"zincky\") between them cover all",
+          "image_url": ""
+        },
+        {
+          "id": 2626879,
+          "source": "wikipedia",
+          "title": "Body image",
+          "contents": "Body image\nare another very commonly used method of measurement. One example of a questionnaire is BASS; it is a 9-item subscale of the Multidimensional Body-Self Relations Questionnaire. It uses a rating scale from −2 to +2 and assesses eight body areas and attributes and overall appearance (face, hair, lower torso, mid-torso, upper torso, muscle tone, height, and weight). Questionnaires can have confounding variable though. For instance, \"Acquiescent response style (ARS), or the tendency to agree with items on a survey, is more common among individuals from Asian and African cultures.\" Gender differences related to body image are increasingly prevalent between men",
+          "image_url": ""
+        },
+        {
+          "id": 1003296,
+          "source": "wikipedia",
+          "title": "Anvik, Alaska",
+          "contents": "Anvik, Alaska\nthe city was 94 Native American, nine White, and one from other races. One also reported Hispanic or Latino ethnicity. There were 39 households of which 41.0% had children under the age of 18 living with them, 30.8% were married couples living together, 25.6% had a female householder with no husband present, and 41.0% were non-families. 33.3% of all households were made up of individuals and 7.7% had someone living alone who was 65 years of age or older. The average household size was 2.67 and the average family size was 3.43. Age distribution was 34 under the age of",
+          "image_url": ""
+        },
+        {
+          "id": 2064589,
+          "source": "wikipedia",
+          "title": "VC dimension",
+          "contents": "VC dimension\nformula_14 is a single-parametric interval classifier on real numbers; i.e, for a certain parameter formula_15, the classifier formula_29 returns 1 if the input number is in the interval formula_39 and 0 otherwise. The VC dimension of formula_14 is 2 because: (a) It can shatter some sets of two points. E.g, for every set formula_41, a classifier formula_29 labels it as (0,0) if formula_43 or if formula_44, as (1,0) if formula_45, as (1,1) if formula_46, and as (0,1) if formula_47. (b) It cannot shatter any set of three points. For every set of three numbers, if the smallest and the largest",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    },
+    {
+      "question": "Sample question 7 for a-okvqa?",
+      "answer": "Answer 7",
+      "golden_answers": [
+        "Answer 7"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 1936456,
+          "source": "wikipedia",
+          "title": "Questionnaire construction",
+          "contents": "Questionnaire construction\ncan be scored and coded more easily, but they diminish expressivity and spontaneity of the responder. In general, the vocabulary of a question should be very simple and direct, and preferably under twenty words. Each question should be edited for readability and should avoid leading or loaded questions. If multiple questions are being used to measure one construct, some of the questions should be worded in the opposite direction to evade response bias. A respondent's answer to an open-ended question can be coded into a response scale afterwards, or analysed using more qualitative methods. Questions should flow logically, from the",
+          "image_url": ""
+        },
+        {
+          "id": 2626879,
+          "source": "wikipedia",
+          "title": "Body image",
+          "contents": "Body image\nare another very commonly used method of measurement. One example of a questionnaire is BASS; it is a 9-item subscale of the Multidimensional Body-Self Relations Questionnaire. It uses a rating scale from −2 to +2 and assesses eight body areas and attributes and overall appearance (face, hair, lower torso, mid-torso, upper torso, muscle tone, height, and weight). Questionnaires can have confounding variable though. For instance, \"Acquiescent response style (ARS), or the tendency to agree with items on a survey, is more common among individuals from Asian and African cultures.\" Gender differences related to body image are increasingly prevalent between men",
+          "image_url": ""
+        },
+        {
+          "id": 843191,
+          "source": "wikipedia",
+          "title": "Surveyor 7",
+          "contents": "Surveyor 7\nand scanned one frame each 61.8 seconds. A complete video transmission of each 200 line picture required 20 seconds and utilized a bandwidth of 1.2 kHz. Most transmissions consisted of 600 line pictures, which were telemetered by a directional antenna. The frames were scanned each 3.6 seconds. Each frame required nominally one second to be read from the vidicon and utilized a 220 kHz bandwidth for transmission. The dynamic range and sensitivity of this camera were slightly less than those on the Surveyor 6 camera. Resolution and quality were excellent. The television images were displayed on a slow scan monitor",
+          "image_url": ""
+        },
+        {
+          "id": 940935,
+          "source": "wikipedia",
+          "title": "YUV",
+          "contents": "YUV\narray are Y′ values that correspond to each individual pixel. However, there are only one fourth as many U and V values. The U and V values correspond to each 2 by 2 block of the image, meaning each U and V entry applies to four pixels. After the Y′ values, the next X/4 indices are the U values for each 2 by 2 block, and the next X/4 indices after that are the V values that also apply to each 2 by 2 block. Translating Y′UV420p to RGB is a more involved process compared to the previous formats. Lookup",
+          "image_url": ""
+        },
+        {
+          "id": 1242978,
+          "source": "wikipedia",
+          "title": "Seven Corners, Virginia",
+          "contents": "Seven Corners, Virginia\naverage household size was 2.62 and the average family size was 3.30. In the CDP, the population was spread out with 21.2% under the age of 18, 11.5% from 18 to 24, 41.6% from 25 to 44, 19.5% from 45 to 64, and 6.2% who were 65 years of age or older. The median age was 32 years. For every 100 females, there were 108.2 males. For every 100 females age 18 and over, there were 108.9 males. The median income for a household in the CDP was $44,579, and the median income for a family was $43,211. Males had",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    },
+    {
+      "question": "Sample question 8 for a-okvqa?",
+      "answer": "Answer 8",
+      "golden_answers": [
+        "Answer 8"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 2656216,
+          "source": "wikipedia",
+          "title": "Graeco-Latin square",
+          "contents": "Graeco-Latin square\nmay be thought of as \"dimensions\" along which a value may vary. Due to the mutually orthogonal property, there is exactly one instance somewhere in the table for any pair of elements, such as (white foreground, monospace), or (\"fjords\", navy background) etc., and also all possible such pairs of values of distinct \"dimensions\" are represented exactly once each. The above table therefore allows for testing five values in each of four different \"dimensions\" in only 25 observations instead of 625 (= 5) observations. Also note that the five 6-letter words (\"fjords\", \"jawbox\", \"phlegm\", \"qiviut\", and \"zincky\") between them cover all",
+          "image_url": ""
+        },
+        {
+          "id": 2626879,
+          "source": "wikipedia",
+          "title": "Body image",
+          "contents": "Body image\nare another very commonly used method of measurement. One example of a questionnaire is BASS; it is a 9-item subscale of the Multidimensional Body-Self Relations Questionnaire. It uses a rating scale from −2 to +2 and assesses eight body areas and attributes and overall appearance (face, hair, lower torso, mid-torso, upper torso, muscle tone, height, and weight). Questionnaires can have confounding variable though. For instance, \"Acquiescent response style (ARS), or the tendency to agree with items on a survey, is more common among individuals from Asian and African cultures.\" Gender differences related to body image are increasingly prevalent between men",
+          "image_url": ""
+        },
+        {
+          "id": 940935,
+          "source": "wikipedia",
+          "title": "YUV",
+          "contents": "YUV\narray are Y′ values that correspond to each individual pixel. However, there are only one fourth as many U and V values. The U and V values correspond to each 2 by 2 block of the image, meaning each U and V entry applies to four pixels. After the Y′ values, the next X/4 indices are the U values for each 2 by 2 block, and the next X/4 indices after that are the V values that also apply to each 2 by 2 block. Translating Y′UV420p to RGB is a more involved process compared to the previous formats. Lookup",
+          "image_url": ""
+        },
+        {
+          "id": 1936456,
+          "source": "wikipedia",
+          "title": "Questionnaire construction",
+          "contents": "Questionnaire construction\ncan be scored and coded more easily, but they diminish expressivity and spontaneity of the responder. In general, the vocabulary of a question should be very simple and direct, and preferably under twenty words. Each question should be edited for readability and should avoid leading or loaded questions. If multiple questions are being used to measure one construct, some of the questions should be worded in the opposite direction to evade response bias. A respondent's answer to an open-ended question can be coded into a response scale afterwards, or analysed using more qualitative methods. Questions should flow logically, from the",
+          "image_url": ""
+        },
+        {
+          "id": 2064589,
+          "source": "wikipedia",
+          "title": "VC dimension",
+          "contents": "VC dimension\nformula_14 is a single-parametric interval classifier on real numbers; i.e, for a certain parameter formula_15, the classifier formula_29 returns 1 if the input number is in the interval formula_39 and 0 otherwise. The VC dimension of formula_14 is 2 because: (a) It can shatter some sets of two points. E.g, for every set formula_41, a classifier formula_29 labels it as (0,0) if formula_43 or if formula_44, as (1,0) if formula_45, as (1,1) if formula_46, and as (0,1) if formula_47. (b) It cannot shatter any set of three points. For every set of three numbers, if the smallest and the largest",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    },
+    {
+      "question": "Sample question 9 for a-okvqa?",
+      "answer": "Answer 9",
+      "golden_answers": [
+        "Answer 9"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 940935,
+          "source": "wikipedia",
+          "title": "YUV",
+          "contents": "YUV\narray are Y′ values that correspond to each individual pixel. However, there are only one fourth as many U and V values. The U and V values correspond to each 2 by 2 block of the image, meaning each U and V entry applies to four pixels. After the Y′ values, the next X/4 indices are the U values for each 2 by 2 block, and the next X/4 indices after that are the V values that also apply to each 2 by 2 block. Translating Y′UV420p to RGB is a more involved process compared to the previous formats. Lookup",
+          "image_url": ""
+        },
+        {
+          "id": 2626879,
+          "source": "wikipedia",
+          "title": "Body image",
+          "contents": "Body image\nare another very commonly used method of measurement. One example of a questionnaire is BASS; it is a 9-item subscale of the Multidimensional Body-Self Relations Questionnaire. It uses a rating scale from −2 to +2 and assesses eight body areas and attributes and overall appearance (face, hair, lower torso, mid-torso, upper torso, muscle tone, height, and weight). Questionnaires can have confounding variable though. For instance, \"Acquiescent response style (ARS), or the tendency to agree with items on a survey, is more common among individuals from Asian and African cultures.\" Gender differences related to body image are increasingly prevalent between men",
+          "image_url": ""
+        },
+        {
+          "id": 1003296,
+          "source": "wikipedia",
+          "title": "Anvik, Alaska",
+          "contents": "Anvik, Alaska\nthe city was 94 Native American, nine White, and one from other races. One also reported Hispanic or Latino ethnicity. There were 39 households of which 41.0% had children under the age of 18 living with them, 30.8% were married couples living together, 25.6% had a female householder with no husband present, and 41.0% were non-families. 33.3% of all households were made up of individuals and 7.7% had someone living alone who was 65 years of age or older. The average household size was 2.67 and the average family size was 3.43. Age distribution was 34 under the age of",
+          "image_url": ""
+        },
+        {
+          "id": 582339,
+          "source": "wikipedia",
+          "title": "Calibration",
+          "contents": "Calibration\nwould be a better solution. If the calibration is performed at 100 units, the 1% standard would actually be anywhere between 99 and 101 units. The acceptable values of calibrations where the test equipment is at the 4:1 ratio would be 96 to 104 units, inclusive. Changing the acceptable range to 97 to 103 units would remove the potential contribution of all of the standards and preserve a 3.3:1 ratio. Continuing, a further change to the acceptable range to 98 to 102 restores more than a 4:1 final ratio. This is a simplified example. The mathematics of the example can",
+          "image_url": ""
+        },
+        {
+          "id": 2656216,
+          "source": "wikipedia",
+          "title": "Graeco-Latin square",
+          "contents": "Graeco-Latin square\nmay be thought of as \"dimensions\" along which a value may vary. Due to the mutually orthogonal property, there is exactly one instance somewhere in the table for any pair of elements, such as (white foreground, monospace), or (\"fjords\", navy background) etc., and also all possible such pairs of values of distinct \"dimensions\" are represented exactly once each. The above table therefore allows for testing five values in each of four different \"dimensions\" in only 25 observations instead of 625 (= 5) observations. Also note that the five 6-letter words (\"fjords\", \"jawbox\", \"phlegm\", \"qiviut\", and \"zincky\") between them cover all",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    }
+  ],
+  "elapsed_time": 11.654348134994507,
+  "samples_per_second": 0.8580488487359498,
+  "timestamp": "2025-12-05T00:21:30.624911"
+}

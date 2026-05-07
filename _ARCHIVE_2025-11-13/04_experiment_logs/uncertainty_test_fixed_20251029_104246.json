@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-10-29T10:42:46.591933",
+  "n_samples": 20,
+  "statistics": {
+    "overall": {
+      "mean": 0.3123425505065919,
+      "std": 0.04837489964751074,
+      "min": 0.23763034667968752,
+      "max": 0.4072579040527343,
+      "unique_count": 20
+    },
+    "text": {
+      "mean": 0.394,
+      "std": 0.09687104830649867,
+      "unique_count": 10
+    },
+    "visual": {
+      "mean": 0.2658431009928386,
+      "std": 0.0055089250147834275,
+      "unique_count": 20
+    },
+    "alignment": {
+      "mean": 0.17794810104370123,
+      "std": 0.10199460721662944,
+      "unique_count": 20
+    }
+  },
+  "threshold_analysis": {
+    "threshold": 0.3,
+    "triggered": 13,
+    "total": 20,
+    "trigger_rate": 65.0
+  },
+  "test_result": "PASS"
+}

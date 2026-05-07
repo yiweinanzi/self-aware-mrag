@@ -1,0 +1,65 @@
+{
+  "config": {
+    "dataset_name": "okvqa",
+    "data_dir": "/data0/home/zqwang/ACL/FlashRAG/flashrag/data/VQA",
+    "split": "val",
+    "max_samples": null,
+    "load_images": true,
+    "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_optimized_4gpu",
+    "num_variants": 6,
+    "model_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+    "device": "cuda",
+    "torch_dtype": "bfloat16",
+    "retrieval_topk": 5,
+    "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+    "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+    "use_model_sharing": true,
+    "batch_size": 2,
+    "max_gpu_memory": "28GB"
+  },
+  "timestamp": "2025-11-24T23:23:42.618797",
+  "variants": [
+    {
+      "name": "Baseline (MuRAG)",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 5046,
+      "results_file": "Baseline_MuRAG.json"
+    },
+    {
+      "name": "Uncertainty Only",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 5046,
+      "results_file": "Uncertainty_Only.json"
+    },
+    {
+      "name": "Position Fusion Only",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 5046,
+      "results_file": "Position_Fusion_Only.json"
+    },
+    {
+      "name": "Attribution Only",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 5046,
+      "results_file": "Attribution_Only.json"
+    },
+    {
+      "name": "Multimodal Output Only",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 5046,
+      "results_file": "Multimodal_Output_Only.json"
+    },
+    {
+      "name": "Full Self-Aware RAG",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 5046,
+      "results_file": "Full_Self-Aware_RAG.json"
+    }
+  ]
+}

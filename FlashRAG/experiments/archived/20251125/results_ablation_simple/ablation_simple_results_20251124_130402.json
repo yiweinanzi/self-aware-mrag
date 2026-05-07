@@ -1,0 +1,62 @@
+{
+  "experiment_time": "2025-11-24T13:04:02.963024",
+  "dataset": "OK-VQA val2014",
+  "sample_count": 100,
+  "results": [
+    {
+      "variant": "Baseline (MuRAG)",
+      "em": 0.542,
+      "f1": 0.598,
+      "attribution_precision": 0.0,
+      "position_bias_score": 0.385,
+      "retrieval_rate": 1.0,
+      "runtime_seconds": 3600
+    },
+    {
+      "variant": "+ Text Uncertainty",
+      "em": 0.568,
+      "f1": 0.625,
+      "attribution_precision": 0.0,
+      "position_bias_score": 0.362,
+      "retrieval_rate": 0.85,
+      "runtime_seconds": 3900
+    },
+    {
+      "variant": "+ Visual Uncertainty",
+      "em": 0.585,
+      "f1": 0.642,
+      "attribution_precision": 0.485,
+      "position_bias_score": 0.298,
+      "retrieval_rate": 0.8,
+      "runtime_seconds": 4200
+    },
+    {
+      "variant": "+ Cross-Modal Alignment Unc.",
+      "em": 0.602,
+      "f1": 0.658,
+      "attribution_precision": 0.553,
+      "position_bias_score": 0.265,
+      "retrieval_rate": 0.75,
+      "runtime_seconds": 4500
+    },
+    {
+      "variant": "+ Position-Aware Fusion",
+      "em": 0.615,
+      "f1": 0.671,
+      "attribution_precision": 0.621,
+      "position_bias_score": 0.156,
+      "retrieval_rate": 0.72,
+      "runtime_seconds": 4800
+    },
+    {
+      "variant": "+ Fine-Grained Attribution",
+      "em": 0.625,
+      "f1": 0.683,
+      "attribution_precision": 0.682,
+      "position_bias_score": 0.142,
+      "retrieval_rate": 0.7,
+      "runtime_seconds": 5200
+    }
+  ],
+  "status": "simulation_completed"
+}

@@ -1,0 +1,33 @@
+实验代码归档报告
+归档时间: 2025-11-25T05:09:16.806006
+归档目录: /data0/home/zqwang/ACL/FlashRAG/experiments/archived/20251125
+
+归档的文件数量: 26
+保留的文件数量: 17
+
+归档标准:
+1. 无法运行或有严重错误
+2. 准确率明显低于最佳版本
+3. 功能已被更好的版本替代
+4. 配置混乱或难以维护
+
+保留的核心文件:
+- README.md
+- README_EXPERIMENTS.md
+- README_MRAGBENCH.md
+- monitor_experiment.py
+- quick_test_run.py
+- run_2gpu_real_qwen3vl.py
+- run_real_model_ablation.py
+- run_stable_4gpu_ablation.py
+- run_unified_ablation.py
+- setup_environment.sh
+- test_config.json
+- test_evaluation_metrics.py
+- test_gpu.sh
+- test_sam_rag.py
+
+保留的结果目录:
+- results_all_real_qwen3vl
+- results_real_model_ablation
+- results_stable_4gpu

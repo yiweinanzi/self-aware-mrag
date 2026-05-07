@@ -1,0 +1,62 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "You can use this for playing soccer.",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "eigen_score": 8.855204582214355,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "I'm sorry, but I cannot determine the type of plant based on the image alone. The image only shows a close-up of a leaf, but does not provide enough information to identify the plant species. To identify a plant, one would need to consider additional factors such as the plant's flowers, fruits, size, shape, and habitat.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "eigen_score": -Infinity,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "This is a toy robot.",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "eigen_score": 8.215542793273926,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  }
+]

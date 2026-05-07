@@ -1,0 +1,2486 @@
+{
+  "experiment_info": {
+    "dataset": "okvqa",
+    "samples": 100,
+    "timestamp": "20251125_135027",
+    "config": {
+      "dataset_name": "okvqa",
+      "data_dir": "/data0/home/zqwang/ACL/FlashRAG/flashrag/data/VQA",
+      "split": "val",
+      "max_samples": 100,
+      "load_images": true,
+      "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_unified_ablation",
+      "timestamp": "20251125_135027",
+      "model_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+      "torch_dtype": "float16",
+      "max_new_tokens": 15,
+      "temperature": 0.01,
+      "use_multi_gpu": true,
+      "num_gpus": 2,
+      "batch_size_per_gpu": 1,
+      "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+      "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+      "retrieval_model_path": "/data0/home/zqwang/ACL/models/bge-large-en-v1.5",
+      "retrieval_topk": 5,
+      "clip_model_path": "/data0/home/zqwang/ACL/models/clip-vit-large-patch14-336",
+      "clip_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/clip/clip_Flat.index",
+      "use_multimodal_retrieval": true,
+      "text_retrieval_weight": 0.6,
+      "visual_retrieval_weight": 0.4,
+      "text_weight": 0.4,
+      "visual_weight": 0.3,
+      "alignment_weight": 0.3,
+      "uncertainty_threshold": 0.43,
+      "use_improved_estimator": true,
+      "save_detailed_results": true,
+      "save_sample_results": true,
+      "enable_complete_metrics": false
+    },
+    "based_on": "Integrated configuration from 59% accuracy experiments"
+  },
+  "variants_summary": [
+    {
+      "variant_name": "Baseline_MuRAG",
+      "variant_description": "基础多模态检索方法",
+      "accuracy": 0.3,
+      "retrieval_rate": 1.0,
+      "execution_time": 582.607168674469,
+      "seconds_per_sample": 5.82607168674469,
+      "config": {
+        "use_uncertainty_estimation": false,
+        "uncertainty_threshold": 1.0,
+        "use_position_fusion": false,
+        "use_attribution": false,
+        "force_retrieval": true,
+        "use_improved_estimator": false,
+        "use_multimodal_retrieval": false
+      }
+    }
+  ],
+  "detailed_results": {
+    "Baseline_MuRAG": {
+      "stats": {
+        "variant_name": "Baseline_MuRAG",
+        "variant_description": "基础多模态检索方法",
+        "config": {
+          "use_uncertainty_estimation": false,
+          "uncertainty_threshold": 1.0,
+          "use_position_fusion": false,
+          "use_attribution": false,
+          "force_retrieval": true,
+          "use_improved_estimator": false,
+          "use_multimodal_retrieval": false
+        },
+        "total_samples": 100,
+        "correct_samples": 30,
+        "accuracy": 0.3,
+        "retrieval_rate": 1.0,
+        "execution_time": 582.607168674469,
+        "timestamp": "2025-11-25T14:00:29.987906",
+        "seconds_per_sample": 5.82607168674469
+      },
+      "sample_results": [
+        {
+          "question": "What sport can you use this for?",
+          "answer": "This motorcycle is a **Honda Africa Twin**, a",
+          "uncertainty": {
+            "text": 0.35309386253356934,
+            "visual": 0.43716420491536456,
+            "alignment": 0.9552986025810242,
+            "total": 0.5589763872623443
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "race",
+            "race",
+            "race",
+            "race",
+            "race",
+            "race",
+            "motocross",
+            "motocross",
+            "ride",
+            "ride"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "Name the type of plant this is?",
+          "answer": "Based on the image, it's difficult to identify",
+          "uncertainty": {
+            "text": 0.3824025094509125,
+            "visual": 0.4285565999348957,
+            "alignment": 0.9188752770423889,
+            "total": 0.5571905668735504
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "vine",
+            "vine",
+            "vine",
+            "vine",
+            "climb",
+            "climb",
+            "look like some kind of ivy",
+            "look like some kind of ivy",
+            "ficus",
+            "ficus"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What toy is this?",
+          "answer": "Based on the image provided, the toy is a",
+          "uncertainty": {
+            "text": 0.4282990097999573,
+            "visual": 0.4361993815104167,
+            "alignment": 0.8943548202514648,
+            "total": 0.5704858644485473
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "stuffed animal",
+            "stuffed animal",
+            "stuffed animal",
+            "stuffed animal",
+            "stuffed animal",
+            "stuffed animal",
+            "teddy bear",
+            "teddy bear",
+            "teddy bear",
+            "teddy bear"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+          "answer": "If the dog were playing the game that is played",
+          "uncertainty": {
+            "text": 0.26782092452049255,
+            "visual": 0.4279330851236979,
+            "alignment": 0.7063002586364746,
+            "total": 0.44739837293624873
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What could this gentleman be carrying in that red bag?",
+          "answer": "Based on the image, the gentleman is carrying a",
+          "uncertainty": {
+            "text": 0.35500723123550415,
+            "visual": 0.4307079671223958,
+            "alignment": 0.7398940920829773,
+            "total": 0.49318351025581364
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "cloth",
+            "cloth",
+            "cloth",
+            "cloth",
+            "food",
+            "food",
+            "lunch",
+            "lunch",
+            "shoe",
+            "shoe"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "Who leaves a toilet like this?",
+          "answer": "Someone who is in a hurry or doesn't care",
+          "uncertainty": {
+            "text": 0.395187109708786,
+            "visual": 0.4147796630859375,
+            "alignment": 0.94643634557724,
+            "total": 0.5664396464824677
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "man",
+            "man",
+            "man",
+            "man",
+            "man",
+            "man",
+            "men",
+            "men",
+            "men",
+            "men"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "A center affixed unit like this one in a kitchen is called a what?",
+          "answer": "A center affixed unit like this one in a",
+          "uncertainty": {
+            "text": 0.2698635160923004,
+            "visual": 0.42700848388671875,
+            "alignment": 0.8297999501228333,
+            "total": 0.4849879366397858
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "island",
+            "island",
+            "island",
+            "island",
+            "island",
+            "island",
+            "island",
+            "island",
+            "island",
+            "island"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "Why might someone go to this place?",
+          "answer": "Based on the visual evidence in the image, someone",
+          "uncertainty": {
+            "text": 0.37831413745880127,
+            "visual": 0.4160944213867187,
+            "alignment": 0.9844931960105896,
+            "total": 0.571501940202713
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "shop",
+            "shop",
+            "shop",
+            "shop",
+            "nyc",
+            "nyc",
+            "shop",
+            "shop",
+            "business",
+            "business"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What does this grow from?",
+          "answer": "This orange lily grows from a **bulb",
+          "uncertainty": {
+            "text": 0.4164524972438812,
+            "visual": 0.41856028238932286,
+            "alignment": 0.9823866486549377,
+            "total": 0.5868650782108307
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "ground",
+            "ground",
+            "ground",
+            "ground",
+            "plant",
+            "plant",
+            "hibiscus plant stem",
+            "hibiscus plant stem",
+            "root",
+            "root"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What is that man doing with the bat?",
+          "answer": "The man is preparing to bat in a baseball game",
+          "uncertainty": {
+            "text": 0.3807445764541626,
+            "visual": 0.4396448974609374,
+            "alignment": 0.6380012631416321,
+            "total": 0.4755916787624359
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "swing",
+            "swing",
+            "swing",
+            "swing",
+            "swing",
+            "swing",
+            "hit",
+            "hit",
+            "try to hit hte ball",
+            "try to hit hte ball"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "Is this at a salt water beach or a lake?",
+          "answer": "Salt water beach.\n\nThe presence of waves breaking at",
+          "uncertainty": {
+            "text": 0.33599933981895447,
+            "visual": 0.4270177815755207,
+            "alignment": 0.8694340586662292,
+            "total": 0.5233352880001068
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "salt water beach",
+            "salt water beach",
+            "salt water beach",
+            "salt water beach",
+            "salt water",
+            "salt water",
+            "lake",
+            "lake",
+            "beach",
+            "beach"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "Who designed the statues?",
+          "answer": "The statues in the image are part of the “",
+          "uncertainty": {
+            "text": 0.4098065197467804,
+            "visual": 0.43266630045572907,
+            "alignment": 0.8100365400314331,
+            "total": 0.5367334600448608
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "artist",
+            "artist",
+            "artist",
+            "artist",
+            "guell",
+            "guell",
+            "toscano",
+            "toscano",
+            "aritect",
+            "aritect"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What is the name of the items the hot dog are topped with?",
+          "answer": "The toppings on the hot dogs are commonly referred to",
+          "uncertainty": {
+            "text": 0.3462643623352051,
+            "visual": 0.42659016927083326,
+            "alignment": 0.8558471202850342,
+            "total": 0.5232369318008423
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "condiment",
+            "condiment",
+            "condiment",
+            "condiment",
+            "onion relish",
+            "onion relish",
+            "vegetable",
+            "vegetable",
+            "relish",
+            "relish"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What is this desk used for?",
+          "answer": "Based on the visual evidence, this desk is used",
+          "uncertainty": {
+            "text": 0.41707995533943176,
+            "visual": 0.41070277913411457,
+            "alignment": 0.9570481777191162,
+            "total": 0.5771572691917419
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "work",
+            "work",
+            "work",
+            "work",
+            "compute",
+            "compute",
+            "work",
+            "work",
+            "office",
+            "office"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What type of bike is on the ground?",
+          "answer": "Based on the visual evidence in the image, the",
+          "uncertainty": {
+            "text": 0.40021568536758423,
+            "visual": 0.44227624511718744,
+            "alignment": 0.6629477739334106,
+            "total": 0.4916534798622131
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "bmx",
+            "bmx",
+            "bmx",
+            "bmx",
+            "bicycle",
+            "bicycle",
+            "bicycle",
+            "bicycle",
+            "10 speed",
+            "10 speed"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What type of plane is that?",
+          "answer": "Based on the visual evidence in the image, the",
+          "uncertainty": {
+            "text": 0.4095398485660553,
+            "visual": 0.43274926757812493,
+            "alignment": 0.8665325045585632,
+            "total": 0.5536004710674285
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "commercial",
+            "commercial",
+            "commercial",
+            "commercial",
+            "passenger",
+            "passenger",
+            "quanta",
+            "quanta",
+            "md 80",
+            "md 80"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "Is this a room for a boy or girl?",
+          "answer": "Based on the visual evidence in the image, this",
+          "uncertainty": {
+            "text": 0.32158586382865906,
+            "visual": 0.426971435546875,
+            "alignment": 0.8753131031990051,
+            "total": 0.5193197071552277
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "girl",
+            "girl",
+            "girl",
+            "girl",
+            "girl",
+            "girl",
+            "girl",
+            "girl",
+            "girl",
+            "girl"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "In what year was this desert first introduced?",
+          "answer": "The donut was first introduced in the 1",
+          "uncertainty": {
+            "text": 0.3563902676105499,
+            "visual": 0.4343799438476562,
+            "alignment": 0.8699504733085632,
+            "total": 0.5338552321910858
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "1847",
+            "1847",
+            "1847",
+            "1847",
+            "1860",
+            "1860",
+            "1934",
+            "1934",
+            "1900s",
+            "1900s"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What is this surf trick called?",
+          "answer": "Based on the image provided, the surfer is",
+          "uncertainty": {
+            "text": 0.43003031611442566,
+            "visual": 0.42438081868489574,
+            "alignment": 0.9239460229873657,
+            "total": 0.5765101789474487
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "ride",
+            "ride",
+            "ride",
+            "ride",
+            "tube ride",
+            "tube ride",
+            "ollie",
+            "ollie",
+            "wave runner",
+            "wave runner"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What do they call running around the bases on a single hit?",
+          "answer": "They call it **advancing** or **running",
+          "uncertainty": {
+            "text": 0.3407255709171295,
+            "visual": 0.4263887939453125,
+            "alignment": 0.907638430595398,
+            "total": 0.536498395729065
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "homerun",
+            "homerun",
+            "homerun",
+            "homerun",
+            "homerun",
+            "homerun",
+            "home run",
+            "home run",
+            "home run",
+            "home run"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "Why is this plugged in?",
+          "answer": "The laptop is plugged in to stay charged and keep",
+          "uncertainty": {
+            "text": 0.34671565890312195,
+            "visual": 0.4265948079427083,
+            "alignment": 0.9485689401626587,
+            "total": 0.5512353879928589
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "charge",
+            "charge",
+            "charge",
+            "charge",
+            "to have power and work",
+            "to have power and work",
+            "power",
+            "power",
+            "outlet",
+            "outlet"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "What is the shape?",
+          "answer": "ring",
+          "uncertainty": {
+            "text": 0.5242751240730286,
+            "visual": 0.4334885457356771,
+            "alignment": 0.8812065720558167,
+            "total": 0.6041185849666595
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "circle",
+            "circle",
+            "circle",
+            "circle",
+            "circle",
+            "circle",
+            "round",
+            "round",
+            "round",
+            "round"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What is the horsepower of the truck pulling the load?",
+          "answer": "Based on the visual information in the image, it",
+          "uncertainty": {
+            "text": 0.3970871865749359,
+            "visual": 0.4439207560221353,
+            "alignment": 0.6319131851196289,
+            "total": 0.48158505697250364
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "510",
+            "510",
+            "510",
+            "510",
+            "510",
+            "510",
+            "420",
+            "420",
+            "500",
+            "500"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What kind of skiing is this person engaged in?",
+          "answer": "Based on the visual evidence in the image, this",
+          "uncertainty": {
+            "text": 0.4024193286895752,
+            "visual": 0.42860937499999985,
+            "alignment": 0.8285804390907288,
+            "total": 0.5381246757030487
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "cross country",
+            "cross country",
+            "cross country",
+            "cross country",
+            "cross country",
+            "cross country",
+            "cross country",
+            "cross country",
+            "cross country",
+            "cross country"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What is the person in the photo wearing?",
+          "answer": "The person in the photo is wearing a black w",
+          "uncertainty": {
+            "text": 0.4382009506225586,
+            "visual": 0.4264043172200521,
+            "alignment": 0.9290578365325928,
+            "total": 0.5819190263748169
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "wetsuit",
+            "wetsuit",
+            "wetsuit",
+            "wetsuit",
+            "suit",
+            "suit",
+            "wet suit",
+            "wet suit",
+            "trunk",
+            "trunk"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What is the name of the board he is on?",
+          "answer": "surfboard",
+          "uncertainty": {
+            "text": 0.3877585232257843,
+            "visual": 0.42600297037760415,
+            "alignment": 0.8557068705558777,
+            "total": 0.5396163615703583
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "surf board",
+            "surf board",
+            "surf board",
+            "surf board",
+            "surfboard",
+            "surfboard",
+            "surfboard",
+            "surfboard",
+            "surf",
+            "surf"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "Name the material used to make this car seat shown in this picture?",
+          "answer": "Based on the visual evidence in the image, the",
+          "uncertainty": {
+            "text": 0.32641738653182983,
+            "visual": 0.41424694824218744,
+            "alignment": 0.8927165269851685,
+            "total": 0.5226559971809386
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "cloth",
+            "cloth",
+            "cloth",
+            "cloth",
+            "nylon",
+            "nylon",
+            "polyester",
+            "polyester",
+            "leather",
+            "leather"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What part of the face is the toothbrush in?",
+          "answer": "The toothbrush is in the **mouth** of",
+          "uncertainty": {
+            "text": 0.3859282433986664,
+            "visual": 0.4153880818684895,
+            "alignment": 0.9366170167922974,
+            "total": 0.5599728269577027
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth",
+            "mouth",
+            "happy",
+            "happy"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "What flavor is this pastry?",
+          "answer": "Based on the visual evidence in the image, it",
+          "uncertainty": {
+            "text": 0.38803714513778687,
+            "visual": 0.4297669270833333,
+            "alignment": 0.8891191482543945,
+            "total": 0.550880680656433
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "blueberry",
+            "blueberry",
+            "blueberry",
+            "blueberry",
+            "cream cheese",
+            "cream cheese",
+            "chocolate",
+            "chocolate",
+            "strawberry",
+            "strawberry"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What kind of container are the flowers in?",
+          "answer": "The flowers are in small, clear glass vases",
+          "uncertainty": {
+            "text": 0.36905166506767273,
+            "visual": 0.4337604573567707,
+            "alignment": 0.7622382044792175,
+            "total": 0.5064202645778656
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "vase",
+            "vase",
+            "vase",
+            "vase",
+            "vase",
+            "vase",
+            "trolley",
+            "trolley",
+            "pot",
+            "pot"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "What country does this appear to be?",
+          "answer": "Based on the visual evidence in the photograph, this",
+          "uncertainty": {
+            "text": 0.35584279894828796,
+            "visual": 0.44267451985677087,
+            "alignment": 0.9123117327690125,
+            "total": 0.5488329953670501
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "scotland",
+            "scotland",
+            "scotland",
+            "scotland",
+            "scotland",
+            "scotland",
+            "usa",
+            "usa",
+            "england",
+            "england"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "Which of the foods in the picture is best for you to eat when you have a cold?",
+          "answer": "When you have a cold, the **soup**",
+          "uncertainty": {
+            "text": 0.32328709959983826,
+            "visual": 0.43396099853515613,
+            "alignment": 0.8048351407051086,
+            "total": 0.5009536816120147
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "soup",
+            "soup",
+            "soup",
+            "soup",
+            "soup",
+            "soup",
+            "chicken soup",
+            "chicken soup",
+            "fruit",
+            "fruit"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "What do teenage pranksters do to this animal?",
+          "answer": "Teenage pranksters might try to scare the cows",
+          "uncertainty": {
+            "text": 0.3919477164745331,
+            "visual": 0.418226582845052,
+            "alignment": 0.9285556674003601,
+            "total": 0.5608137616634369
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "tip",
+            "tip",
+            "tip",
+            "tip",
+            "tip",
+            "tip",
+            "tip",
+            "tip",
+            "tip",
+            "tip"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "How many watts is that microwave?",
+          "answer": "Based on the image provided, it is not possible",
+          "uncertainty": {
+            "text": 0.423545241355896,
+            "visual": 0.42422729492187494,
+            "alignment": 0.8815127015113831,
+            "total": 0.5611400954723358
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "800",
+            "800",
+            "800",
+            "800",
+            "120",
+            "120",
+            "1000",
+            "1000",
+            "100",
+            "100"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What is this type of blanket called?",
+          "answer": "This type of blanket is called a **quilt",
+          "uncertainty": {
+            "text": 0.3727034330368042,
+            "visual": 0.41537483723958335,
+            "alignment": 0.9095732569694519,
+            "total": 0.5465658014774322
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "quilt",
+            "quilt",
+            "quilt",
+            "quilt",
+            "quilt",
+            "quilt",
+            "quilt",
+            "quilt",
+            "patchwork",
+            "patchwork"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "What south american country usually has this climate?",
+          "answer": "The climate depicted in the image — bright, sunny",
+          "uncertainty": {
+            "text": 0.3444765508174896,
+            "visual": 0.42786124674479153,
+            "alignment": 0.9198504090309143,
+            "total": 0.5421041170597076
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "brazil",
+            "brazil",
+            "brazil",
+            "brazil",
+            "brazil",
+            "brazil",
+            "africa",
+            "africa",
+            "ecuador",
+            "ecuador"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What american restaurant features an open kitchen with visible cooking area such as this?",
+          "answer": "**Answer:**\n\n**Diner or Fast Food",
+          "uncertainty": {
+            "text": 0.29704684019088745,
+            "visual": 0.4393257242838541,
+            "alignment": 0.6190337538719177,
+            "total": 0.4363265795230865
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "diner",
+            "diner",
+            "diner",
+            "diner",
+            "diner",
+            "diner",
+            "denny's",
+            "denny's",
+            "waffle house",
+            "waffle house"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "What other big vehicle is often painted about the same shade as this vehicle?",
+          "answer": "A big vehicle often painted about the same shade of",
+          "uncertainty": {
+            "text": 0.2783503830432892,
+            "visual": 0.4331745198567708,
+            "alignment": 0.7328872680664062,
+            "total": 0.46115868959426876
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "firetruck",
+            "firetruck",
+            "firetruck",
+            "firetruck",
+            "firetruck",
+            "firetruck",
+            "firetruck",
+            "firetruck",
+            "fire truck",
+            "fire truck"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What brand is this wine?",
+          "answer": "Becker Vineyards",
+          "uncertainty": {
+            "text": 0.3972818851470947,
+            "visual": 0.4535830485026041,
+            "alignment": 0.7063716650009155,
+            "total": 0.5068991681098938
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "becker vineyard",
+            "becker vineyard",
+            "becker vineyard",
+            "becker vineyard",
+            "becker vineyard",
+            "becker vineyard",
+            "becker vineyard",
+            "becker vineyard",
+            "becker",
+            "becker"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "What would happen if these items fall to the ground?",
+          "answer": "If these items fell to the ground, the outcome",
+          "uncertainty": {
+            "text": 0.3313543498516083,
+            "visual": 0.4331493937174479,
+            "alignment": 0.8243350982666016,
+            "total": 0.5097870875358581
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "shatter",
+            "shatter",
+            "shatter",
+            "shatter",
+            "they would shatter",
+            "they would shatter",
+            "break",
+            "break",
+            "they would break",
+            "they would break"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What brand of suit is the man in the image wearing?",
+          "answer": "Based on the visual information in the image, it",
+          "uncertainty": {
+            "text": 0.34707126021385193,
+            "visual": 0.44553735351562496,
+            "alignment": 0.6228814125061035,
+            "total": 0.4593541338920593
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "brook brother",
+            "brook brother",
+            "brook brother",
+            "brook brother",
+            "gorgio armani",
+            "gorgio armani",
+            "name brand",
+            "name brand",
+            "gucchi",
+            "gucchi"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "Where might i buy a print that resembles this photo?",
+          "answer": "You might buy a print that resembles this photo from",
+          "uncertainty": {
+            "text": 0.29247188568115234,
+            "visual": 0.42077081298828123,
+            "alignment": 0.9767085313796997,
+            "total": 0.5362325575828553
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "gallery",
+            "gallery",
+            "gallery",
+            "gallery",
+            "store",
+            "store",
+            "target",
+            "target",
+            "walmart",
+            "walmart"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What are the rolled black food items called?",
+          "answer": "Based on the image provided, the rolled black food",
+          "uncertainty": {
+            "text": 0.4227771759033203,
+            "visual": 0.43252838134765614,
+            "alignment": 0.6757559180259705,
+            "total": 0.5015961601734161
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "sushi",
+            "sushi",
+            "sushi",
+            "sushi",
+            "sushi",
+            "sushi",
+            "sushi",
+            "sushi",
+            "sushi",
+            "sushi"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What type of bird is this?",
+          "answer": "Based on the visual characteristics in the image, this",
+          "uncertainty": {
+            "text": 0.4451313018798828,
+            "visual": 0.4377905476888021,
+            "alignment": 0.9196639060974121,
+            "total": 0.5852888568878174
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "blue jay",
+            "blue jay",
+            "blue jay",
+            "blue jay",
+            "bluebird",
+            "bluebird",
+            "songbird",
+            "songbird",
+            "goldfinch",
+            "goldfinch"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "How can you tell that the people are not upset?",
+          "answer": "You can tell the people are not upset because they",
+          "uncertainty": {
+            "text": 0.34231171011924744,
+            "visual": 0.43063566080729154,
+            "alignment": 0.9686047434806824,
+            "total": 0.556696805334091
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "they are smile",
+            "they are smile",
+            "they are smile",
+            "they are smile",
+            "smile",
+            "smile",
+            "smile",
+            "smile",
+            "smile",
+            "smile"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "How fast is the vehicle pictured capable of reaching?",
+          "answer": "Based on the visual evidence in the image, the",
+          "uncertainty": {
+            "text": 0.3614536225795746,
+            "visual": 0.4414671427408853,
+            "alignment": 0.7666151523590088,
+            "total": 0.507006137561798
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "80 mph",
+            "80 mph",
+            "80 mph",
+            "80 mph",
+            "100 mph",
+            "100 mph",
+            "100 mph",
+            "100 mph",
+            "10mph",
+            "10mph"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "Name the type of hat the man is wearing?",
+          "answer": "The man is wearing a **cowboy hat**",
+          "uncertainty": {
+            "text": 0.369835764169693,
+            "visual": 0.42396504720052075,
+            "alignment": 0.8366584181785583,
+            "total": 0.5261213452816009
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "cowboy",
+            "cowboy",
+            "cowboy",
+            "cowboy",
+            "sombrero",
+            "sombrero",
+            "sombrero",
+            "sombrero",
+            "stetson",
+            "stetson"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        },
+        {
+          "question": "What sates are these grown in?",
+          "answer": "The fruits in the image are oranges, which are",
+          "uncertainty": {
+            "text": 0.35826054215431213,
+            "visual": 0.4154694417317708,
+            "alignment": 0.9652734398841858,
+            "total": 0.5575270813465119
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "florida california",
+            "florida california",
+            "florida california",
+            "florida california",
+            "california",
+            "california",
+            "california",
+            "california",
+            "florida",
+            "florida"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "How does the bread taste?",
+          "answer": "Based on the visual evidence in the image, it",
+          "uncertainty": {
+            "text": 0.4593535363674164,
+            "visual": 0.42422961425781247,
+            "alignment": 0.9593608379364014,
+            "total": 0.5988185502052308
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "good",
+            "good",
+            "good",
+            "good",
+            "like bread",
+            "like bread",
+            "sweet",
+            "sweet",
+            "delicious",
+            "delicious"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": false
+        },
+        {
+          "question": "What is this type of mack truck used for?",
+          "answer": "This is a **Mack cement mixer truck**,",
+          "uncertainty": {
+            "text": 0.403957337141037,
+            "visual": 0.4467493286132812,
+            "alignment": 0.4846894443035126,
+            "total": 0.4410145667314529
+          },
+          "retrieved": true,
+          "retrieved_docs": [],
+          "n_retrieved_docs": 0,
+          "n_fused_docs": 0,
+          "attributions": null,
+          "golden_answers": [
+            "cement",
+            "cement",
+            "cement",
+            "cement",
+            "cement",
+            "cement",
+            "cement",
+            "cement",
+            "road work",
+            "road work"
+          ],
+          "retrieval_result": [
+            {
+              "retrieved_docs": [],
+              "retrieval_scores": [],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.0,
+            "individual_scores": [
+              0.0
+            ],
+            "position_weights": []
+          },
+          "selected_modality": "both",
+          "modality_weights": {
+            "text": 0.5,
+            "image": 0.5
+          },
+          "query_enhanced": false,
+          "correct": true
+        }
+      ]
+    }
+  }
+}

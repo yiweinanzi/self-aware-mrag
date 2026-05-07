@@ -1,0 +1,165 @@
+{
+  "method": "Self-Aware-MRAG (Ours)",
+  "config": {
+    "dataset_name": "a-okvqa",
+    "max_samples": 10,
+    "load_images": true,
+    "qwen3_vl_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+    "torch_dtype": "bfloat16",
+    "temperature": 0.01,
+    "max_new_tokens": 30,
+    "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+    "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+    "retrieval_model_path": "/data0/home/zqwang/ACL/models/bge-large-en-v1.5",
+    "retrieval_topk": 5,
+    "uncertainty_threshold": 0.43,
+    "use_improved_estimator": true,
+    "text_weight": 0.4,
+    "visual_weight": 0.3,
+    "alignment_weight": 0.3,
+    "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_aokvqa_baselines"
+  },
+  "metrics": {
+    "avg_accuracy": 0.0,
+    "avg_retrieved": 0.2,
+    "avg_F1": 0.13333333333333333,
+    "avg_VQA_Score": 0.0,
+    "avg_Recall@5": 0.0,
+    "avg_Faithfulness": 0.13333333333333333,
+    "avg_Attribution_Precision": 0.1,
+    "avg_Position_Bias_Score": 0.5,
+    "accuracy": 0.0,
+    "retrieval_rate": 0.2
+  },
+  "results": [
+    {
+      "question": "Sample question 0 for a-okvqa?",
+      "answer": "okvqa sample",
+      "golden_answers": [
+        "Answer 0"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [],
+      "retrieved": false
+    },
+    {
+      "question": "Sample question 1 for a-okvqa?",
+      "answer": "calibration improves accuracy",
+      "golden_answers": [
+        "Answer 1"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 582339,
+          "source": "wikipedia",
+          "title": "Calibration",
+          "contents": "Calibration\nwould be a better solution. If the calibration is performed at 100 units, the 1% standard would actually be anywhere between 99 and 101 units. The acceptable values of calibrations where the test equipment is at the 4:1 ratio would be 96 to 104 units, inclusive. Changing the acceptable range to 97 to 103 units would remove the potential contribution of all of the standards and preserve a 3.3:1 ratio. Continuing, a further change to the acceptable range to 98 to 102 restores more than a 4:1 final ratio. This is a simplified example. The mathematics of the example can",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    },
+    {
+      "question": "Sample question 2 for a-okvqa?",
+      "answer": "what is answer",
+      "golden_answers": [
+        "Answer 2"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [],
+      "retrieved": false
+    },
+    {
+      "question": "Sample question 3 for a-okvqa?",
+      "answer": "yes",
+      "golden_answers": [
+        "Answer 3"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [],
+      "retrieved": false
+    },
+    {
+      "question": "Sample question 4 for a-okvqa?",
+      "answer": "what is answer",
+      "golden_answers": [
+        "Answer 4"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [],
+      "retrieved": false
+    },
+    {
+      "question": "Sample question 5 for a-okvqa?",
+      "answer": "altered state consciousness",
+      "golden_answers": [
+        "Answer 5"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [
+        {
+          "id": 1864092,
+          "source": "wikipedia",
+          "title": "Altered state of consciousness",
+          "contents": "Altered state of consciousness\nconsiders Auditory Alterations (AUA) and vigilance reduction (VIR). This consists of 94 items. It assesses five primary dimensions and one global dimension of ASC. The main factors of the instrument are: This is a refined version of 5D-ASC(3D-OAV+2D), but it is analyzed in a different way. Here more dimensions of consciousness are included, such as spiritual experience, fear, anxiety, love, etc., which could be considered more basic. It is one of the most widely used types of the questionnaire in laboratory research. Altered states of consciousness can be assessed by observations and imaging of the brain such as functional magnetic",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true
+    },
+    {
+      "question": "Sample question 6 for a-okvqa?",
+      "answer": "okvqa sample",
+      "golden_answers": [
+        "Answer 6"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [],
+      "retrieved": false
+    },
+    {
+      "question": "Sample question 7 for a-okvqa?",
+      "answer": "okvqa sample",
+      "golden_answers": [
+        "Answer 7"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [],
+      "retrieved": false
+    },
+    {
+      "question": "Sample question 8 for a-okvqa?",
+      "answer": "okvqa sample",
+      "golden_answers": [
+        "Answer 8"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [],
+      "retrieved": false
+    },
+    {
+      "question": "Sample question 9 for a-okvqa?",
+      "answer": "okvqa sample",
+      "golden_answers": [
+        "Answer 9"
+      ],
+      "choices": {},
+      "rationale": "",
+      "retrieved_docs": [],
+      "retrieved": false
+    }
+  ],
+  "elapsed_time": 12.903482437133789,
+  "samples_per_second": 0.7749845864262105,
+  "timestamp": "2025-12-05T00:21:18.769693"
+}

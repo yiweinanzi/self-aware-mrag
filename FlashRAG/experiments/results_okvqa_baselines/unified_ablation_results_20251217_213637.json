@@ -1,0 +1,43 @@
+{
+  "experiment_info": {
+    "dataset": "okvqa",
+    "samples": 10,
+    "timestamp": "20251217_213637",
+    "config": {
+      "dataset_name": "okvqa",
+      "data_dir": "/data0/home/zqwang/ACL/FlashRAG/flashrag/data/VQA",
+      "split": "val",
+      "max_samples": 10,
+      "load_images": true,
+      "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_okvqa_baselines",
+      "timestamp": "20251217_213637",
+      "model_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+      "torch_dtype": "float16",
+      "max_new_tokens": 30,
+      "temperature": 0.01,
+      "use_multi_gpu": false,
+      "num_gpus": 2,
+      "batch_size_per_gpu": 1,
+      "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+      "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+      "retrieval_model_path": "/data0/home/zqwang/ACL/models/bge-large-en-v1.5",
+      "retrieval_topk": 5,
+      "clip_model_path": "/data0/home/zqwang/ACL/models/clip-vit-large-patch14-336",
+      "clip_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/clip/clip_Flat.index",
+      "use_multimodal_retrieval": false,
+      "text_retrieval_weight": 0.6,
+      "visual_retrieval_weight": 0.4,
+      "text_weight": 0.4,
+      "visual_weight": 0.3,
+      "alignment_weight": 0.3,
+      "uncertainty_threshold": 0.43,
+      "use_improved_estimator": true,
+      "save_detailed_results": true,
+      "save_sample_results": true,
+      "enable_complete_metrics": false
+    },
+    "based_on": "Integrated configuration from 59% accuracy experiments"
+  },
+  "variants_summary": [],
+  "detailed_results": {}
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "This is a question that requires more context to provide a specific answer. Can you please provide more information about what you are referring to?",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "I'm sorry, but I cannot provide an answer without more information or a specific image of the plant in question. Please provide more details or a specific image for me to assist you better.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "This is a stuffed animal, specifically a teddy bear.",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "If the animal were playing the game with the items the man is holding, the animal's trunk would be in use.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "It is not possible for me to determine what the gentleman is carrying in his red bag without more context or information. The red bag could contain a variety of items, such as groceries, personal belongings, or even a gift for someone. Without more information, it is not possible to accurately speculate about the contents of the bag.",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  }
+]

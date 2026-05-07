@@ -1,0 +1,163 @@
+{
+  "Self-Aware-MRAG": {
+    "method": "Self-Aware-MRAG",
+    "accuracy": 0.5,
+    "em": 0.5,
+    "f1": 0.0,
+    "retrieval_rate": 0.6,
+    "retrieval_recall_top5": 0.6,
+    "vqa_score": 0,
+    "faithfulness": 0.2,
+    "attribution_precision": 0.2,
+    "position_bias_score": 0.5,
+    "scenario_accuracy": {
+      "Scope": 0.0,
+      "Obstruction": 100.0,
+      "Temporal": 66.66666666666666,
+      "Deformation": 0.0,
+      "Biological": 0.0,
+      "Angle": 100.0,
+      "Partial": 0.0
+    },
+    "runtime_seconds": 314.4712510108948,
+    "seconds_per_sample": 31.447125101089476
+  },
+  "SAM-RAG": {
+    "method": "SAM-RAG",
+    "accuracy": 0.2,
+    "em": 0.2,
+    "f1": 0.0,
+    "retrieval_rate": 0.8,
+    "retrieval_recall_top5": 0.8,
+    "vqa_score": 0,
+    "faithfulness": 0.788888888888889,
+    "attribution_precision": 0.725,
+    "position_bias_score": 0.5,
+    "scenario_accuracy": {
+      "Scope": 0.0,
+      "Obstruction": 50.0,
+      "Temporal": 0.0,
+      "Deformation": 100.0,
+      "Biological": 0.0,
+      "Angle": 0.0,
+      "Partial": 0.0
+    },
+    "runtime_seconds": 852.1544818878174,
+    "seconds_per_sample": 85.21544818878174
+  },
+  "mR2AG": {
+    "method": "mR2AG",
+    "accuracy": 0.6,
+    "em": 0.6,
+    "f1": 0.0,
+    "retrieval_rate": 0.8,
+    "retrieval_recall_top5": 0.8,
+    "vqa_score": 0,
+    "faithfulness": 0.24,
+    "attribution_precision": 0.1,
+    "position_bias_score": 0.5,
+    "scenario_accuracy": {
+      "Scope": 0.0,
+      "Obstruction": 50.0,
+      "Temporal": 66.66666666666666,
+      "Deformation": 100.0,
+      "Biological": 100.0,
+      "Angle": 0.0,
+      "Partial": 100.0
+    },
+    "runtime_seconds": 572.1067037582397,
+    "seconds_per_sample": 57.21067037582397
+  },
+  "VisRAG": {
+    "method": "VisRAG",
+    "accuracy": 0.2,
+    "em": 0.2,
+    "f1": 0.0,
+    "retrieval_rate": 1.0,
+    "retrieval_recall_top5": 1.0,
+    "vqa_score": 0,
+    "faithfulness": 0.02,
+    "attribution_precision": 0.0,
+    "position_bias_score": 0.5,
+    "scenario_accuracy": {
+      "Scope": 0.0,
+      "Obstruction": 50.0,
+      "Temporal": 0.0,
+      "Deformation": 0.0,
+      "Biological": 0.0,
+      "Angle": 100.0,
+      "Partial": 0.0
+    },
+    "runtime_seconds": 572.0941591262817,
+    "seconds_per_sample": 57.209415912628174
+  },
+  "ViDoRAG": {
+    "method": "ViDoRAG",
+    "accuracy": 0.3,
+    "em": 0.3,
+    "f1": 0.0,
+    "retrieval_rate": 1.0,
+    "retrieval_recall_top5": 1.0,
+    "vqa_score": 0,
+    "faithfulness": 0.4,
+    "attribution_precision": 0.2,
+    "position_bias_score": 0.5,
+    "scenario_accuracy": {
+      "Scope": 0.0,
+      "Obstruction": 50.0,
+      "Temporal": 33.33333333333333,
+      "Deformation": 0.0,
+      "Biological": 0.0,
+      "Angle": 100.0,
+      "Partial": 0.0
+    },
+    "runtime_seconds": 281.2042598724365,
+    "seconds_per_sample": 28.120425987243653
+  },
+  "RagVL": {
+    "method": "RagVL",
+    "accuracy": 0.6,
+    "em": 0.6,
+    "f1": 0.0,
+    "retrieval_rate": 0.0,
+    "retrieval_recall_top5": 0.0,
+    "vqa_score": 0,
+    "faithfulness": 0.0,
+    "attribution_precision": 0.0,
+    "position_bias_score": 0.5,
+    "scenario_accuracy": {
+      "Scope": 0.0,
+      "Obstruction": 100.0,
+      "Temporal": 33.33333333333333,
+      "Deformation": 100.0,
+      "Biological": 0.0,
+      "Angle": 100.0,
+      "Partial": 100.0
+    },
+    "runtime_seconds": 240.97842669487,
+    "seconds_per_sample": 24.097842669487
+  },
+  "MuRAG": {
+    "method": "MuRAG",
+    "accuracy": 0.6,
+    "em": 0.6,
+    "f1": 0.0,
+    "retrieval_rate": 1.0,
+    "retrieval_recall_top5": 1.0,
+    "vqa_score": 0,
+    "faithfulness": 0.20666666666666664,
+    "attribution_precision": 0.1,
+    "position_bias_score": 0.5,
+    "scenario_accuracy": {
+      "Scope": 0.0,
+      "Obstruction": 100.0,
+      "Temporal": 33.33333333333333,
+      "Deformation": 100.0,
+      "Biological": 100.0,
+      "Angle": 100.0,
+      "Partial": 0.0
+    },
+    "runtime_seconds": 1273.9293730258942,
+    "seconds_per_sample": 127.39293730258942
+  }
+}

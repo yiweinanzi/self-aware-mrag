@@ -1,0 +1,242 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "You can use the information provided in the three documents to play a game of \"Sports Trivia\" or to gather information for a presentation or report about different sports. The documents provide a brief description of three different sports - soccer, tennis, and baseball - and their basic rules and equipment.",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "retrieved_docs": [
+      "Soccer (football) is a team sport played with a ball between two teams of 11 players.",
+      "Tennis is a racket sport played on a rectangular court.",
+      "Baseball is a bat-and-ball game between two teams."
+    ],
+    "retrieved": true,
+    "context_length": 233
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "Based on the given context, it is not possible to determine the type of plant from the given documents. The documents provide information about animals (cat, car, and elephant) and a description of a vehicle (road vehicle with four wheels powered by an engine), but do not provide any information about plants.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "retrieved_docs": [
+      "A cat is a small domesticated carnivorous mammal with soft fur and retractile claws.",
+      "A car is a road vehicle with four wheels powered by an engine.",
+      "An elephant is a large mammal with a trunk, large ears, and tusks."
+    ],
+    "retrieved": true,
+    "context_length": 255
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "This is a robot toy.",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "retrieved_docs": [
+      "A robot toy is a mechanical toy designed to resemble a robot.",
+      "Action figures are poseable character figures made of plastic.",
+      "A stuffed animal is a toy made of fabric and filled with soft material like cotton."
+    ],
+    "retrieved": true,
+    "context_length": 249
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "If the man is holding a stuffed animal and an action figure, the part of the stuffed animal that would be in use is its head. The head of the stuffed animal can be moved and posed, allowing the man to play with the action figure and create different scenarios or stories. The body of the stuffed animal would not be in use since it is not poseable like the head.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "retrieved_docs": [
+      "A robot toy is a mechanical toy designed to resemble a robot.",
+      "A stuffed animal is a toy made of fabric and filled with soft material like cotton.",
+      "Action figures are poseable character figures made of plastic."
+    ],
+    "retrieved": true,
+    "context_length": 249
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "Based on the given context, it is impossible to determine what the gentleman is carrying in the red bag. The information provided in the three documents does not offer any clues or connections that could help us determine the contents of the red bag.",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "retrieved_docs": [
+      "Pizza is an Italian dish with a round flat base of dough topped with tomatoes and cheese.",
+      "A cat is a small domesticated carnivorous mammal with soft fur and retractile claws.",
+      "A car is a road vehicle with four wheels powered by an engine."
+    ],
+    "retrieved": true,
+    "context_length": 278
+  },
+  {
+    "id": "5723996",
+    "question": "Who leaves a toilet like this?",
+    "prediction": "A cat.",
+    "golden_answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "retrieved_docs": [
+      "A cat is a small domesticated carnivorous mammal with soft fur and retractile claws.",
+      "A car is a road vehicle with four wheels powered by an engine.",
+      "An elephant is a large mammal with a trunk, large ears, and tusks."
+    ],
+    "retrieved": true,
+    "context_length": 255
+  },
+  {
+    "id": "5759705",
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "prediction": "A center affixed unit like the one described in the kitchen is typically referred to as a \"kitchen island\" or simply \"island.\"",
+    "golden_answers": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "retrieved_docs": [
+      "A cat is a small domesticated carnivorous mammal with soft fur and retractile claws.",
+      "A dog is a domesticated carnivorous mammal typically kept as a pet.",
+      "A bicycle is a two-wheeled vehicle powered by pedaling."
+    ],
+    "retrieved": true,
+    "context_length": 249
+  },
+  {
+    "id": "3045575",
+    "question": "Why might someone go to this place?",
+    "prediction": "Someone might go to London to visit the famous landmarks and attractions, such as Buckingham Palace, the London Eye, and the British Museum. They might also go to experience the city's rich history, culture, and cuisine. Additionally, London is a major transportation hub, with several airports and train stations, making it easy to travel to from other parts of the world.",
+    "golden_answers": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "retrieved_docs": [
+      "A cat is a small domesticated carnivorous mammal with soft fur and retractile claws.",
+      "London is the capital city of England and the United Kingdom.",
+      "A car is a road vehicle with four wheels powered by an engine."
+    ],
+    "retrieved": true,
+    "context_length": 250
+  },
+  {
+    "id": "2183655",
+    "question": "What does this grow from?",
+    "prediction": "The answer to the question \"What does this grow from?\" is \"An embryo.\"",
+    "golden_answers": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "retrieved_docs": [
+      "A cat is a small domesticated carnivorous mammal with soft fur and retractile claws.",
+      "An elephant is a large mammal with a trunk, large ears, and tusks.",
+      "A horse is a large domesticated mammal used for riding, racing, and pulling loads."
+    ],
+    "retrieved": true,
+    "context_length": 275
+  },
+  {
+    "id": "2863135",
+    "question": "What is that man doing with the bat?",
+    "prediction": "The man is holding a baseball bat, which is a type of bat used in the sport of baseball.",
+    "golden_answers": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "retrieved_docs": [
+      "Baseball is a bat-and-ball game between two teams.",
+      "Tennis is a racket sport played on a rectangular court.",
+      "A cat is a small domesticated carnivorous mammal with soft fur and retractile claws."
+    ],
+    "retrieved": true,
+    "context_length": 232
+  }
+]

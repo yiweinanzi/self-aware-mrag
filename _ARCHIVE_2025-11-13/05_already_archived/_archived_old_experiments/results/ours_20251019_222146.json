@@ -1,0 +1,202 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "You can use this for playing a game of tennis.",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "eigen_score": 8.924860954284668,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "The plant in the image is a flowering plant, specifically a type of orchid.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "eigen_score": 7.730771064758301,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "The toy in the image is a stuffed animal, specifically a teddy bear.",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "eigen_score": 7.8695068359375,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "The man is holding a pair of scissors and a ball in his hands. If the animal were to play the game, it would likely use its mouth to pick up the ball and its paws to hold the scissors. The animal might also use its head and neck to manipulate the scissors, possibly to cut the ball or to interact with the game in some other way. However, it's important to note that animals do not typically play games in the same way that",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "eigen_score": 8.788126945495605,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "It is impossible to know for certain what the gentleman is carrying in his red bag without more context or information. However, some possibilities could include groceries, personal belongings, a laptop or other work-related items, or even a gift for someone. The red color of the bag could also be significant, as it may indicate that the bag is meant to be seen or draw attention to its contents.",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "eigen_score": 7.691781044006348,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "5723996",
+    "question": "Who leaves a toilet like this?",
+    "prediction": "It is not appropriate to leave a toilet in a public restroom in such a state. It is the responsibility of the person using the restroom to properly flush the toilet and dispose of any waste in the toilet bowl. Leaving a toilet in a state where it is overflowing or has been left unflushed is not only unsanitary but also goes against proper restroom etiquette. It is important to always use a restroom in",
+    "golden_answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "eigen_score": 8.549656867980957,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "5759705",
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "prediction": "A center affixed unit, also known as a kitchen island, is typically referred to as a kitchen island. It is a freestanding furniture piece that is designed to serve as additional workspace, storage, and seating in the kitchen.",
+    "golden_answers": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "eigen_score": 8.057062149047852,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3045575",
+    "question": "Why might someone go to this place?",
+    "prediction": "Someone might go to this place to enjoy the outdoors, take a break from their daily routine, and appreciate the beauty of nature. The image shows a person standing on a lush green field, surrounded by grass and trees, which suggests that this location is ideal for relaxation, leisure, or even recreational activities such as picnicking, playing sports, or simply taking a walk. The serene and peaceful atmosphere of the field can provide an escape from the h",
+    "golden_answers": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "eigen_score": 8.911134719848633,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "2183655",
+    "question": "What does this grow from?",
+    "prediction": "I'm sorry, but I'm not sure what you are referring to. Could you please provide more context or information about what you are asking?",
+    "golden_answers": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "eigen_score": 7.163024425506592,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "2863135",
+    "question": "What is that man doing with the bat?",
+    "prediction": "The man is holding a baseball bat and standing next to a baseball field. It is not clear what his specific actions are, but he could be preparing to play a game of baseball, practicing his swing, or simply enjoying a leisurely activity outdoors.",
+    "golden_answers": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "eigen_score": 7.573434352874756,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  }
+]

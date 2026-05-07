@@ -1,0 +1,50 @@
+{
+  "tau_0.35": {
+    "metrics": {
+      "em": 0.5,
+      "f1": 0.6054957264957266,
+      "retrieval_recall_top5": 0.04,
+      "vqa_score": 0.1666666666666666,
+      "faithfulness": 0.0,
+      "attribution_precision": 0.0,
+      "position_bias_score": 0.0,
+      "runtime_seconds": 1159.3864607810974,
+      "seconds_per_sample": 23.18772921562195,
+      "threshold": 0.35,
+      "retrieval_trigger_rate": 1.0
+    },
+    "threshold": 0.35
+  },
+  "tau_0.45": {
+    "metrics": {
+      "em": 0.5,
+      "f1": 0.6054957264957266,
+      "retrieval_recall_top5": 0.04,
+      "vqa_score": 0.1666666666666666,
+      "faithfulness": 0.0,
+      "attribution_precision": 0.0,
+      "position_bias_score": 0.0,
+      "runtime_seconds": 1128.7173063755035,
+      "seconds_per_sample": 22.574346127510072,
+      "threshold": 0.45,
+      "retrieval_trigger_rate": 1.0
+    },
+    "threshold": 0.45
+  },
+  "tau_0.55": {
+    "metrics": {
+      "em": 0.54,
+      "f1": 0.6399401709401709,
+      "retrieval_recall_top5": 0.0,
+      "vqa_score": 0.17999999999999997,
+      "faithfulness": 0.0,
+      "attribution_precision": 0.0,
+      "position_bias_score": 0.0,
+      "runtime_seconds": 1145.1570172309875,
+      "seconds_per_sample": 22.90314034461975,
+      "threshold": 0.55,
+      "retrieval_trigger_rate": 0.0
+    },
+    "threshold": 0.55
+  }
+}

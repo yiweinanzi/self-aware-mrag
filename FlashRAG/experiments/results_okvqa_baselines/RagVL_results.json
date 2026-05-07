@@ -1,0 +1,580 @@
+{
+  "method": "RagVL",
+  "config": {
+    "dataset_name": "okvqa",
+    "data_dir": "/data0/home/zqwang/ACL/FlashRAG/flashrag/data/VQA",
+    "split": "val",
+    "max_samples": 10,
+    "load_images": true,
+    "qwen3_vl_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+    "torch_dtype": "bfloat16",
+    "temperature": 0.01,
+    "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+    "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+    "retrieval_model_path": "/data0/home/zqwang/ACL/models/bge-large-en-v1.5",
+    "retrieval_topk": 5,
+    "uncertainty_threshold": 0.43,
+    "use_improved_estimator": true,
+    "text_weight": 0.4,
+    "visual_weight": 0.3,
+    "alignment_weight": 0.3,
+    "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_okvqa_baselines"
+  },
+  "metrics": {
+    "avg_accuracy": 0.0,
+    "avg_retrieved": 1.0,
+    "avg_F1": 0.08818181818181818,
+    "avg_VQA_Score": 0.0,
+    "avg_Recall@5": 0.2,
+    "avg_Faithfulness": 0.2822222222222222,
+    "avg_Attribution_Precision": 0.04,
+    "avg_Position_Bias_Score": 0.47246644820586103,
+    "accuracy": 0.0,
+    "retrieval_rate": 1.0
+  },
+  "results": [
+    {
+      "question": "What sport can you use this for?",
+      "answer": "Based on the image and context provided, this motorcycle is not used for any of the sports mentioned (",
+      "retrieved_docs": [
+        {
+          "id": 636970,
+          "source": "wikipedia",
+          "title": "Squash (sport)",
+          "contents": "Squash (sport)\nSquash (sport) Squash is a ball sport played by two (singles) or four players (doubles squash) in a four-walled court with a small, hollow rubber ball. The players must alternate in striking the ball with their racquet and hit the ball onto the playable surfaces of the four walls of the court. The game was formerly called squash rackets, a reference to the \"squashable\" soft ball used in the game (compared with the harder ball used in its sister game rackets). The governing body of Squash, the World Squash Federation (WSF) is recognised by the International Olympic Committee (IOC), but",
+          "image_url": ""
+        },
+        {
+          "id": 136066,
+          "source": "wikipedia",
+          "title": "Field hockey",
+          "contents": "Field hockey\nwas banned after similar concerns were expressed about the ability of players to direct the ball accurately, but the reverse edge hit does appear to be more predictable and controllable than its counterpart. This type of hit is now more commonly referred to as the \"forehand sweep\" where the ball is hit with the flat side or \"natural\" side of the stick and not the rounded edge. Other rules include; no foot-to-ball contact, no use of hands, no obstructing other players, no high back swing, and no third party. If a player is dribbling the ball and either loses control",
+          "image_url": ""
+        },
+        {
+          "id": 484346,
+          "source": "wikipedia",
+          "title": "Disabled sports",
+          "contents": "Disabled sports\nDisabled sports Disabled sports, also adaptive sports or parasports, are sports played by persons with a disability, including physical and intellectual disabilities. As many disabled sports are based on existing able bodied sports, modified to meet the needs of persons with a disability, they are sometimes referred to as \"adapted sports\". However, not all disabled sports are adapted; several sports that have been specifically created for persons with a disability have no equivalent in non-disabled sports. Disability exists in four categories: physical, mental, permanent and temporary. Organized sport for athletes with a disability is generally divided into three broad disability",
+          "image_url": ""
+        },
+        {
+          "id": 292744,
+          "source": "wikipedia",
+          "title": "Netball",
+          "contents": "Netball\nnetball is a variation of netball, played exclusively indoors, in which the playing court is often surrounded on each side and overhead by a net. The net prevents the ball from leaving the court, permitting faster play by reducing playing stoppages. Different forms of indoor netball exist. In a seven-per-side version called \"action netball\", seven players per team play with rules similar to netball. However, a game is split into 15-minute halves with a three-minute break in between. This version is played in Australia, New Zealand, South Africa and England. A six-per-side version of the sport is also played in",
+          "image_url": ""
+        },
+        {
+          "id": 88076,
+          "source": "wikipedia",
+          "title": "Culture of Canada",
+          "contents": "Culture of Canada\nhas the most registered players of any team sport in Canada, and is the most played sport with all demographics, including ethnic origin, ages and genders. Professional teams exist in many cities in Canada – with a trio of teams in North America's top pro league, Major League Soccer – and international soccer competitions such as the FIFA World Cup, UEFA Euro and the UEFA Champions League attract some of the biggest audiences in Canada. Other popular team sports include curling, street hockey, cricket, rugby league, rugby union, softball and Ultimate frisbee. Popular individual sports include auto racing, boxing, karate,",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "race",
+        "race",
+        "race",
+        "race",
+        "race",
+        "race",
+        "motocross",
+        "motocross",
+        "ride",
+        "ride"
+      ]
+    },
+    {
+      "question": "Name the type of plant this is?",
+      "answer": "Based on the image and context provided, it is not possible to definitively name the specific type of",
+      "retrieved_docs": [
+        {
+          "id": 2825802,
+          "source": "wikipedia",
+          "title": "Type (biology)",
+          "contents": "Type (biology)\nis \"an exceptional need\" for \"clarifying the taxonomic status\" of a species (Article 75.2). There are many other permutations and variations on terms using the suffix \"-type\" (e.g., allotype, cotype, topotype, generitype, isotype, isoneotype, isolectotype, etc.) but these are not formally regulated by the Code, and a great many are obsolete and/or idiosyncratic. However, some of these categories can potentially apply to genuine type specimens, such as a neotype; e.g., isotypic/topotypic specimens are preferred to other specimens, when they are available at the time a neotype is chosen (because they are from the same time and/or place as the original",
+          "image_url": ""
+        },
+        {
+          "id": 2825800,
+          "source": "wikipedia",
+          "title": "Type (biology)",
+          "contents": "Type (biology)\na rare and hitherto unknown color morph of a long-known species, using only the available blood and feather samples. While there is still some debate on the need to deposit actual killed individuals as type specimens, it can be observed that given proper vouchering and storage, tissue samples can be just as valuable should disputes about the validity of a species arise. The various types listed above are necessary because many species were described one or two centuries ago, when a single type specimen, a holotype, was often not designated. Also, types were not always carefully preserved, and intervening events",
+          "image_url": ""
+        },
+        {
+          "id": 2825792,
+          "source": "wikipedia",
+          "title": "Type (biology)",
+          "contents": "Type (biology)\nof specimens. The type of a genus or subgenus is a species. The type of a suprageneric taxon (e.g., family, etc.) is a genus. Names higher than superfamily rank do not have types. A \"name-bearing type\" is a specimen or image that \"provides the objective standard of reference whereby the application of the name of a nominal taxon can be determined.\" Although in reality biologists may examine many specimens (when available) of a new taxon before writing an official published species description, nonetheless, under the formal rules for naming species (the International Code of Zoological Nomenclature), a single type must",
+          "image_url": ""
+        },
+        {
+          "id": 2820676,
+          "source": "wikipedia",
+          "title": "Type species",
+          "contents": "Type species\nhas that type can also be referred to as the type of the genus name. Names of genus and family ranks, the various subdivisions of those ranks, and some higher-rank names based on genus names, have such types. In bacteriology, a type species is assigned for each genus. Every named genus or subgenus in zoology, whether or not currently recognized as valid, is theoretically associated with a type species. In practice, however, there is a backlog of untypified names defined in older publications when it was not required to specify a type. A type species is both a concept and",
+          "image_url": ""
+        },
+        {
+          "id": 2825781,
+          "source": "wikipedia",
+          "title": "Type (biology)",
+          "contents": "Type (biology)\nType (biology) In biology, a type is a particular specimen (or in some cases a group of specimens) of an organism to which the scientific name of that organism is formally attached. In other words, a type is an example that serves to anchor or centralize the defining features of that particular taxon. In older usage (pre-1900 in botany), a type was a taxon rather than a specimen. A taxon is a scientifically named grouping of organisms with other like organisms, a set that includes some organisms and excludes others, based on a detailed published description (for example a species",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "vine",
+        "vine",
+        "vine",
+        "vine",
+        "climb",
+        "climb",
+        "look like some kind of ivy",
+        "look like some kind of ivy",
+        "ficus",
+        "ficus"
+      ]
+    },
+    {
+      "question": "What toy is this?",
+      "answer": "Based on the image, the toy is a **stuffed teddy bear**.\n\nIt is a",
+      "retrieved_docs": [
+        {
+          "id": 1327296,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nToy A toy is an item that is used in play, especially one designed for such use. Playing with toys can be an enjoyable means of training young children for life in society. Different materials like wood, clay, paper, and plastic are used to make toys. Many items are designed to serve as toys, but goods produced for other purposes can also be used. For instance, a small child may fold an ordinary piece of paper into an airplane shape and \"fly it\". Newer forms of toys include interactive digital entertainment. Some toys are produced primarily as collectors' items and",
+          "image_url": ""
+        },
+        {
+          "id": 1327337,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nthem. Sometimes intended as decorations, keepsakes, or collectibles for older children and adults, most dolls are intended as toys for children, usually girls, to play with. Dolls have been found in Egyptian tombs which date to as early as 2000 BCE. Dolls are usually miniatures, but baby dolls may be of true size and weight. A doll or stuffed animal of soft material is sometimes called a plush toy or plushie. A popular toy of this type is the Teddy Bear. A distinction is often made between dolls and action figures, which are generally of plastic or semi-metallic construction and",
+          "image_url": ""
+        },
+        {
+          "id": 1327336,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nto work with their hands, puzzle solvers, and imaginative sorts. Some other examples include Bayko, Konstruk-Tubes, K'Nex, Erector Sets, Tinkertoys, and Meccano, and generic construction toys such as Neodymium magnet toys. A doll is a model of a human (often a baby), a humanoid (like Bert and Ernie), or an animal. Modern dolls are often made of cloth or plastic. Other materials that are, or have been, used in the manufacture of dolls include cornhusks, bone, stone, wood, porcelain (sometimes called china), bisque, celluloid, wax, and even apples. Often people will make dolls out of whatever materials are available to",
+          "image_url": ""
+        },
+        {
+          "id": 1327335,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nThe things that are built are sometimes used as toys once completed, but generally speaking, the object is to build things of one's own design, and old models often are broken up and the pieces reused in new models. The oldest and, perhaps most common construction toy is a set of simple wooden blocks, which are often painted in bright colors and given to babies and toddlers. Construction sets such as Lego bricks and Lincoln Logs are designed for slightly older children and have been quite popular in the last century. Construction sets appeal to children (and adults) who like",
+          "image_url": ""
+        },
+        {
+          "id": 2349108,
+          "source": "wikipedia",
+          "title": "Stuffed toy",
+          "contents": "Stuffed toy\nStuffed toy A stuffed toy is a toy with an outer fabric sewn from a textile and then stuffed with a flexible material. In North American English, they are variously referred to as plush toys, stuffed animals, plushies, snuggies, stuffies, or snuggled animals. In British English, they are soft toys or cuddly toys. The toys developed in their current form in the early years of the 20th century and have remained consistently popular with children throughout. Different fads have caused specific toys to surge in popularity among adults and collectors. Noticeable examples include Tickle Me Elmo and Beanie Babies. Textiles",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "teddy bear",
+        "teddy bear",
+        "teddy bear",
+        "teddy bear"
+      ]
+    },
+    {
+      "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+      "answer": "Based on the image and context, the animal (a dog) would be using its **paws",
+      "retrieved_docs": [
+        {
+          "id": 2046605,
+          "source": "wikipedia",
+          "title": "Ioannina",
+          "contents": "Ioannina\nis located within the Ioannina municipality, and is the capital of Ioannina regional unit and the region of Epirus. Ioannina is located northwest of Athens, southwest of Thessaloniki and east of the port of Igoumenitsa in the Ionian Sea. The municipality Ioannina has an area of 403.322 km, the municipal unit Ioannina has an area of 47.440 km, and the community Ioannina (the city proper) has an area of 17.335 km. The present municipality Ioannina was formed at the 2011 local government reform by the merger of the following 6 former municipalities, that became municipal units (constituent communities in brackets):",
+          "image_url": ""
+        },
+        {
+          "id": 2954035,
+          "source": "wikipedia",
+          "title": "Los Santos Province",
+          "contents": "Los Santos Province\nare determined by three morphostructural regions which are characterized by its elevations. It is clearly divided into three zones: the mountainous area dominated by the Azuero mountain ranges: Western Azuero range and Eastern Azuero range, known locally as sierra de Azuero. The mountains are an extension of the Cordillera Central extending south until its extinction in coastal Búcaro and Cañas. There are few valleys, prominent among them are the Tonosí and Rico valley. A transitional zone of low hills and clustered mainly in the central southern part of the province hills. A third area in low-lying coastal regions coastal plains",
+          "image_url": ""
+        },
+        {
+          "id": 2954036,
+          "source": "wikipedia",
+          "title": "Los Santos Province",
+          "contents": "Los Santos Province\nand sedimentary basins, where the hilly reliefs that are part of the foothills of the mountains predominate. The coastline of Los Santos is characterized by an overwhelming predominance of beaches and coastal lowlands with the presence of some cliffs especially in the southern part of the Sierra de Azuero in Tonosí. Mangroves and small dune formations are the most characteristic element of the coastal relief. The beaches are dissipative, fine golden sand on the north and darke volcanic in the south, with annual variations in the coastline that can be labeled due to winter storms. Los Santos’ wildlife is typical",
+          "image_url": ""
+        },
+        {
+          "id": 698033,
+          "source": "wikipedia",
+          "title": "Surface anatomy",
+          "contents": "Surface anatomy\ncalled the mamma or mammary, the armpit as the axilla and axillary, and the navel as the umbilicus and umbilical. The pelvis is the lower torso, between the abdomen and the thighs. The groin, where the thigh joins the trunk, are the inguen and inguinal area. The entire arm is referred to as the brachium and brachial, the front of the elbow as the antecubitis and antecubital, the back of the elbow as the olecranon or olecranal, the forearm as the antebrachium and antebrachial, the wrist as the carpus and carpal area, the hand as the manus and manual, the",
+          "image_url": ""
+        },
+        {
+          "id": 1096845,
+          "source": "wikipedia",
+          "title": "Bay Mills Township, Michigan",
+          "contents": "Bay Mills Township, Michigan\nhas a total area of , of which is land and , or 33.92%, is water. As of the census of 2000, there were 1,214 people, 485 households, and 345 families residing in the township. The population density was 18.8 per square mile (7.2/km²). There were 996 housing units at an average density of 15.4 per square mile (5.9/km²). The racial makeup of the township was 44.98% White, 51.40% Native American, 0.08% Asian, 0.25% from other races, and 3.29% from two or more races. Hispanic or Latino of any race were 0.99% of the population. 41.51% was of Ojibwe, 6.7%",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth"
+      ]
+    },
+    {
+      "question": "What could this gentleman be carrying in that red bag?",
+      "answer": "Based on the image and context, the gentleman is likely carrying a **lunch bag or insulated food",
+      "retrieved_docs": [
+        {
+          "id": 1485569,
+          "source": "wikipedia",
+          "title": "Tottenham Court Road",
+          "contents": "Tottenham Court Road\nPolice responded to reports of a \"suspicious item\" on Tottenham Court Road. A disposable robot was deployed to investigate the item that caused panic on the streets. The incident lasted about 1.25 hours (from 5:45pm to around 7:00pm). Residents reported that they heard an explosion take place, but The Met apparently refused to confirm or deny that a controlled explosion took place. Police reported to a computer equipment and office furniture building just minutes after objects were thrown from the fifth floor. It was an alleged hostage situation and the suspect was thought to have a bomb, and was allegedly",
+          "image_url": ""
+        },
+        {
+          "id": 1191682,
+          "source": "wikipedia",
+          "title": "Wynnewood, Oklahoma",
+          "contents": "Wynnewood, Oklahoma\nhome was almost entirely flattened with a large portion of the foundation slab swept clean of debris. Trees in this area were debarked, extensive ground scouring occurred, and vehicles were thrown and mangled beyond recognition. A second brick house had its roof torn off, and multiple power poles were snapped. Further to the east, a poorly anchored frame home was swept cleanly away at high-end EF3 intensity. A nearby mobile home was also destroyed, with a vehicle parked nearby being rolled across the edge of a nearby pond and severely damaged. A few other homes in this area sustained less",
+          "image_url": ""
+        },
+        {
+          "id": 2701127,
+          "source": "wikipedia",
+          "title": "HMS Vanguard (1909)",
+          "contents": "HMS Vanguard (1909)\nwas past its stated safe life. The possibility of spontaneous detonation was raised, but could not be proved. It was also noted that a number of ship's boilers were still in use, and some watertight doors, which should have been closed in wartime, were open as the ship was in port. It was suggested that this might have contributed to a dangerously high temperature in the magazines. The final conclusion of the board was that a fire started in a four-inch magazine, perhaps when a raised temperature caused spontaneous ignition of cordite, spreading to one or the other main magazines,",
+          "image_url": ""
+        },
+        {
+          "id": 2171019,
+          "source": "wikipedia",
+          "title": "Plaster",
+          "contents": "Plaster\nrequired amputation of both her thumbs and six of her fingers. Some variations of plaster that contain powdered silica or asbestos may present health hazards if inhaled. <nowiki>Asbestos</nowiki> is a known irritant when inhaled and can cause cancer, <nowiki>especially</nowiki> in people who smoke, and inhalation can also cause asbestosis. Inhaled silica can cause silicosis and (in very rare cases) can encourage the development of cancer. Persons working regularly with plaster containing these additives should take precautions to avoid inhaling powdered plaster, cured or uncured. (Note that asbestos is rarely used in modern plaster formulations because of its carcinogenic <nowiki>effects.)</nowiki> People",
+          "image_url": ""
+        },
+        {
+          "id": 1659658,
+          "source": "wikipedia",
+          "title": "Ice storm",
+          "contents": "Ice storm\nhas indirectly caused numerous illnesses and deaths due to unintentional carbon monoxide (CO) poisoning. At lower levels, CO poisoning causes symptoms such as nausea, dizziness, fatigue, and headache, but high levels can cause unconsciousness, heart failure, and death. The relatively high incidence of CO poisoning during ice storms occurs due to the use of alternative methods of heating and cooking during prolonged power outages, common after severe ice storms. Gas generators, charcoal and propane barbecues, and kerosene heaters contribute to CO poisoning when they operate in confined locations. CO is produced when appliances burn fuel without enough oxygen present, such",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "cloth",
+        "cloth",
+        "cloth",
+        "cloth",
+        "food",
+        "food",
+        "lunch",
+        "lunch",
+        "shoe",
+        "shoe"
+      ]
+    },
+    {
+      "question": "Who leaves a toilet like this?",
+      "answer": "Based on the image and context provided, **no one leaves a toilet like this**.\n\nThe image",
+      "retrieved_docs": [
+        {
+          "id": 2330390,
+          "source": "wikipedia",
+          "title": "The Wiggles",
+          "contents": "The Wiggles\ntalking about quitting touring for many years; Cook announced his intention to retire first, citing a desire to spend more time with his family, and then Fatt announced his own retirement shortly thereafter. Page, who was still struggling with his health issues and had stated that his interest was in working with the group's original line-up, was subsequently asked to extend his stay until the end of the year so he would leave alongside Cook and Fatt, to which he agreed. Cook reported that the original members were confident that the new group would be accepted by the fans because",
+          "image_url": ""
+        },
+        {
+          "id": 799837,
+          "source": "wikipedia",
+          "title": "Signs (film)",
+          "contents": "Signs (film)\nthat the aliens have left Earth as suddenly as they arrived. Graham leaves the basement to locate Morgan's asthma inhaler, the others following him. But they discover that an alien, the one trapped in Ray's home, is still there, and takes Morgan hostage. Colleen's last words come back to Graham, and he instructs Merrill to \"swing away\" with a baseball bat from his minor league days. Merrill attacks the alien but not before it attempts to poison Morgan by spraying him with a toxin from its body. Graham recovers his son when the alien drops him and takes Morgan outside",
+          "image_url": ""
+        },
+        {
+          "id": 2679801,
+          "source": "wikipedia",
+          "title": "Resignation",
+          "contents": "Resignation\nalso be withdrawn. Resignation Resignation is the formal act of giving up or quitting one's office or position. A resignation can occur when a person holding a position gained by election or appointment steps down, but leaving a position upon the expiration of a term, or choosing not to seek an additional term, is not considered resignation. When an employee chooses to leave a position, it is considered a resignation, as opposed to involuntary termination. Whether an employee resigned or was terminated is sometimes a topic of dispute, because in many situations, a terminated employee is eligible for severance pay",
+          "image_url": ""
+        },
+        {
+          "id": 476443,
+          "source": "wikipedia",
+          "title": "State of the Union",
+          "contents": "State of the Union\nand Senators, stating: \"Members of Congress, I have the high privilege and distinct honor of presenting to you the President of the United States.\" This leads to a further round of applause and, eventually, the beginning of the address by the President. At close of the ceremony, attendees leave on their own accord. The Sergeants at Arms guides the President out of the Chamber. Some politicians stay to shake hands with and congratulate the President on the way out. Customarily, one cabinet member (the designated survivor) does not attend the speech, in order to provide continuity in the line of",
+          "image_url": ""
+        },
+        {
+          "id": 943384,
+          "source": "wikipedia",
+          "title": "Survivor (franchise)",
+          "contents": "Survivor (franchise)\nRong has had the most evacuations to date, with three. Occasionally, castaways who are not in need of medical treatment have decided to quit the game, without waiting to be voted out, due to physical or emotional exhaustion—either by making an announcement at a Tribal Council, in which case they are let out of the game without any vote, or by being recovered from camp after making their intentions clear to producers and being interviewed by the host. When a player leaves the game without being voted off, the other tribes are notified of the departed player's removal, and the",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "man",
+        "man",
+        "man",
+        "man",
+        "man",
+        "man",
+        "men",
+        "men",
+        "men",
+        "men"
+      ]
+    },
+    {
+      "question": "A center affixed unit like this one in a kitchen is called a what?",
+      "answer": "Based on the image and context, a center-affixed unit like the one shown — a large,",
+      "retrieved_docs": [
+        {
+          "id": 2866187,
+          "source": "wikipedia",
+          "title": "F-center",
+          "contents": "F-center\nF-center An F-center, Farbe center or color center (from the original German \"Farbzentrum\"; \"Farbe\" means \"color\", and \"zentrum\" center) is a type of crystallographic defect in which an anionic vacancy in a crystal is filled by one or more unpaired electrons. Electrons in such a vacancy tend to absorb light in the visible spectrum such that a material that is usually transparent becomes colored. This is used to identify many compounds, especially zinc oxide (yellow). Color centers can occur naturally in compounds (particularly metallic oxides) because when heated to high temperature the ions become excited and are displaced from their",
+          "image_url": ""
+        },
+        {
+          "id": 1562248,
+          "source": "wikipedia",
+          "title": "Centroid",
+          "contents": "Centroid\nbe determined experimentally by using a plumbline and a pin to find the collocated center of mass of a thin body of uniform density having the same shape. The body is held by the pin, inserted at a point, off the presumed centroid in such a way that it can freely rotate around the pin; the plumb line is then dropped from the pin (figure b). The position of the plumbline is traced on the surface, and the procedure is repeated with the pin inserted at any different point (or a number of points) off the centroid of the object.",
+          "image_url": ""
+        },
+        {
+          "id": 26092,
+          "source": "wikipedia",
+          "title": "Optical aberration",
+          "contents": "Optical aberration\ncan be recognized in the figure. If, in an unsharp image, a patch of light corresponds to an object point, the \"center of gravity\" of the patch may be regarded as the image point, this being the point where the plane receiving the image, e.g., a focusing screen, intersects the ray passing through the middle of the stop. This assumption is justified if a poor image on the focusing screen remains stationary when the aperture is diminished; in practice, this generally occurs. This ray, named by Abbe a \"principal ray\" (not to be confused with the \"principal rays\" of the",
+          "image_url": ""
+        },
+        {
+          "id": 1284689,
+          "source": "wikipedia",
+          "title": "Center of pressure (fluid mechanics)",
+          "contents": "Center of pressure (fluid mechanics)\nto use the center of pressure in the mathematical analysis of longitudinal static stability of an aircraft. For this reason, it is much simpler to use the aerodynamic center when carrying out a mathematical analysis. The aerodynamic center occupies a fixed location on an airfoil, typically close to the quarter-chord point. The aerodynamic center is the conceptual starting point for longitudinal stability. The horizontal stabilizer contributes extra stability and this allows the center of gravity to be a small distance aft of the aerodynamic center without the aircraft reaching neutral stability. The position of the center of gravity at which",
+          "image_url": ""
+        },
+        {
+          "id": 1486055,
+          "source": "wikipedia",
+          "title": "Center of mass",
+          "contents": "Center of mass\nof an object may be assumed to be concentrated to visualise its motion. In other words, the center of mass is the particle equivalent of a given object for application of Newton's laws of motion. In the case of a single rigid body, the center of mass is fixed in relation to the body, and if the body has uniform density, it will be located at the centroid. The center of mass may be located outside the physical body, as is sometimes the case for hollow or open-shaped objects, such as a horseshoe. In the case of a distribution of",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island"
+      ]
+    },
+    {
+      "question": "Why might someone go to this place?",
+      "answer": "Based on the image and context, someone might go to this place for the following reasons:\n\n1.",
+      "retrieved_docs": [
+        {
+          "id": 1702952,
+          "source": "wikipedia",
+          "title": "Explanation",
+          "contents": "Explanation\ntheft usually explain the motives (e.g., to feed a starving family). It is important to be aware when an explanation is \"not\" a justification. A criminal profiler may offer an explanation of a suspect's behavior (e.g.; the person lost their job, the person got evicted, etc.). Such statements may help us understand why the person committed the crime, however an uncritical listener may believe the speaker is trying to gain sympathy for the person and his or her actions. It does not follow that a person proposing an explanation has any sympathy for the views or actions being explained. This",
+          "image_url": ""
+        },
+        {
+          "id": 2304854,
+          "source": "wikipedia",
+          "title": "Dorothea Puente",
+          "contents": "Dorothea Puente\nthem would you want that to happen to yourself? Would you want that to happen to your children? ... I am led to believe if there is any reason for us to be living here on this earth, it is to somehow enhance one another's humanity, to love, to touch each other with kindness, to know that you have made just one person breathe easier because you have lived. I submit to you ladies and gentlemen that is why these people came to testify for Dorothea Puente ... I think you can only truly understand why so many people testified",
+          "image_url": ""
+        },
+        {
+          "id": 17272,
+          "source": "wikipedia",
+          "title": "An Enquiry Concerning Human Understanding",
+          "contents": "An Enquiry Concerning Human Understanding\nthe senses. That said, he provides some reasons why we may have a basis for trust in the testimony of persons: because a) human memory can be relatively tenacious; and b) because people are inclined to tell the truth, and ashamed of telling falsities. Needless to say, these reasons are only to be trusted to the extent that they conform to experience. (Hume 1974:389) And there are a number of reasons to be skeptical of human testimony, also based on experience. If a) testimonies conflict one another, b) there are a small number of witnesses, c) the speaker has no",
+          "image_url": ""
+        },
+        {
+          "id": 409532,
+          "source": "wikipedia",
+          "title": "Theory of justification",
+          "contents": "Theory of justification\n\"not\" a justification. A criminal profiler may offer an explanation of a suspect's behavior (e.g.; the person lost his or her job, the person got evicted, etc.), and such statements may help us understand why the person committed the crime. An uncritical listener may believe the speaker is trying to gain sympathy for the person and his or her actions, but it does not follow that a person proposing an explanation has any sympathy for the views or actions being explained. This is an important distinction because we need to be able to understand and explain terrible events and behavior",
+          "image_url": ""
+        },
+        {
+          "id": 1793152,
+          "source": "wikipedia",
+          "title": "What would Jesus do?",
+          "contents": "What would Jesus do?\nmeant by it. It seems to me there's an awful lot of trouble in the world that somehow wouldn't exist if all the people who sing such songs went and lived them out. I suppose I don't understand. But what would Jesus do? Is that what you mean by following His steps? It seems to me sometimes as if the people in the big churches had good clothes and nice houses to live in, and money to spend for luxuries, and could go away on summer vacations and all that, while the people outside the churches, thousands of them, I",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "shop",
+        "shop",
+        "shop",
+        "shop",
+        "nyc",
+        "nyc",
+        "shop",
+        "shop",
+        "business",
+        "business"
+      ]
+    },
+    {
+      "question": "What does this grow from?",
+      "answer": "Based on the image provided, the object is a **lily flower**.\n\nLilies grow from",
+      "retrieved_docs": [
+        {
+          "id": 517744,
+          "source": "wikipedia",
+          "title": "Diffraction grating",
+          "contents": "Diffraction grating\nsometimes seen in meteorology. Diffraction coronas are colorful rings surrounding a source of light, such as the sun. These are usually observed much closer to the light source than halos, and are caused by very fine particles, like water droplets, ice crystals, or smoke particles in a hazy sky. When the particles are all nearly the same size they diffract the incoming light at very specific angles. The exact angle depends on the size of the particles. Diffraction coronas are commonly observed around light sources, like candle flames or street lights, in the fog. Cloud iridescence is caused by diffraction,",
+          "image_url": ""
+        },
+        {
+          "id": 245989,
+          "source": "wikipedia",
+          "title": "Linker (computing)",
+          "contents": "Linker (computing)\nLinker (computing) In computing, a linker or link editor is a computer utility program that takes one or more object files generated by a compiler and combines them into a single executable file, library file, or another 'object' file. A simpler version that writes its output directly to memory is called the \"loader\", though loading is typically considered a separate process. Computer programs typically are composed of several parts or modules; these parts/modules need not all be contained within a single object file, and in such cases refer to each other by means of symbols as addresses into other modules,",
+          "image_url": ""
+        },
+        {
+          "id": 2086834,
+          "source": "wikipedia",
+          "title": "Equaliser (mathematics)",
+          "contents": "Equaliser (mathematics)\nmay also find {\"f\" = \"g\" = \"h\" = ···} in informal contexts. As a degenerate case of the general definition, let F be a singleton {\"f\"}. Since \"f\"(\"x\") always equals itself, the equalizer must be the entire domain \"X\". As an even more degenerate case, let F be the empty set {}. Then the equalizer is again the entire domain \"X\", since the universal quantification in the definition is vacuously true. A binary equalizer (that is, an equalizer of just two functions) is also called a \"difference kernel\". This may also be denoted DiffKer(\"f\",\"g\"), Ker(\"f\",\"g\"), or Ker(\"f\" − \"g\").",
+          "image_url": ""
+        },
+        {
+          "id": 1431844,
+          "source": "wikipedia",
+          "title": "Builder pattern",
+          "contents": "Builder pattern\nof the object that is built. It also allows for inserting new implementations of how an object is built without disturbing the client code. /// <summary> /// Represents a product created by the builder /// </summary> public class Car /// <summary> /// The builder abstraction /// </summary> public interface ICarBuilder /// <summary> /// Concrete builder implementation /// </summary> public class FerrariBuilder : ICarBuilder /// <summary> /// The director /// </summary> public class SportsCarBuildDirector public class Client The Director assembles a car instance in the example above, delegating the construction to a separate builder object that it has been given to",
+          "image_url": ""
+        },
+        {
+          "id": 436154,
+          "source": "wikipedia",
+          "title": "Ultrasound",
+          "contents": "Ultrasound\nsometimes mistakenly called \"supersonic cleaners\", are used at frequencies from 20 to 40 kHz for jewellery, lenses and other optical parts, watches, dental instruments, surgical instruments, diving regulators and industrial parts. An ultrasonic cleaner works mostly by energy released from the collapse of millions of microscopic cavitations near the dirty surface. The bubbles made by cavitation collapse forming tiny jets directed at the surface. Similar to ultrasonic cleaning, biological cells including bacteria can be disintegrated. High power ultrasound produces cavitation that facilitates particle disintegration or reactions. This has uses in biological science for analytical or chemical purposes (sonication and sonoporation)",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "ground",
+        "ground",
+        "ground",
+        "ground",
+        "plant",
+        "plant",
+        "hibiscus plant stem",
+        "hibiscus plant stem",
+        "root",
+        "root"
+      ]
+    },
+    {
+      "question": "What is that man doing with the bat?",
+      "answer": "Based on the image, the man is a baseball batter preparing to hit a pitch.\n\nHe is standing",
+      "retrieved_docs": [
+        {
+          "id": 2050335,
+          "source": "wikipedia",
+          "title": "That",
+          "contents": "That\nThat That is a function word used in the English language for several grammatical purposes. These include: In the first two uses the word is usually pronounced weakly, as , whereas in the other uses it is pronounced . In the Old English language \"that\" was spelled \"þæt\". It was also abbreviated as a letter Thorn, \"þ\", with the ascender crossed, \"ꝥ\" ( ). In Middle English, the letter Ash, \"æ\", was replaced with the letter \"a\", so that \"that\" was spelled \"þat\", or sometimes \"þet\". The ascender of the \"þ\" was reduced (making it similar to the Old English",
+          "image_url": ""
+        },
+        {
+          "id": 2050339,
+          "source": "wikipedia",
+          "title": "That",
+          "contents": "That\nis the bat, (plural) Those are the bats.) That That is a function word used in the English language for several grammatical purposes. These include: In the first two uses the word is usually pronounced weakly, as , whereas in the other uses it is pronounced . In the Old English language \"that\" was spelled \"þæt\". It was also abbreviated as a letter Thorn, \"þ\", with the ascender crossed, \"ꝥ\" ( ). In Middle English, the letter Ash, \"æ\", was replaced with the letter \"a\", so that \"that\" was spelled \"þat\", or sometimes \"þet\". The ascender of the \"þ\" was",
+          "image_url": ""
+        },
+        {
+          "id": 2342667,
+          "source": "wikipedia",
+          "title": "Demonstrative",
+          "contents": "Demonstrative\nThese are abstract entities of discourse, not concrete objects. Each language may have subtly different rules on how to use demonstratives to refer to things previously spoken, currently being spoken, or about to be spoken. In English, \"that\" (or occasionally \"those\") refers to something previously spoken, while \"this\" (or occasionally \"these\") refers to something about to be spoken (or, occasionally, something being simultaneously spoken). Demonstrative Demonstratives (abbreviated ) are words, such as \"this\" and \"that\", used to indicate which entities are being referred to and to distinguish those entities from others. They are typically deictic, their meaning depending on a",
+          "image_url": ""
+        },
+        {
+          "id": 2050338,
+          "source": "wikipedia",
+          "title": "That",
+          "contents": "That\nsemicolon should be used to be grammatically correct: \" He told me; it is a good read\". In grammar, the usage of \"that\" constitutes a that-clause while its absence constitutes a bare clause. The word \"that\" are in the formation of the restrictive relative clause, especially one identification. These words are used to modify an adjective, a noun, and a pronoun. (e.g.: -s The one that works well, -ed The one that worked well.) Also, the word \"that\" is used in subordinate conjunctions describing a person or people. In demonstrative, \"that\" is singular, and \"those\" in plural. (e.g.: (singular) That",
+          "image_url": ""
+        },
+        {
+          "id": 261979,
+          "source": "wikipedia",
+          "title": "Microscope",
+          "contents": "Microscope\nMicroscope A microscope (from the , \"mikrós\", \"small\" and , \"skopeîn\", \"to look\" or \"see\") is an instrument used to see objects that are too small to be seen by the naked eye. Microscopy is the science of investigating small objects and structures using such an instrument. Microscopic means invisible to the eye unless aided by a microscope. There are many types of microscopes, and they may be grouped in different ways. One way is to describe the way the instruments interact with a sample to create images, either by sending a beam of light or electrons to a sample",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "hit",
+        "hit",
+        "try to hit hte ball",
+        "try to hit hte ball"
+      ]
+    }
+  ],
+  "elapsed_time": 69.98501944541931,
+  "samples_per_second": 0.14288772196168226,
+  "timestamp": "2025-12-05T00:23:58.118712"
+}

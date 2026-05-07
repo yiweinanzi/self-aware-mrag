@@ -1,0 +1,220 @@
+{
+  "method": "VisRAG",
+  "config": {
+    "dataset_name": "okvqa",
+    "data_dir": "/data0/home/zqwang/ACL/FlashRAG/flashrag/data/VQA",
+    "split": "val",
+    "max_samples": 10,
+    "load_images": true,
+    "qwen3_vl_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+    "torch_dtype": "bfloat16",
+    "temperature": 0.01,
+    "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+    "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+    "retrieval_model_path": "/data0/home/zqwang/ACL/models/bge-large-en-v1.5",
+    "retrieval_topk": 5,
+    "uncertainty_threshold": 0.43,
+    "use_improved_estimator": true,
+    "text_weight": 0.4,
+    "visual_weight": 0.3,
+    "alignment_weight": 0.3,
+    "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_okvqa_baselines"
+  },
+  "metrics": {
+    "avg_accuracy": 20.0,
+    "avg_retrieved": 0.0,
+    "avg_F1": 0.2,
+    "avg_VQA_Score": 20.0,
+    "avg_Recall@5": 0.0,
+    "avg_Faithfulness": 0.0,
+    "avg_Attribution_Precision": 0.0,
+    "avg_Position_Bias_Score": 0.5,
+    "accuracy": 20.0,
+    "retrieval_rate": 0.0
+  },
+  "results": [
+    {
+      "question": "What sport can you use this for?",
+      "answer": "This motorcycle is a **Honda Africa Twin**, a dual-sport bike designed for both on-road and",
+      "retrieved_docs": [],
+      "retrieved": false,
+      "golden_answers": [
+        "race",
+        "race",
+        "race",
+        "race",
+        "race",
+        "race",
+        "motocross",
+        "motocross",
+        "ride",
+        "ride"
+      ]
+    },
+    {
+      "question": "Name the type of plant this is?",
+      "answer": "Based on the image, the plant is a **vertical garden** or **living wall**. It",
+      "retrieved_docs": [],
+      "retrieved": false,
+      "golden_answers": [
+        "vine",
+        "vine",
+        "vine",
+        "vine",
+        "climb",
+        "climb",
+        "look like some kind of ivy",
+        "look like some kind of ivy",
+        "ficus",
+        "ficus"
+      ]
+    },
+    {
+      "question": "What toy is this?",
+      "answer": "teddy bear",
+      "retrieved_docs": [],
+      "retrieved": false,
+      "golden_answers": [
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "teddy bear",
+        "teddy bear",
+        "teddy bear",
+        "teddy bear"
+      ]
+    },
+    {
+      "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+      "answer": "Based on the image, the animal is a dog, and the man is holding two frisbe",
+      "retrieved_docs": [],
+      "retrieved": false,
+      "golden_answers": [
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth"
+      ]
+    },
+    {
+      "question": "What could this gentleman be carrying in that red bag?",
+      "answer": "Based on the image, the gentleman is carrying a red bag with a gray base and a gray handle",
+      "retrieved_docs": [],
+      "retrieved": false,
+      "golden_answers": [
+        "cloth",
+        "cloth",
+        "cloth",
+        "cloth",
+        "food",
+        "food",
+        "lunch",
+        "lunch",
+        "shoe",
+        "shoe"
+      ]
+    },
+    {
+      "question": "Who leaves a toilet like this?",
+      "answer": "The person who uses it.",
+      "retrieved_docs": [],
+      "retrieved": false,
+      "golden_answers": [
+        "man",
+        "man",
+        "man",
+        "man",
+        "man",
+        "man",
+        "men",
+        "men",
+        "men",
+        "men"
+      ]
+    },
+    {
+      "question": "A center affixed unit like this one in a kitchen is called a what?",
+      "answer": "island",
+      "retrieved_docs": [],
+      "retrieved": false,
+      "golden_answers": [
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island"
+      ]
+    },
+    {
+      "question": "Why might someone go to this place?",
+      "answer": "Based on the visual evidence in the image, someone might go to this place for several compelling reasons:",
+      "retrieved_docs": [],
+      "retrieved": false,
+      "golden_answers": [
+        "shop",
+        "shop",
+        "shop",
+        "shop",
+        "nyc",
+        "nyc",
+        "shop",
+        "shop",
+        "business",
+        "business"
+      ]
+    },
+    {
+      "question": "What does this grow from?",
+      "answer": "This orange lily grows from a **bulb**.\n\nLilies are bulbous plants, meaning",
+      "retrieved_docs": [],
+      "retrieved": false,
+      "golden_answers": [
+        "ground",
+        "ground",
+        "ground",
+        "ground",
+        "plant",
+        "plant",
+        "hibiscus plant stem",
+        "hibiscus plant stem",
+        "root",
+        "root"
+      ]
+    },
+    {
+      "question": "What is that man doing with the bat?",
+      "answer": "The man is preparing to bat in a baseball game. He is standing at home plate in a batting",
+      "retrieved_docs": [],
+      "retrieved": false,
+      "golden_answers": [
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "hit",
+        "hit",
+        "try to hit hte ball",
+        "try to hit hte ball"
+      ]
+    }
+  ],
+  "elapsed_time": 60.30232882499695,
+  "samples_per_second": 0.16583107476696204,
+  "timestamp": "2025-12-05T00:21:28.166008"
+}

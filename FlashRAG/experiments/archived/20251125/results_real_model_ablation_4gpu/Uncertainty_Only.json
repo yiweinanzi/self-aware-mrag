@@ -1,0 +1,13 @@
+[
+  {
+    "question_id": "",
+    "question": "What color is the sky?",
+    "predicted_answer": "white",
+    "golden_answers": [
+      "blue"
+    ],
+    "is_correct": false,
+    "variant": "Uncertainty Only",
+    "processing_gpu": 3
+  }
+]

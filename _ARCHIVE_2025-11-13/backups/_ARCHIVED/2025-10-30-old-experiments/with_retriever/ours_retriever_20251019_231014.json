@@ -1,0 +1,212 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "Based on the given context, it is not possible to determine the specific sport that can be played with a ball, a rectangular court, and two teams. However, some possible sports that could fit these criteria are:\n\n1. Frisbee: A sport played with a flying disc between two teams, typically with 7 players on each team.\n2. Ultimate Frisbee: A non-contact team sport played with a flying disc, where the objective is to",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "eigen_score": 8.946154594421387,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "Based on the given context, it is not possible to determine the type of plant from the given information. The given statements provide information about animals (a cat, a car, and an elephant) and their characteristics, but do not provide any information about plants.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "eigen_score": 8.034934043884277,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "Based on the given context, it is not possible to definitively determine the type of toy in question. However, we can eliminate some possibilities.\n\n* If the toy is a mechanical toy designed to resemble a robot, it is not an action figure, as action figures are poseable character figures made of plastic.\n* If the toy is a toy made of fabric and filled with soft material like cotton, it is not a robot toy or an",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "eigen_score": 8.243576049804688,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "If the man is holding a stuffed animal and an action figure, the part of the stuffed animal that would be in use is its head. The head of the stuffed animal can be used to represent the character or figure in the game being played. The action figure, on the other hand, would typically be used to represent the player's character or figure in the game.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "eigen_score": 9.10990047454834,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "It is not possible to determine what the gentleman is carrying in the red bag based on the given information. The information provided describes pizza, cats, and cars, but does not provide any context or information about the gentleman or the red bag.",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "eigen_score": 8.100687980651855,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "5723996",
+    "question": "Who leaves a toilet like this?",
+    "prediction": "An elephant.",
+    "golden_answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "eigen_score": null,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "5759705",
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "prediction": "A center affixed unit like the one described in the kitchen is typically referred to as a kitchen island or a kitchen cart. These units are designed to provide additional workspace, storage, and seating in the kitchen, and they often feature an integrated sink and other appliances.",
+    "golden_answers": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "eigen_score": null,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "3045575",
+    "question": "Why might someone go to this place?",
+    "prediction": "Someone might go to London to visit the famous landmarks and attractions, such as Buckingham Palace, the London Eye, and the British Museum. They might also go to experience the city's rich history, culture, and cuisine. Additionally, London is a major transportation hub, with several airports, train stations, and bus routes, making it easy to get around and explore the city.",
+    "golden_answers": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "eigen_score": null,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "2183655",
+    "question": "What does this grow from?",
+    "prediction": "A flower bulb is a type of bulb that grows from a flower bulb plant. The flower bulb plant produces a bulb that contains the flower bulb, which eventually sprouts and grows into a flower. The flower bulb plant can be grown from seeds, and the seeds can be sown in the fall or spring. The flower bulb plant prefers well-drained soil and full sun to partial shade. Once the flower bulb has bloomed,",
+    "golden_answers": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "eigen_score": null,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "2863135",
+    "question": "What is that man doing with the bat?",
+    "prediction": "The man is holding a baseball bat, which is a piece of equipment used in the sport of baseball.",
+    "golden_answers": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "eigen_score": null,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  }
+]

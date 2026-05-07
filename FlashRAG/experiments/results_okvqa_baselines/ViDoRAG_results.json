@@ -1,0 +1,587 @@
+{
+  "method": "ViDoRAG",
+  "config": {
+    "dataset_name": "okvqa",
+    "data_dir": "/data0/home/zqwang/ACL/FlashRAG/flashrag/data/VQA",
+    "split": "val",
+    "max_samples": 10,
+    "load_images": true,
+    "qwen3_vl_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+    "torch_dtype": "bfloat16",
+    "temperature": 0.01,
+    "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+    "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+    "retrieval_model_path": "/data0/home/zqwang/ACL/models/bge-large-en-v1.5",
+    "retrieval_topk": 5,
+    "uncertainty_threshold": 0.43,
+    "use_improved_estimator": true,
+    "text_weight": 0.4,
+    "visual_weight": 0.3,
+    "alignment_weight": 0.3,
+    "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_okvqa_baselines"
+  },
+  "metrics": {
+    "avg_accuracy": 10.0,
+    "avg_retrieved": 1.0,
+    "avg_F1": 0.18636363636363637,
+    "avg_VQA_Score": 10.0,
+    "avg_Recall@5": 0.6,
+    "avg_Faithfulness": 0.4723809523809523,
+    "avg_Attribution_Precision": 0.3439393939393939,
+    "avg_Position_Bias_Score": 0.4121329360986511,
+    "accuracy": 10.0,
+    "retrieval_rate": 1.0
+  },
+  "results": [
+    {
+      "question": "What sport can you use this for?",
+      "answer": "None of the listed sports (squash, roller hockey, lacrosse, rowing, racket sports) are directly related to",
+      "retrieved_docs": [
+        {
+          "id": 636978,
+          "source": "wikipedia",
+          "title": "Squash (sport)",
+          "contents": "Squash (sport)\nis appropriate for one's skill level. The four different ball types are Intro (Blue dot, 140% of Pro bounce), Progress (Red dot, 120% of Pro bounce), Competition (single yellow dot, 110% of Pro bounce) and Pro (double yellow dot). The \"double-yellow dot\" ball, introduced in 2000, is the competition standard, replacing the earlier \"yellow-dot\" ball. There is also an \"orange dot\" ball for use at high altitudes. Players wear comfortable sports clothing. In competition, men usually wear shorts and a T-shirt, tank top or a polo shirt. Women normally wear a skirt or skort and a T-shirt or a tank",
+          "image_url": ""
+        },
+        {
+          "id": 352754,
+          "source": "wikipedia",
+          "title": "Roller hockey",
+          "contents": "Roller hockey\nfootball or basketball. The stick is more or less the same as in bandy and shinty. Roller hockey (inline) bears close resemblance to ice hockey and is played on inline skates, uses an ice hockey stick and includes a lot of fast \"racing back and forth\" action. Inline hockey goalies use a glove called a catcher to catch shots made on goal, and a flat, usually square, mitt called a blocker which is used to deflect shots on goal. The Quad hockey goalie uses a flat batting glove that provides rebound characteristics when blocking a shot on goal. Quad hockey",
+          "image_url": ""
+        },
+        {
+          "id": 248638,
+          "source": "wikipedia",
+          "title": "Lacrosse",
+          "contents": "Lacrosse\nprotect against concussions. Women goalies wear a helmet, gloves, and chest protector. Lacrosse Lacrosse is a team sport played with a lacrosse stick and a lacrosse ball, commonly played indoors or outdoors. Players use the head of the lacrosse stick to carry, pass, catch, and shoot the ball into the goal. The sport is governed by the Federation of International Lacrosse; the most prominent international competition is the World Lacrosse Championship, which has been dominated by the United States. The sport has four versions that have different sticks, fields, rules and equipment: field lacrosse, women's lacrosse, box lacrosse and intercrosse.",
+          "image_url": ""
+        },
+        {
+          "id": 347795,
+          "source": "wikipedia",
+          "title": "Rowing (sport)",
+          "contents": "Rowing (sport)\ndistance. As many sports teams have logos printed on their jerseys, rowing clubs have specifically painted blades that each team is associated with. Indoor rowing (on ergometer, or tank) is a way to train technique and strength by going through the same motions as rowing, with resistance. Indoor rowing is helpful when there are no rowable bodies of water near by, or weather conditions don't permit rowing. A rowing tank is an indoor facility which attempts to mimic the conditions rowers face on open water. Rowing tanks are primarily used for off-season rowing, muscle specific conditioning and technique training, or",
+          "image_url": ""
+        },
+        {
+          "id": 637012,
+          "source": "wikipedia",
+          "title": "Racket (sports equipment)",
+          "contents": "Racket (sports equipment)\nRacket (sports equipment) A racket or racquet is a sports implement consisting of a handled frame with an open hoop across which a network of strings or catgut is stretched tightly. It is used for striking a ball or shuttlecock in games such as squash, tennis, racquetball, and badminton. Collectively, these games are known as racket sports. Racket design and manufacturing has changed considerably over the centuries. The frame of rackets for all sports was traditionally made of solid wood (later laminated wood) and the strings of animal intestine known as catgut. The traditional racket size was limited by the",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "race",
+        "race",
+        "race",
+        "race",
+        "race",
+        "race",
+        "motocross",
+        "motocross",
+        "ride",
+        "ride"
+      ]
+    },
+    {
+      "question": "Name the type of plant this is?",
+      "answer": "Based on the visual evidence, the plant is a vertical garden or living wall composed of various green leafy plants, likely including",
+      "retrieved_docs": [
+        {
+          "id": 1441102,
+          "source": "wikipedia",
+          "title": "Asclepias tuberosa",
+          "contents": "Asclepias tuberosa\nCommon names include butterfly weed, Canada root, chieger flower, chiggerflower, fluxroot, Indian paintbrush, Indian posy, orange milkweed, orange root, orange Swallow-wort, pleurisy root, silky swallow-wort, tuber root, yellow milkweed, white-root, windroot, butterfly love, butterflyweed, and butterfly milkweed. Asclepias tuberosa Asclepias tuberosa is a species of milkweed native to eastern North America. It is a perennial plant growing to tall, with clustered orange or yellow flowers from early summer to early autumn. The leaves are spirally arranged, lanceolate, 5–12 cm long, and 2–3 cm broad. This plant favors dry, sand or gravel soil, but has also been reported on stream margins.",
+          "image_url": ""
+        },
+        {
+          "id": 2820794,
+          "source": "wikipedia",
+          "title": "Aegopodium podagraria",
+          "contents": "Aegopodium podagraria\nAegopodium podagraria Aegopodium podagraria (commonly called ground elder, herb gerard, bishop's weed, goutweed, gout wort, and snow-in-the-mountain, and sometimes called English masterwort and wild masterwort) is a perennial plant in the carrot family (Apiaceae) that grows in shady places. The name \"ground elder\" comes from the superficial similarity of its leaves and flowers to those of elder (\"Sambucus\"), which is unrelated. It is the type species of the genus \"Aegopodium\". This species is native to Eurasia, and has been introduced around the world as an ornamental plant, where it occasionally poses an ecological threat as an invasive exotic plant. \"A.",
+          "image_url": ""
+        },
+        {
+          "id": 2483675,
+          "source": "wikipedia",
+          "title": "Pachypodium lamerei",
+          "contents": "Pachypodium lamerei\nPachypodium lamerei Pachypodium lamerei is a species of flowering plant in the dogbane family Apocynaceae. It is a stem succulent, photosynthesizing mainly through its trunk, and comes from the island of Madagascar, off the east coast of Africa. It has large thorns and leaves mostly just at the top of the plant, and large, fragrant flowers. The species has become one of the best known pachypodiums in cultivation, being relatively easy to propagate and grow. In cultivation it is often marketed as the Madagascar palm, despite its not being a palm at all. A variety called \"Ramosum\" has been described.",
+          "image_url": ""
+        },
+        {
+          "id": 2767490,
+          "source": "wikipedia",
+          "title": "Heracleum (plant)",
+          "contents": "Heracleum (plant)\nis \"H. mantegazzianum\", the size of which is exceptional. Other than size, the related species \"H. mantegazzianum\", \"H. sosnowskyi\", and \"H. persicum\" have very similar characteristics. The common name giant hogweed usually refers to \"H. mantegazzianum\" alone but in some locales that common name refers to all three species as a group. The morphological similarity of species within the \"Heracleum\" genus and the difficulty of botanical identification has led to numerous synonyms and naming issues. For example, the classification of the species now widely known as \"H. maximum\" has been inconsistent. In the literature, the scientific names \"H. lanatum\", \"H.",
+          "image_url": ""
+        },
+        {
+          "id": 765227,
+          "source": "wikipedia",
+          "title": "Deciduous",
+          "contents": "Deciduous\ninclude honeysuckle, viburnum, and many others. Most temperate woody vines are also deciduous, including grapes, poison ivy, Virginia creeper, wisteria, etc. The characteristic is useful in plant identification; for instance in parts of Southern California and the American Southeast, deciduous and evergreen oak species may grow side by side. Periods of leaf fall often coincide with seasons: winter in the case of cool-climate plants or the dry-season in the case of tropical plants, however there are no deciduous species among tree-like monocotyledonous plants, e.g. palms, yuccas, and dracaenas. The hydrangea hirta is a deciduous woody shrub found in Japan. Forests",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "vine",
+        "vine",
+        "vine",
+        "vine",
+        "climb",
+        "climb",
+        "look like some kind of ivy",
+        "look like some kind of ivy",
+        "ficus",
+        "ficus"
+      ]
+    },
+    {
+      "question": "What toy is this?",
+      "answer": "stuffed toy",
+      "retrieved_docs": [
+        {
+          "id": 990298,
+          "source": "wikipedia",
+          "title": "Yo-yo",
+          "contents": "Yo-yo\nYo-yo A yo-yo (also spelled yoyo) is a toy consisting of an axle connected to two disks, and a string looped around the axle. It has some similarities to a slender spool. A yo-yo is played by holding the free end of the string known as the handle (by inserting one fingerusually the middle or index fingerinto a slip knot) allowing gravity (or the force of a throw and gravity) to spin the yo-yo and unwind the string (similar to how a pullstring works). The player then allows the yo-yo to wind itself back to the player's hand, exploiting its",
+          "image_url": ""
+        },
+        {
+          "id": 1327296,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nToy A toy is an item that is used in play, especially one designed for such use. Playing with toys can be an enjoyable means of training young children for life in society. Different materials like wood, clay, paper, and plastic are used to make toys. Many items are designed to serve as toys, but goods produced for other purposes can also be used. For instance, a small child may fold an ordinary piece of paper into an airplane shape and \"fly it\". Newer forms of toys include interactive digital entertainment. Some toys are produced primarily as collectors' items and",
+          "image_url": ""
+        },
+        {
+          "id": 2349108,
+          "source": "wikipedia",
+          "title": "Stuffed toy",
+          "contents": "Stuffed toy\nStuffed toy A stuffed toy is a toy with an outer fabric sewn from a textile and then stuffed with a flexible material. In North American English, they are variously referred to as plush toys, stuffed animals, plushies, snuggies, stuffies, or snuggled animals. In British English, they are soft toys or cuddly toys. The toys developed in their current form in the early years of the 20th century and have remained consistently popular with children throughout. Different fads have caused specific toys to surge in popularity among adults and collectors. Noticeable examples include Tickle Me Elmo and Beanie Babies. Textiles",
+          "image_url": ""
+        },
+        {
+          "id": 691834,
+          "source": "wikipedia",
+          "title": "Silly Putty",
+          "contents": "Silly Putty\nSilly Putty Silly Putty is a toy based on silicone polymers that have unusual physical properties. It bounces, but it breaks when given a sharp blow, and it can also flow like a liquid. It contains a viscoelastic liquid silicone, a type of non-Newtonian fluid, which makes it act as a viscous liquid over a long time period but as an elastic solid over a short time period. It was originally created during research into potential rubber substitutes for use by the United States in World War II. The name \"Silly Putty\" is a trademark of Crayola LLC. Other names",
+          "image_url": ""
+        },
+        {
+          "id": 1327336,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nto work with their hands, puzzle solvers, and imaginative sorts. Some other examples include Bayko, Konstruk-Tubes, K'Nex, Erector Sets, Tinkertoys, and Meccano, and generic construction toys such as Neodymium magnet toys. A doll is a model of a human (often a baby), a humanoid (like Bert and Ernie), or an animal. Modern dolls are often made of cloth or plastic. Other materials that are, or have been, used in the manufacture of dolls include cornhusks, bone, stone, wood, porcelain (sometimes called china), bisque, celluloid, wax, and even apples. Often people will make dolls out of whatever materials are available to",
+          "image_url": ""
+        },
+        {
+          "id": 1327341,
+          "source": "wikipedia",
+          "title": "Toy",
+          "contents": "Toy\nOther categories include; construction puzzles, stick puzzles, tiling puzzles, disentanglement puzzles, sliding puzzles, logic puzzles, picture puzzles, lock puzzles and mechanical puzzles. Some toys, such as Beanie Babies, attract large numbers of enthusiasts, eventually becoming collectibles. Other toys, such as Boyds Bears are marketed to adults as collectibles. Some people spend large sums of money in an effort to acquire larger and more complete collections. The record for a single Pez dispenser at auction, for example, is US$1100. Many successful films, television programs, books and sport teams have official merchandise, which often includes related toys. Some notable examples are \"Star",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "stuffed animal",
+        "teddy bear",
+        "teddy bear",
+        "teddy bear",
+        "teddy bear"
+      ]
+    },
+    {
+      "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+      "answer": "paws",
+      "retrieved_docs": [
+        {
+          "id": 53887,
+          "source": "wikipedia",
+          "title": "Bongo (antelope)",
+          "contents": "Bongo (antelope)\nmostly nocturnal, they are occasionally active during the day. However, like deer, bongos may exhibit crepuscular behaviour. Bongos are both timid and easily frightened; after a scare, a bongo moves away at considerable speed, even through dense undergrowth. Once they find cover, they stay alert and face away from the disturbance, but peek every now and then to check the situation. The bongo's hindquarters are less conspicuous than the forequarters, and from this position the animal can quickly flee. When in distress, the bongo emits a bleat. It uses a limited number of vocalisations, mostly grunts and snorts; females have",
+          "image_url": ""
+        },
+        {
+          "id": 53883,
+          "source": "wikipedia",
+          "title": "Bongo (antelope)",
+          "contents": "Bongo (antelope)\nhave two heavy and slightly spiralled horns that slope over their backs, and like many other antelope species, both male and female bongos have horns. Bongos are the only tragelaphids in which both sexes have horns. The horns of bongos are in the form of a lyre and bear a resemblance to those of the related antelope species of nyalas, sitatungas, bushbucks, kudus and elands. Unlike deer, which have branched antlers shed annually, bongos and other antelopes have pointed horns they keep throughout their lives. Males have massive backswept horns, while females have smaller, thinner, and more parallel horns. The",
+          "image_url": ""
+        },
+        {
+          "id": 1538472,
+          "source": "wikipedia",
+          "title": "Learning",
+          "contents": "Learning\nin itself, but that improves performance in similar future situations. This is seen in a wide variety of vertebrates besides humans, but is mostly limited to mammals and birds. Cats are known to play with a ball of string when young, which gives them experience with catching prey. Besides inanimate objects, animals may play with other members of their own species or other animals, such as orcas playing with seals they have caught. Play involves a significant cost to animals, such as increased vulnerability to predators and the risk of injury and possibly infection. It also consumes energy, so there",
+          "image_url": ""
+        },
+        {
+          "id": 86841,
+          "source": "wikipedia",
+          "title": "Coyote",
+          "contents": "Coyote\nengaging in play behavior. A common play behavior includes the coyote \"hip-slam\". By three weeks of age, coyote pups bite each other with less inhibition than wolf pups. By the age of four to five weeks, pups have established dominance hierarchies, and are by then more likely to play rather than fight. The male plays an active role in feeding, grooming, and guarding the pups, but abandons them if the female goes missing before the pups are completely weaned. The den is abandoned by June to July, and the pups follow their parents in patrolling their territory and hunting. Pups",
+          "image_url": ""
+        },
+        {
+          "id": 2063962,
+          "source": "wikipedia",
+          "title": "Oceanic dolphin",
+          "contents": "Oceanic dolphin\nto dislodge parasites. Dolphins show various types of playful behavior, often including objects, self-made bubble rings, other dolphins, or other animals. When playing with objects or small animals, common behavior includes carrying the object or animal along using various parts of the body, passing it along to other members of the group or taking it from another member, or throwing it out of the water. Dolphins have also been observed harassing animals in other ways, for example by dragging birds underwater without showing any intent to eat them. Playful behaviour that involves another animal species with active participation of the",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth",
+        "mouth"
+      ]
+    },
+    {
+      "question": "What could this gentleman be carrying in that red bag?",
+      "answer": "diplomatic bag",
+      "retrieved_docs": [
+        {
+          "id": 2472024,
+          "source": "wikipedia",
+          "title": "Pocket",
+          "contents": "Pocket\nin the 1980s and early 2000s. In some of the following illustrations, a folded blue handkerchief is included for illustration purposes: Pocket A pocket is a bag- or envelope-like receptacle either fastened to or inserted in an article of clothing to hold small items. Pockets are also attached to luggage, backpacks, and similar items. In older usage, a pocket was a separate small bag or pouch. Ancient people used leather or cloth pouches to hold valuables. Ötzi (also called the \"Iceman\"), who lived around 3,300 BCE, had a belt with a pouch sewn to it that contained a cache of",
+          "image_url": ""
+        },
+        {
+          "id": 2938751,
+          "source": "wikipedia",
+          "title": "Diplomatic bag",
+          "contents": "Diplomatic bag\nDiplomatic bag A diplomatic bag, also known as a diplomatic pouch, is a container with certain legal protections used for carrying official correspondence or other items between a diplomatic mission and its home government or other diplomatic, consular, or otherwise official entity. The physical concept of a \"diplomatic bag\" is flexible and therefore can take many forms (e.g., a cardboard box, briefcase, duffel bag, large suitcase, crate or even a shipping container). Additionally, a diplomatic bag usually has some form of lock and/or tamper-evident seal attached to it in order to deter or detect interference by unauthorized third parties. The",
+          "image_url": ""
+        },
+        {
+          "id": 1543323,
+          "source": "wikipedia",
+          "title": "Backpack",
+          "contents": "Backpack\nuse these military-style tactical backpacks and webbing for storing gear and ammunition. There is also a small but thriving industry devoted to creating historical reproductions of military gear; such companies generally produce period-appropriate uniforms and other gear in addition to backpacks. Some more recent military/tactical designs, especially the MOLLE and ILBE packs used by the United States armed forces, are covered with webbing loop attachment points for increased carrying capacity. Recently, at least one brand of backpack has been specially designed for professional cooks and culinary students. This sort of backpack is meant to safely carry knives, cooking tools, and",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "cloth",
+        "cloth",
+        "cloth",
+        "cloth",
+        "food",
+        "food",
+        "lunch",
+        "lunch",
+        "shoe",
+        "shoe"
+      ]
+    },
+    {
+      "question": "Who leaves a toilet like this?",
+      "answer": "user",
+      "retrieved_docs": [
+        {
+          "id": 1805341,
+          "source": "wikipedia",
+          "title": "Flush toilet",
+          "contents": "Flush toilet\nuse of a toilet brush to remove bits of feces that may have left marks on the shelf. Additionally, this design presents the disadvantage of creating a strong lingering odor since the feces are not submerged in water immediately after excretion. Similar designs are found in some early toilets in the US, one particular brand being labeled the \"Grand Niagara\", as the flushing of the shelf created a waterfall effect into the drain chamber. In many parts of Asia, people traditionally use the toilet in a squatting position. This applies to defecation and urination by males and females. Therefore, homes",
+          "image_url": ""
+        },
+        {
+          "id": 1805305,
+          "source": "wikipedia",
+          "title": "Flush toilet",
+          "contents": "Flush toilet\nFlush toilet A flush toilet (also known as a flushing toilet, flush lavatory, water closet (WC), or commode in colloquial US English) is a toilet that disposes of human excreta (urine and feces) by using water to flush it through a drainpipe to another location for disposal, thus maintaining a separation between humans and their excreta. Flush toilets can be designed for sitting (in which case they are also called \"Western\" toilets) or for squatting, in the case of squat toilets. The opposite of a flush toilet is a dry toilet, which uses no water for flushing. Flush toilets are",
+          "image_url": ""
+        },
+        {
+          "id": 1805343,
+          "source": "wikipedia",
+          "title": "Flush toilet",
+          "contents": "Flush toilet\nseat if someone attempts to squat on the edges. In India, the \"Anglo-Indian\" design allows the same toilet to be used in the sitting or the squatting position. The valve closet has a valve or flap at the exit of the bowl, often with a watertight seal to retain a pool of water in the pan. When the toilet is flushed, the valve is opened and the water in the pan flows rapidly out of the bowl into the drains, carrying the waste with it. The earliest type of toilet, the valve closet is now rarely used for water-flush toilet",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "man",
+        "man",
+        "man",
+        "man",
+        "man",
+        "man",
+        "men",
+        "men",
+        "men",
+        "men"
+      ]
+    },
+    {
+      "question": "A center affixed unit like this one in a kitchen is called a what?",
+      "answer": "Island",
+      "retrieved_docs": [
+        {
+          "id": 599645,
+          "source": "wikipedia",
+          "title": "Kitchen",
+          "contents": "Kitchen\nand often now made of granite, marble, tile or wood – is placed. The units which are held on the wall for storage purposes are termed as \"wall units\" or \"wall cabinets\". In small areas of kitchen in an apartment, even a \"tall storage unit\" is available for effective storage. In cheaper brands, all cabinets are kept a uniform color, normally white, with interchangeable doors and accessories chosen by the customer to give a varied look. In more expensive brands, the cabinets are produced matching the doors' colors and finishes, for an older more bespoke look. Starting in the 1980s,",
+          "image_url": ""
+        },
+        {
+          "id": 2948852,
+          "source": "wikipedia",
+          "title": "Kitchen stove",
+          "contents": "Kitchen stove\n\"drop-in range\" is a combination stovetop-and-oven unit that installs in a kitchen's lower cabinets flush with the countertop. Most modern stoves come in a unit with built-in extractor hoods. Professional chefs often prefer gas stovetops, for they allow them to control the heat more finely and more quickly. Today's major brands offer both gas and electric stoves, and many also offer dual-fuel ranges combining a gas stovetop and an electric oven. Early clay stoves that enclosed the fire completely, were known from the Chinese Qin Dynasty (221 BC–206/207 BC), and a similar design known as \"kamado\" (かまど) appeared in the",
+          "image_url": ""
+        },
+        {
+          "id": 599643,
+          "source": "wikipedia",
+          "title": "Kitchen",
+          "contents": "Kitchen\nkitchen, but later defined new in the \"Swedish kitchen\" (\"Svensk köksstandard\", Swedish kitchen standard). The equipment used remained a standard for years to come: hot and cold water on tap and a kitchen sink and an electrical or gas stove and oven. Not much later, the refrigerator was added as a standard item. The concept was refined in the \"Swedish kitchen\" using unit furniture with wooden fronts for the kitchen cabinets. Soon, the concept was amended by the use of smooth synthetic door and drawer fronts, first in white, recalling a sense of cleanliness and alluding to sterile lab or",
+          "image_url": ""
+        },
+        {
+          "id": 599613,
+          "source": "wikipedia",
+          "title": "Kitchen",
+          "contents": "Kitchen\nKitchen A kitchen is a room or part of a room used for cooking and food preparation in a dwelling or in a commercial establishment. A modern middle-class residential kitchen is typically equipped with a stove, a sink with hot and cold running water, a refrigerator, and worktops and kitchen cabinets arranged according to a modular design. Many households have a microwave oven, a dishwasher, and other electric appliances. The main functions of a kitchen are to store, prepare and cook food (and to complete related tasks such as dishwashing). The room or area may also be used for dining",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island",
+        "island"
+      ]
+    },
+    {
+      "question": "Why might someone go to this place?",
+      "answer": "To experience vibrant nightlife and shopping in a bustling urban district.",
+      "retrieved_docs": [
+        {
+          "id": 694012,
+          "source": "wikipedia",
+          "title": "Louisville, Kentucky",
+          "contents": "Louisville, Kentucky\nMuseum, which opened its doors in 2004 as an armaments museum, featuring the only collection of Royal Armouries artifacts outside of the United Kingdom. Since then the Frazier has expanded its focus to broader history. The Frazier Museum has three floors of exhibits, an education center and a tournament ring, which presents daily performances, as well as event spaces available for rent, including a rooftop garden featuring native plants and 4th floor loft-style space that accommodates up to 360 people seated. Also nearby is the Kentucky Science Center, which is Kentucky's largest hands-on science center and features interactive exhibits, IMAX",
+          "image_url": ""
+        },
+        {
+          "id": 527821,
+          "source": "wikipedia",
+          "title": "Ljubljana",
+          "contents": "Ljubljana\nare located the Celica Hostel with rooms all artistically decorated by the Metelkova artists, and a new part of the Museum of Modern Art, Museum of Contemporary Art. Another alternative culture centre is located in the former Rog factory. Both Metelkova and Rog factory factory located in Tabor neighbourhood are walking distance from the city centre and visited by various tours. The Šiška Cultural Quarter hosts a number of art groups and cultural organisations dedicated to contemporary and avant-garde arts. Part of it is also Kino Šiška Centre for Urban Culture, a venue where music concerts of indie, punk, and",
+          "image_url": ""
+        },
+        {
+          "id": 2547423,
+          "source": "wikipedia",
+          "title": "Arashiyama",
+          "contents": "Arashiyama\nis known for its moss garden that is punctuated with tall maple trees. The temple's entrance gate and small main hall have thatched roofs. The latter has an attractive round window looking into the gardens. Adashino Nenbutsuji Temple Hours: 9:00 to 16:30 (until 15:30 from December to February) Closed: No closing days Admission: 500 yen Adashino Nenbutsuji is located at the end of the Saga-Toriimoto Preserved Street. The temple was founded in the early 9th century when the famous monk Kobo Daishi placed stone statues for the souls of the dead here. Today, the temple grounds are covered by hundreds",
+          "image_url": ""
+        },
+        {
+          "id": 1070963,
+          "source": "wikipedia",
+          "title": "Cedar Rapids, Iowa",
+          "contents": "Cedar Rapids, Iowa\nhome to the Cedar Rapids Museum of Art, The Cedar Rapids Ceramics Center, Legion Art's CSPS Hall, the National Czech & Slovak Museum & Library, the African American Historical Museum, Kirkwood Community College's Iowa Hall Gallery, and the legendary Grant Wood Studio at 5 Turner Alley. These Cedar Rapids venues have recently hosted world class and award nominated exhibitions, including the works of Andy Warhol, Grant Wood, and the Iowa Biennial, among others. The Cedar Rapids Museum of Art houses the largest collection of Grant Wood paintings in the world. The 1920s Paramount Theatre is home to the Orchestra Iowa",
+          "image_url": ""
+        },
+        {
+          "id": 2888902,
+          "source": "wikipedia",
+          "title": "Detroit Institute of Arts",
+          "contents": "Detroit Institute of Arts\ncampus is located in Detroit's Cultural Center Historic District, about two miles (3 km) north of the downtown area, across from the Detroit Public Library near Wayne State University. The museum building is highly regarded by architects. The original building, designed by Paul Philippe Cret, is flanked by north and south wings with the white marble as the main exterior material for the entire structure. The campus is part of the city's Cultural Center Historic District listed in the National Register of Historic Places. The museum's first painting was donated in 1883 and its collection consists of over 65,000 works.",
+          "image_url": ""
+        },
+        {
+          "id": 1990348,
+          "source": "wikipedia",
+          "title": "Mesa Verde National Park",
+          "contents": "Mesa Verde National Park\nand Research Center opened in December 2012. Chapin Mesa (the most popular area) is beyond the visitor center. Mesa Verde National Park is an area of federal exclusive jurisdiction. Because of this all law enforcement, emergency medical service, and wildland/structural fire duties are conducted by federal National Park Service Law Enforcement Rangers. The Mesa Verde National Park Post Office has the ZIP code 81330. Access to park facilities vary by season. Three of the cliff dwellings on Chapin Mesa are open to the public. The Chapin Mesa Archeological Museum is open all year. Spruce Tree House is also open all",
+          "image_url": ""
+        },
+        {
+          "id": 1111848,
+          "source": "wikipedia",
+          "title": "Taylors Falls, Minnesota",
+          "contents": "Taylors Falls, Minnesota\nincludes a ski and snowboard resort, Wild Mountain. The Resort, which is also a water park in the summer months, is located 7.4 miles north of downtown Taylors Falls and 61 miles from Downtown Minneapolis. The site has 26 ski hills spread over 100 acres of land. It also boasts as being the first ski resort to open in Minnesota every year. During the summer, Wild Mountain also operates Taylors Falls Scenic Boat Tours. Leaving multiple times a day, the tours range from 45-80 mins long. On the outskirts of Taylors Falls is Franconia Sculpture Park. It is an outdoor",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "shop",
+        "shop",
+        "shop",
+        "shop",
+        "nyc",
+        "nyc",
+        "shop",
+        "shop",
+        "business",
+        "business"
+      ]
+    },
+    {
+      "question": "What does this grow from?",
+      "answer": "shoot meristems",
+      "retrieved_docs": [
+        {
+          "id": 747680,
+          "source": "wikipedia",
+          "title": "Canna (plant)",
+          "contents": "Canna (plant)\npropagation method is rhizome division. This uses material from a single parent, and as there is no exchange of genetic material, it almost always produces plants that are identical to the parent. After a summer’s growth, the horticultural cultivars can be separated into typically four or five separate smaller rhizomes, each with a growing nodal point ('growing eye'). Without the growing point, which is composed of meristem material, the rhizome will not grow. Micropropagation, also known as tissue culture, is the practice of rapidly multiplying stock plant material to produce a large number of progeny plants. Micropropagation uses \"in vitro\"",
+          "image_url": ""
+        },
+        {
+          "id": 747670,
+          "source": "wikipedia",
+          "title": "Canna (plant)",
+          "contents": "Canna (plant)\nand twisted and distorted blooms and foliage. The flowers are sometimes affected by a grey, fuzzy mold called botrytis. Under humid conditions, it is often found growing on the older flowers. Treatment is to simply remove the old flowers, so the mold does not spread to the new flowers. Cannas grow best in full sun with moderate water in well-drained rich or sandy soil. They grow from perennial rhizomes, but are frequently grown as annuals in temperate zones for an exotic or tropical look in the garden. In arid regions, cannas are often grown in the water garden, with the",
+          "image_url": ""
+        },
+        {
+          "id": 188094,
+          "source": "wikipedia",
+          "title": "Hydroponics",
+          "contents": "Hydroponics\nhave both more air and water retention space than perlite and peat. This aggregate holds more water than parboiled rice hulls. Growstones by volume consist of 0.5 to 5% calcium carbonate – for a standard 5.1 kg bag of Growstones that corresponds to 25.8 to 258 grams of calcium carbonate. The remainder is soda-lime glass. Coco peat, also known as coir or coco, is the leftover material after the fibres have been removed from the outermost shell (bolster) of the coconut. Coir is a 100% natural grow and flowering medium. Coconut coir is colonized with trichoderma fungi, which protects roots",
+          "image_url": ""
+        },
+        {
+          "id": 104181,
+          "source": "wikipedia",
+          "title": "Developmental biology",
+          "contents": "Developmental biology\nroots grow from root meristems located at the tip of the root, and new stems and leaves grow from shoot meristems located at the tip of the shoot. Branching occurs when small clumps of cells left behind by the meristem, and which have not yet undergone cellular differentiation to form a specialized tissue, begin to grow as the tip of a new root or shoot. Growth from any such meristem at the tip of a root or shoot is termed primary growth and results in the lengthening of that root or shoot. Secondary growth results in widening of a root",
+          "image_url": ""
+        },
+        {
+          "id": 623983,
+          "source": "wikipedia",
+          "title": "Shoot",
+          "contents": "Shoot\nof some genera such as \"Picea\" are so small that they can be mistaken for part of the leaf that they have produced. A related phenomenon is seasonal heterophylly, which involves visibly different leaves from spring growth and later lammas growth. Whereas spring growth mostly comes from buds formed the previous season, and often includes flowers, lammas growth often involves long shoots. Shoot In botany, shoots consist of stems including their appendages, the leaves and lateral buds, flowering stems and flower buds. The new growth from seed germination that grows upward is a shoot where leaves will develop. In the",
+          "image_url": ""
+        },
+        {
+          "id": 2105803,
+          "source": "wikipedia",
+          "title": "Lenticel",
+          "contents": "Lenticel\ndevelopment of the first periderm.The formation of lenticels seem to be directly related to the growth and strength of the shoot and on the hydrose of the tissue, which refers to the internal moisture. As stems and roots mature lenticel development continues in the new periderm (for example, periderm that forms at the bottom of cracks in the bark). Lenticels are found as raised circular, oval, or elongated areas on stems and roots. In woody plants, lenticels commonly appear as rough, cork-like structures on young branches. Underneath them, porous tissue creates a number of large intercellular spaces between cells. This",
+          "image_url": ""
+        },
+        {
+          "id": 2180542,
+          "source": "wikipedia",
+          "title": "Corm",
+          "contents": "Corm\nin starch, above a circular basal node from which roots grow. Long-lived cormous plants vary in their long-term development. Some regularly replace their older corms with a stack of younger corms, increased more or less seasonally. By splitting such a stack before the older corm generations wither too badly, the horticulturist can exploit the individual corms for propagation. Other species seldom do anything of that kind; their corms simply grow larger in most seasons. Yet others split when multiple buds or stolons on a large corm sprout independently, forming a tussock. Corms can be dug up and used to propagate",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "ground",
+        "ground",
+        "ground",
+        "ground",
+        "plant",
+        "plant",
+        "hibiscus plant stem",
+        "hibiscus plant stem",
+        "root",
+        "root"
+      ]
+    },
+    {
+      "question": "What is that man doing with the bat?",
+      "answer": "The man is preparing to bat, waiting for the pitch to hit the ball.",
+      "retrieved_docs": [
+        {
+          "id": 41671,
+          "source": "wikipedia",
+          "title": "Baseball",
+          "contents": "Baseball\nholding a bat. The batter waits for the pitcher to throw a pitch (the ball) toward home plate, and attempts to hit the ball with the bat. The catcher catches pitches that the batter does not hit—as a result of either electing not to swing or failing to connect—and returns them to the pitcher. A batter who hits the ball into the field of play must drop the bat and begin running toward first base, at which point the player is referred to as a \"runner\" (or, until the play is over, a \"batter-runner\"). A batter-runner who reaches first base",
+          "image_url": ""
+        },
+        {
+          "id": 1806869,
+          "source": "wikipedia",
+          "title": "Corked bat",
+          "contents": "Corked bat\nreported that Pete Rose used corked bats during his 1985 pursuit of Ty Cobb's all-time hits record. Two sports memorabilia collectors who owned Rose's game-used bats from that season had the bats x-rayed and found the telltale signs of corking. Rose had previously denied using corked bats. Corked bat In baseball, a corked bat is a specially modified baseball bat that has been filled with cork or other lighter, less dense substances to make the bat lighter. A lighter bat gives a hitter a quicker swing and may improve the hitter's timing. In Major League Baseball, modifying a bat with",
+          "image_url": ""
+        },
+        {
+          "id": 2062766,
+          "source": "wikipedia",
+          "title": "Tony Gwynn",
+          "contents": "Tony Gwynn\nbats light like his aluminum ones in college. Instead of having the barrel of his bats shaved, as many batters do, he had them \"cupped\", with the end of the barrel hollowed out like the bottom of a wine bottle. His small hands required that he use thin-handled bats. His bat control made him a good hit-and-run batter, although some former teammates complained he would swing for a hit even when a player was trying to steal, depriving his teammate of a stolen base. Gwynn was able to hit the ball to all fields, but liked to hit balls the",
+          "image_url": ""
+        },
+        {
+          "id": 2544469,
+          "source": "wikipedia",
+          "title": "Catcher",
+          "contents": "Catcher\nbackhand, as necessary; he can catch a low pitch with the mitt pointed upward or downward. These choices help the catcher to create a favorable presentation (or frame) for the umpire. A variation on \"framing\" is called \"pulling pitches\". The general approach is to catch the half of the ball that is outside the strike zone and show the umpire only the half of the ball, lodged in the mitt, that is closer to the zone. The illusion is often enhanced with a slight 'tug' of the mitt (of an inch or two) toward the strike zone. By rule the",
+          "image_url": ""
+        },
+        {
+          "id": 46252,
+          "source": "wikipedia",
+          "title": "At bat",
+          "contents": "At bat\nAt bat In baseball, an at bat (AB) or time at bat is a batter's turn batting against a pitcher. An at bat is different from a plate appearance. A batter is credited with a plate appearance regardless of what happens during his turn at bat, but a batter is credited with an at bat only if that plate appearance does not have one of the results enumerated below. While at bats are used to calculate certain statistics, including batting average and slugging percentage, a player can qualify for the season-ending rankings in these categories only if he accumulates 502",
+          "image_url": ""
+        },
+        {
+          "id": 2944197,
+          "source": "wikipedia",
+          "title": "First baseman",
+          "contents": "First baseman\nright-handed, and therefore, a majority of batted balls are hit to the left side of the infield and fielded by the third baseman or shortstop. Left-handed first basemen are also advantageous in attempting to pick off baserunners at first, as the left-hander can catch and tag in one motion, often doing both at the same time, while right-handed first baseman must sweep their glove across their body, costing them a crucial fraction of a second in applying the tag. The first baseman's mitt is similar to a catcher's mitt in that it has extra padding and has no individual fingers.",
+          "image_url": ""
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "swing",
+        "hit",
+        "hit",
+        "try to hit hte ball",
+        "try to hit hte ball"
+      ]
+    }
+  ],
+  "elapsed_time": 79.95174407958984,
+  "samples_per_second": 0.12507544538422158,
+  "timestamp": "2025-12-05T00:22:48.124865"
+}

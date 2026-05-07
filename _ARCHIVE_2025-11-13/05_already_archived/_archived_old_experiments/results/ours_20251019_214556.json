@@ -1,0 +1,102 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "You can use this for playing soccer.",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "eigen_score": 9.077088356018066,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "The plant in the image is a flowering plant, specifically a type of orchid.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "eigen_score": 7.883458137512207,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "The toy in the image is a stuffed animal, specifically a teddy bear.",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "eigen_score": 8.063277244567871,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "The man is holding a pair of scissors and a ball. If the animal were playing a game with these items, it is likely that the animal would be using its mouth to pick up the ball and its paws to hold or manipulate the scissors. The animal might also use its head or neck to move the scissors around. However, it is important to note that animals do not typically play with scissors and a ball in the same way that humans do, so",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "eigen_score": 8.74967098236084,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "It is impossible to know exactly what the gentleman is carrying in his red bag without more context or information. However, there are a few possibilities based on common items that people might carry in a bag. Some possibilities include:\n\n* A book or other reading material\n* A laptop or other electronic devices\n* A lunch or snacks\n* Personal belongings such as keys, wallet, phone, or other small items\n* A bag for groceries or other purchases",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "eigen_score": 8.646666526794434,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  }
+]

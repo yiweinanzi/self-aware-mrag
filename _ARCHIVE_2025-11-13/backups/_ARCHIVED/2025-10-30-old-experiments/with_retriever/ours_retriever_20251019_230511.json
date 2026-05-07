@@ -1,0 +1,212 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "Based on the given context, it is not possible to determine the specific sport that can be played with a ball and a bat. However, it can be inferred that the sport involves some form of ball and bat interaction, and may require teams or individual players. Some possible sports that could fit this description include baseball, cricket, or even a bat-and-ball game like street hockey or skateboarding.",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "eigen_score": 8.53976058959961,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "Based on the given context, it is not possible to determine the type of plant based on the information provided. The given definitions only provide information about the characteristics of animals (cats, elephants) and a vehicle (cars).",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "eigen_score": 8.101739883422852,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "Based on the provided context, it is not possible to definitively determine the type of toy in question. The toy could be a robot toy, an action figure, or a stuffed animal, as all of these types of toys have been described as \"toys\" in the given documents.",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "eigen_score": 8.229903221130371,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "If the man was playing a game with the items he is holding, which are a stuffed animal and a robot toy, the part of the stuffed animal that would be in use would be its arms. The stuffed animal has arms that can be used to hold or manipulate objects, such as the robot toy. The robot toy, on the other hand, would not be used in this context, as it is a mechanical toy designed to resemble a robot and not a",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "eigen_score": 8.646100044250488,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "It is not possible to determine what the gentleman is carrying in the red bag based on the given information. The red bag could potentially contain a variety of items, such as pizza, a cat, or a car. Without more context or information, it is not possible to accurately determine the contents of the red bag.",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "eigen_score": 7.656411647796631,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "5723996",
+    "question": "Who leaves a toilet like this?",
+    "prediction": "An elephant.",
+    "golden_answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "eigen_score": null,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "5759705",
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "prediction": "A center affixed unit like the one in the kitchen is commonly referred to as a kitchen island or a kitchen cart. These units are typically used for food preparation and provide additional counter space and storage options in the kitchen.",
+    "golden_answers": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "eigen_score": null,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "3045575",
+    "question": "Why might someone go to this place?",
+    "prediction": "Someone might go to London to visit the famous landmarks and attractions, such as Buckingham Palace, the London Eye, and the British Museum. They might also go to experience the city's rich history, culture, and cuisine. Additionally, London is a major transportation hub, with several airports, train stations, and bus routes, making it easy to get around and explore the city.",
+    "golden_answers": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "eigen_score": null,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "2183655",
+    "question": "What does this grow from?",
+    "prediction": "The answer to the question \"What does this grow from?\" is \"An embryo.\"",
+    "golden_answers": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "eigen_score": null,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  },
+  {
+    "id": "2863135",
+    "question": "What is that man doing with the bat?",
+    "prediction": "The man is holding a baseball bat, which is a piece of equipment used in the sport of baseball.",
+    "golden_answers": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "eigen_score": null,
+    "should_retrieve": true,
+    "retrieved": true,
+    "num_retrieved": 3
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "ViDoRAG": {
+    "avg_accuracy": 0.0,
+    "avg_retrieved": 1.0,
+    "avg_F1": 0.0,
+    "avg_VQA_Score": 0.0,
+    "avg_Recall@5": 0.2,
+    "avg_Faithfulness": 0.03333333333333333,
+    "avg_Attribution_Precision": 0.0,
+    "avg_Position_Bias_Score": 0.4600948258997327,
+    "accuracy": 0.0,
+    "retrieval_rate": 1.0,
+    "method": "ViDoRAG",
+    "runtime_seconds": 4.668793439865112,
+    "seconds_per_sample": 0.4668793439865112
+  }
+}

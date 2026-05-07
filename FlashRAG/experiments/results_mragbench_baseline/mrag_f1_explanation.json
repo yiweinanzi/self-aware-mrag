@@ -1,0 +1,23 @@
+{
+  "issue": "All F1 scores are 0 in MRAG-Bench evaluation",
+  "cause": "F1 calculation may not be suitable for multiple-choice questions",
+  "explanation": {
+    "for_mcq": "For single-choice MCQs, F1 should equal Exact Match",
+    "calculation": "F1 = 2 \u00d7 Precision \u00d7 Recall / (Precision + Recall)",
+    "result": "When TP=correct, FP=incorrect, FN=incorrect => F1 = Accuracy"
+  },
+  "recommendations": [
+    "Keep original data unchanged",
+    "Explain F1=EM for MCQs in the paper",
+    "Use Accuracy as primary metric",
+    "Use F1 for open-ended questions only"
+  ],
+  "example": {
+    "method": "Calculate F1 for MCQs",
+    "steps": [
+      "1. Count correct predictions (TP)",
+      "2. Count incorrect predictions (FP=FN)",
+      "3. F1 = TP / (TP + FP) = Accuracy"
+    ]
+  }
+}

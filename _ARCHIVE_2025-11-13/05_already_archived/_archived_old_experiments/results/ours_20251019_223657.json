@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "You can use this for playing soccer.",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "eigen_score": 8.705700874328613,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "I'm sorry, but I cannot identify the type of plant in the image without more information or a clearer view of the plant. Please provide more details or a clearer image for me to assist you better.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "eigen_score": 8.152892112731934,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "The toy in the image is a stuffed animal, specifically a teddy bear.",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "eigen_score": -Infinity,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "The man is holding a pair of scissors and a ball. If the animal were playing a game with these items, it is likely that the animal would be using its mouth to pick up the ball and its paws to hold or manipulate the scissors. The animal might also use its body to maneuver the scissors and ball around, depending on the nature of the game.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "eigen_score": 8.660445213317871,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "It is impossible for me to know exactly what the gentleman is carrying in his red bag, as I am just a computer program and do not have access to any information about the specific situation or the contents of the bag. However, some possibilities could include groceries, a laptop, a book, or a gift for someone. The bag's color and the fact that the gentleman is carrying it could provide some clues, but without more context, it is not possible to determine its contents with",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "eigen_score": 8.202780723571777,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "5723996",
+    "question": "Who leaves a toilet like this?",
+    "prediction": "It is not appropriate to leave a toilet in a public restroom in such a state. It is the responsibility of the facility management to ensure that the restrooms are clean and functional. Leaving a toilet in a state of disrepair can create an unsanitary and unpleasant environment for other users of the restroom. It is important to report any issues with public restrooms to the appropriate authorities so that they can be addressed and maintained properly.",
+    "golden_answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "eigen_score": 8.644373893737793,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "5759705",
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "prediction": "A center affixed unit, such as the one you described in a kitchen, is typically referred to as a range hood or vent hood. It is designed to capture and remove smoke, odors, and other airborne contaminants generated during cooking, and to improve indoor air quality. Range hoods are typically installed above a stove or cooktop and are connected to a ventilation system, such as an exhaust fan or ductwork, to remove the filtered",
+    "golden_answers": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "eigen_score": 8.033011436462402,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "3045575",
+    "question": "Why might someone go to this place?",
+    "prediction": "Someone might go to this place to enjoy the outdoors, take a break from their daily routine, and relax in a peaceful environment. The image shows a person sitting on a bench in a park, which suggests that the park offers a space for people to unwind, connect with nature, and engage in leisurely activities such as reading, writing, or simply daydreaming. Parks are also popular spots for socializing with friends and family, jog",
+    "golden_answers": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "eigen_score": 9.062361717224121,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "2183655",
+    "question": "What does this grow from?",
+    "prediction": "I'm sorry, but I'm not sure what you are referring to. Could you please provide more context or information about what you are asking?",
+    "golden_answers": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "eigen_score": NaN,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "2863135",
+    "question": "What is that man doing with the bat?",
+    "prediction": "The man is holding a baseball bat, and he is either preparing to hit a baseball or is in the process of swinging the bat. It is not possible to determine the exact action he is taking without more context or information.",
+    "golden_answers": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "eigen_score": 7.551576137542725,
+    "should_retrieve": true,
+    "retrieval_modality": "both"
+  },
+  {
+    "id": "299845",
+    "question": "Is this at a salt water beach or a lake?",
+    "prediction": "This is at a salt water beach.",
+    "golden_answers": [
+      "salt water beach",
+      "salt water beach",
+      "salt water beach",
+      "salt water beach",
+      "salt water",
+      "salt water",
+      "lake",
+      "lake",
+      "beach",
+      "beach"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "115115",
+    "question": "Who designed the statues?",
+    "prediction": "The statues were designed by the artist Auguste Rodin.",
+    "golden_answers": [
+      "artist",
+      "artist",
+      "artist",
+      "artist",
+      "guell",
+      "guell",
+      "toscano",
+      "toscano",
+      "aritect",
+      "aritect"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3234605",
+    "question": "What is the name of the items the hot dog are topped with?",
+    "prediction": "The items that are typically used to top a hot dog are called \"toppings.\" Some common toppings for hot dogs include mustard, ketchup, onions, relish, sauerkraut, cheese, chili, and coleslaw.",
+    "golden_answers": [
+      "condiment",
+      "condiment",
+      "condiment",
+      "condiment",
+      "onion relish",
+      "onion relish",
+      "vegetable",
+      "vegetable",
+      "relish",
+      "relish"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "5169165",
+    "question": "What is this desk used for?",
+    "prediction": "This desk is used for working on a computer. It is a place where someone can sit and use a computer for tasks such as typing documents, browsing the internet, or using software programs. The desk provides a stable and comfortable surface for the computer and any other equipment or materials that may be needed for the task at hand.",
+    "golden_answers": [
+      "work",
+      "work",
+      "work",
+      "work",
+      "compute",
+      "compute",
+      "work",
+      "work",
+      "office",
+      "office"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "217115",
+    "question": "What type of bike is on the ground?",
+    "prediction": "There is a mountain bike on the ground.",
+    "golden_answers": [
+      "bmx",
+      "bmx",
+      "bmx",
+      "bmx",
+      "bicycle",
+      "bicycle",
+      "bicycle",
+      "bicycle",
+      "10 speed",
+      "10 speed"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3133865",
+    "question": "What type of plane is that?",
+    "prediction": "The plane in the image is a large commercial airliner, which is typically used for transporting passengers and cargo over long distances. The specific make and model of the airliner cannot be determined from the image alone, but it is likely a well-known and widely used aircraft type, such as a Boeing 737 or an Airbus A320. These types of planes are commonly used by airlines for domestic and international flights, and are designed to carry",
+    "golden_answers": [
+      "commercial",
+      "commercial",
+      "commercial",
+      "commercial",
+      "passenger",
+      "passenger",
+      "quanta",
+      "quanta",
+      "md 80",
+      "md 80"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "4026395",
+    "question": "Is this a room for a boy or girl?",
+    "prediction": "This is a room for a boy.",
+    "golden_answers": [
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "4575845",
+    "question": "In what year was this desert first introduced?",
+    "prediction": "I'm sorry, but I'm not sure what desert you are referring to. There are many different deserts in the world, and the introduction of a desert can be difficult to pinpoint. Can you please provide more information or context about the desert you are asking about?",
+    "golden_answers": [
+      "1847",
+      "1847",
+      "1847",
+      "1847",
+      "1860",
+      "1860",
+      "1934",
+      "1934",
+      "1900s",
+      "1900s"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "4883775",
+    "question": "What is this surf trick called?",
+    "prediction": "The surf trick you are referring to is called a \"hang ten.\" It is a maneuver in which the surfer rides on the nose of the surfboard with all ten toes hanging over the edge. This trick requires a high level of skill and balance, and is often performed by experienced surfers in large, powerful waves. The hang ten is a popular and recognizable maneuver in the world of surfing, and is often used as a way to",
+    "golden_answers": [
+      "ride",
+      "ride",
+      "ride",
+      "ride",
+      "tube ride",
+      "tube ride",
+      "ollie",
+      "ollie",
+      "wave runner",
+      "wave runner"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3017535",
+    "question": "What do they call running around the bases on a single hit?",
+    "prediction": "Running around the bases on a single hit is called a \"single.\" In baseball, a single is a hit that allows the batter to reach first base safely. It is one of the three main types of hits in baseball, along with doubles and triples. A single is when the batter hits the ball and reaches first base before the fielding team can make a play to get the batter out.",
+    "golden_answers": [
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "home run",
+      "home run",
+      "home run",
+      "home run"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "1833195",
+    "question": "Why is this plugged in?",
+    "prediction": "I'm sorry, but I'm not sure what you are referring to. Could you please provide more context or information so I can better understand your question and provide an accurate response?",
+    "golden_answers": [
+      "charge",
+      "charge",
+      "charge",
+      "charge",
+      "to have power and work",
+      "to have power and work",
+      "power",
+      "power",
+      "outlet",
+      "outlet"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3970635",
+    "question": "What is the shape?",
+    "prediction": "The shape is circular.",
+    "golden_answers": [
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "circle",
+      "round",
+      "round",
+      "round",
+      "round"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "4976605",
+    "question": "What is the horsepower of the truck pulling the load?",
+    "prediction": "The horsepower of the truck pulling the load depends on several factors, such as the weight of the load, the speed at which the truck is traveling, and the engine power of the truck.\n\nIn general, the more weight the truck is pulling, the more horsepower it will need to generate to maintain speed and control. Similarly, if the truck is traveling at higher speeds, it will require more horsepower to overcome air resistance and maintain its speed",
+    "golden_answers": [
+      "510",
+      "510",
+      "510",
+      "510",
+      "510",
+      "510",
+      "420",
+      "420",
+      "500",
+      "500"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "2357845",
+    "question": "What kind of skiing is this person engaged in?",
+    "prediction": "The person in the image is engaged in downhill skiing, also known as alpine skiing. This type of skiing typically takes place on steeper slopes and involves navigating challenging terrain at high speeds. The skier is wearing a black and white outfit, which is a common color scheme for downhill skiing attire, and is equipped with skis and poles to aid in their descent.",
+    "golden_answers": [
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country",
+      "cross country"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3190735",
+    "question": "What is the person in the photo wearing?",
+    "prediction": "The person in the photo is wearing a black shirt.",
+    "golden_answers": [
+      "wetsuit",
+      "wetsuit",
+      "wetsuit",
+      "wetsuit",
+      "suit",
+      "suit",
+      "wet suit",
+      "wet suit",
+      "trunk",
+      "trunk"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "5144685",
+    "question": "What is the name of the board he is on?",
+    "prediction": "The name of the board he is on is the \"Sandwich Board\" or \"Sandwich Board Game.\"",
+    "golden_answers": [
+      "surf board",
+      "surf board",
+      "surf board",
+      "surf board",
+      "surfboard",
+      "surfboard",
+      "surfboard",
+      "surfboard",
+      "surf",
+      "surf"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "4371265",
+    "question": "Name the material used to make this car seat shown in this picture?",
+    "prediction": "The car seat in the picture is made of leather.",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "nylon",
+      "nylon",
+      "polyester",
+      "polyester",
+      "leather",
+      "leather"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "5182875",
+    "question": "What part of the face is the toothbrush in?",
+    "prediction": "The toothbrush is in the mouth.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "happy",
+      "happy"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3804595",
+    "question": "What flavor is this pastry?",
+    "prediction": "As an AI, I don't have the ability to taste or smell, so I cannot determine the flavor of the pastry. However, I can provide you with information about different types of pastries and their flavors if you'd like.",
+    "golden_answers": [
+      "blueberry",
+      "blueberry",
+      "blueberry",
+      "blueberry",
+      "cream cheese",
+      "cream cheese",
+      "chocolate",
+      "chocolate",
+      "strawberry",
+      "strawberry"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "5002005",
+    "question": "What kind of container are the flowers in?",
+    "prediction": "The flowers are in a vase.",
+    "golden_answers": [
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "vase",
+      "trolley",
+      "trolley",
+      "pot",
+      "pot"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3156685",
+    "question": "What country does this appear to be?",
+    "prediction": "The image depicts a scene in a foreign country, but it is not possible for me to determine the specific country based on the available information. The image shows a street with people, cars, and buildings, but without more context or specific details, it is not possible to identify the country.",
+    "golden_answers": [
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "scotland",
+      "usa",
+      "usa",
+      "england",
+      "england"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3736625",
+    "question": "Which of the foods in the picture is best for you to eat when you have a cold?",
+    "prediction": "It is not recommended to eat any of the foods in the picture, as they are all high in calories, fat, and sodium, and are not considered to be healthy food options. When you have a cold, it is best to focus on eating nutritious, warm, and soothing foods such as soup, chicken noodle soup, or oatmeal. These foods can help to soothe your throat and provide you with the nut",
+    "golden_answers": [
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "soup",
+      "chicken soup",
+      "chicken soup",
+      "fruit",
+      "fruit"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "4293695",
+    "question": "What do teenage pranksters do to this animal?",
+    "prediction": "It is not appropriate to engage in any form of prank or harassment towards any animal, including teenage pranksters. Such behavior can cause distress and harm to the animal, and is not only unethical but also illegal in many places. It is important to treat all animals with respect and kindness, and to report any instances of animal abuse or mistreatment to the appropriate authorities.",
+    "golden_answers": [
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip",
+      "tip"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "4273415",
+    "question": "How many watts is that microwave?",
+    "prediction": "I'm sorry, but I am not able to see or measure the power output of a microwave. Microwaves are typically rated by their power output in watts, but I do not have access to that information. To determine the power output of a microwave, you would need to consult the manufacturer's specifications or the label on the appliance.",
+    "golden_answers": [
+      "800",
+      "800",
+      "800",
+      "800",
+      "120",
+      "120",
+      "1000",
+      "1000",
+      "100",
+      "100"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3938365",
+    "question": "What is this type of blanket called?",
+    "prediction": "The type of blanket you are referring to is called a \"throw blanket.\" Throw blankets are typically made of soft, warm materials such as wool, fleece, or cotton, and are used to add an extra layer of comfort and warmth to a bed or couch. They are often used as a decorative accent and can come in a variety of colors, patterns, and sizes.",
+    "golden_answers": [
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "quilt",
+      "patchwork",
+      "patchwork"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "179845",
+    "question": "What south american country usually has this climate?",
+    "prediction": "The climate of the south american country you are referring to is usually characterized by hot and humid temperatures, with a significant amount of rainfall throughout the year. This type of climate is commonly found in countries such as Brazil, Colombia, and Venezuela. These countries have a tropical or subtropical climate, which is characterized by high temperatures and high levels of humidity. The rainfall in these countries is often heavy and frequent, and it can occur throughout the",
+    "golden_answers": [
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "brazil",
+      "africa",
+      "africa",
+      "ecuador",
+      "ecuador"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3268375",
+    "question": "What american restaurant features an open kitchen with visible cooking area such as this?",
+    "prediction": "One well-known American restaurant with an open kitchen is \"The Cheesecake Factory.\" The restaurant is known for its extensive menu and showcases its kitchen staff preparing dishes for customers to watch. The open kitchen design allows customers to see the cooking process and enjoy the aroma of the food being prepared.",
+    "golden_answers": [
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "diner",
+      "denny's",
+      "denny's",
+      "waffle house",
+      "waffle house"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "2780325",
+    "question": "What other big vehicle is often painted about the same shade as this vehicle?",
+    "prediction": "One vehicle that is often painted the same shade as the one in the image is the classic Volkswagen Beetle. Both the Beetle and the vehicle in the image are often painted in shades of red or orange, which are popular colors for these types of vehicles. The Beetle, in particular, is often associated with the color \"VW\" red, which is a shade of orange that was commonly used on the original Beetle.",
+    "golden_answers": [
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "firetruck",
+      "fire truck",
+      "fire truck"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "1110325",
+    "question": "What brand is this wine?",
+    "prediction": "I'm sorry, but I cannot determine the brand of the wine without more information. Can you please provide more details or a photo of the wine label?",
+    "golden_answers": [
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker vineyard",
+      "becker",
+      "becker"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "5096415",
+    "question": "What would happen if these items fall to the ground?",
+    "prediction": "If the items on the table were to fall to the ground, it would depend on the specific items and their weight. Some items may simply fall over and break if they are not stable, while others may break upon impact with the ground. Additionally, some items may cause damage to the table or any other surfaces they fall on. It is important to handle fragile items with care and to ensure that they are placed on stable surfaces to prevent accidents and damage.",
+    "golden_answers": [
+      "shatter",
+      "shatter",
+      "shatter",
+      "shatter",
+      "they would shatter",
+      "they would shatter",
+      "break",
+      "break",
+      "they would break",
+      "they would break"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3413095",
+    "question": "What brand of suit is the man in the image wearing?",
+    "prediction": "The man in the image is wearing a suit made by the brand Armani.",
+    "golden_answers": [
+      "brook brother",
+      "brook brother",
+      "brook brother",
+      "brook brother",
+      "gorgio armani",
+      "gorgio armani",
+      "name brand",
+      "name brand",
+      "gucchi",
+      "gucchi"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "1121605",
+    "question": "Where might i buy a print that resembles this photo?",
+    "prediction": "To buy a print that resembles the photo you provided, you can search for art print shops or online marketplaces that offer prints of similar images. Some popular options include:\n\n1. Redbubble (<https://www.redbubble.com/>)\n2. Society6 (<https://society6.com/>)\n3. Spreadshirt (<https://www.spreadshirt.com/>)\n4. ArtPal",
+    "golden_answers": [
+      "gallery",
+      "gallery",
+      "gallery",
+      "gallery",
+      "store",
+      "store",
+      "target",
+      "target",
+      "walmart",
+      "walmart"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "2645405",
+    "question": "What are the rolled black food items called?",
+    "prediction": "The rolled black food items you are referring to are likely \"sushi.\" Sushi is a traditional Japanese dish made from vinegared rice, seaweed, and various types of fish or other ingredients. The rice is typically rolled in a sheet of nori (seaweed) and then filled with the desired ingredients. Sushi can come in many different forms, including rolls, nigiri (rice topped with fish), and mak",
+    "golden_answers": [
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi",
+      "sushi"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "1089825",
+    "question": "What type of bird is this?",
+    "prediction": "I'm sorry, but I cannot identify the specific type of bird you are referring to without more information or a clear image. There are millions of bird species in the world, and without more context or visual cues, it is impossible for me to accurately identify the bird you are asking about.",
+    "golden_answers": [
+      "blue jay",
+      "blue jay",
+      "blue jay",
+      "blue jay",
+      "bluebird",
+      "bluebird",
+      "songbird",
+      "songbird",
+      "goldfinch",
+      "goldfinch"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "2929715",
+    "question": "How can you tell that the people are not upset?",
+    "prediction": "I cannot definitively determine the emotions or reactions of the people in the image without additional context or information. However, I can provide some possible reasons why the people might not appear to be upset:\n\n1. They could be posing for a picture and are intentionally smiling or maintaining a neutral expression to appear friendly and approachable.\n2. They might be in a situation where they are not directly affected by the event or issue that is causing upset or concern",
+    "golden_answers": [
+      "they are smile",
+      "they are smile",
+      "they are smile",
+      "they are smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile",
+      "smile"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "1902045",
+    "question": "How fast is the vehicle pictured capable of reaching?",
+    "prediction": "The vehicle pictured is capable of reaching speeds of up to 240 mph (386 km/h).",
+    "golden_answers": [
+      "80 mph",
+      "80 mph",
+      "80 mph",
+      "80 mph",
+      "100 mph",
+      "100 mph",
+      "100 mph",
+      "100 mph",
+      "10mph",
+      "10mph"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "3774865",
+    "question": "Name the type of hat the man is wearing?",
+    "prediction": "The man is wearing a fedora hat.",
+    "golden_answers": [
+      "cowboy",
+      "cowboy",
+      "cowboy",
+      "cowboy",
+      "sombrero",
+      "sombrero",
+      "sombrero",
+      "sombrero",
+      "stetson",
+      "stetson"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "1282805",
+    "question": "What sates are these grown in?",
+    "prediction": "I'm sorry, but I'm not sure what you are referring to. Could you please provide more context or information so I can better understand your question and provide an accurate answer?",
+    "golden_answers": [
+      "florida california",
+      "florida california",
+      "florida california",
+      "florida california",
+      "california",
+      "california",
+      "california",
+      "california",
+      "florida",
+      "florida"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "1318415",
+    "question": "How does the bread taste?",
+    "prediction": "I'm sorry, but I am an AI language model and do not have the ability to taste or smell anything. I can only provide information and answer questions based on my programming and the data I have been trained on.",
+    "golden_answers": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "like bread",
+      "like bread",
+      "sweet",
+      "sweet",
+      "delicious",
+      "delicious"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  },
+  {
+    "id": "1305165",
+    "question": "What is this type of mack truck used for?",
+    "prediction": "A Mack truck is a type of heavy-duty commercial vehicle that is typically used for transporting goods and cargo over long distances. Mack trucks are known for their durability, power, and reliability, and they are often used in a variety of industries, including construction, manufacturing, and transportation. They come in a range of sizes and configurations, and can be used for tasks such as hauling freight, towing trailers, or providing support for",
+    "golden_answers": [
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "cement",
+      "road work",
+      "road work"
+    ],
+    "eigen_score": null,
+    "should_retrieve": false,
+    "retrieval_modality": null
+  }
+]

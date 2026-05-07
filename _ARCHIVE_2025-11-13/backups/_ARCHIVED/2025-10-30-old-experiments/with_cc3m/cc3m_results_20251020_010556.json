@@ -1,0 +1,262 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "Based on the given context, it seems that the sport being discussed is not explicitly mentioned in any of the documents. However, we can infer that it might be a sport that involves some level of creativity and imagination, as suggested by the statements \"let's add a new sport\" and \"think of some fun rules to turn this into a game.\"\n\nOne possible sport that could be adapted from these statements is \"sport of imagination\" or \"creative sports,\" where players",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "retrieved_docs": [
+      "let 's add a new sport .",
+      "just for the sport of it",
+      "would this be something you would like to try as a sport ?",
+      "not really one for sports .",
+      "think of some fun rules to turn this into a game !"
+    ],
+    "retrieved": true,
+    "context_length": 256
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "Based on the given documents, it appears that someone is trying to identify a plant, and they are not sure what type it is. The plant could be a type of flower, a bush, or a tree, but the exact species is not known. The person is seeking help from others to identify the plant, and they are willing to provide more information if it would help in the identification process.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "retrieved_docs": [
+      "not sure what type of plant .",
+      "does anybody know what kind of plant this is ?",
+      "what kind of plant is this ?",
+      "do you know the name of this plant ?",
+      "someone find out what kind of plant this is !"
+    ],
+    "retrieved": true,
+    "context_length": 257
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "Based on the provided context, it is not possible to definitively determine the name of the toy in human language. However, we can infer that it is a children's toy that was clearly made and may have been a favorite or one of the few toys left from someone's childhood. It is also possible that the toy is a type of stuffed animal or a doll, as suggested by the use of terms such as \"toy like this\" and \"one",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "retrieved_docs": [
+      "picture of how is a toy like this called in human language ?",
+      "one of the few toys left from my childhood .",
+      "my favorite of the old toys from my childhood .",
+      "children 's toys that were clearly made",
+      "children 's toys that were clearly made"
+    ],
+    "retrieved": true,
+    "context_length": 302
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "Based on the given context, it is not possible to determine which part of the man's body would be in use if he were playing the game with the items he is holding. The context only provides information about the man playing a video game with a joystick, but does not provide any information about the specific game he is playing or the physical movements required for that game.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "retrieved_docs": [
+      "man playing the game of game , or game",
+      "man playing video game with a joystick",
+      "man playing video game with a joystick",
+      "man playing video game with a joystick .",
+      "man playing video game with a joystick ."
+    ],
+    "retrieved": true,
+    "context_length": 267
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "Based on the given context, it is difficult to determine exactly what the gentleman is carrying in the red bag. However, we can make some educated guesses. The gentleman could be carrying items such as a wallet, keys, phone, and other personal belongings that he needs to have with him while he is out and about. The fact that he is carrying a bag suggests that he has some essentials that he needs to keep close by, but the specific contents of the bag are not provided",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "retrieved_docs": [
+      "like the pop of the red bag",
+      "sometimes a man needs a bag .",
+      "a man on the go needs a bag to hold his essentials .",
+      "person is carrying the bag for person .",
+      "person with just a small bag to carry only the necessities"
+    ],
+    "retrieved": true,
+    "context_length": 278
+  },
+  {
+    "id": "5723996",
+    "question": "Who leaves a toilet like this?",
+    "prediction": "Based on the given context, it appears that someone has left a toilet in a dirty and disgusting state, possibly in a house. The phrasing \"if this is your idea of installing a toilet\" and \"see what this toilet did while you were gone\" suggest that the toilet was not installed properly or was not maintained properly. The fact that the toilet is described as \"dirty\" and \"disgusting\" further supports",
+    "golden_answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "retrieved_docs": [
+      "if this is your idea of installing a toilet ~",
+      "see what this toilet did while you were gone ? i tried my best to stop him ...",
+      "... the toilet is behind the door",
+      "dirty toilet in a house .",
+      "would love a toilet like this one found"
+    ],
+    "retrieved": true,
+    "context_length": 293
+  },
+  {
+    "id": "5759705",
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "prediction": "A center affixed unit like the one described in the documents is typically referred to as a \"kitchen island\" or a \"kitchen cart.\"",
+    "golden_answers": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "retrieved_docs": [
+      "it 's a bit more difficult to integrate such a kitchen in an open floor plan , although not impossible",
+      "a house like this : utility off kitchen",
+      "functional design if the next house has a small kitchen .",
+      "there are kitchens as well as an utility room",
+      "a kitchen with no ornamentation"
+    ],
+    "retrieved": true,
+    "context_length": 347
+  },
+  {
+    "id": "3045575",
+    "question": "Why might someone go to this place?",
+    "prediction": "Based on the given documents, it seems that the place in question is a popular spot among the individuals who wrote the messages. They all express a desire to visit the location, with some of them even using emojis to convey their enthusiasm. The phrases \"worth a visit\" and \"# for a reason\" suggest that the place might offer something unique or noteworthy that attracts visitors. However, without more information about the specific location, it is impossible to determine the",
+    "golden_answers": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "retrieved_docs": [
+      "want to check this place out .",
+      "i want to go there .",
+      "? check this place out !",
+      "this place is # for a reason !",
+      "worth a visit for sure ."
+    ],
+    "retrieved": true,
+    "context_length": 201
+  },
+  {
+    "id": "2183655",
+    "question": "What does this grow from?",
+    "prediction": "Based on the given documents, it is not possible to definitively determine what grows from the described objects. However, some possible answers could be:\n\n* Document 1: \"looks like mine growing out\" - It is not possible to determine with certainty what grows from this description. It could be a plant, an animal, or something else entirely.\n* Document 2: \"looks like a plant to me\" - While it is possible that the object in question is",
+    "golden_answers": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "retrieved_docs": [
+      "looks like mine growing out .",
+      "looks like a plant to me",
+      "i 'm not sure what this is .",
+      "what makes it grow .",
+      "some sort of interesting plant ."
+    ],
+    "retrieved": true,
+    "context_length": 206
+  },
+  {
+    "id": "2863135",
+    "question": "What is that man doing with the bat?",
+    "prediction": "Based on the given context, it is not possible to definitively determine the exact action the man is taking with the bat. However, we can make some educated guesses based on the available information.\n\nIn Document 1, the man is holding a baseball bat, which suggests that he might be preparing to play baseball or practice his swing.\n\nIn Document 2, the man is holding a baseball bat and a ball, which indicates that he is likely engaged in a baseball-",
+    "golden_answers": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "retrieved_docs": [
+      "i think he needs a bigger bat !",
+      "a man with a baseball bat and ball",
+      "killer with the hood and baseball bat",
+      "is that a red baton i see before me ?",
+      "this photo provided by person , shows a bat ."
+    ],
+    "retrieved": true,
+    "context_length": 257
+  }
+]

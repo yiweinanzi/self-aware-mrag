@@ -1,0 +1,12 @@
+{
+  "dataset_name": "okvqa_test",
+  "data_dir": "/data0/home/zqwang/ACL/FlashRAG/flashrag/data/VQA",
+  "split": "val",
+  "max_samples": 50,
+  "load_images": true,
+  "qwen3_vl_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+  "retrieval_topk": 3,
+  "temperature": 0.01,
+  "max_new_tokens": 10,
+  "uncertainty_threshold": 0.43
+}

@@ -1,0 +1,17 @@
+{
+  "Self-Aware-MRAG": {
+    "method_name": "Self-Aware-MRAG",
+    "num_samples": 100,
+    "elapsed_time": 0.7971742153167725,
+    "avg_time_per_sample": 0.007971742153167725,
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "retrieval_recall_top5": 0.0,
+      "vqa_score": 0.0,
+      "faithfulness": 0.0,
+      "attribution_precision": 0.0,
+      "position_bias_score": 0.0
+    }
+  }
+}

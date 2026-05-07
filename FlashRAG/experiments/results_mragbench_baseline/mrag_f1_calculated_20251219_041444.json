@@ -1,0 +1,63 @@
+{
+  "date": "20251219_041444",
+  "dataset": "MRAG-Bench",
+  "calculator": "MRAGBenchF1Calculator",
+  "methods": {
+    "Self-Aware-MRAG": {
+      "standard_f1": 0,
+      "em_based_f1": 0,
+      "precision": 0,
+      "recall": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "SAM-RAG": {
+      "standard_f1": 0,
+      "em_based_f1": 0,
+      "precision": 0,
+      "recall": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "mR2AG": {
+      "standard_f1": 0,
+      "em_based_f1": 0,
+      "precision": 0,
+      "recall": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "VisRAG": {
+      "standard_f1": 0,
+      "em_based_f1": 0,
+      "precision": 0,
+      "recall": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "ViDoRAG": {
+      "standard_f1": 0,
+      "em_based_f1": 0,
+      "precision": 0,
+      "recall": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "MuRAG": {
+      "standard_f1": 0,
+      "em_based_f1": 0,
+      "precision": 0,
+      "recall": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "recommendation": "Use EM-Based F1 for multiple-choice questions",
+  "original_data": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_mragbench_baseline/metrics_comparison_20251219_012819.json"
+}

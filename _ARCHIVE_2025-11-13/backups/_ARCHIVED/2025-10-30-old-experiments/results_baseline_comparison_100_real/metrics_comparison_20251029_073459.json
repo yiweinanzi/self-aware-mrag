@@ -1,0 +1,79 @@
+{
+  "Self-Aware-MRAG": {
+    "em": 0.61,
+    "f1": 0.6683539238539238,
+    "retrieval_recall_top5": 0.17,
+    "vqa_score": 0.20333333333333328,
+    "faithfulness": 0.0,
+    "attribution_precision": 0.0,
+    "position_bias_score": 0.0,
+    "runtime_seconds": 2620.610671520233,
+    "seconds_per_sample": 26.20610671520233
+  },
+  "Self-RAG": {
+    "em": 0.63,
+    "f1": 0.6929570984570984,
+    "retrieval_recall_top5": 0.06,
+    "vqa_score": 0.20999999999999994,
+    "faithfulness": 0.0,
+    "attribution_precision": 0.0,
+    "position_bias_score": 0.0,
+    "runtime_seconds": 2545.860107898712,
+    "seconds_per_sample": 25.458601078987122
+  },
+  "mR2AG": {
+    "em": 0.63,
+    "f1": 0.6929570984570984,
+    "retrieval_recall_top5": 0.06,
+    "vqa_score": 0.20999999999999994,
+    "faithfulness": 0.0,
+    "attribution_precision": 0.0,
+    "position_bias_score": 0.0,
+    "runtime_seconds": 2526.41557765007,
+    "seconds_per_sample": 25.2641557765007
+  },
+  "VisRAG": {
+    "em": 0.62,
+    "f1": 0.6829570984570984,
+    "retrieval_recall_top5": 0.06,
+    "vqa_score": 0.2066666666666666,
+    "faithfulness": 0.0,
+    "attribution_precision": 0.0,
+    "position_bias_score": 0.0,
+    "runtime_seconds": 2550.8757150173187,
+    "seconds_per_sample": 25.50875715017319
+  },
+  "REVEAL": {
+    "em": 0.62,
+    "f1": 0.6890682095682095,
+    "retrieval_recall_top5": 0.06,
+    "vqa_score": 0.2066666666666666,
+    "faithfulness": 0.0,
+    "attribution_precision": 0.0,
+    "position_bias_score": 0.0,
+    "runtime_seconds": 2532.5055980682373,
+    "seconds_per_sample": 25.32505598068237
+  },
+  "RagVL": {
+    "em": 0.6,
+    "f1": 0.6690682095682096,
+    "retrieval_recall_top5": 0.06,
+    "vqa_score": 0.19999999999999996,
+    "faithfulness": 0.0,
+    "attribution_precision": 0.0,
+    "position_bias_score": 0.0,
+    "runtime_seconds": 2544.714133501053,
+    "seconds_per_sample": 25.447141335010528
+  },
+  "MuRAG": {
+    "em": 0.62,
+    "f1": 0.687401542901543,
+    "retrieval_recall_top5": 0.06,
+    "vqa_score": 0.2066666666666666,
+    "faithfulness": 0.0,
+    "attribution_precision": 0.0,
+    "position_bias_score": 0.0,
+    "runtime_seconds": 2533.637948989868,
+    "seconds_per_sample": 25.336379489898682
+  }
+}

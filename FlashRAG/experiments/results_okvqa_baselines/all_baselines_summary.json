@@ -1,0 +1,89 @@
+{
+  "config": {
+    "dataset_name": "okvqa",
+    "data_dir": "/data0/home/zqwang/ACL/FlashRAG/flashrag/data/VQA",
+    "split": "val",
+    "max_samples": 10,
+    "load_images": true,
+    "qwen3_vl_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+    "torch_dtype": "bfloat16",
+    "temperature": 0.01,
+    "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+    "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+    "retrieval_model_path": "/data0/home/zqwang/ACL/models/bge-large-en-v1.5",
+    "retrieval_topk": 5,
+    "uncertainty_threshold": 0.43,
+    "use_improved_estimator": true,
+    "text_weight": 0.4,
+    "visual_weight": 0.3,
+    "alignment_weight": 0.3,
+    "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_okvqa_baselines"
+  },
+  "timestamp": "2025-12-04T23:37:39.709803",
+  "total_samples": 10,
+  "methods": {
+    "Self-Aware-MRAG (Ours)": {
+      "EM": 0,
+      "F1": 0.2333333333333333,
+      "Recall@5": 0,
+      "VQA-Score": 10.0,
+      "Faithfulness": 0.45,
+      "Attribution Precision": 0.3,
+      "Position Bias Score": 0.4600948258997327
+    },
+    "MuRAG": {
+      "EM": 0,
+      "F1": 0.045,
+      "Recall@5": 0,
+      "VQA-Score": 0.0,
+      "Faithfulness": 0.27745310245310245,
+      "Attribution Precision": 0.014285714285714285,
+      "Position Bias Score": 0.4600948258997327
+    },
+    "VisRAG": {
+      "EM": 0,
+      "F1": 0.2,
+      "Recall@5": 0,
+      "VQA-Score": 20.0,
+      "Faithfulness": 0.0,
+      "Attribution Precision": 0.0,
+      "Position Bias Score": 0.5
+    },
+    "ViDoRAG": {
+      "EM": 0,
+      "F1": 0.18636363636363637,
+      "Recall@5": 0,
+      "VQA-Score": 10.0,
+      "Faithfulness": 0.4723809523809523,
+      "Attribution Precision": 0.3439393939393939,
+      "Position Bias Score": 0.4121329360986511
+    },
+    "RagVL": {
+      "EM": 0,
+      "F1": 0.08818181818181818,
+      "Recall@5": 0,
+      "VQA-Score": 0.0,
+      "Faithfulness": 0.2822222222222222,
+      "Attribution Precision": 0.04,
+      "Position Bias Score": 0.47246644820586103
+    },
+    "SAM-RAG": {
+      "EM": 0,
+      "F1": 0.02857142857142857,
+      "Recall@5": 0,
+      "VQA-Score": 0.0,
+      "Faithfulness": 0.21408730158730158,
+      "Attribution Precision": 0.0,
+      "Position Bias Score": 0.4600948258997327
+    },
+    "mR²AG": {
+      "EM": 0,
+      "F1": 0.05535714285714286,
+      "Recall@5": 0,
+      "VQA-Score": 0.0,
+      "Faithfulness": 0.30029038943512626,
+      "Attribution Precision": 0.08542429792429793,
+      "Position Bias Score": 0.4121329360986511
+    }
+  }
+}

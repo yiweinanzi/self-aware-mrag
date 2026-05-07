@@ -47,10 +47,9 @@ models/
 pytorch_model*.bin
 model*.safetensors
 
-# 大文件 - 数据集和语料库
+# 大文件 - 数据集和语料库（只排除语料库级别的大文件）
 corpus/
 data/raw/
-*.jsonl
 *.json.gz
 *.parquet
 *.arrow
@@ -62,10 +61,7 @@ indexes/
 *.faiss
 
 # 实验结果和日志
-results/
 outputs/
-experiments/results/
-experiments/outputs/
 *.log
 nohup.out
 wandb/
@@ -90,8 +86,7 @@ run_*.log
 📝*.md
 cursor_task*.md
 
-# 归档目录
-_ARCHIVE_*/
+# 归档目录（保留代码，忽略日志）
 _BACKUP_*/
 _DOCS/
 
@@ -109,9 +104,7 @@ ACL_LATEX/
 .autodl/
 *.vsix
 
-# 实验结果目录（保留代码，忽略结果）
-FlashRAG/experiments/results_*/
-FlashRAG/experiments/*/results*.json
+# 实验结果目录（保留代码和结果，只忽略超大 JSON）
 FlashRAG/experiments/*/*.png
 FlashRAG/experiments/*/REPORT*.md
 FlashRAG/experiments/*/COMPARISON*.md
@@ -122,8 +115,7 @@ nohup*.out
 *.log
 quick_eval_log.txt
 
-# 测试脚本（临时）
-test_*.py
+# 测试脚本（保留）
 verify_*.py
 
 
@@ -135,9 +127,11 @@ FlashRAG/logs/
 FlashRAG/cache/
 FlashRAG/flashrag/data/MRAG-Bench/
 
-# Large experiment result files
+# Large experiment result files (only truly large ones >10MB)
 FlashRAG/experiments/multimodalqa_corpus.jsonl
-FlashRAG/experiments/archived/
+FlashRAG/experiments/archived/20251125/results_real_ablation/real_ablation_results_20251124_131943.json
+FlashRAG/experiments/archived/20251125/results_final_ablation/final_ablation_results_20251124_210959.json
+FlashRAG/experiments/archived/20251125/results_final_ablation/final_ablation_results_20251124_131341.json
 
 # Large log/output files
 full_ablation_248.out

@@ -1,0 +1,52 @@
+{
+  "config": {
+    "dataset_name": "a-okvqa",
+    "max_samples": 10,
+    "load_images": true,
+    "qwen3_vl_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+    "torch_dtype": "bfloat16",
+    "temperature": 0.01,
+    "max_new_tokens": 30,
+    "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+    "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+    "retrieval_model_path": "/data0/home/zqwang/ACL/models/bge-large-en-v1.5",
+    "retrieval_topk": 5,
+    "uncertainty_threshold": 0.43,
+    "use_improved_estimator": true,
+    "text_weight": 0.4,
+    "visual_weight": 0.3,
+    "alignment_weight": 0.3,
+    "output_dir": "/data0/home/zqwang/ACL/FlashRAG/experiments/results_aokvqa_baselines"
+  },
+  "timestamp": "2025-12-05T00:21:36.104715",
+  "total_samples": 10,
+  "methods": {
+    "Self-Aware-MRAG (Ours)": {
+      "EM": 0,
+      "F1": 0.13333333333333333,
+      "Recall@5": 0,
+      "VQA-Score": 0.0,
+      "Faithfulness": 0.13333333333333333,
+      "Attribution Precision": 0.1,
+      "Position Bias Score": 0.5
+    },
+    "Retrieval-Based": {
+      "EM": 0,
+      "F1": 1.0,
+      "Recall@5": 0,
+      "VQA-Score": 33.33333333333333,
+      "Faithfulness": 0.6,
+      "Attribution Precision": 0.0,
+      "Position Bias Score": 0.5
+    },
+    "Knowledge-Reasoning": {
+      "EM": 0,
+      "F1": 1.0,
+      "Recall@5": 0,
+      "VQA-Score": 33.33333333333333,
+      "Faithfulness": 0.45,
+      "Attribution Precision": 0.0,
+      "Position Bias Score": 0.5
+    }
+  }
+}

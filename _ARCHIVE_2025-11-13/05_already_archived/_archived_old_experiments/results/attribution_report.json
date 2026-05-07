@@ -1,0 +1,110 @@
+{
+  "visual_attribution": {
+    "num_regions": 1,
+    "avg_confidence": 1.0,
+    "regions": [
+      {
+        "region_bbox": [
+          0,
+          0,
+          336,
+          336
+        ],
+        "confidence": 1.0,
+        "source_image_id": "img_0",
+        "method": "simple"
+      }
+    ]
+  },
+  "text_attribution": {
+    "num_tokens": 12,
+    "avg_confidence": 0.8083333333333335,
+    "high_confidence_ratio": 0.8333333333333334,
+    "tokens": [
+      {
+        "token": "The",
+        "position": 0,
+        "source_span": "The Eiffel Tower is",
+        "source_text_id": "doc_2",
+        "confidence": 0.9
+      },
+      {
+        "token": "capital",
+        "position": 1,
+        "source_span": "Western Europe. Its capital and largest city",
+        "source_text_id": "doc_0",
+        "confidence": 0.9
+      },
+      {
+        "token": "of",
+        "position": 2,
+        "source_span": "",
+        "source_text_id": null,
+        "confidence": 0.0
+      },
+      {
+        "token": "France",
+        "position": 3,
+        "source_span": "France is a country",
+        "source_text_id": "doc_0",
+        "confidence": 0.9
+      },
+      {
+        "token": "is",
+        "position": 4,
+        "source_span": "France is a country in",
+        "source_text_id": "doc_0",
+        "confidence": 0.9
+      },
+      {
+        "token": "Paris",
+        "position": 5,
+        "source_span": "Paris is known for",
+        "source_text_id": "doc_1",
+        "confidence": 0.9
+      },
+      {
+        "token": "and",
+        "position": 6,
+        "source_span": "Europe. Its capital and largest city is",
+        "source_text_id": "doc_0",
+        "confidence": 0.9
+      },
+      {
+        "token": "it",
+        "position": 7,
+        "source_span": " a country in Western Europe. Its capital and largest city is ",
+        "source_text_id": "doc_0",
+        "confidence": 0.7
+      },
+      {
+        "token": "is",
+        "position": 8,
+        "source_span": "France is a country in",
+        "source_text_id": "doc_0",
+        "confidence": 0.9
+      },
+      {
+        "token": "a",
+        "position": 9,
+        "source_span": "France is a country in Western",
+        "source_text_id": "doc_0",
+        "confidence": 0.9
+      },
+      {
+        "token": "beautiful",
+        "position": 10,
+        "source_span": "known for its beautiful architecture and culture.",
+        "source_text_id": "doc_1",
+        "confidence": 0.9
+      },
+      {
+        "token": "city",
+        "position": 11,
+        "source_span": "capital and largest city is Paris.",
+        "source_text_id": "doc_0",
+        "confidence": 0.9
+      }
+    ]
+  }
+}

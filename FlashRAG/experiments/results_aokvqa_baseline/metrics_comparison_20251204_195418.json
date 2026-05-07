@@ -1,0 +1,34 @@
+{
+  "SAM-RAG": {
+    "method": "SAM-RAG",
+    "accuracy": 0.0,
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_rate": 1.0,
+    "retrieval_recall_top5": 1.0,
+    "vqa_score": 0,
+    "faithfulness": 0.0,
+    "attribution_precision": 0.0,
+    "position_bias_score": 0.5,
+    "mc_accuracy": 0.0,
+    "has_rationales": 10,
+    "runtime_seconds": 10.2677903175354,
+    "seconds_per_sample": 1.0267790317535401
+  },
+  "ViDoRAG": {
+    "method": "ViDoRAG",
+    "accuracy": 0.0,
+    "em": 0.0,
+    "f1": 0.0,
+    "retrieval_rate": 1.0,
+    "retrieval_recall_top5": 1.0,
+    "vqa_score": 0,
+    "faithfulness": 0.0,
+    "attribution_precision": 0.0,
+    "position_bias_score": 0.5,
+    "mc_accuracy": 0.0,
+    "has_rationales": 10,
+    "runtime_seconds": 9.579527378082275,
+    "seconds_per_sample": 0.9579527378082275
+  }
+}

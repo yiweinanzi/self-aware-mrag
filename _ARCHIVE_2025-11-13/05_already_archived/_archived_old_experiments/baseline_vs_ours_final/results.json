@@ -1,0 +1,11 @@
+{
+  "baseline": {
+    "acc": 0.56,
+    "correct": 28
+  },
+  "ours": {
+    "acc": 0.48,
+    "correct": 24
+  },
+  "improvement": -0.08000000000000007
+}

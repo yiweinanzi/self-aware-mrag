@@ -1,0 +1,202 @@
+[
+  {
+    "id": "2971475",
+    "question": "What sport can you use this for?",
+    "prediction": "This can be used for playing a game of tennis.",
+    "golden_answers": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "3397615",
+    "question": "Name the type of plant this is?",
+    "prediction": "I'm sorry, but I cannot answer your question without more information or a specific image of the plant in question. There are countless types of plants, and without more context or a clear visual, I am unable to provide a specific answer.",
+    "golden_answers": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "3575865",
+    "question": "What toy is this?",
+    "prediction": "This is a stuffed animal.",
+    "golden_answers": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "949225",
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "prediction": "If the animal were playing the game that the man is holding, the animal's trunk would be in use. In the image, the man is holding a pair of scissors and a ball. The animal's trunk is a versatile and dexterous appendage that can grasp and manipulate objects, making it well-suited for playing games that involve handling objects like the scissors and ball.",
+    "golden_answers": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "2076115",
+    "question": "What could this gentleman be carrying in that red bag?",
+    "prediction": "It is impossible for me to accurately determine what the gentleman is carrying in his red bag without more context or information. The red bag could be carrying a variety of items, such as groceries, a laptop, a book, or even a piece of artwork. The specific contents of the bag would depend on the individual and their personal belongings.",
+    "golden_answers": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "5723996",
+    "question": "Who leaves a toilet like this?",
+    "prediction": "It is not appropriate to leave a toilet in a public restroom in this manner. It is the responsibility of the facility management to ensure that the restroom is clean and functional for the use of the public. Leaving a toilet in such a state can create an unsanitary and unpleasant environment for other users and is not in accordance with proper restroom etiquette.",
+    "golden_answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "5759705",
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "prediction": "A center affixed unit in a kitchen, such as a cooktop or stovetop, is typically called a \"stove\" or a \"cooktop.\"",
+    "golden_answers": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "3045575",
+    "question": "Why might someone go to this place?",
+    "prediction": "Someone might go to this place to enjoy a meal at the restaurant, which offers a variety of dishes including seafood and vegetarian options. The restaurant is located in a scenic area with a beautiful view, which can make the dining experience more enjoyable and memorable. Additionally, the restaurant is situated in a small town, which can provide a charming and cozy atmosphere for people looking to escape the hustle and bustle of city life.",
+    "golden_answers": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "2183655",
+    "question": "What does this grow from?",
+    "prediction": "I'm sorry, but I need more information to provide an accurate answer. Can you please provide more context or details about what you are referring to?",
+    "golden_answers": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  },
+  {
+    "id": "2863135",
+    "question": "What is that man doing with the bat?",
+    "prediction": "The man is holding a baseball bat and standing in a batting stance, preparing to swing at an incoming pitch. He is likely a baseball player who is getting ready to hit the ball during a game or practice session.",
+    "golden_answers": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "retrieved_docs": [],
+    "retrieved": false,
+    "context_length": 0
+  }
+]

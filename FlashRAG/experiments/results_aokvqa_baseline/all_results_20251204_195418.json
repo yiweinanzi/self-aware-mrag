@@ -1,0 +1,996 @@
+{
+  "SAM-RAG": [
+    {
+      "answer": "",
+      "raw_prediction": "",
+      "retrieved_docs": [
+        "Tooth decay\nlead to dry mouth and thus to widespread tooth decay. Examples include Sjögren's syndrome, diabetes mellitus, diabetes insipidus, and sarcoidosis. Medications, such as antihistamines and antidepressants, can also impair salivary flow. Stimulants, most notoriously methylamphetamine, also occlude the flow of saliva to an extreme degree. This is known as meth mouth. Tetrahydrocannabinol (THC), the active chemical substance in cannabis, also causes a nearly complete occlusion of salivation, known in colloquial terms as \"cotton mouth\". Moreover, 63% of the most commonly prescribed medications in the United States list dry mouth as a known side-effect. Radiation therapy of the head and neck",
+        "Motorcycle personal protective equipment\nis of course not always completely effective. Many riders wear \"roost protectors\" designed specifically to protect against painful debris from other bikes, but are of no use in a fall or collision. Leathers are one-piece suits or two-piece jackets and trousers worn by motorcyclists, mainly for protection in a crash. In most cases, the type of leather used is not fashion leather but protective leather, which is thicker, stronger, and only moderately flexible. Today, kangaroo leather is becoming popular for its suppleness, light weight, and strength compared to cowhide. Not all leathers used in garments perform equally; products made from",
+        "Motorcycle helmet\nface. Many full face helmets include vents to increase the airflow to the rider. The significant attraction of these helmets is their protectiveness. Some wearers dislike the increased heat, sense of isolation, lack of wind, and reduced hearing of such helmets. Full-face helmets intended for off-road or motocross use sometimes omit the face shield, but extend the visor and chin portions to increase ventilation, since riding off-road is a very strenuous activity. Studies have shown that full face helmets offer the most protection to motorcycle riders because 35% of all crashes showed major impact on the chin-bar area. Wearing a",
+        "Mouthwash\nsolution. Alcohol is added to mouthwash not to destroy bacteria but to act as a carrier agent for essential active ingredients such as menthol, eucalyptol and thymol which help to penetrate plaque. Sometimes a significant amount of alcohol (up to 27% vol) is added, as a carrier for the flavor, to provide \"bite\". Because of the alcohol content, it is possible to fail a breathalyzer test after rinsing although breath alcohol levels return to normal after 10 minutes. In addition, alcohol is a drying agent, which encourages bacterial activity in the mouth, releasing more malodorous volatile sulfur compounds. Therefore, alcohol-containing",
+        "Motorcycle personal protective equipment\nmay include advanced insulating materials and waterproof breathable fabric, although touring gloves may still lack advanced armouring features used in motorcycle racing gloves. Gloves intended for motorcycle racing typically incorporate pre-curved finger sections and the best available protection, obtained through additional armour incorporated within the glove. Additional protection may involve titanium or carbon panels for knuckles and the joints of the fingers. Furthermore, racing gloves may and often do incorporate additional wrist and other protection panels to protect the heel of the hand, back of the hand and other easily injured parts of the hand. Race gloves often have the"
+      ],
+      "used_retrieval": true,
+      "num_batches_used": 1,
+      "relevant_docs_count": 5,
+      "support_status": "N/A",
+      "usefulness_status": "N/A",
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Tooth decay\nlead to dry mouth and thus to widespread tooth decay. Examples include Sjögren's syndrome, diabetes mellitus, diabetes insipidus, and sarcoidosis. Medications, such as antihistamines and antidepressants, can also impair salivary flow. Stimulants, most notoriously methylamphetamine, also occlude the flow of saliva to an extreme degree. This is known as meth mouth. Tetrahydrocannabinol (THC), the active chemical substance in cannabis, also causes a nearly complete occlusion of salivation, known in colloquial terms as \"cotton mouth\". Moreover, 63% of the most commonly prescribed medications in the United States list dry mouth as a known side-effect. Radiation therapy of the head and neck",
+            "Motorcycle personal protective equipment\nis of course not always completely effective. Many riders wear \"roost protectors\" designed specifically to protect against painful debris from other bikes, but are of no use in a fall or collision. Leathers are one-piece suits or two-piece jackets and trousers worn by motorcyclists, mainly for protection in a crash. In most cases, the type of leather used is not fashion leather but protective leather, which is thicker, stronger, and only moderately flexible. Today, kangaroo leather is becoming popular for its suppleness, light weight, and strength compared to cowhide. Not all leathers used in garments perform equally; products made from",
+            "Motorcycle helmet\nface. Many full face helmets include vents to increase the airflow to the rider. The significant attraction of these helmets is their protectiveness. Some wearers dislike the increased heat, sense of isolation, lack of wind, and reduced hearing of such helmets. Full-face helmets intended for off-road or motocross use sometimes omit the face shield, but extend the visor and chin portions to increase ventilation, since riding off-road is a very strenuous activity. Studies have shown that full face helmets offer the most protection to motorcycle riders because 35% of all crashes showed major impact on the chin-bar area. Wearing a",
+            "Mouthwash\nsolution. Alcohol is added to mouthwash not to destroy bacteria but to act as a carrier agent for essential active ingredients such as menthol, eucalyptol and thymol which help to penetrate plaque. Sometimes a significant amount of alcohol (up to 27% vol) is added, as a carrier for the flavor, to provide \"bite\". Because of the alcohol content, it is possible to fail a breathalyzer test after rinsing although breath alcohol levels return to normal after 10 minutes. In addition, alcohol is a drying agent, which encourages bacterial activity in the mouth, releasing more malodorous volatile sulfur compounds. Therefore, alcohol-containing",
+            "Motorcycle personal protective equipment\nmay include advanced insulating materials and waterproof breathable fabric, although touring gloves may still lack advanced armouring features used in motorcycle racing gloves. Gloves intended for motorcycle racing typically incorporate pre-curved finger sections and the best available protection, obtained through additional armour incorporated within the glove. Additional protection may involve titanium or carbon panels for knuckles and the joints of the fingers. Furthermore, racing gloves may and often do incorporate additional wrist and other protection panels to protect the heel of the hand, back of the hand and other easily injured parts of the hand. Race gloves often have the"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "attributions": {
+        "visual": [],
+        "text": []
+      },
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": []
+      },
+      "question": "What is in the motorcyclist's mouth?",
+      "ground_truth": "D"
+    },
+    {
+      "answer": "",
+      "raw_prediction": "",
+      "retrieved_docs": [
+        "February 29\nperson born on 29 February has their birthday, although case law would suggest that age is computed based on the number of years elapsed, from the day after the date of birth, and that the person's birth day then occurs on the last day of the year period. This differs from English common law where a birthday is considered to be the start of the next year, the preceding year ending at midnight on the day preceding the birthday. While a person attains the same age on the same day, it also means that, in New Zealand, if something must",
+        "Happy Birthday to You\npublication used \"John\" as the example. <score lang=\"lilypond\">\\relative c' { \\key f \\major \\time 3/4 \\partial 4 c8. c16 | d4 c f | e2 c8. c16 | d4 c g' | f2 c8. c16 | c'4 a f | e( d) bes'8. bes16 | a4 f g | f2 \\bar \"|.\" } \\addlyrics { Hap -- py birth -- day to you, Hap -- py birth -- day to you, Hap -- py birth -- day dear [NAME], __ Hap -- py birth -- day to you. }</score> It is traditional, among English-speakers, that at a birthday party, the",
+        "Birthday problem\nBirthday problem In probability theory, the birthday problem or birthday paradox concerns the probability that, in a set of randomly chosen people, some pair of them will have the same birthday. By the pigeonhole principle, the probability reaches 100% when the number of people reaches 367 (since there are only 366 possible birthdays, including February 29). However, 99.9% probability is reached with just 70 people, and 50% probability with 23 people. These conclusions are based on the assumption that each day of the year (excluding February 29) is equally probable for a birthday. It may well seem surprising that a",
+        "Birthday problem\nany of persons 1 through 22. Let these events respectively be called \"Event 2\", \"Event 3\", and so on. One may also add an \"Event 1\", corresponding to the event of person 1 having a birthday, which occurs with probability 1. This conjunction of events may be computed using conditional probability: the probability of Event 2 is 364/365, as person 2 may have any birthday other than the birthday of person 1. Similarly, the probability of Event 3 given that Event 2 occurred is 363/365, as person 3 may have any of the birthdays not already taken by persons 1",
+        "Birthday problem\nleap years, twins, seasonal or weekday variations are disregarded, and it is assumed that all 365 possible birthdays are equally likely. (Real-life birthday distributions are not uniform, since not all dates are equally likely, but these irregularities have little effect on the analysis.) The goal is to compute , the probability that at least two people in the room have the same birthday. However, it is simpler to calculate , the probability that no two people in the room have the same birthday. Then, because and are the only two possibilities and are also mutually exclusive, In deference to widely"
+      ],
+      "used_retrieval": true,
+      "num_batches_used": 1,
+      "relevant_docs_count": 5,
+      "support_status": "N/A",
+      "usefulness_status": "N/A",
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "February 29\nperson born on 29 February has their birthday, although case law would suggest that age is computed based on the number of years elapsed, from the day after the date of birth, and that the person's birth day then occurs on the last day of the year period. This differs from English common law where a birthday is considered to be the start of the next year, the preceding year ending at midnight on the day preceding the birthday. While a person attains the same age on the same day, it also means that, in New Zealand, if something must",
+            "Happy Birthday to You\npublication used \"John\" as the example. <score lang=\"lilypond\">\\relative c' { \\key f \\major \\time 3/4 \\partial 4 c8. c16 | d4 c f | e2 c8. c16 | d4 c g' | f2 c8. c16 | c'4 a f | e( d) bes'8. bes16 | a4 f g | f2 \\bar \"|.\" } \\addlyrics { Hap -- py birth -- day to you, Hap -- py birth -- day to you, Hap -- py birth -- day dear [NAME], __ Hap -- py birth -- day to you. }</score> It is traditional, among English-speakers, that at a birthday party, the",
+            "Birthday problem\nBirthday problem In probability theory, the birthday problem or birthday paradox concerns the probability that, in a set of randomly chosen people, some pair of them will have the same birthday. By the pigeonhole principle, the probability reaches 100% when the number of people reaches 367 (since there are only 366 possible birthdays, including February 29). However, 99.9% probability is reached with just 70 people, and 50% probability with 23 people. These conclusions are based on the assumption that each day of the year (excluding February 29) is equally probable for a birthday. It may well seem surprising that a",
+            "Birthday problem\nany of persons 1 through 22. Let these events respectively be called \"Event 2\", \"Event 3\", and so on. One may also add an \"Event 1\", corresponding to the event of person 1 having a birthday, which occurs with probability 1. This conjunction of events may be computed using conditional probability: the probability of Event 2 is 364/365, as person 2 may have any birthday other than the birthday of person 1. Similarly, the probability of Event 3 given that Event 2 occurred is 363/365, as person 3 may have any of the birthdays not already taken by persons 1",
+            "Birthday problem\nleap years, twins, seasonal or weekday variations are disregarded, and it is assumed that all 365 possible birthdays are equally likely. (Real-life birthday distributions are not uniform, since not all dates are equally likely, but these irregularities have little effect on the analysis.) The goal is to compute , the probability that at least two people in the room have the same birthday. However, it is simpler to calculate , the probability that no two people in the room have the same birthday. Then, because and are the only two possibilities and are also mutually exclusive, In deference to widely"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "attributions": {
+        "visual": [],
+        "text": []
+      },
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": []
+      },
+      "question": "Which number birthday is probably being celebrated?",
+      "ground_truth": "D"
+    },
+    {
+      "answer": "",
+      "raw_prediction": "",
+      "retrieved_docs": [
+        "Sierra Vista, Arizona\nAquatic Center, aka \"The Cove,\" is a facility that contains of pool water surface, which equates to over of water. The Aquatic Center boasts a 0' depth, or \"beach\", entry, eight 25-yard lap lanes for lap and competitive swimming, and a wave machine with several wave patterns for Open Swim. The Cove has a submersible bulkhead which makes the switch from wave pool to competitive pool possible. The Cove also has a warm water therapy pool, children's lagoon with slide, two 1 meter diving boards and one 3 meter diving board, and two enclosed water tube slides to include a",
+        "Nature\nis a body of standing water, either natural or man-made, that is usually smaller than a lake. A wide variety of man-made bodies of water are classified as ponds, including water gardens designed for aesthetic ornamentation, fish ponds designed for commercial fish breeding, and solar ponds designed to store thermal energy. Ponds and lakes are distinguished from streams via current speed. While currents in streams are easily observed, ponds and lakes possess thermally driven micro-currents and moderate wind driven currents. These features distinguish a pond from many other aquatic terrain features, such as stream pools and tide pools. A river",
+        "Gravity current\nis a region in which relatively large volumes of ambient fluid are displaced. The tail is the bulk of fluid which follows the head. Immediately in the wake of the head, intense mixing occurs between the gravity current and the ambient fluid. Mixing occurs from both above and below the gravity current. Mixing from above is a result of turbulent billows (Kelvin-Helmholtz instabilities) which form in the wake of the head and engulf ambient fluid into the tail, a process referred to as \"entrainment\". Mixing from below is a result of the gravity current overrunning ambient fluid, literally trapping it",
+        "Gravity wave\nor surface waves, while gravity waves that are \"within\" the body of the water (such as between parts of different densities) are called internal waves. Wind-generated waves on the water surface are examples of gravity waves, as are tsunamis and ocean tides. Wind-generated gravity waves on the free surface of the Earth's ponds, lakes, seas and oceans have a period of between 0.3 and 30 seconds (3 Hz to 0.03 Hz). Shorter waves are also affected by surface tension and are called gravity–capillary waves and (if hardly influenced by gravity) capillary waves. Alternatively, so-called infragravity waves, which are due to",
+        "Whirlpool\nWhirlpool A whirlpool is a body of rotating water produced by the meeting of opposing currents. The vast majority of whirlpools are not very powerful and very small whirlpools can be easily seen when a bath or a sink is draining. More powerful ones in seas or oceans may be termed maelstroms. \"Vortex\" is the proper term for any whirlpool that has a downdraft. In oceans, in narrow straits with fast flowing water, whirlpools are normally caused by tides; there are few stories of large ships ever being sucked into such a maelstrom, although smaller craft are in danger. Smaller"
+      ],
+      "used_retrieval": true,
+      "num_batches_used": 1,
+      "relevant_docs_count": 5,
+      "support_status": "N/A",
+      "usefulness_status": "N/A",
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Sierra Vista, Arizona\nAquatic Center, aka \"The Cove,\" is a facility that contains of pool water surface, which equates to over of water. The Aquatic Center boasts a 0' depth, or \"beach\", entry, eight 25-yard lap lanes for lap and competitive swimming, and a wave machine with several wave patterns for Open Swim. The Cove has a submersible bulkhead which makes the switch from wave pool to competitive pool possible. The Cove also has a warm water therapy pool, children's lagoon with slide, two 1 meter diving boards and one 3 meter diving board, and two enclosed water tube slides to include a",
+            "Nature\nis a body of standing water, either natural or man-made, that is usually smaller than a lake. A wide variety of man-made bodies of water are classified as ponds, including water gardens designed for aesthetic ornamentation, fish ponds designed for commercial fish breeding, and solar ponds designed to store thermal energy. Ponds and lakes are distinguished from streams via current speed. While currents in streams are easily observed, ponds and lakes possess thermally driven micro-currents and moderate wind driven currents. These features distinguish a pond from many other aquatic terrain features, such as stream pools and tide pools. A river",
+            "Gravity current\nis a region in which relatively large volumes of ambient fluid are displaced. The tail is the bulk of fluid which follows the head. Immediately in the wake of the head, intense mixing occurs between the gravity current and the ambient fluid. Mixing occurs from both above and below the gravity current. Mixing from above is a result of turbulent billows (Kelvin-Helmholtz instabilities) which form in the wake of the head and engulf ambient fluid into the tail, a process referred to as \"entrainment\". Mixing from below is a result of the gravity current overrunning ambient fluid, literally trapping it",
+            "Gravity wave\nor surface waves, while gravity waves that are \"within\" the body of the water (such as between parts of different densities) are called internal waves. Wind-generated waves on the water surface are examples of gravity waves, as are tsunamis and ocean tides. Wind-generated gravity waves on the free surface of the Earth's ponds, lakes, seas and oceans have a period of between 0.3 and 30 seconds (3 Hz to 0.03 Hz). Shorter waves are also affected by surface tension and are called gravity–capillary waves and (if hardly influenced by gravity) capillary waves. Alternatively, so-called infragravity waves, which are due to",
+            "Whirlpool\nWhirlpool A whirlpool is a body of rotating water produced by the meeting of opposing currents. The vast majority of whirlpools are not very powerful and very small whirlpools can be easily seen when a bath or a sink is draining. More powerful ones in seas or oceans may be termed maelstroms. \"Vortex\" is the proper term for any whirlpool that has a downdraft. In oceans, in narrow straits with fast flowing water, whirlpools are normally caused by tides; there are few stories of large ships ever being sucked into such a maelstrom, although smaller craft are in danger. Smaller"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "attributions": {
+        "visual": [],
+        "text": []
+      },
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": []
+      },
+      "question": "What best describes the pool of water?",
+      "ground_truth": "C"
+    },
+    {
+      "answer": "",
+      "raw_prediction": "",
+      "retrieved_docs": [
+        "Pavlova (cake)\nconsistency, gradually adding caster sugar before folding in vinegar or another acid (e.g. cream of tartar or lemon juice), cornflour, and sometimes vanilla essence, and slow-baking the mixture, similar to meringue. The pavlova has a crisp and crunchy outer shell, and a soft, moist marshmallow-like centre, in contrast to meringue which is usually solid throughout. It has been suggested the addition of cornflour is responsible for the marshmallow centre, although it has been debated that the cornflour is just another egg white stabiliser in addition to the acid. The consistency also makes the pavlova significantly more fragile than meringue. Because",
+        "Cake\noven door is opened during the cooking process. A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles, which are also known as \"jimmies\" in certain parts of the United States and \"hundreds and thousands\" in the United Kingdom. Frosting is usually made from powdered (icing) sugar, sometimes a fat of some sort, milk or cream, and often flavorings such as vanilla extract or cocoa powder. Some decorators use a rolled fondant icing. Commercial bakeries tend to use lard for the fat, and often whip the lard to introduce air bubbles. This",
+        "Icing (food)\nIcing (food) Icing, or frosting, is a sweet, often creamy glaze made of sugar with a liquid, such as water or milk, that is often enriched with ingredients like butter, egg whites, cream cheese, or flavorings. It is used to cover or decorate baked goods, such as cakes or cookies. When it is used between layers of cake, it is called filling. Icing can be formed into shapes such as flowers and leaves using a pastry bag. Such decorations are commonplace on birthday and wedding cakes. Chef's colour dye (food colouring) is commonly added to icing mixtures to achieve the",
+        "Wedding cake\nchips. Fondant is a form of frosting style that is rolled out and draped over tiers. Its smooth, firm sugar icing is often embellished with appliqués, Fondant can be cut into designs, formed into shapes, flavored or tinted. Poured fondant is used to glaze petits fours and other detailed confections. Flowerpaste or Gumpaste is a pliable dough made from egg whites, unflavored gelatine, powdered sugar, Carboximetil Cellulose(CMC) TYLOSE, or GUM tragacamthum. There are an array of methods and ingredients around the world on how to make flowerpaste/gumpaste. The purpose of this dough is to create flowers and decorations for a",
+        "Icing (food)\nother materials was introduced in the 17th century. The icing was applied to the cake then hardened in the oven. The earliest attestation of the verb 'to ice' in this sense seems to date from around 1600, and the noun 'icing' from 1683. 'Frosting' was first attested in 1750. Icing (food) Icing, or frosting, is a sweet, often creamy glaze made of sugar with a liquid, such as water or milk, that is often enriched with ingredients like butter, egg whites, cream cheese, or flavorings. It is used to cover or decorate baked goods, such as cakes or cookies. When"
+      ],
+      "used_retrieval": true,
+      "num_batches_used": 1,
+      "relevant_docs_count": 5,
+      "support_status": "N/A",
+      "usefulness_status": "N/A",
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Pavlova (cake)\nconsistency, gradually adding caster sugar before folding in vinegar or another acid (e.g. cream of tartar or lemon juice), cornflour, and sometimes vanilla essence, and slow-baking the mixture, similar to meringue. The pavlova has a crisp and crunchy outer shell, and a soft, moist marshmallow-like centre, in contrast to meringue which is usually solid throughout. It has been suggested the addition of cornflour is responsible for the marshmallow centre, although it has been debated that the cornflour is just another egg white stabiliser in addition to the acid. The consistency also makes the pavlova significantly more fragile than meringue. Because",
+            "Cake\noven door is opened during the cooking process. A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles, which are also known as \"jimmies\" in certain parts of the United States and \"hundreds and thousands\" in the United Kingdom. Frosting is usually made from powdered (icing) sugar, sometimes a fat of some sort, milk or cream, and often flavorings such as vanilla extract or cocoa powder. Some decorators use a rolled fondant icing. Commercial bakeries tend to use lard for the fat, and often whip the lard to introduce air bubbles. This",
+            "Icing (food)\nIcing (food) Icing, or frosting, is a sweet, often creamy glaze made of sugar with a liquid, such as water or milk, that is often enriched with ingredients like butter, egg whites, cream cheese, or flavorings. It is used to cover or decorate baked goods, such as cakes or cookies. When it is used between layers of cake, it is called filling. Icing can be formed into shapes such as flowers and leaves using a pastry bag. Such decorations are commonplace on birthday and wedding cakes. Chef's colour dye (food colouring) is commonly added to icing mixtures to achieve the",
+            "Wedding cake\nchips. Fondant is a form of frosting style that is rolled out and draped over tiers. Its smooth, firm sugar icing is often embellished with appliqués, Fondant can be cut into designs, formed into shapes, flavored or tinted. Poured fondant is used to glaze petits fours and other detailed confections. Flowerpaste or Gumpaste is a pliable dough made from egg whites, unflavored gelatine, powdered sugar, Carboximetil Cellulose(CMC) TYLOSE, or GUM tragacamthum. There are an array of methods and ingredients around the world on how to make flowerpaste/gumpaste. The purpose of this dough is to create flowers and decorations for a",
+            "Icing (food)\nother materials was introduced in the 17th century. The icing was applied to the cake then hardened in the oven. The earliest attestation of the verb 'to ice' in this sense seems to date from around 1600, and the noun 'icing' from 1683. 'Frosting' was first attested in 1750. Icing (food) Icing, or frosting, is a sweet, often creamy glaze made of sugar with a liquid, such as water or milk, that is often enriched with ingredients like butter, egg whites, cream cheese, or flavorings. It is used to cover or decorate baked goods, such as cakes or cookies. When"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "attributions": {
+        "visual": [],
+        "text": []
+      },
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": []
+      },
+      "question": "What is the white substance on top of the cupcakes?",
+      "ground_truth": "D"
+    },
+    {
+      "answer": "",
+      "raw_prediction": "",
+      "retrieved_docs": [
+        "Laptop\nLaptop A laptop, also called a notebook computer or simply a notebook, is a small, portable personal computer with a \"clamshell\" form factor, having, typically, a thin LCD or LED computer screen mounted on the inside of the upper lid of the \"clamshell\" and an alphanumeric keyboard on the inside of the lower lid. The \"clamshell\" is opened up to use the computer. Laptops are folded shut for transportation, and thus are suitable for mobile use. Its name comes from \"lap\", as it was deemed to be placed for use on a person's lap. Although originally there was a distinction",
+        "Laptop\nare commonly called a 'traditional laptop' or notebook, particularly if they have a screen size of 11 to 17 inches measured diagonally and run a full-featured operating system like Windows 10, macOS, or Linux. Traditional laptops are the most common form of laptops, although Chromebooks, Ultrabooks, convertibles and 2-in-1s (described below) are becoming more common, with similar performance being achieved in their more portable or affordable forms. A \"subnotebook\" or an \"ultraportable\", is a laptop designed and marketed with an emphasis on portability (small size, low weight, and often longer battery life). Subnotebooks are usually smaller and lighter than standard",
+        "Laptop\nincorporate a card reader which allows for use of memory cards, such as those used for digital cameras, which are typically SD or microSD cards. This enables users to download digital pictures from an SD card onto a laptop, thus enabling them to delete the SD card's contents to free up space for taking new pictures. Optical disc drives capable of playing CD-ROMs, compact discs (CD), DVDs, and in some cases, Blu-ray Discs (BD), were nearly universal on full-sized models by the early 2010s. A disc drive remains fairly common in laptops with a screen wider than , although the",
+        "Laptop\nlaptop computer market continues to expand, introducing a number of laptops like Acer's Aspire and TravelMate, Asus' Transformer Book, VivoBook and Zenbook, Dell's Inspiron, Latitude and XPS, HP's EliteBook, Envy, Pavilion and ProBook, Lenovo's IdeaPad and ThinkPad and Toshiba's Portégé, Satellite and Tecra that incorporate the use of laptop computers. The form of the traditional laptop computer is a clamshell, with a screen on one of its inner sides and a keyboard on the opposite, facing the screen. It can be easily folded to conserve space while traveling. The screen and keyboard are inaccessible while closed. Devices of this form",
+        "Laptop\nfeatures of several previously separate device types. The \"hybrids\", \"convertibles\" and \"2-in-1s\" emerged as crossover devices, which share traits of both tablets and laptops. All such devices have a touchscreen display designed to allow users to work in a \"tablet\" mode, using either multi-touch gestures or a stylus/digital pen. \"Convertibles\" are devices with the ability to conceal a hardware keyboard. Keyboards on such devices can be flipped, rotated, or slid behind the back of the chassis, thus transforming from a laptop into a tablet. \"Hybrids\" have a keyboard detachment mechanism, and due to this feature, all critical components are situated"
+      ],
+      "used_retrieval": true,
+      "num_batches_used": 1,
+      "relevant_docs_count": 5,
+      "support_status": "N/A",
+      "usefulness_status": "N/A",
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Laptop\nLaptop A laptop, also called a notebook computer or simply a notebook, is a small, portable personal computer with a \"clamshell\" form factor, having, typically, a thin LCD or LED computer screen mounted on the inside of the upper lid of the \"clamshell\" and an alphanumeric keyboard on the inside of the lower lid. The \"clamshell\" is opened up to use the computer. Laptops are folded shut for transportation, and thus are suitable for mobile use. Its name comes from \"lap\", as it was deemed to be placed for use on a person's lap. Although originally there was a distinction",
+            "Laptop\nare commonly called a 'traditional laptop' or notebook, particularly if they have a screen size of 11 to 17 inches measured diagonally and run a full-featured operating system like Windows 10, macOS, or Linux. Traditional laptops are the most common form of laptops, although Chromebooks, Ultrabooks, convertibles and 2-in-1s (described below) are becoming more common, with similar performance being achieved in their more portable or affordable forms. A \"subnotebook\" or an \"ultraportable\", is a laptop designed and marketed with an emphasis on portability (small size, low weight, and often longer battery life). Subnotebooks are usually smaller and lighter than standard",
+            "Laptop\nincorporate a card reader which allows for use of memory cards, such as those used for digital cameras, which are typically SD or microSD cards. This enables users to download digital pictures from an SD card onto a laptop, thus enabling them to delete the SD card's contents to free up space for taking new pictures. Optical disc drives capable of playing CD-ROMs, compact discs (CD), DVDs, and in some cases, Blu-ray Discs (BD), were nearly universal on full-sized models by the early 2010s. A disc drive remains fairly common in laptops with a screen wider than , although the",
+            "Laptop\nlaptop computer market continues to expand, introducing a number of laptops like Acer's Aspire and TravelMate, Asus' Transformer Book, VivoBook and Zenbook, Dell's Inspiron, Latitude and XPS, HP's EliteBook, Envy, Pavilion and ProBook, Lenovo's IdeaPad and ThinkPad and Toshiba's Portégé, Satellite and Tecra that incorporate the use of laptop computers. The form of the traditional laptop computer is a clamshell, with a screen on one of its inner sides and a keyboard on the opposite, facing the screen. It can be easily folded to conserve space while traveling. The screen and keyboard are inaccessible while closed. Devices of this form",
+            "Laptop\nfeatures of several previously separate device types. The \"hybrids\", \"convertibles\" and \"2-in-1s\" emerged as crossover devices, which share traits of both tablets and laptops. All such devices have a touchscreen display designed to allow users to work in a \"tablet\" mode, using either multi-touch gestures or a stylus/digital pen. \"Convertibles\" are devices with the ability to conceal a hardware keyboard. Keyboards on such devices can be flipped, rotated, or slid behind the back of the chassis, thus transforming from a laptop into a tablet. \"Hybrids\" have a keyboard detachment mechanism, and due to this feature, all critical components are situated"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "attributions": {
+        "visual": [],
+        "text": []
+      },
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": []
+      },
+      "question": "What type of device is sitting next to the laptop?",
+      "ground_truth": "B"
+    },
+    {
+      "answer": "",
+      "raw_prediction": "",
+      "retrieved_docs": [
+        "Bongo (antelope)\nhave two heavy and slightly spiralled horns that slope over their backs, and like many other antelope species, both male and female bongos have horns. Bongos are the only tragelaphids in which both sexes have horns. The horns of bongos are in the form of a lyre and bear a resemblance to those of the related antelope species of nyalas, sitatungas, bushbucks, kudus and elands. Unlike deer, which have branched antlers shed annually, bongos and other antelopes have pointed horns they keep throughout their lives. Males have massive backswept horns, while females have smaller, thinner, and more parallel horns. The",
+        "Harrier (dog)\nis a muscular hunting hound with a small, hard coat. It has large bones for stamina and strength. The Harrier is slightly longer than tall, with a level topline. The tail is medium-length, carried high, but is not curled over the back. The skull is broad with a strong square muzzle. The rounded ears are pendant, and the eyes are either brown or hazel. The wide nose is black. The expression is mellow when the dog is relaxed and alert when he is excited. The teeth should meet in a scissors or level bite. The feet are tight and cat-like,",
+        "Ungulate\nantlers annually, and thus can be honest signals of metabolic efficiency and food gathering capability. Ossicones are horn-like (or antler-like) protuberances that can be found on the heads of giraffes and male okapis today. They are similar to the horns of antelopes and cattle, save that they are derived from ossified cartilage, and that the ossicones remain covered in skin and fur, rather than horn. Antlers (such as on deer) are derived from bone tissue: when mature, the skin and fur covering of the antlers, termed \"velvet\", is sloughed and scraped off to expose the bone of the antlers. Pronghorn",
+        "Bongo (antelope)\nshort, bristly, brown ridge of dorsal hair from the shoulder to the rump; the white stripes run into this ridge. A white chevron appears between the eyes, and two large white spots grace each cheek. Another white chevron occurs where the neck meets the chest. The large ears are to sharpen hearing, and the distinctive coloration may help bongos identify one another in their dark forest habitats. Bongos have no special secretion glands, so rely less on scent to find one another than do other similar antelopes. The lips of a bongo are white, topped with a black muzzle. Bongos",
+        "Bactrian camel\nis . Body mass can range from , with males often being much larger and heavier than females. Its long, wooly coat varies in colour from dark brown to sandy beige. A mane and beard of long hair occurs on the neck and throat, with hairs measuring up to long. The shaggy winter coat is shed extremely rapidly, with huge sections peeling off at once, appearing as if sloppily shorn. The two humps on the back are composed of fat (not water as is sometimes thought). The face is typical of a camelid, being long and somewhat triangular, with a"
+      ],
+      "used_retrieval": true,
+      "num_batches_used": 1,
+      "relevant_docs_count": 5,
+      "support_status": "N/A",
+      "usefulness_status": "N/A",
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Bongo (antelope)\nhave two heavy and slightly spiralled horns that slope over their backs, and like many other antelope species, both male and female bongos have horns. Bongos are the only tragelaphids in which both sexes have horns. The horns of bongos are in the form of a lyre and bear a resemblance to those of the related antelope species of nyalas, sitatungas, bushbucks, kudus and elands. Unlike deer, which have branched antlers shed annually, bongos and other antelopes have pointed horns they keep throughout their lives. Males have massive backswept horns, while females have smaller, thinner, and more parallel horns. The",
+            "Harrier (dog)\nis a muscular hunting hound with a small, hard coat. It has large bones for stamina and strength. The Harrier is slightly longer than tall, with a level topline. The tail is medium-length, carried high, but is not curled over the back. The skull is broad with a strong square muzzle. The rounded ears are pendant, and the eyes are either brown or hazel. The wide nose is black. The expression is mellow when the dog is relaxed and alert when he is excited. The teeth should meet in a scissors or level bite. The feet are tight and cat-like,",
+            "Ungulate\nantlers annually, and thus can be honest signals of metabolic efficiency and food gathering capability. Ossicones are horn-like (or antler-like) protuberances that can be found on the heads of giraffes and male okapis today. They are similar to the horns of antelopes and cattle, save that they are derived from ossified cartilage, and that the ossicones remain covered in skin and fur, rather than horn. Antlers (such as on deer) are derived from bone tissue: when mature, the skin and fur covering of the antlers, termed \"velvet\", is sloughed and scraped off to expose the bone of the antlers. Pronghorn",
+            "Bongo (antelope)\nshort, bristly, brown ridge of dorsal hair from the shoulder to the rump; the white stripes run into this ridge. A white chevron appears between the eyes, and two large white spots grace each cheek. Another white chevron occurs where the neck meets the chest. The large ears are to sharpen hearing, and the distinctive coloration may help bongos identify one another in their dark forest habitats. Bongos have no special secretion glands, so rely less on scent to find one another than do other similar antelopes. The lips of a bongo are white, topped with a black muzzle. Bongos",
+            "Bactrian camel\nis . Body mass can range from , with males often being much larger and heavier than females. Its long, wooly coat varies in colour from dark brown to sandy beige. A mane and beard of long hair occurs on the neck and throat, with hairs measuring up to long. The shaggy winter coat is shed extremely rapidly, with huge sections peeling off at once, appearing as if sloppily shorn. The two humps on the back are composed of fat (not water as is sometimes thought). The face is typical of a camelid, being long and somewhat triangular, with a"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "attributions": {
+        "visual": [],
+        "text": []
+      },
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": []
+      },
+      "question": "The thing on the animal to the left's head is similar to what is on the head of what else?",
+      "ground_truth": "A"
+    },
+    {
+      "answer": "",
+      "raw_prediction": "",
+      "retrieved_docs": [
+        "Small appliance\nSmall appliance A small appliance, small domestic appliance, or small electrics are portable or semi-portable machines, generally used on table-tops, counter-tops, or other platforms, to accomplish a household task. Examples include microwave ovens, toasters, humidifiers, and coffeemakers. They contrast with major appliances (British \"white goods\"), such as the refrigerator and washing machine, which cannot be easily moved and are generally placed on the floor. Small appliances also contrast with consumer electronics (British \"brown goods\") which are for leisure and entertainment rather than purely practical tasks. Some small appliances perform the same or similar function as their larger counterparts. For example,",
+        "Small appliance\nvarious attachments so as to constitute several individual appliances, such as a blender, a food processor, or a juicer. Many stand mixers, while functioning primarily as a mixer, have attachments which can perform additional functions. A few gasoline and gas-powered appliances exist for use in situations where electricity is not expected to be available, but these are typically larger and not as portable as most small appliances. Items that perform the same function as small appliances but are hand powered are generally referred to as tools or gadgets, for example a hand cranked egg beater, a grater, a mandoline, or",
+        "Kitchen stove\ndevice, which is mobile and can be used as an appropriate technology. Kitchen stove A kitchen stove, often called simply a stove or a cooker, is a kitchen appliance designed for the purpose of cooking food. Kitchen stoves rely on the application of direct heat for the cooking process and may also contain an oven, used for baking. \"Cookstoves\" (also called \"cooking stoves\" or \"wood stoves\") are heated by burning wood or charcoal; \"gas stoves\" are heated by gas; and \"electric stoves\" by electricity. A stove with a built-in cooktop is also called a range. In the industrialized world, as",
+        "Homemaking\na room or part of a room used by the Homemaker for cooking, food preparation and food preservation. In the West, a modern kitchen is typically equipped with a stove, an oven, a sink with hot and cold running water, a refrigerator and kitchen cabinets. Many homemakers use a microwave oven, a dishwasher and other electric appliances like blender and convection cooker and automatic appliances like rotimatic and automatic cookers. The main function of a kitchen is cooking or preparing food but it may also be used for dining and entertaining. Cooking is the process of preparing food with or",
+        "Small appliance\na toaster oven is a small appliance that performs a similar function as an oven. Small appliances often have a home version and a commercial version, for example waffle irons, food processors, and blenders. The commercial, or industrial, version is designed to be used nearly continuously in a restaurant or other similar setting. Commercial appliances are typically connected to a more powerful electrical outlet, are larger and stronger, have more user-serviceable parts, and cost significantly more. Small appliances can be very inexpensive, such as an electric can opener, hot pot, toaster, or coffee maker which may cost only a few"
+      ],
+      "used_retrieval": true,
+      "num_batches_used": 1,
+      "relevant_docs_count": 5,
+      "support_status": "N/A",
+      "usefulness_status": "N/A",
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Small appliance\nSmall appliance A small appliance, small domestic appliance, or small electrics are portable or semi-portable machines, generally used on table-tops, counter-tops, or other platforms, to accomplish a household task. Examples include microwave ovens, toasters, humidifiers, and coffeemakers. They contrast with major appliances (British \"white goods\"), such as the refrigerator and washing machine, which cannot be easily moved and are generally placed on the floor. Small appliances also contrast with consumer electronics (British \"brown goods\") which are for leisure and entertainment rather than purely practical tasks. Some small appliances perform the same or similar function as their larger counterparts. For example,",
+            "Small appliance\nvarious attachments so as to constitute several individual appliances, such as a blender, a food processor, or a juicer. Many stand mixers, while functioning primarily as a mixer, have attachments which can perform additional functions. A few gasoline and gas-powered appliances exist for use in situations where electricity is not expected to be available, but these are typically larger and not as portable as most small appliances. Items that perform the same function as small appliances but are hand powered are generally referred to as tools or gadgets, for example a hand cranked egg beater, a grater, a mandoline, or",
+            "Kitchen stove\ndevice, which is mobile and can be used as an appropriate technology. Kitchen stove A kitchen stove, often called simply a stove or a cooker, is a kitchen appliance designed for the purpose of cooking food. Kitchen stoves rely on the application of direct heat for the cooking process and may also contain an oven, used for baking. \"Cookstoves\" (also called \"cooking stoves\" or \"wood stoves\") are heated by burning wood or charcoal; \"gas stoves\" are heated by gas; and \"electric stoves\" by electricity. A stove with a built-in cooktop is also called a range. In the industrialized world, as",
+            "Homemaking\na room or part of a room used by the Homemaker for cooking, food preparation and food preservation. In the West, a modern kitchen is typically equipped with a stove, an oven, a sink with hot and cold running water, a refrigerator and kitchen cabinets. Many homemakers use a microwave oven, a dishwasher and other electric appliances like blender and convection cooker and automatic appliances like rotimatic and automatic cookers. The main function of a kitchen is cooking or preparing food but it may also be used for dining and entertaining. Cooking is the process of preparing food with or",
+            "Small appliance\na toaster oven is a small appliance that performs a similar function as an oven. Small appliances often have a home version and a commercial version, for example waffle irons, food processors, and blenders. The commercial, or industrial, version is designed to be used nearly continuously in a restaurant or other similar setting. Commercial appliances are typically connected to a more powerful electrical outlet, are larger and stronger, have more user-serviceable parts, and cost significantly more. Small appliances can be very inexpensive, such as an electric can opener, hot pot, toaster, or coffee maker which may cost only a few"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "attributions": {
+        "visual": [],
+        "text": []
+      },
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": []
+      },
+      "question": "What is the appliance the woman is holding used for?",
+      "ground_truth": "C"
+    },
+    {
+      "answer": "",
+      "raw_prediction": "",
+      "retrieved_docs": [
+        "Slate\nwill display a property called fissility, forming smooth flat sheets of stone which have long been used for roofing, floor tiles, and other purposes. Slate is frequently grey in color, especially when seen, en masse, covering roofs. However, slate occurs in a variety of colors even from a single locality; for example, slate from North Wales can be found in many shades of grey, from pale to dark, and may also be purple, green or cyan. Slate is not to be confused with shale, from which it may be formed, or schist. The word \"slate\" is also used for certain",
+        "Orientability\n(as opposed to counter-clockwise) is called an orientation, and the surface is called oriented. For surfaces embedded in Euclidean space, an orientation is specified by the choice of a continuously varying surface normal n at every point. If such a normal exists at all, then there are always two ways to select it: n or −n. More generally, an orientable surface admits exactly two orientations, and the distinction between an orient\"ed\" surface and an orient\"able\" surface is subtle and frequently blurred. An orientable surface is an abstract surface that admits an orientation, while an oriented surface is a surface that",
+        "Phong reflection model\nas a combination of the diffuse reflection of rough surfaces with the specular reflection of shiny surfaces. It is based on Phong's informal observation that shiny surfaces have small intense specular highlights, while dull surfaces have large highlights that fall off more gradually. The model also includes an \"ambient\" term to account for the small amount of light that is scattered about the entire scene. For each light source in the scene, components formula_1 and formula_2 are defined as the intensities (often as RGB values) of the specular and diffuse components of the light sources, respectively. A single term formula_3",
+        "Soil\nprofile which consists of two or more layers, referred to as soil horizons, that differ in one or more properties such as in their texture, structure, density, porosity, consistency, temperature, color, and reactivity. The horizons differ greatly in thickness and generally lack sharp boundaries; their development is dependent on the type of parent material, the processes that modify those parent materials, and the soil-forming factors that influence those processes. The biological influences on soil properties are strongest near the surface, while the geochemical influences on soil properties increase with depth. Mature soil profiles typically include three basic master horizons: A,",
+        "Surface (topology)\nas differential geometry and complex analysis. The various mathematical notions of surface can be used to model surfaces in the physical world. In mathematics, a surface is a geometrical shape that resembles a deformed plane. The most familiar examples arise as boundaries of solid objects in ordinary three-dimensional Euclidean space R, such as spheres. The exact definition of a surface may depend on the context. Typically, in algebraic geometry, a surface may cross itself (and may have other singularities), while, in topology and differential geometry, it may not. A surface is a two-dimensional space; this means that a moving point"
+      ],
+      "used_retrieval": true,
+      "num_batches_used": 1,
+      "relevant_docs_count": 5,
+      "support_status": "N/A",
+      "usefulness_status": "N/A",
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Slate\nwill display a property called fissility, forming smooth flat sheets of stone which have long been used for roofing, floor tiles, and other purposes. Slate is frequently grey in color, especially when seen, en masse, covering roofs. However, slate occurs in a variety of colors even from a single locality; for example, slate from North Wales can be found in many shades of grey, from pale to dark, and may also be purple, green or cyan. Slate is not to be confused with shale, from which it may be formed, or schist. The word \"slate\" is also used for certain",
+            "Orientability\n(as opposed to counter-clockwise) is called an orientation, and the surface is called oriented. For surfaces embedded in Euclidean space, an orientation is specified by the choice of a continuously varying surface normal n at every point. If such a normal exists at all, then there are always two ways to select it: n or −n. More generally, an orientable surface admits exactly two orientations, and the distinction between an orient\"ed\" surface and an orient\"able\" surface is subtle and frequently blurred. An orientable surface is an abstract surface that admits an orientation, while an oriented surface is a surface that",
+            "Phong reflection model\nas a combination of the diffuse reflection of rough surfaces with the specular reflection of shiny surfaces. It is based on Phong's informal observation that shiny surfaces have small intense specular highlights, while dull surfaces have large highlights that fall off more gradually. The model also includes an \"ambient\" term to account for the small amount of light that is scattered about the entire scene. For each light source in the scene, components formula_1 and formula_2 are defined as the intensities (often as RGB values) of the specular and diffuse components of the light sources, respectively. A single term formula_3",
+            "Soil\nprofile which consists of two or more layers, referred to as soil horizons, that differ in one or more properties such as in their texture, structure, density, porosity, consistency, temperature, color, and reactivity. The horizons differ greatly in thickness and generally lack sharp boundaries; their development is dependent on the type of parent material, the processes that modify those parent materials, and the soil-forming factors that influence those processes. The biological influences on soil properties are strongest near the surface, while the geochemical influences on soil properties increase with depth. Mature soil profiles typically include three basic master horizons: A,",
+            "Surface (topology)\nas differential geometry and complex analysis. The various mathematical notions of surface can be used to model surfaces in the physical world. In mathematics, a surface is a geometrical shape that resembles a deformed plane. The most familiar examples arise as boundaries of solid objects in ordinary three-dimensional Euclidean space R, such as spheres. The exact definition of a surface may depend on the context. Typically, in algebraic geometry, a surface may cross itself (and may have other singularities), while, in topology and differential geometry, it may not. A surface is a two-dimensional space; this means that a moving point"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "attributions": {
+        "visual": [],
+        "text": []
+      },
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": []
+      },
+      "question": "What is the descriptive word for this surface?",
+      "ground_truth": "B"
+    },
+    {
+      "answer": "",
+      "raw_prediction": "",
+      "retrieved_docs": [
+        "Pankration\nathlete is straddling the left thigh of the opponent—the left knee of the opponent is not on the floor—and is trapping the left foot of the opponent by stepping on it. The athlete uses his left hand to push down on the side/back of the head of the opponent while with his right hand he pulls the opponent's right arm back, against his midsection. This creates an arm bar on the right arm with the pressure now being mostly on the elbow. The fallen opponent cannot relieve it, because his head is being shoved the opposite way by the left",
+        "Professional wrestling holds\npectoral muscles. Variations of this can include clasping the opponent's hand instead of hooking the upper arm, for extra leverage and bridging out, while performing the move to increase leverage and immobilize the opponent. A seated variation also exists as Becky Lynch uses it as the \"Dis-arm-her\", where the attacking wrestler takes a facedown opponent's arm in a kneeling position adding pressure by pulling back on the arm. The wrestler grabs the wrist of the opponent so that the arm is held bent against their back, and their hand forced upwards towards the neck, thereby applying pressure to the shoulder",
+        "Pankration\nis behind the opponent and has him leaning down, with the right knee of the opponent on the ground. The athlete has the opponent's right arm straightened out and extended maximally backward at the shoulder joint. With the opponent's right arm across his own torso, the athlete uses his left hand to keep the pressure on the opponent's right arm by grabbing and pressing down on it just above the wrist. The right hand of the athlete is pressing down at the (side of) the head of the opponent, thus not permitting him to rotate to his right to relieve",
+        "Somersault\nSomersault A somersault (also \"flip\", \"heli\", and in gymnastics \"salto\") is an acrobatic exercise in which a person's body rotates 360° around a horizontal axis with the feet passing over the head. A somersault can be performed forwards, backwards, or sideways and can be executed in the air or on the ground. When performed on the ground it is typically called a roll. \"Somersault\" originates from an obsolete French word, \"sombresault\", from Occitan \"sobresaut\"; and ultimately Latin – \"supra\", \"over\", and \"saltus\", \"jump\". There are many variations of front and back somersaults. Somersaults can be performed in multiples, or multiples",
+        "Lead and follow\na marker of an inexperienced or poorly taught dancer, the process of leading and following, particularly at an advanced level, often involves the contra- and contrasting uses of weight transfers and 'arm moves'. As an example, a Lead may lead a Follow back onto their right foot through the Lead's own weight transfer forwards onto their left foot; yet at the same time turn the Follow's torso to the left from above the hips. The Lead has to communicate the direction of the movement to the Follow. Traditionally, the Lead's right hand is on the follow's back, near the lowest"
+      ],
+      "used_retrieval": true,
+      "num_batches_used": 1,
+      "relevant_docs_count": 5,
+      "support_status": "N/A",
+      "usefulness_status": "N/A",
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Pankration\nathlete is straddling the left thigh of the opponent—the left knee of the opponent is not on the floor—and is trapping the left foot of the opponent by stepping on it. The athlete uses his left hand to push down on the side/back of the head of the opponent while with his right hand he pulls the opponent's right arm back, against his midsection. This creates an arm bar on the right arm with the pressure now being mostly on the elbow. The fallen opponent cannot relieve it, because his head is being shoved the opposite way by the left",
+            "Professional wrestling holds\npectoral muscles. Variations of this can include clasping the opponent's hand instead of hooking the upper arm, for extra leverage and bridging out, while performing the move to increase leverage and immobilize the opponent. A seated variation also exists as Becky Lynch uses it as the \"Dis-arm-her\", where the attacking wrestler takes a facedown opponent's arm in a kneeling position adding pressure by pulling back on the arm. The wrestler grabs the wrist of the opponent so that the arm is held bent against their back, and their hand forced upwards towards the neck, thereby applying pressure to the shoulder",
+            "Pankration\nis behind the opponent and has him leaning down, with the right knee of the opponent on the ground. The athlete has the opponent's right arm straightened out and extended maximally backward at the shoulder joint. With the opponent's right arm across his own torso, the athlete uses his left hand to keep the pressure on the opponent's right arm by grabbing and pressing down on it just above the wrist. The right hand of the athlete is pressing down at the (side of) the head of the opponent, thus not permitting him to rotate to his right to relieve",
+            "Somersault\nSomersault A somersault (also \"flip\", \"heli\", and in gymnastics \"salto\") is an acrobatic exercise in which a person's body rotates 360° around a horizontal axis with the feet passing over the head. A somersault can be performed forwards, backwards, or sideways and can be executed in the air or on the ground. When performed on the ground it is typically called a roll. \"Somersault\" originates from an obsolete French word, \"sombresault\", from Occitan \"sobresaut\"; and ultimately Latin – \"supra\", \"over\", and \"saltus\", \"jump\". There are many variations of front and back somersaults. Somersaults can be performed in multiples, or multiples",
+            "Lead and follow\na marker of an inexperienced or poorly taught dancer, the process of leading and following, particularly at an advanced level, often involves the contra- and contrasting uses of weight transfers and 'arm moves'. As an example, a Lead may lead a Follow back onto their right foot through the Lead's own weight transfer forwards onto their left foot; yet at the same time turn the Follow's torso to the left from above the hips. The Lead has to communicate the direction of the movement to the Follow. Traditionally, the Lead's right hand is on the follow's back, near the lowest"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "attributions": {
+        "visual": [],
+        "text": []
+      },
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": []
+      },
+      "question": "What is the person on the left doing with their body?",
+      "ground_truth": "A"
+    },
+    {
+      "answer": "",
+      "raw_prediction": "",
+      "retrieved_docs": [
+        "Suit (clothing)\nwhile a belt may allow the trouser waist to slip down on the hips or below a protruding midsection, and requires constant repositioning; also, they allow, indeed work best with, a slightly looser waist which gives room for natural expansion when seated. Suit trousers, also known as dress pants in the US, are a style of trousers intended as formal or semi-formal wear. They are often made of either wool or polyester (although many other synthetic and natural textiles are used) and may be designed to be worn with a matching suit jacket. Suit trousers often have a crease in",
+        "Jeans\nof low-rise jeans, famous in 1990s and 2000s as sagging, was coming back in fashion due to celebrities like Justin Bieber endorsing it. Low-rise jeans are usually worn 2-3 inches or more below the navel. Jeans Jeans are a type of pants or trousers, typically made from denim or dungaree cloth. Often the term \"jeans\" refers to a particular style of trousers, called \"blue jeans\", which were invented by Jacob W. Davis in partnership with Levi Strauss & Co. in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873. Prior to the Levi Strauss patented",
+        "Jeans\nJeans Jeans are a type of pants or trousers, typically made from denim or dungaree cloth. Often the term \"jeans\" refers to a particular style of trousers, called \"blue jeans\", which were invented by Jacob W. Davis in partnership with Levi Strauss & Co. in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873. Prior to the Levi Strauss patented trousers, the term \"blue jeans\" had been long in use for various garments (including trousers, overalls, and coats), constructed from blue-colored denim. \"Jean\" also references a (historic) type of sturdy cloth commonly made with a",
+        "Suit (clothing)\nand the trousers have always been worn with the appropriate jacket. Trouser width has varied considerably throughout the decades. In the 1920s, trousers were straight-legged and wide-legged, with a standard width at the cuff of 23 inches. After 1935, trousers began to be tapered in at the bottom half of the leg. Trousers remained wide at the top of the leg throughout the 1940s. By the 1950s and 1960s, a more slim look had become popular. In the 1970s, suit makers offered a variety of styles of trousers, including flared, bell bottomed, wide-legged, and more traditional tapered trousers. In the",
+        "Underpants\nUnderpants Underpants (often abbreviated to pants in the UK) are an undergarment covering the body from the waist or hips to the top of the thighs or knees. In British English the term refers to men's underwear, while in the US the term is gender neutral. The equivalent woman's garment are panties. Boxer shorts, boxers, or trunks have an elasticated waistband that is at or near the wearer's waist, while the groin sections are fairly loose and extend to the mid-thigh. There is usually a fly, either with or without buttons. The waistbands of boxer shorts are usually wider than"
+      ],
+      "used_retrieval": true,
+      "num_batches_used": 1,
+      "relevant_docs_count": 5,
+      "support_status": "N/A",
+      "usefulness_status": "N/A",
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Suit (clothing)\nwhile a belt may allow the trouser waist to slip down on the hips or below a protruding midsection, and requires constant repositioning; also, they allow, indeed work best with, a slightly looser waist which gives room for natural expansion when seated. Suit trousers, also known as dress pants in the US, are a style of trousers intended as formal or semi-formal wear. They are often made of either wool or polyester (although many other synthetic and natural textiles are used) and may be designed to be worn with a matching suit jacket. Suit trousers often have a crease in",
+            "Jeans\nof low-rise jeans, famous in 1990s and 2000s as sagging, was coming back in fashion due to celebrities like Justin Bieber endorsing it. Low-rise jeans are usually worn 2-3 inches or more below the navel. Jeans Jeans are a type of pants or trousers, typically made from denim or dungaree cloth. Often the term \"jeans\" refers to a particular style of trousers, called \"blue jeans\", which were invented by Jacob W. Davis in partnership with Levi Strauss & Co. in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873. Prior to the Levi Strauss patented",
+            "Jeans\nJeans Jeans are a type of pants or trousers, typically made from denim or dungaree cloth. Often the term \"jeans\" refers to a particular style of trousers, called \"blue jeans\", which were invented by Jacob W. Davis in partnership with Levi Strauss & Co. in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873. Prior to the Levi Strauss patented trousers, the term \"blue jeans\" had been long in use for various garments (including trousers, overalls, and coats), constructed from blue-colored denim. \"Jean\" also references a (historic) type of sturdy cloth commonly made with a",
+            "Suit (clothing)\nand the trousers have always been worn with the appropriate jacket. Trouser width has varied considerably throughout the decades. In the 1920s, trousers were straight-legged and wide-legged, with a standard width at the cuff of 23 inches. After 1935, trousers began to be tapered in at the bottom half of the leg. Trousers remained wide at the top of the leg throughout the 1940s. By the 1950s and 1960s, a more slim look had become popular. In the 1970s, suit makers offered a variety of styles of trousers, including flared, bell bottomed, wide-legged, and more traditional tapered trousers. In the",
+            "Underpants\nUnderpants Underpants (often abbreviated to pants in the UK) are an undergarment covering the body from the waist or hips to the top of the thighs or knees. In British English the term refers to men's underwear, while in the US the term is gender neutral. The equivalent woman's garment are panties. Boxer shorts, boxers, or trunks have an elasticated waistband that is at or near the wearer's waist, while the groin sections are fairly loose and extend to the mid-thigh. There is usually a fly, either with or without buttons. The waistbands of boxer shorts are usually wider than"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "attributions": {
+        "visual": [],
+        "text": []
+      },
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": []
+      },
+      "question": "What type of pants is the man on the right wearing?",
+      "ground_truth": "D"
+    }
+  ],
+  "ViDoRAG": [
+    {
+      "answer": "Answer generation failed",
+      "raw_prediction": "Answer generation failed",
+      "retrieved_docs": [
+        "Tooth decay\nlead to dry mouth and thus to widespread tooth decay. Examples include Sjögren's syndrome, diabetes mellitus, diabetes insipidus, and sarcoidosis. Medications, such as antihistamines and antidepressants, can also impair salivary flow. Stimulants, most notoriously methylamphetamine, also occlude the flow of saliva to an extreme degree. This is known as meth mouth. Tetrahydrocannabinol (THC), the active chemical substance in cannabis, also causes a nearly complete occlusion of salivation, known in colloquial terms as \"cotton mouth\". Moreover, 63% of the most commonly prescribed medications in the United States list dry mouth as a known side-effect. Radiation therapy of the head and neck",
+        "Motorcycle personal protective equipment\nis of course not always completely effective. Many riders wear \"roost protectors\" designed specifically to protect against painful debris from other bikes, but are of no use in a fall or collision. Leathers are one-piece suits or two-piece jackets and trousers worn by motorcyclists, mainly for protection in a crash. In most cases, the type of leather used is not fashion leather but protective leather, which is thicker, stronger, and only moderately flexible. Today, kangaroo leather is becoming popular for its suppleness, light weight, and strength compared to cowhide. Not all leathers used in garments perform equally; products made from",
+        "Motorcycle helmet\nface. Many full face helmets include vents to increase the airflow to the rider. The significant attraction of these helmets is their protectiveness. Some wearers dislike the increased heat, sense of isolation, lack of wind, and reduced hearing of such helmets. Full-face helmets intended for off-road or motocross use sometimes omit the face shield, but extend the visor and chin portions to increase ventilation, since riding off-road is a very strenuous activity. Studies have shown that full face helmets offer the most protection to motorcycle riders because 35% of all crashes showed major impact on the chin-bar area. Wearing a",
+        "Mouthwash\nsolution. Alcohol is added to mouthwash not to destroy bacteria but to act as a carrier agent for essential active ingredients such as menthol, eucalyptol and thymol which help to penetrate plaque. Sometimes a significant amount of alcohol (up to 27% vol) is added, as a carrier for the flavor, to provide \"bite\". Because of the alcohol content, it is possible to fail a breathalyzer test after rinsing although breath alcohol levels return to normal after 10 minutes. In addition, alcohol is a drying agent, which encourages bacterial activity in the mouth, releasing more malodorous volatile sulfur compounds. Therefore, alcohol-containing",
+        "Motorcycle personal protective equipment\nmay include advanced insulating materials and waterproof breathable fabric, although touring gloves may still lack advanced armouring features used in motorcycle racing gloves. Gloves intended for motorcycle racing typically incorporate pre-curved finger sections and the best available protection, obtained through additional armour incorporated within the glove. Additional protection may involve titanium or carbon panels for knuckles and the joints of the fingers. Furthermore, racing gloves may and often do incorporate additional wrist and other protection panels to protect the heel of the hand, back of the hand and other easily injured parts of the hand. Race gloves often have the"
+      ],
+      "used_retrieval": true,
+      "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+      "method": "ViDoRAG",
+      "initial_retrieved": 5,
+      "selected_retrieved": 5,
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Tooth decay\nlead to dry mouth and thus to widespread tooth decay. Examples include Sjögren's syndrome, diabetes mellitus, diabetes insipidus, and sarcoidosis. Medications, such as antihistamines and antidepressants, can also impair salivary flow. Stimulants, most notoriously methylamphetamine, also occlude the flow of saliva to an extreme degree. This is known as meth mouth. Tetrahydrocannabinol (THC), the active chemical substance in cannabis, also causes a nearly complete occlusion of salivation, known in colloquial terms as \"cotton mouth\". Moreover, 63% of the most commonly prescribed medications in the United States list dry mouth as a known side-effect. Radiation therapy of the head and neck",
+            "Motorcycle personal protective equipment\nis of course not always completely effective. Many riders wear \"roost protectors\" designed specifically to protect against painful debris from other bikes, but are of no use in a fall or collision. Leathers are one-piece suits or two-piece jackets and trousers worn by motorcyclists, mainly for protection in a crash. In most cases, the type of leather used is not fashion leather but protective leather, which is thicker, stronger, and only moderately flexible. Today, kangaroo leather is becoming popular for its suppleness, light weight, and strength compared to cowhide. Not all leathers used in garments perform equally; products made from",
+            "Motorcycle helmet\nface. Many full face helmets include vents to increase the airflow to the rider. The significant attraction of these helmets is their protectiveness. Some wearers dislike the increased heat, sense of isolation, lack of wind, and reduced hearing of such helmets. Full-face helmets intended for off-road or motocross use sometimes omit the face shield, but extend the visor and chin portions to increase ventilation, since riding off-road is a very strenuous activity. Studies have shown that full face helmets offer the most protection to motorcycle riders because 35% of all crashes showed major impact on the chin-bar area. Wearing a",
+            "Mouthwash\nsolution. Alcohol is added to mouthwash not to destroy bacteria but to act as a carrier agent for essential active ingredients such as menthol, eucalyptol and thymol which help to penetrate plaque. Sometimes a significant amount of alcohol (up to 27% vol) is added, as a carrier for the flavor, to provide \"bite\". Because of the alcohol content, it is possible to fail a breathalyzer test after rinsing although breath alcohol levels return to normal after 10 minutes. In addition, alcohol is a drying agent, which encourages bacterial activity in the mouth, releasing more malodorous volatile sulfur compounds. Therefore, alcohol-containing",
+            "Motorcycle personal protective equipment\nmay include advanced insulating materials and waterproof breathable fabric, although touring gloves may still lack advanced armouring features used in motorcycle racing gloves. Gloves intended for motorcycle racing typically incorporate pre-curved finger sections and the best available protection, obtained through additional armour incorporated within the glove. Additional protection may involve titanium or carbon panels for knuckles and the joints of the fingers. Furthermore, racing gloves may and often do incorporate additional wrist and other protection panels to protect the heel of the hand, back of the hand and other easily injured parts of the hand. Race gloves often have the"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.3,
+        "individual_scores": [
+          0.3
+        ],
+        "position_weights": [
+          0.4,
+          0.3,
+          0.2,
+          0.07,
+          0.03
+        ]
+      },
+      "pipeline_type": "vidorag",
+      "question": "What is in the motorcyclist's mouth?",
+      "ground_truth": "D"
+    },
+    {
+      "answer": "Answer generation failed",
+      "raw_prediction": "Answer generation failed",
+      "retrieved_docs": [
+        "February 29\nperson born on 29 February has their birthday, although case law would suggest that age is computed based on the number of years elapsed, from the day after the date of birth, and that the person's birth day then occurs on the last day of the year period. This differs from English common law where a birthday is considered to be the start of the next year, the preceding year ending at midnight on the day preceding the birthday. While a person attains the same age on the same day, it also means that, in New Zealand, if something must",
+        "Happy Birthday to You\npublication used \"John\" as the example. <score lang=\"lilypond\">\\relative c' { \\key f \\major \\time 3/4 \\partial 4 c8. c16 | d4 c f | e2 c8. c16 | d4 c g' | f2 c8. c16 | c'4 a f | e( d) bes'8. bes16 | a4 f g | f2 \\bar \"|.\" } \\addlyrics { Hap -- py birth -- day to you, Hap -- py birth -- day to you, Hap -- py birth -- day dear [NAME], __ Hap -- py birth -- day to you. }</score> It is traditional, among English-speakers, that at a birthday party, the",
+        "Birthday problem\nBirthday problem In probability theory, the birthday problem or birthday paradox concerns the probability that, in a set of randomly chosen people, some pair of them will have the same birthday. By the pigeonhole principle, the probability reaches 100% when the number of people reaches 367 (since there are only 366 possible birthdays, including February 29). However, 99.9% probability is reached with just 70 people, and 50% probability with 23 people. These conclusions are based on the assumption that each day of the year (excluding February 29) is equally probable for a birthday. It may well seem surprising that a",
+        "Birthday problem\nany of persons 1 through 22. Let these events respectively be called \"Event 2\", \"Event 3\", and so on. One may also add an \"Event 1\", corresponding to the event of person 1 having a birthday, which occurs with probability 1. This conjunction of events may be computed using conditional probability: the probability of Event 2 is 364/365, as person 2 may have any birthday other than the birthday of person 1. Similarly, the probability of Event 3 given that Event 2 occurred is 363/365, as person 3 may have any of the birthdays not already taken by persons 1",
+        "Birthday problem\nleap years, twins, seasonal or weekday variations are disregarded, and it is assumed that all 365 possible birthdays are equally likely. (Real-life birthday distributions are not uniform, since not all dates are equally likely, but these irregularities have little effect on the analysis.) The goal is to compute , the probability that at least two people in the room have the same birthday. However, it is simpler to calculate , the probability that no two people in the room have the same birthday. Then, because and are the only two possibilities and are also mutually exclusive, In deference to widely"
+      ],
+      "used_retrieval": true,
+      "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+      "method": "ViDoRAG",
+      "initial_retrieved": 5,
+      "selected_retrieved": 5,
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "February 29\nperson born on 29 February has their birthday, although case law would suggest that age is computed based on the number of years elapsed, from the day after the date of birth, and that the person's birth day then occurs on the last day of the year period. This differs from English common law where a birthday is considered to be the start of the next year, the preceding year ending at midnight on the day preceding the birthday. While a person attains the same age on the same day, it also means that, in New Zealand, if something must",
+            "Happy Birthday to You\npublication used \"John\" as the example. <score lang=\"lilypond\">\\relative c' { \\key f \\major \\time 3/4 \\partial 4 c8. c16 | d4 c f | e2 c8. c16 | d4 c g' | f2 c8. c16 | c'4 a f | e( d) bes'8. bes16 | a4 f g | f2 \\bar \"|.\" } \\addlyrics { Hap -- py birth -- day to you, Hap -- py birth -- day to you, Hap -- py birth -- day dear [NAME], __ Hap -- py birth -- day to you. }</score> It is traditional, among English-speakers, that at a birthday party, the",
+            "Birthday problem\nBirthday problem In probability theory, the birthday problem or birthday paradox concerns the probability that, in a set of randomly chosen people, some pair of them will have the same birthday. By the pigeonhole principle, the probability reaches 100% when the number of people reaches 367 (since there are only 366 possible birthdays, including February 29). However, 99.9% probability is reached with just 70 people, and 50% probability with 23 people. These conclusions are based on the assumption that each day of the year (excluding February 29) is equally probable for a birthday. It may well seem surprising that a",
+            "Birthday problem\nany of persons 1 through 22. Let these events respectively be called \"Event 2\", \"Event 3\", and so on. One may also add an \"Event 1\", corresponding to the event of person 1 having a birthday, which occurs with probability 1. This conjunction of events may be computed using conditional probability: the probability of Event 2 is 364/365, as person 2 may have any birthday other than the birthday of person 1. Similarly, the probability of Event 3 given that Event 2 occurred is 363/365, as person 3 may have any of the birthdays not already taken by persons 1",
+            "Birthday problem\nleap years, twins, seasonal or weekday variations are disregarded, and it is assumed that all 365 possible birthdays are equally likely. (Real-life birthday distributions are not uniform, since not all dates are equally likely, but these irregularities have little effect on the analysis.) The goal is to compute , the probability that at least two people in the room have the same birthday. However, it is simpler to calculate , the probability that no two people in the room have the same birthday. Then, because and are the only two possibilities and are also mutually exclusive, In deference to widely"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.3,
+        "individual_scores": [
+          0.3
+        ],
+        "position_weights": [
+          0.4,
+          0.3,
+          0.2,
+          0.07,
+          0.03
+        ]
+      },
+      "pipeline_type": "vidorag",
+      "question": "Which number birthday is probably being celebrated?",
+      "ground_truth": "D"
+    },
+    {
+      "answer": "Answer generation failed",
+      "raw_prediction": "Answer generation failed",
+      "retrieved_docs": [
+        "Sierra Vista, Arizona\nAquatic Center, aka \"The Cove,\" is a facility that contains of pool water surface, which equates to over of water. The Aquatic Center boasts a 0' depth, or \"beach\", entry, eight 25-yard lap lanes for lap and competitive swimming, and a wave machine with several wave patterns for Open Swim. The Cove has a submersible bulkhead which makes the switch from wave pool to competitive pool possible. The Cove also has a warm water therapy pool, children's lagoon with slide, two 1 meter diving boards and one 3 meter diving board, and two enclosed water tube slides to include a",
+        "Nature\nis a body of standing water, either natural or man-made, that is usually smaller than a lake. A wide variety of man-made bodies of water are classified as ponds, including water gardens designed for aesthetic ornamentation, fish ponds designed for commercial fish breeding, and solar ponds designed to store thermal energy. Ponds and lakes are distinguished from streams via current speed. While currents in streams are easily observed, ponds and lakes possess thermally driven micro-currents and moderate wind driven currents. These features distinguish a pond from many other aquatic terrain features, such as stream pools and tide pools. A river",
+        "Gravity current\nis a region in which relatively large volumes of ambient fluid are displaced. The tail is the bulk of fluid which follows the head. Immediately in the wake of the head, intense mixing occurs between the gravity current and the ambient fluid. Mixing occurs from both above and below the gravity current. Mixing from above is a result of turbulent billows (Kelvin-Helmholtz instabilities) which form in the wake of the head and engulf ambient fluid into the tail, a process referred to as \"entrainment\". Mixing from below is a result of the gravity current overrunning ambient fluid, literally trapping it",
+        "Gravity wave\nor surface waves, while gravity waves that are \"within\" the body of the water (such as between parts of different densities) are called internal waves. Wind-generated waves on the water surface are examples of gravity waves, as are tsunamis and ocean tides. Wind-generated gravity waves on the free surface of the Earth's ponds, lakes, seas and oceans have a period of between 0.3 and 30 seconds (3 Hz to 0.03 Hz). Shorter waves are also affected by surface tension and are called gravity–capillary waves and (if hardly influenced by gravity) capillary waves. Alternatively, so-called infragravity waves, which are due to",
+        "Whirlpool\nWhirlpool A whirlpool is a body of rotating water produced by the meeting of opposing currents. The vast majority of whirlpools are not very powerful and very small whirlpools can be easily seen when a bath or a sink is draining. More powerful ones in seas or oceans may be termed maelstroms. \"Vortex\" is the proper term for any whirlpool that has a downdraft. In oceans, in narrow straits with fast flowing water, whirlpools are normally caused by tides; there are few stories of large ships ever being sucked into such a maelstrom, although smaller craft are in danger. Smaller"
+      ],
+      "used_retrieval": true,
+      "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+      "method": "ViDoRAG",
+      "initial_retrieved": 5,
+      "selected_retrieved": 5,
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Sierra Vista, Arizona\nAquatic Center, aka \"The Cove,\" is a facility that contains of pool water surface, which equates to over of water. The Aquatic Center boasts a 0' depth, or \"beach\", entry, eight 25-yard lap lanes for lap and competitive swimming, and a wave machine with several wave patterns for Open Swim. The Cove has a submersible bulkhead which makes the switch from wave pool to competitive pool possible. The Cove also has a warm water therapy pool, children's lagoon with slide, two 1 meter diving boards and one 3 meter diving board, and two enclosed water tube slides to include a",
+            "Nature\nis a body of standing water, either natural or man-made, that is usually smaller than a lake. A wide variety of man-made bodies of water are classified as ponds, including water gardens designed for aesthetic ornamentation, fish ponds designed for commercial fish breeding, and solar ponds designed to store thermal energy. Ponds and lakes are distinguished from streams via current speed. While currents in streams are easily observed, ponds and lakes possess thermally driven micro-currents and moderate wind driven currents. These features distinguish a pond from many other aquatic terrain features, such as stream pools and tide pools. A river",
+            "Gravity current\nis a region in which relatively large volumes of ambient fluid are displaced. The tail is the bulk of fluid which follows the head. Immediately in the wake of the head, intense mixing occurs between the gravity current and the ambient fluid. Mixing occurs from both above and below the gravity current. Mixing from above is a result of turbulent billows (Kelvin-Helmholtz instabilities) which form in the wake of the head and engulf ambient fluid into the tail, a process referred to as \"entrainment\". Mixing from below is a result of the gravity current overrunning ambient fluid, literally trapping it",
+            "Gravity wave\nor surface waves, while gravity waves that are \"within\" the body of the water (such as between parts of different densities) are called internal waves. Wind-generated waves on the water surface are examples of gravity waves, as are tsunamis and ocean tides. Wind-generated gravity waves on the free surface of the Earth's ponds, lakes, seas and oceans have a period of between 0.3 and 30 seconds (3 Hz to 0.03 Hz). Shorter waves are also affected by surface tension and are called gravity–capillary waves and (if hardly influenced by gravity) capillary waves. Alternatively, so-called infragravity waves, which are due to",
+            "Whirlpool\nWhirlpool A whirlpool is a body of rotating water produced by the meeting of opposing currents. The vast majority of whirlpools are not very powerful and very small whirlpools can be easily seen when a bath or a sink is draining. More powerful ones in seas or oceans may be termed maelstroms. \"Vortex\" is the proper term for any whirlpool that has a downdraft. In oceans, in narrow straits with fast flowing water, whirlpools are normally caused by tides; there are few stories of large ships ever being sucked into such a maelstrom, although smaller craft are in danger. Smaller"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.3,
+        "individual_scores": [
+          0.3
+        ],
+        "position_weights": [
+          0.4,
+          0.3,
+          0.2,
+          0.07,
+          0.03
+        ]
+      },
+      "pipeline_type": "vidorag",
+      "question": "What best describes the pool of water?",
+      "ground_truth": "C"
+    },
+    {
+      "answer": "Answer generation failed",
+      "raw_prediction": "Answer generation failed",
+      "retrieved_docs": [
+        "Pavlova (cake)\nconsistency, gradually adding caster sugar before folding in vinegar or another acid (e.g. cream of tartar or lemon juice), cornflour, and sometimes vanilla essence, and slow-baking the mixture, similar to meringue. The pavlova has a crisp and crunchy outer shell, and a soft, moist marshmallow-like centre, in contrast to meringue which is usually solid throughout. It has been suggested the addition of cornflour is responsible for the marshmallow centre, although it has been debated that the cornflour is just another egg white stabiliser in addition to the acid. The consistency also makes the pavlova significantly more fragile than meringue. Because",
+        "Cake\noven door is opened during the cooking process. A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles, which are also known as \"jimmies\" in certain parts of the United States and \"hundreds and thousands\" in the United Kingdom. Frosting is usually made from powdered (icing) sugar, sometimes a fat of some sort, milk or cream, and often flavorings such as vanilla extract or cocoa powder. Some decorators use a rolled fondant icing. Commercial bakeries tend to use lard for the fat, and often whip the lard to introduce air bubbles. This",
+        "Icing (food)\nIcing (food) Icing, or frosting, is a sweet, often creamy glaze made of sugar with a liquid, such as water or milk, that is often enriched with ingredients like butter, egg whites, cream cheese, or flavorings. It is used to cover or decorate baked goods, such as cakes or cookies. When it is used between layers of cake, it is called filling. Icing can be formed into shapes such as flowers and leaves using a pastry bag. Such decorations are commonplace on birthday and wedding cakes. Chef's colour dye (food colouring) is commonly added to icing mixtures to achieve the",
+        "Wedding cake\nchips. Fondant is a form of frosting style that is rolled out and draped over tiers. Its smooth, firm sugar icing is often embellished with appliqués, Fondant can be cut into designs, formed into shapes, flavored or tinted. Poured fondant is used to glaze petits fours and other detailed confections. Flowerpaste or Gumpaste is a pliable dough made from egg whites, unflavored gelatine, powdered sugar, Carboximetil Cellulose(CMC) TYLOSE, or GUM tragacamthum. There are an array of methods and ingredients around the world on how to make flowerpaste/gumpaste. The purpose of this dough is to create flowers and decorations for a",
+        "Icing (food)\nother materials was introduced in the 17th century. The icing was applied to the cake then hardened in the oven. The earliest attestation of the verb 'to ice' in this sense seems to date from around 1600, and the noun 'icing' from 1683. 'Frosting' was first attested in 1750. Icing (food) Icing, or frosting, is a sweet, often creamy glaze made of sugar with a liquid, such as water or milk, that is often enriched with ingredients like butter, egg whites, cream cheese, or flavorings. It is used to cover or decorate baked goods, such as cakes or cookies. When"
+      ],
+      "used_retrieval": true,
+      "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+      "method": "ViDoRAG",
+      "initial_retrieved": 5,
+      "selected_retrieved": 5,
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Pavlova (cake)\nconsistency, gradually adding caster sugar before folding in vinegar or another acid (e.g. cream of tartar or lemon juice), cornflour, and sometimes vanilla essence, and slow-baking the mixture, similar to meringue. The pavlova has a crisp and crunchy outer shell, and a soft, moist marshmallow-like centre, in contrast to meringue which is usually solid throughout. It has been suggested the addition of cornflour is responsible for the marshmallow centre, although it has been debated that the cornflour is just another egg white stabiliser in addition to the acid. The consistency also makes the pavlova significantly more fragile than meringue. Because",
+            "Cake\noven door is opened during the cooking process. A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles, which are also known as \"jimmies\" in certain parts of the United States and \"hundreds and thousands\" in the United Kingdom. Frosting is usually made from powdered (icing) sugar, sometimes a fat of some sort, milk or cream, and often flavorings such as vanilla extract or cocoa powder. Some decorators use a rolled fondant icing. Commercial bakeries tend to use lard for the fat, and often whip the lard to introduce air bubbles. This",
+            "Icing (food)\nIcing (food) Icing, or frosting, is a sweet, often creamy glaze made of sugar with a liquid, such as water or milk, that is often enriched with ingredients like butter, egg whites, cream cheese, or flavorings. It is used to cover or decorate baked goods, such as cakes or cookies. When it is used between layers of cake, it is called filling. Icing can be formed into shapes such as flowers and leaves using a pastry bag. Such decorations are commonplace on birthday and wedding cakes. Chef's colour dye (food colouring) is commonly added to icing mixtures to achieve the",
+            "Wedding cake\nchips. Fondant is a form of frosting style that is rolled out and draped over tiers. Its smooth, firm sugar icing is often embellished with appliqués, Fondant can be cut into designs, formed into shapes, flavored or tinted. Poured fondant is used to glaze petits fours and other detailed confections. Flowerpaste or Gumpaste is a pliable dough made from egg whites, unflavored gelatine, powdered sugar, Carboximetil Cellulose(CMC) TYLOSE, or GUM tragacamthum. There are an array of methods and ingredients around the world on how to make flowerpaste/gumpaste. The purpose of this dough is to create flowers and decorations for a",
+            "Icing (food)\nother materials was introduced in the 17th century. The icing was applied to the cake then hardened in the oven. The earliest attestation of the verb 'to ice' in this sense seems to date from around 1600, and the noun 'icing' from 1683. 'Frosting' was first attested in 1750. Icing (food) Icing, or frosting, is a sweet, often creamy glaze made of sugar with a liquid, such as water or milk, that is often enriched with ingredients like butter, egg whites, cream cheese, or flavorings. It is used to cover or decorate baked goods, such as cakes or cookies. When"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.3,
+        "individual_scores": [
+          0.3
+        ],
+        "position_weights": [
+          0.4,
+          0.3,
+          0.2,
+          0.07,
+          0.03
+        ]
+      },
+      "pipeline_type": "vidorag",
+      "question": "What is the white substance on top of the cupcakes?",
+      "ground_truth": "D"
+    },
+    {
+      "answer": "Answer generation failed",
+      "raw_prediction": "Answer generation failed",
+      "retrieved_docs": [
+        "Laptop\nLaptop A laptop, also called a notebook computer or simply a notebook, is a small, portable personal computer with a \"clamshell\" form factor, having, typically, a thin LCD or LED computer screen mounted on the inside of the upper lid of the \"clamshell\" and an alphanumeric keyboard on the inside of the lower lid. The \"clamshell\" is opened up to use the computer. Laptops are folded shut for transportation, and thus are suitable for mobile use. Its name comes from \"lap\", as it was deemed to be placed for use on a person's lap. Although originally there was a distinction",
+        "Laptop\nare commonly called a 'traditional laptop' or notebook, particularly if they have a screen size of 11 to 17 inches measured diagonally and run a full-featured operating system like Windows 10, macOS, or Linux. Traditional laptops are the most common form of laptops, although Chromebooks, Ultrabooks, convertibles and 2-in-1s (described below) are becoming more common, with similar performance being achieved in their more portable or affordable forms. A \"subnotebook\" or an \"ultraportable\", is a laptop designed and marketed with an emphasis on portability (small size, low weight, and often longer battery life). Subnotebooks are usually smaller and lighter than standard",
+        "Laptop\nincorporate a card reader which allows for use of memory cards, such as those used for digital cameras, which are typically SD or microSD cards. This enables users to download digital pictures from an SD card onto a laptop, thus enabling them to delete the SD card's contents to free up space for taking new pictures. Optical disc drives capable of playing CD-ROMs, compact discs (CD), DVDs, and in some cases, Blu-ray Discs (BD), were nearly universal on full-sized models by the early 2010s. A disc drive remains fairly common in laptops with a screen wider than , although the",
+        "Laptop\nlaptop computer market continues to expand, introducing a number of laptops like Acer's Aspire and TravelMate, Asus' Transformer Book, VivoBook and Zenbook, Dell's Inspiron, Latitude and XPS, HP's EliteBook, Envy, Pavilion and ProBook, Lenovo's IdeaPad and ThinkPad and Toshiba's Portégé, Satellite and Tecra that incorporate the use of laptop computers. The form of the traditional laptop computer is a clamshell, with a screen on one of its inner sides and a keyboard on the opposite, facing the screen. It can be easily folded to conserve space while traveling. The screen and keyboard are inaccessible while closed. Devices of this form",
+        "Laptop\nfeatures of several previously separate device types. The \"hybrids\", \"convertibles\" and \"2-in-1s\" emerged as crossover devices, which share traits of both tablets and laptops. All such devices have a touchscreen display designed to allow users to work in a \"tablet\" mode, using either multi-touch gestures or a stylus/digital pen. \"Convertibles\" are devices with the ability to conceal a hardware keyboard. Keyboards on such devices can be flipped, rotated, or slid behind the back of the chassis, thus transforming from a laptop into a tablet. \"Hybrids\" have a keyboard detachment mechanism, and due to this feature, all critical components are situated"
+      ],
+      "used_retrieval": true,
+      "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+      "method": "ViDoRAG",
+      "initial_retrieved": 5,
+      "selected_retrieved": 5,
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Laptop\nLaptop A laptop, also called a notebook computer or simply a notebook, is a small, portable personal computer with a \"clamshell\" form factor, having, typically, a thin LCD or LED computer screen mounted on the inside of the upper lid of the \"clamshell\" and an alphanumeric keyboard on the inside of the lower lid. The \"clamshell\" is opened up to use the computer. Laptops are folded shut for transportation, and thus are suitable for mobile use. Its name comes from \"lap\", as it was deemed to be placed for use on a person's lap. Although originally there was a distinction",
+            "Laptop\nare commonly called a 'traditional laptop' or notebook, particularly if they have a screen size of 11 to 17 inches measured diagonally and run a full-featured operating system like Windows 10, macOS, or Linux. Traditional laptops are the most common form of laptops, although Chromebooks, Ultrabooks, convertibles and 2-in-1s (described below) are becoming more common, with similar performance being achieved in their more portable or affordable forms. A \"subnotebook\" or an \"ultraportable\", is a laptop designed and marketed with an emphasis on portability (small size, low weight, and often longer battery life). Subnotebooks are usually smaller and lighter than standard",
+            "Laptop\nincorporate a card reader which allows for use of memory cards, such as those used for digital cameras, which are typically SD or microSD cards. This enables users to download digital pictures from an SD card onto a laptop, thus enabling them to delete the SD card's contents to free up space for taking new pictures. Optical disc drives capable of playing CD-ROMs, compact discs (CD), DVDs, and in some cases, Blu-ray Discs (BD), were nearly universal on full-sized models by the early 2010s. A disc drive remains fairly common in laptops with a screen wider than , although the",
+            "Laptop\nlaptop computer market continues to expand, introducing a number of laptops like Acer's Aspire and TravelMate, Asus' Transformer Book, VivoBook and Zenbook, Dell's Inspiron, Latitude and XPS, HP's EliteBook, Envy, Pavilion and ProBook, Lenovo's IdeaPad and ThinkPad and Toshiba's Portégé, Satellite and Tecra that incorporate the use of laptop computers. The form of the traditional laptop computer is a clamshell, with a screen on one of its inner sides and a keyboard on the opposite, facing the screen. It can be easily folded to conserve space while traveling. The screen and keyboard are inaccessible while closed. Devices of this form",
+            "Laptop\nfeatures of several previously separate device types. The \"hybrids\", \"convertibles\" and \"2-in-1s\" emerged as crossover devices, which share traits of both tablets and laptops. All such devices have a touchscreen display designed to allow users to work in a \"tablet\" mode, using either multi-touch gestures or a stylus/digital pen. \"Convertibles\" are devices with the ability to conceal a hardware keyboard. Keyboards on such devices can be flipped, rotated, or slid behind the back of the chassis, thus transforming from a laptop into a tablet. \"Hybrids\" have a keyboard detachment mechanism, and due to this feature, all critical components are situated"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.3,
+        "individual_scores": [
+          0.3
+        ],
+        "position_weights": [
+          0.4,
+          0.3,
+          0.2,
+          0.07,
+          0.03
+        ]
+      },
+      "pipeline_type": "vidorag",
+      "question": "What type of device is sitting next to the laptop?",
+      "ground_truth": "B"
+    },
+    {
+      "answer": "Answer generation failed",
+      "raw_prediction": "Answer generation failed",
+      "retrieved_docs": [
+        "Bongo (antelope)\nhave two heavy and slightly spiralled horns that slope over their backs, and like many other antelope species, both male and female bongos have horns. Bongos are the only tragelaphids in which both sexes have horns. The horns of bongos are in the form of a lyre and bear a resemblance to those of the related antelope species of nyalas, sitatungas, bushbucks, kudus and elands. Unlike deer, which have branched antlers shed annually, bongos and other antelopes have pointed horns they keep throughout their lives. Males have massive backswept horns, while females have smaller, thinner, and more parallel horns. The",
+        "Harrier (dog)\nis a muscular hunting hound with a small, hard coat. It has large bones for stamina and strength. The Harrier is slightly longer than tall, with a level topline. The tail is medium-length, carried high, but is not curled over the back. The skull is broad with a strong square muzzle. The rounded ears are pendant, and the eyes are either brown or hazel. The wide nose is black. The expression is mellow when the dog is relaxed and alert when he is excited. The teeth should meet in a scissors or level bite. The feet are tight and cat-like,",
+        "Ungulate\nantlers annually, and thus can be honest signals of metabolic efficiency and food gathering capability. Ossicones are horn-like (or antler-like) protuberances that can be found on the heads of giraffes and male okapis today. They are similar to the horns of antelopes and cattle, save that they are derived from ossified cartilage, and that the ossicones remain covered in skin and fur, rather than horn. Antlers (such as on deer) are derived from bone tissue: when mature, the skin and fur covering of the antlers, termed \"velvet\", is sloughed and scraped off to expose the bone of the antlers. Pronghorn",
+        "Bongo (antelope)\nshort, bristly, brown ridge of dorsal hair from the shoulder to the rump; the white stripes run into this ridge. A white chevron appears between the eyes, and two large white spots grace each cheek. Another white chevron occurs where the neck meets the chest. The large ears are to sharpen hearing, and the distinctive coloration may help bongos identify one another in their dark forest habitats. Bongos have no special secretion glands, so rely less on scent to find one another than do other similar antelopes. The lips of a bongo are white, topped with a black muzzle. Bongos",
+        "Bactrian camel\nis . Body mass can range from , with males often being much larger and heavier than females. Its long, wooly coat varies in colour from dark brown to sandy beige. A mane and beard of long hair occurs on the neck and throat, with hairs measuring up to long. The shaggy winter coat is shed extremely rapidly, with huge sections peeling off at once, appearing as if sloppily shorn. The two humps on the back are composed of fat (not water as is sometimes thought). The face is typical of a camelid, being long and somewhat triangular, with a"
+      ],
+      "used_retrieval": true,
+      "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+      "method": "ViDoRAG",
+      "initial_retrieved": 5,
+      "selected_retrieved": 5,
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Bongo (antelope)\nhave two heavy and slightly spiralled horns that slope over their backs, and like many other antelope species, both male and female bongos have horns. Bongos are the only tragelaphids in which both sexes have horns. The horns of bongos are in the form of a lyre and bear a resemblance to those of the related antelope species of nyalas, sitatungas, bushbucks, kudus and elands. Unlike deer, which have branched antlers shed annually, bongos and other antelopes have pointed horns they keep throughout their lives. Males have massive backswept horns, while females have smaller, thinner, and more parallel horns. The",
+            "Harrier (dog)\nis a muscular hunting hound with a small, hard coat. It has large bones for stamina and strength. The Harrier is slightly longer than tall, with a level topline. The tail is medium-length, carried high, but is not curled over the back. The skull is broad with a strong square muzzle. The rounded ears are pendant, and the eyes are either brown or hazel. The wide nose is black. The expression is mellow when the dog is relaxed and alert when he is excited. The teeth should meet in a scissors or level bite. The feet are tight and cat-like,",
+            "Ungulate\nantlers annually, and thus can be honest signals of metabolic efficiency and food gathering capability. Ossicones are horn-like (or antler-like) protuberances that can be found on the heads of giraffes and male okapis today. They are similar to the horns of antelopes and cattle, save that they are derived from ossified cartilage, and that the ossicones remain covered in skin and fur, rather than horn. Antlers (such as on deer) are derived from bone tissue: when mature, the skin and fur covering of the antlers, termed \"velvet\", is sloughed and scraped off to expose the bone of the antlers. Pronghorn",
+            "Bongo (antelope)\nshort, bristly, brown ridge of dorsal hair from the shoulder to the rump; the white stripes run into this ridge. A white chevron appears between the eyes, and two large white spots grace each cheek. Another white chevron occurs where the neck meets the chest. The large ears are to sharpen hearing, and the distinctive coloration may help bongos identify one another in their dark forest habitats. Bongos have no special secretion glands, so rely less on scent to find one another than do other similar antelopes. The lips of a bongo are white, topped with a black muzzle. Bongos",
+            "Bactrian camel\nis . Body mass can range from , with males often being much larger and heavier than females. Its long, wooly coat varies in colour from dark brown to sandy beige. A mane and beard of long hair occurs on the neck and throat, with hairs measuring up to long. The shaggy winter coat is shed extremely rapidly, with huge sections peeling off at once, appearing as if sloppily shorn. The two humps on the back are composed of fat (not water as is sometimes thought). The face is typical of a camelid, being long and somewhat triangular, with a"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.3,
+        "individual_scores": [
+          0.3
+        ],
+        "position_weights": [
+          0.4,
+          0.3,
+          0.2,
+          0.07,
+          0.03
+        ]
+      },
+      "pipeline_type": "vidorag",
+      "question": "The thing on the animal to the left's head is similar to what is on the head of what else?",
+      "ground_truth": "A"
+    },
+    {
+      "answer": "Answer generation failed",
+      "raw_prediction": "Answer generation failed",
+      "retrieved_docs": [
+        "Small appliance\nSmall appliance A small appliance, small domestic appliance, or small electrics are portable or semi-portable machines, generally used on table-tops, counter-tops, or other platforms, to accomplish a household task. Examples include microwave ovens, toasters, humidifiers, and coffeemakers. They contrast with major appliances (British \"white goods\"), such as the refrigerator and washing machine, which cannot be easily moved and are generally placed on the floor. Small appliances also contrast with consumer electronics (British \"brown goods\") which are for leisure and entertainment rather than purely practical tasks. Some small appliances perform the same or similar function as their larger counterparts. For example,",
+        "Small appliance\nvarious attachments so as to constitute several individual appliances, such as a blender, a food processor, or a juicer. Many stand mixers, while functioning primarily as a mixer, have attachments which can perform additional functions. A few gasoline and gas-powered appliances exist for use in situations where electricity is not expected to be available, but these are typically larger and not as portable as most small appliances. Items that perform the same function as small appliances but are hand powered are generally referred to as tools or gadgets, for example a hand cranked egg beater, a grater, a mandoline, or",
+        "Kitchen stove\ndevice, which is mobile and can be used as an appropriate technology. Kitchen stove A kitchen stove, often called simply a stove or a cooker, is a kitchen appliance designed for the purpose of cooking food. Kitchen stoves rely on the application of direct heat for the cooking process and may also contain an oven, used for baking. \"Cookstoves\" (also called \"cooking stoves\" or \"wood stoves\") are heated by burning wood or charcoal; \"gas stoves\" are heated by gas; and \"electric stoves\" by electricity. A stove with a built-in cooktop is also called a range. In the industrialized world, as",
+        "Homemaking\na room or part of a room used by the Homemaker for cooking, food preparation and food preservation. In the West, a modern kitchen is typically equipped with a stove, an oven, a sink with hot and cold running water, a refrigerator and kitchen cabinets. Many homemakers use a microwave oven, a dishwasher and other electric appliances like blender and convection cooker and automatic appliances like rotimatic and automatic cookers. The main function of a kitchen is cooking or preparing food but it may also be used for dining and entertaining. Cooking is the process of preparing food with or",
+        "Small appliance\na toaster oven is a small appliance that performs a similar function as an oven. Small appliances often have a home version and a commercial version, for example waffle irons, food processors, and blenders. The commercial, or industrial, version is designed to be used nearly continuously in a restaurant or other similar setting. Commercial appliances are typically connected to a more powerful electrical outlet, are larger and stronger, have more user-serviceable parts, and cost significantly more. Small appliances can be very inexpensive, such as an electric can opener, hot pot, toaster, or coffee maker which may cost only a few"
+      ],
+      "used_retrieval": true,
+      "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+      "method": "ViDoRAG",
+      "initial_retrieved": 5,
+      "selected_retrieved": 5,
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Small appliance\nSmall appliance A small appliance, small domestic appliance, or small electrics are portable or semi-portable machines, generally used on table-tops, counter-tops, or other platforms, to accomplish a household task. Examples include microwave ovens, toasters, humidifiers, and coffeemakers. They contrast with major appliances (British \"white goods\"), such as the refrigerator and washing machine, which cannot be easily moved and are generally placed on the floor. Small appliances also contrast with consumer electronics (British \"brown goods\") which are for leisure and entertainment rather than purely practical tasks. Some small appliances perform the same or similar function as their larger counterparts. For example,",
+            "Small appliance\nvarious attachments so as to constitute several individual appliances, such as a blender, a food processor, or a juicer. Many stand mixers, while functioning primarily as a mixer, have attachments which can perform additional functions. A few gasoline and gas-powered appliances exist for use in situations where electricity is not expected to be available, but these are typically larger and not as portable as most small appliances. Items that perform the same function as small appliances but are hand powered are generally referred to as tools or gadgets, for example a hand cranked egg beater, a grater, a mandoline, or",
+            "Kitchen stove\ndevice, which is mobile and can be used as an appropriate technology. Kitchen stove A kitchen stove, often called simply a stove or a cooker, is a kitchen appliance designed for the purpose of cooking food. Kitchen stoves rely on the application of direct heat for the cooking process and may also contain an oven, used for baking. \"Cookstoves\" (also called \"cooking stoves\" or \"wood stoves\") are heated by burning wood or charcoal; \"gas stoves\" are heated by gas; and \"electric stoves\" by electricity. A stove with a built-in cooktop is also called a range. In the industrialized world, as",
+            "Homemaking\na room or part of a room used by the Homemaker for cooking, food preparation and food preservation. In the West, a modern kitchen is typically equipped with a stove, an oven, a sink with hot and cold running water, a refrigerator and kitchen cabinets. Many homemakers use a microwave oven, a dishwasher and other electric appliances like blender and convection cooker and automatic appliances like rotimatic and automatic cookers. The main function of a kitchen is cooking or preparing food but it may also be used for dining and entertaining. Cooking is the process of preparing food with or",
+            "Small appliance\na toaster oven is a small appliance that performs a similar function as an oven. Small appliances often have a home version and a commercial version, for example waffle irons, food processors, and blenders. The commercial, or industrial, version is designed to be used nearly continuously in a restaurant or other similar setting. Commercial appliances are typically connected to a more powerful electrical outlet, are larger and stronger, have more user-serviceable parts, and cost significantly more. Small appliances can be very inexpensive, such as an electric can opener, hot pot, toaster, or coffee maker which may cost only a few"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.3,
+        "individual_scores": [
+          0.3
+        ],
+        "position_weights": [
+          0.4,
+          0.3,
+          0.2,
+          0.07,
+          0.03
+        ]
+      },
+      "pipeline_type": "vidorag",
+      "question": "What is the appliance the woman is holding used for?",
+      "ground_truth": "C"
+    },
+    {
+      "answer": "Answer generation failed",
+      "raw_prediction": "Answer generation failed",
+      "retrieved_docs": [
+        "Slate\nwill display a property called fissility, forming smooth flat sheets of stone which have long been used for roofing, floor tiles, and other purposes. Slate is frequently grey in color, especially when seen, en masse, covering roofs. However, slate occurs in a variety of colors even from a single locality; for example, slate from North Wales can be found in many shades of grey, from pale to dark, and may also be purple, green or cyan. Slate is not to be confused with shale, from which it may be formed, or schist. The word \"slate\" is also used for certain",
+        "Orientability\n(as opposed to counter-clockwise) is called an orientation, and the surface is called oriented. For surfaces embedded in Euclidean space, an orientation is specified by the choice of a continuously varying surface normal n at every point. If such a normal exists at all, then there are always two ways to select it: n or −n. More generally, an orientable surface admits exactly two orientations, and the distinction between an orient\"ed\" surface and an orient\"able\" surface is subtle and frequently blurred. An orientable surface is an abstract surface that admits an orientation, while an oriented surface is a surface that",
+        "Phong reflection model\nas a combination of the diffuse reflection of rough surfaces with the specular reflection of shiny surfaces. It is based on Phong's informal observation that shiny surfaces have small intense specular highlights, while dull surfaces have large highlights that fall off more gradually. The model also includes an \"ambient\" term to account for the small amount of light that is scattered about the entire scene. For each light source in the scene, components formula_1 and formula_2 are defined as the intensities (often as RGB values) of the specular and diffuse components of the light sources, respectively. A single term formula_3",
+        "Soil\nprofile which consists of two or more layers, referred to as soil horizons, that differ in one or more properties such as in their texture, structure, density, porosity, consistency, temperature, color, and reactivity. The horizons differ greatly in thickness and generally lack sharp boundaries; their development is dependent on the type of parent material, the processes that modify those parent materials, and the soil-forming factors that influence those processes. The biological influences on soil properties are strongest near the surface, while the geochemical influences on soil properties increase with depth. Mature soil profiles typically include three basic master horizons: A,",
+        "Surface (topology)\nas differential geometry and complex analysis. The various mathematical notions of surface can be used to model surfaces in the physical world. In mathematics, a surface is a geometrical shape that resembles a deformed plane. The most familiar examples arise as boundaries of solid objects in ordinary three-dimensional Euclidean space R, such as spheres. The exact definition of a surface may depend on the context. Typically, in algebraic geometry, a surface may cross itself (and may have other singularities), while, in topology and differential geometry, it may not. A surface is a two-dimensional space; this means that a moving point"
+      ],
+      "used_retrieval": true,
+      "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+      "method": "ViDoRAG",
+      "initial_retrieved": 5,
+      "selected_retrieved": 5,
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Slate\nwill display a property called fissility, forming smooth flat sheets of stone which have long been used for roofing, floor tiles, and other purposes. Slate is frequently grey in color, especially when seen, en masse, covering roofs. However, slate occurs in a variety of colors even from a single locality; for example, slate from North Wales can be found in many shades of grey, from pale to dark, and may also be purple, green or cyan. Slate is not to be confused with shale, from which it may be formed, or schist. The word \"slate\" is also used for certain",
+            "Orientability\n(as opposed to counter-clockwise) is called an orientation, and the surface is called oriented. For surfaces embedded in Euclidean space, an orientation is specified by the choice of a continuously varying surface normal n at every point. If such a normal exists at all, then there are always two ways to select it: n or −n. More generally, an orientable surface admits exactly two orientations, and the distinction between an orient\"ed\" surface and an orient\"able\" surface is subtle and frequently blurred. An orientable surface is an abstract surface that admits an orientation, while an oriented surface is a surface that",
+            "Phong reflection model\nas a combination of the diffuse reflection of rough surfaces with the specular reflection of shiny surfaces. It is based on Phong's informal observation that shiny surfaces have small intense specular highlights, while dull surfaces have large highlights that fall off more gradually. The model also includes an \"ambient\" term to account for the small amount of light that is scattered about the entire scene. For each light source in the scene, components formula_1 and formula_2 are defined as the intensities (often as RGB values) of the specular and diffuse components of the light sources, respectively. A single term formula_3",
+            "Soil\nprofile which consists of two or more layers, referred to as soil horizons, that differ in one or more properties such as in their texture, structure, density, porosity, consistency, temperature, color, and reactivity. The horizons differ greatly in thickness and generally lack sharp boundaries; their development is dependent on the type of parent material, the processes that modify those parent materials, and the soil-forming factors that influence those processes. The biological influences on soil properties are strongest near the surface, while the geochemical influences on soil properties increase with depth. Mature soil profiles typically include three basic master horizons: A,",
+            "Surface (topology)\nas differential geometry and complex analysis. The various mathematical notions of surface can be used to model surfaces in the physical world. In mathematics, a surface is a geometrical shape that resembles a deformed plane. The most familiar examples arise as boundaries of solid objects in ordinary three-dimensional Euclidean space R, such as spheres. The exact definition of a surface may depend on the context. Typically, in algebraic geometry, a surface may cross itself (and may have other singularities), while, in topology and differential geometry, it may not. A surface is a two-dimensional space; this means that a moving point"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.3,
+        "individual_scores": [
+          0.3
+        ],
+        "position_weights": [
+          0.4,
+          0.3,
+          0.2,
+          0.07,
+          0.03
+        ]
+      },
+      "pipeline_type": "vidorag",
+      "question": "What is the descriptive word for this surface?",
+      "ground_truth": "B"
+    },
+    {
+      "answer": "Answer generation failed",
+      "raw_prediction": "Answer generation failed",
+      "retrieved_docs": [
+        "Pankration\nathlete is straddling the left thigh of the opponent—the left knee of the opponent is not on the floor—and is trapping the left foot of the opponent by stepping on it. The athlete uses his left hand to push down on the side/back of the head of the opponent while with his right hand he pulls the opponent's right arm back, against his midsection. This creates an arm bar on the right arm with the pressure now being mostly on the elbow. The fallen opponent cannot relieve it, because his head is being shoved the opposite way by the left",
+        "Professional wrestling holds\npectoral muscles. Variations of this can include clasping the opponent's hand instead of hooking the upper arm, for extra leverage and bridging out, while performing the move to increase leverage and immobilize the opponent. A seated variation also exists as Becky Lynch uses it as the \"Dis-arm-her\", where the attacking wrestler takes a facedown opponent's arm in a kneeling position adding pressure by pulling back on the arm. The wrestler grabs the wrist of the opponent so that the arm is held bent against their back, and their hand forced upwards towards the neck, thereby applying pressure to the shoulder",
+        "Pankration\nis behind the opponent and has him leaning down, with the right knee of the opponent on the ground. The athlete has the opponent's right arm straightened out and extended maximally backward at the shoulder joint. With the opponent's right arm across his own torso, the athlete uses his left hand to keep the pressure on the opponent's right arm by grabbing and pressing down on it just above the wrist. The right hand of the athlete is pressing down at the (side of) the head of the opponent, thus not permitting him to rotate to his right to relieve",
+        "Somersault\nSomersault A somersault (also \"flip\", \"heli\", and in gymnastics \"salto\") is an acrobatic exercise in which a person's body rotates 360° around a horizontal axis with the feet passing over the head. A somersault can be performed forwards, backwards, or sideways and can be executed in the air or on the ground. When performed on the ground it is typically called a roll. \"Somersault\" originates from an obsolete French word, \"sombresault\", from Occitan \"sobresaut\"; and ultimately Latin – \"supra\", \"over\", and \"saltus\", \"jump\". There are many variations of front and back somersaults. Somersaults can be performed in multiples, or multiples",
+        "Lead and follow\na marker of an inexperienced or poorly taught dancer, the process of leading and following, particularly at an advanced level, often involves the contra- and contrasting uses of weight transfers and 'arm moves'. As an example, a Lead may lead a Follow back onto their right foot through the Lead's own weight transfer forwards onto their left foot; yet at the same time turn the Follow's torso to the left from above the hips. The Lead has to communicate the direction of the movement to the Follow. Traditionally, the Lead's right hand is on the follow's back, near the lowest"
+      ],
+      "used_retrieval": true,
+      "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+      "method": "ViDoRAG",
+      "initial_retrieved": 5,
+      "selected_retrieved": 5,
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Pankration\nathlete is straddling the left thigh of the opponent—the left knee of the opponent is not on the floor—and is trapping the left foot of the opponent by stepping on it. The athlete uses his left hand to push down on the side/back of the head of the opponent while with his right hand he pulls the opponent's right arm back, against his midsection. This creates an arm bar on the right arm with the pressure now being mostly on the elbow. The fallen opponent cannot relieve it, because his head is being shoved the opposite way by the left",
+            "Professional wrestling holds\npectoral muscles. Variations of this can include clasping the opponent's hand instead of hooking the upper arm, for extra leverage and bridging out, while performing the move to increase leverage and immobilize the opponent. A seated variation also exists as Becky Lynch uses it as the \"Dis-arm-her\", where the attacking wrestler takes a facedown opponent's arm in a kneeling position adding pressure by pulling back on the arm. The wrestler grabs the wrist of the opponent so that the arm is held bent against their back, and their hand forced upwards towards the neck, thereby applying pressure to the shoulder",
+            "Pankration\nis behind the opponent and has him leaning down, with the right knee of the opponent on the ground. The athlete has the opponent's right arm straightened out and extended maximally backward at the shoulder joint. With the opponent's right arm across his own torso, the athlete uses his left hand to keep the pressure on the opponent's right arm by grabbing and pressing down on it just above the wrist. The right hand of the athlete is pressing down at the (side of) the head of the opponent, thus not permitting him to rotate to his right to relieve",
+            "Somersault\nSomersault A somersault (also \"flip\", \"heli\", and in gymnastics \"salto\") is an acrobatic exercise in which a person's body rotates 360° around a horizontal axis with the feet passing over the head. A somersault can be performed forwards, backwards, or sideways and can be executed in the air or on the ground. When performed on the ground it is typically called a roll. \"Somersault\" originates from an obsolete French word, \"sombresault\", from Occitan \"sobresaut\"; and ultimately Latin – \"supra\", \"over\", and \"saltus\", \"jump\". There are many variations of front and back somersaults. Somersaults can be performed in multiples, or multiples",
+            "Lead and follow\na marker of an inexperienced or poorly taught dancer, the process of leading and following, particularly at an advanced level, often involves the contra- and contrasting uses of weight transfers and 'arm moves'. As an example, a Lead may lead a Follow back onto their right foot through the Lead's own weight transfer forwards onto their left foot; yet at the same time turn the Follow's torso to the left from above the hips. The Lead has to communicate the direction of the movement to the Follow. Traditionally, the Lead's right hand is on the follow's back, near the lowest"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.3,
+        "individual_scores": [
+          0.3
+        ],
+        "position_weights": [
+          0.4,
+          0.3,
+          0.2,
+          0.07,
+          0.03
+        ]
+      },
+      "pipeline_type": "vidorag",
+      "question": "What is the person on the left doing with their body?",
+      "ground_truth": "A"
+    },
+    {
+      "answer": "Answer generation failed",
+      "raw_prediction": "Answer generation failed",
+      "retrieved_docs": [
+        "Suit (clothing)\nwhile a belt may allow the trouser waist to slip down on the hips or below a protruding midsection, and requires constant repositioning; also, they allow, indeed work best with, a slightly looser waist which gives room for natural expansion when seated. Suit trousers, also known as dress pants in the US, are a style of trousers intended as formal or semi-formal wear. They are often made of either wool or polyester (although many other synthetic and natural textiles are used) and may be designed to be worn with a matching suit jacket. Suit trousers often have a crease in",
+        "Jeans\nof low-rise jeans, famous in 1990s and 2000s as sagging, was coming back in fashion due to celebrities like Justin Bieber endorsing it. Low-rise jeans are usually worn 2-3 inches or more below the navel. Jeans Jeans are a type of pants or trousers, typically made from denim or dungaree cloth. Often the term \"jeans\" refers to a particular style of trousers, called \"blue jeans\", which were invented by Jacob W. Davis in partnership with Levi Strauss & Co. in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873. Prior to the Levi Strauss patented",
+        "Jeans\nJeans Jeans are a type of pants or trousers, typically made from denim or dungaree cloth. Often the term \"jeans\" refers to a particular style of trousers, called \"blue jeans\", which were invented by Jacob W. Davis in partnership with Levi Strauss & Co. in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873. Prior to the Levi Strauss patented trousers, the term \"blue jeans\" had been long in use for various garments (including trousers, overalls, and coats), constructed from blue-colored denim. \"Jean\" also references a (historic) type of sturdy cloth commonly made with a",
+        "Suit (clothing)\nand the trousers have always been worn with the appropriate jacket. Trouser width has varied considerably throughout the decades. In the 1920s, trousers were straight-legged and wide-legged, with a standard width at the cuff of 23 inches. After 1935, trousers began to be tapered in at the bottom half of the leg. Trousers remained wide at the top of the leg throughout the 1940s. By the 1950s and 1960s, a more slim look had become popular. In the 1970s, suit makers offered a variety of styles of trousers, including flared, bell bottomed, wide-legged, and more traditional tapered trousers. In the",
+        "Underpants\nUnderpants Underpants (often abbreviated to pants in the UK) are an undergarment covering the body from the waist or hips to the top of the thighs or knees. In British English the term refers to men's underwear, while in the US the term is gender neutral. The equivalent woman's garment are panties. Boxer shorts, boxers, or trunks have an elasticated waistband that is at or near the wearer's waist, while the groin sections are fairly loose and extend to the mid-thigh. There is usually a fly, either with or without buttons. The waistbands of boxer shorts are usually wider than"
+      ],
+      "used_retrieval": true,
+      "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+      "method": "ViDoRAG",
+      "initial_retrieved": 5,
+      "selected_retrieved": 5,
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            "Suit (clothing)\nwhile a belt may allow the trouser waist to slip down on the hips or below a protruding midsection, and requires constant repositioning; also, they allow, indeed work best with, a slightly looser waist which gives room for natural expansion when seated. Suit trousers, also known as dress pants in the US, are a style of trousers intended as formal or semi-formal wear. They are often made of either wool or polyester (although many other synthetic and natural textiles are used) and may be designed to be worn with a matching suit jacket. Suit trousers often have a crease in",
+            "Jeans\nof low-rise jeans, famous in 1990s and 2000s as sagging, was coming back in fashion due to celebrities like Justin Bieber endorsing it. Low-rise jeans are usually worn 2-3 inches or more below the navel. Jeans Jeans are a type of pants or trousers, typically made from denim or dungaree cloth. Often the term \"jeans\" refers to a particular style of trousers, called \"blue jeans\", which were invented by Jacob W. Davis in partnership with Levi Strauss & Co. in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873. Prior to the Levi Strauss patented",
+            "Jeans\nJeans Jeans are a type of pants or trousers, typically made from denim or dungaree cloth. Often the term \"jeans\" refers to a particular style of trousers, called \"blue jeans\", which were invented by Jacob W. Davis in partnership with Levi Strauss & Co. in 1871 and patented by Jacob W. Davis and Levi Strauss on May 20, 1873. Prior to the Levi Strauss patented trousers, the term \"blue jeans\" had been long in use for various garments (including trousers, overalls, and coats), constructed from blue-colored denim. \"Jean\" also references a (historic) type of sturdy cloth commonly made with a",
+            "Suit (clothing)\nand the trousers have always been worn with the appropriate jacket. Trouser width has varied considerably throughout the decades. In the 1920s, trousers were straight-legged and wide-legged, with a standard width at the cuff of 23 inches. After 1935, trousers began to be tapered in at the bottom half of the leg. Trousers remained wide at the top of the leg throughout the 1940s. By the 1950s and 1960s, a more slim look had become popular. In the 1970s, suit makers offered a variety of styles of trousers, including flared, bell bottomed, wide-legged, and more traditional tapered trousers. In the",
+            "Underpants\nUnderpants Underpants (often abbreviated to pants in the UK) are an undergarment covering the body from the waist or hips to the top of the thighs or knees. In British English the term refers to men's underwear, while in the US the term is gender neutral. The equivalent woman's garment are panties. Boxer shorts, boxers, or trunks have an elasticated waistband that is at or near the wearer's waist, while the groin sections are fairly loose and extend to the mid-thigh. There is usually a fly, either with or without buttons. The waistbands of boxer shorts are usually wider than"
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.3,
+        "individual_scores": [
+          0.3
+        ],
+        "position_weights": [
+          0.4,
+          0.3,
+          0.2,
+          0.07,
+          0.03
+        ]
+      },
+      "pipeline_type": "vidorag",
+      "question": "What type of pants is the man on the right wearing?",
+      "ground_truth": "D"
+    }
+  ]
+}

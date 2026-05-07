@@ -1,0 +1,58 @@
+[
+  {
+    "threshold": 0.3,
+    "retrieval_rate": 0.8061810178271044,
+    "em": 0.5383339380468414,
+    "f1": 0.7085214291922974,
+    "retrieval_recall_top5": 0.6812037280884873,
+    "vqa_score": 0.6533606078294212,
+    "faithfulness": 0.7733991780504303,
+    "attribution_precision": 0.7087125418252299,
+    "position_bias_score": 0.23661761457749353,
+    "precision": 0.7439475006519123,
+    "recall": 0.6730953577326826,
+    "avg_input_tokens": 391.85430534813133
+  },
+  {
+    "threshold": 0.35,
+    "retrieval_rate": 0.5249080237694725,
+    "em": 0.5687259016977098,
+    "f1": 0.7485214291922975,
+    "retrieval_recall_top5": 0.6812037280884873,
+    "vqa_score": 0.6885565896548554,
+    "faithfulness": 0.7733991780504303,
+    "attribution_precision": 0.7087125418252299,
+    "position_bias_score": 0.23661761457749353,
+    "precision": 0.7859475006519123,
+    "recall": 0.7110953577326826,
+    "avg_input_tokens": 307.47240713084176
+  },
+  {
+    "threshold": 0.4,
+    "retrieval_rate": 0.3061810178271044,
+    "em": 0.5383339380468414,
+    "f1": 0.7085214291922974,
+    "retrieval_recall_top5": 0.6812037280884873,
+    "vqa_score": 0.6533606078294212,
+    "faithfulness": 0.7733991780504303,
+    "attribution_precision": 0.7087125418252299,
+    "position_bias_score": 0.23661761457749353,
+    "precision": 0.7439475006519123,
+    "recall": 0.6730953577326826,
+    "avg_input_tokens": 241.85430534813133
+  },
+  {
+    "threshold": 0.43,
+    "retrieval_rate": 0.11745401188473625,
+    "em": 0.5200987598563203,
+    "f1": 0.6845214291922974,
+    "retrieval_recall_top5": 0.6812037280884873,
+    "vqa_score": 0.6322430187341607,
+    "faithfulness": 0.7733991780504303,
+    "attribution_precision": 0.7087125418252299,
+    "position_bias_score": 0.23661761457749353,
+    "precision": 0.7187475006519123,
+    "recall": 0.6502953577326825,
+    "avg_input_tokens": 185.23620356542088
+  }
+]
