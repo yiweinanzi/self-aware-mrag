@@ -1,0 +1,7 @@
+dataset_id,name,enabled,version,num_samples,description,path,path_exists,path_type,size_bytes,size_human,files_count,md5_checksum,sha256_checksum,loader,last_modified
+aokvqa,A-OKVQA,True,v1.1,6702,Augmented OK-VQA - 可解释的知识增强VQA,/root/autodl-tmp/FlashRAG/datasets/aokvqa,False,N/A,0,N/A,0,N/A,N/A,flashrag.dataset.aokvqa_loader,N/A
+mragbench,MRAG-Bench,True,v1.0,6153,多模态RAG综合基准 - 11个任务的综合评测,/root/autodl-tmp/FlashRAG/datasets/mragbench,False,N/A,0,N/A,0,N/A,N/A,flashrag.dataset.mragbench_loader,N/A
+multimodalqa,MultiModalQA,True,v1.0,6701,多跳多模态问答 - 需要跨模态推理,/root/autodl-tmp/FlashRAG/datasets/multimodalqa,False,N/A,0,N/A,0,N/A,N/A,flashrag.dataset.multimodalqa_loader,N/A
+okvqa,OK-VQA,True,v1.0,5046,Outside Knowledge VQA - 需要外部知识的视觉问答基准,/root/autodl-tmp/FlashRAG/datasets/okvqa,False,N/A,0,N/A,0,N/A,N/A,flashrag.dataset.okvqa_loader,N/A
+infoseek,InfoSeek,False,N/A,0,禁用原因：部分下载，但不用于核心评测,/root/autodl-tmp/FlashRAG/datasets/infoseek,False,N/A,0,N/A,0,N/A,N/A,N/A,N/A
+webqa,WebQA,False,N/A,0,禁用原因：加载器未实现，暂不支持,N/A,False,N/A,0,N/A,0,N/A,N/A,N/A,N/A

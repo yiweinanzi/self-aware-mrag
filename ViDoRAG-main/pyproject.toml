@@ -1,0 +1,29 @@
+[project]
+name = "vidorag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "colpali-engine>=0.3.2",
+    "dashscope>=1.22.2",
+    "datasets>=3.5.0",
+    "einops>=0.8.1",
+    "llama-index==0.12.0",
+    "llama-index-embeddings-huggingface>=0.5.2",
+    "llama-index-embeddings-instructor>=0.3.0",
+    "pdf2image>=1.17.0",
+    "qwen-vl-utils>=0.0.10",
+    "scikit-learn==1.6.1",
+    "seaborn==0.13.2",
+    "setuptools>=78.1.0",
+    "tiktoken==0.8.0",
+    "torch==2.6.0",
+    "torchvision>=0.21.0",
+    "tqdm>=4.67.1",
+    "transformers>=4.49.0",
+]
+
+[[tool.uv.index]]
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true

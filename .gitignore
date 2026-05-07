@@ -1,0 +1,145 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.log
+.ipynb_checkpoints/
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 大文件 - 模型和权重
+models/
+*.bin
+*.safetensors
+*.pth
+*.pt
+*.ckpt
+*.h5
+pytorch_model*.bin
+model*.safetensors
+
+# 大文件 - 数据集和语料库
+corpus/
+data/raw/
+*.jsonl
+*.json.gz
+*.parquet
+*.arrow
+
+# 大文件 - 索引文件
+indexes/
+*.index
+*.memmap
+*.faiss
+
+# 实验结果和日志
+results/
+outputs/
+experiments/results/
+experiments/outputs/
+*.log
+nohup.out
+wandb/
+tensorboard/
+tf-logs/
+
+# 临时文件
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+
+# 操作系统
+.DS_Store
+Thumbs.db
+*.swp
+.directory
+
+# 特定项目文件
+build_wiki_index_3m.log
+run_*.log
+📝*.md
+cursor_task*.md
+
+# 归档目录
+_ARCHIVE_*/
+_BACKUP_*/
+_DOCS/
+
+# 开源参考代码（不提交到仓库）
+open_resource/
+LLaVA-main/
+MRAG-Bench-main/
+SeaKR-main/
+
+# 参考文档和论文
+refernce/
+ACL_LATEX/
+
+# 临时和配置文件
+.autodl/
+*.vsix
+
+# 实验结果目录（保留代码，忽略结果）
+FlashRAG/experiments/results_*/
+FlashRAG/experiments/*/results*.json
+FlashRAG/experiments/*/*.png
+FlashRAG/experiments/*/REPORT*.md
+FlashRAG/experiments/*/COMPARISON*.md
+FlashRAG/experiments/*/THRESHOLD*.md
+
+# 日志文件
+nohup*.out
+*.log
+quick_eval_log.txt
+
+# 测试脚本（临时）
+test_*.py
+verify_*.py
+
+
+
+# --- Project-specific large directories (avoid pushing) ---
+FlashRAG/corpus/
+FlashRAG/indexes/
+FlashRAG/logs/
+FlashRAG/cache/
+FlashRAG/flashrag/data/MRAG-Bench/
+
+# Large experiment result files
+FlashRAG/experiments/multimodalqa_corpus.jsonl
+FlashRAG/experiments/archived/
+
+# Large log/output files
+full_ablation_248.out
+*.out
+*.err

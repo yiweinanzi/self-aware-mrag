@@ -1,0 +1,396 @@
+{
+  "experiment_info": {
+    "dataset": "okvqa",
+    "samples": 3,
+    "timestamp": "20251216_114319",
+    "config": {
+      "dataset_name": "okvqa",
+      "data_dir": "/data0/home/zqwang/ACL/FlashRAG/flashrag/data/VQA",
+      "split": "val",
+      "max_samples": 3,
+      "load_images": true,
+      "output_dir": "results_vidorag_test",
+      "timestamp": "20251216_114319",
+      "model_path": "/data0/home/zqwang/ACL/models/Qwen3-VL-8B-Instruct",
+      "torch_dtype": "bfloat16",
+      "max_new_tokens": 20,
+      "temperature": 0.01,
+      "use_multi_gpu": false,
+      "num_gpus": 2,
+      "batch_size_per_gpu": 1,
+      "faiss_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/bge/e5_Flat.index",
+      "corpus_path": "/data0/home/zqwang/ACL/FlashRAG/corpus/corpus_wiki_3m.jsonl",
+      "retrieval_model_path": "/data0/home/zqwang/ACL/models/bge-large-en-v1.5",
+      "retrieval_topk": 5,
+      "clip_model_path": "/data0/home/zqwang/ACL/models/clip-vit-large-patch14-336",
+      "clip_index_path": "/data0/home/zqwang/ACL/FlashRAG/indexes/wiki_3m/clip/clip_Flat.index",
+      "use_multimodal_retrieval": true,
+      "text_retrieval_weight": 0.6,
+      "visual_retrieval_weight": 0.4,
+      "text_weight": 0.4,
+      "visual_weight": 0.3,
+      "alignment_weight": 0.3,
+      "uncertainty_threshold": 0.43,
+      "use_improved_estimator": true,
+      "save_detailed_results": true,
+      "save_sample_results": true,
+      "enable_complete_metrics": true
+    },
+    "based_on": "Integrated configuration from 59% accuracy experiments"
+  },
+  "variants_summary": [
+    {
+      "variant_name": "ViDoRAG",
+      "variant_description": "Video and Document RAG with multi-agent system",
+      "accuracy": 0.0,
+      "retrieval_rate": 1.0,
+      "execution_time": 2.521989345550537,
+      "seconds_per_sample": 0.8406631151835123,
+      "config": {},
+      "total_samples": 0,
+      "correct_samples": 0,
+      "timestamp": "2025-12-16T11:44:44.532717",
+      "F1": 0.0,
+      "VQA_Score": 0.0,
+      "Recall@5": 0.0,
+      "Faithfulness": 0.0,
+      "Attribution_Precision": 0.0,
+      "Position_Bias_Score": 0.5,
+      "F1_std": 0.0,
+      "VQA_Score_std": 0.0,
+      "Recall@5_std": 0.0,
+      "retrieved_samples": 0
+    }
+  ],
+  "detailed_results": {
+    "ViDoRAG": {
+      "stats": {
+        "variant_name": "ViDoRAG",
+        "variant_description": "Video and Document RAG with multi-agent system",
+        "config": {},
+        "total_samples": 0,
+        "correct_samples": 0,
+        "accuracy": 0.0,
+        "retrieval_rate": 1.0,
+        "execution_time": 2.521989345550537,
+        "timestamp": "2025-12-16T11:44:44.532717",
+        "seconds_per_sample": 0.8406631151835123,
+        "F1": 0.0,
+        "VQA_Score": 0.0,
+        "Recall@5": 0.0,
+        "Faithfulness": 0.0,
+        "Attribution_Precision": 0.0,
+        "Position_Bias_Score": 0.5,
+        "F1_std": 0.0,
+        "VQA_Score_std": 0.0,
+        "Recall@5_std": 0.0,
+        "retrieved_samples": 0
+      },
+      "sample_results": [
+        {
+          "answer": "Answer generation failed",
+          "raw_prediction": "Answer generation failed",
+          "retrieved_docs": [
+            {
+              "contents": "Lacrosse\nprotect against concussions. Women goalies wear a helmet, gloves, and chest protector. Lacrosse Lacrosse is a team sport played with a lacrosse stick and a lacrosse ball, commonly played indoors or outdoors. Players use the head of the lacrosse stick to carry, pass, catch, and shoot the ball into the goal. The sport is governed by the Federation of International Lacrosse; the most prominent international competition is the World Lacrosse Championship, which has been dominated by the United States. The sport has four versions that have different sticks, fields, rules and equipment: field lacrosse, women's lacrosse, box lacrosse and intercrosse.",
+              "id": "vidorag_doc_0",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Racket (sports equipment)\ninjury rate in tennis (when compared with the wood era) is, in part, due to the increase in stiffness, both of the racket and of the strings. Real tennis uses wooden rackets and cork-filled balls. It is a very different sport from today's lawn tennis. Racket (sports equipment) A racket or racquet is a sports implement consisting of a handled frame with an open hoop across which a network of strings or catgut is stretched tightly. It is used for striking a ball or shuttlecock in games such as squash, tennis, racquetball, and badminton. Collectively, these games are known as",
+              "id": "vidorag_doc_1",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Racket (sports equipment)\nRacket (sports equipment) A racket or racquet is a sports implement consisting of a handled frame with an open hoop across which a network of strings or catgut is stretched tightly. It is used for striking a ball or shuttlecock in games such as squash, tennis, racquetball, and badminton. Collectively, these games are known as racket sports. Racket design and manufacturing has changed considerably over the centuries. The frame of rackets for all sports was traditionally made of solid wood (later laminated wood) and the strings of animal intestine known as catgut. The traditional racket size was limited by the",
+              "id": "vidorag_doc_2",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Badminton\nBadminton Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are \"singles\" (with one player per side) and \"doubles\" (with two players per side). Badminton is often played as a casual outdoor activity in a yard or on a beach; formal games are played on a rectangular indoor court. Points are scored by striking the shuttlecock with the racquet and landing it within the opposing side's half of the court. Each side may only strike the shuttlecock once before",
+              "id": "vidorag_doc_3",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Squash (sport)\nis appropriate for one's skill level. The four different ball types are Intro (Blue dot, 140% of Pro bounce), Progress (Red dot, 120% of Pro bounce), Competition (single yellow dot, 110% of Pro bounce) and Pro (double yellow dot). The \"double-yellow dot\" ball, introduced in 2000, is the competition standard, replacing the earlier \"yellow-dot\" ball. There is also an \"orange dot\" ball for use at high altitudes. Players wear comfortable sports clothing. In competition, men usually wear shorts and a T-shirt, tank top or a polo shirt. Women normally wear a skirt or skort and a T-shirt or a tank",
+              "id": "vidorag_doc_4",
+              "title": "",
+              "source": "vidorag_retriever"
+            }
+          ],
+          "used_retrieval": true,
+          "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+          "method": "ViDoRAG",
+          "initial_retrieved": 5,
+          "selected_retrieved": 5,
+          "retrieved": true,
+          "correct": false,
+          "retrieval_result": [
+            {
+              "retrieved_docs": [
+                {
+                  "contents": "Lacrosse\nprotect against concussions. Women goalies wear a helmet, gloves, and chest protector. Lacrosse Lacrosse is a team sport played with a lacrosse stick and a lacrosse ball, commonly played indoors or outdoors. Players use the head of the lacrosse stick to carry, pass, catch, and shoot the ball into the goal. The sport is governed by the Federation of International Lacrosse; the most prominent international competition is the World Lacrosse Championship, which has been dominated by the United States. The sport has four versions that have different sticks, fields, rules and equipment: field lacrosse, women's lacrosse, box lacrosse and intercrosse.",
+                  "id": "vidorag_doc_0",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Racket (sports equipment)\ninjury rate in tennis (when compared with the wood era) is, in part, due to the increase in stiffness, both of the racket and of the strings. Real tennis uses wooden rackets and cork-filled balls. It is a very different sport from today's lawn tennis. Racket (sports equipment) A racket or racquet is a sports implement consisting of a handled frame with an open hoop across which a network of strings or catgut is stretched tightly. It is used for striking a ball or shuttlecock in games such as squash, tennis, racquetball, and badminton. Collectively, these games are known as",
+                  "id": "vidorag_doc_1",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Racket (sports equipment)\nRacket (sports equipment) A racket or racquet is a sports implement consisting of a handled frame with an open hoop across which a network of strings or catgut is stretched tightly. It is used for striking a ball or shuttlecock in games such as squash, tennis, racquetball, and badminton. Collectively, these games are known as racket sports. Racket design and manufacturing has changed considerably over the centuries. The frame of rackets for all sports was traditionally made of solid wood (later laminated wood) and the strings of animal intestine known as catgut. The traditional racket size was limited by the",
+                  "id": "vidorag_doc_2",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Badminton\nBadminton Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are \"singles\" (with one player per side) and \"doubles\" (with two players per side). Badminton is often played as a casual outdoor activity in a yard or on a beach; formal games are played on a rectangular indoor court. Points are scored by striking the shuttlecock with the racquet and landing it within the opposing side's half of the court. Each side may only strike the shuttlecock once before",
+                  "id": "vidorag_doc_3",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Squash (sport)\nis appropriate for one's skill level. The four different ball types are Intro (Blue dot, 140% of Pro bounce), Progress (Red dot, 120% of Pro bounce), Competition (single yellow dot, 110% of Pro bounce) and Pro (double yellow dot). The \"double-yellow dot\" ball, introduced in 2000, is the competition standard, replacing the earlier \"yellow-dot\" ball. There is also an \"orange dot\" ball for use at high altitudes. Players wear comfortable sports clothing. In competition, men usually wear shorts and a T-shirt, tank top or a polo shirt. Women normally wear a skirt or skort and a T-shirt or a tank",
+                  "id": "vidorag_doc_4",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                }
+              ],
+              "retrieval_scores": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.3,
+            "individual_scores": [
+              0.3
+            ],
+            "position_weights": [
+              0.4,
+              0.3,
+              0.2,
+              0.07,
+              0.03
+            ]
+          },
+          "pipeline_type": "vidorag"
+        },
+        {
+          "answer": "Answer generation failed",
+          "raw_prediction": "Answer generation failed",
+          "retrieved_docs": [
+            {
+              "contents": "Asclepias tuberosa\nCommon names include butterfly weed, Canada root, chieger flower, chiggerflower, fluxroot, Indian paintbrush, Indian posy, orange milkweed, orange root, orange Swallow-wort, pleurisy root, silky swallow-wort, tuber root, yellow milkweed, white-root, windroot, butterfly love, butterflyweed, and butterfly milkweed. Asclepias tuberosa Asclepias tuberosa is a species of milkweed native to eastern North America. It is a perennial plant growing to tall, with clustered orange or yellow flowers from early summer to early autumn. The leaves are spirally arranged, lanceolate, 5–12 cm long, and 2–3 cm broad. This plant favors dry, sand or gravel soil, but has also been reported on stream margins.",
+              "id": "vidorag_doc_0",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Aegopodium podagraria\nAegopodium podagraria Aegopodium podagraria (commonly called ground elder, herb gerard, bishop's weed, goutweed, gout wort, and snow-in-the-mountain, and sometimes called English masterwort and wild masterwort) is a perennial plant in the carrot family (Apiaceae) that grows in shady places. The name \"ground elder\" comes from the superficial similarity of its leaves and flowers to those of elder (\"Sambucus\"), which is unrelated. It is the type species of the genus \"Aegopodium\". This species is native to Eurasia, and has been introduced around the world as an ornamental plant, where it occasionally poses an ecological threat as an invasive exotic plant. \"A.",
+              "id": "vidorag_doc_1",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Asclepias tuberosa\nAsclepias tuberosa Asclepias tuberosa is a species of milkweed native to eastern North America. It is a perennial plant growing to tall, with clustered orange or yellow flowers from early summer to early autumn. The leaves are spirally arranged, lanceolate, 5–12 cm long, and 2–3 cm broad. This plant favors dry, sand or gravel soil, but has also been reported on stream margins. It requires full sun. It is commonly known as butterfly weed because of the butterflies that are attracted to the plant by its color and its copious production of nectar. It is also the larval food plant",
+              "id": "vidorag_doc_2",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Pachypodium lamerei\nPachypodium lamerei Pachypodium lamerei is a species of flowering plant in the dogbane family Apocynaceae. It is a stem succulent, photosynthesizing mainly through its trunk, and comes from the island of Madagascar, off the east coast of Africa. It has large thorns and leaves mostly just at the top of the plant, and large, fragrant flowers. The species has become one of the best known pachypodiums in cultivation, being relatively easy to propagate and grow. In cultivation it is often marketed as the Madagascar palm, despite its not being a palm at all. A variety called \"Ramosum\" has been described.",
+              "id": "vidorag_doc_3",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Campsis radicans\nCampsis radicans Campsis radicans (trumpet vine or trumpet creeper, also known in North America as cow itch vine or hummingbird vine), is a species of flowering plant of the family Bignoniaceae, native to the eastern United States and naturalized in parts of the western United States as well as in Ontario, parts of Europe, and scattered locations in Latin America. Growing to , it is a vigorous, deciduous woody vine, notable for its showy trumpet-shaped flowers. It inhabits woodlands and riverbanks, and is also a popular garden subject. The leaves are opposite, ovate, pinnate, 3–10 cm long, and emerald green",
+              "id": "vidorag_doc_4",
+              "title": "",
+              "source": "vidorag_retriever"
+            }
+          ],
+          "used_retrieval": true,
+          "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+          "method": "ViDoRAG",
+          "initial_retrieved": 5,
+          "selected_retrieved": 5,
+          "retrieved": true,
+          "correct": false,
+          "retrieval_result": [
+            {
+              "retrieved_docs": [
+                {
+                  "contents": "Asclepias tuberosa\nCommon names include butterfly weed, Canada root, chieger flower, chiggerflower, fluxroot, Indian paintbrush, Indian posy, orange milkweed, orange root, orange Swallow-wort, pleurisy root, silky swallow-wort, tuber root, yellow milkweed, white-root, windroot, butterfly love, butterflyweed, and butterfly milkweed. Asclepias tuberosa Asclepias tuberosa is a species of milkweed native to eastern North America. It is a perennial plant growing to tall, with clustered orange or yellow flowers from early summer to early autumn. The leaves are spirally arranged, lanceolate, 5–12 cm long, and 2–3 cm broad. This plant favors dry, sand or gravel soil, but has also been reported on stream margins.",
+                  "id": "vidorag_doc_0",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Aegopodium podagraria\nAegopodium podagraria Aegopodium podagraria (commonly called ground elder, herb gerard, bishop's weed, goutweed, gout wort, and snow-in-the-mountain, and sometimes called English masterwort and wild masterwort) is a perennial plant in the carrot family (Apiaceae) that grows in shady places. The name \"ground elder\" comes from the superficial similarity of its leaves and flowers to those of elder (\"Sambucus\"), which is unrelated. It is the type species of the genus \"Aegopodium\". This species is native to Eurasia, and has been introduced around the world as an ornamental plant, where it occasionally poses an ecological threat as an invasive exotic plant. \"A.",
+                  "id": "vidorag_doc_1",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Asclepias tuberosa\nAsclepias tuberosa Asclepias tuberosa is a species of milkweed native to eastern North America. It is a perennial plant growing to tall, with clustered orange or yellow flowers from early summer to early autumn. The leaves are spirally arranged, lanceolate, 5–12 cm long, and 2–3 cm broad. This plant favors dry, sand or gravel soil, but has also been reported on stream margins. It requires full sun. It is commonly known as butterfly weed because of the butterflies that are attracted to the plant by its color and its copious production of nectar. It is also the larval food plant",
+                  "id": "vidorag_doc_2",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Pachypodium lamerei\nPachypodium lamerei Pachypodium lamerei is a species of flowering plant in the dogbane family Apocynaceae. It is a stem succulent, photosynthesizing mainly through its trunk, and comes from the island of Madagascar, off the east coast of Africa. It has large thorns and leaves mostly just at the top of the plant, and large, fragrant flowers. The species has become one of the best known pachypodiums in cultivation, being relatively easy to propagate and grow. In cultivation it is often marketed as the Madagascar palm, despite its not being a palm at all. A variety called \"Ramosum\" has been described.",
+                  "id": "vidorag_doc_3",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Campsis radicans\nCampsis radicans Campsis radicans (trumpet vine or trumpet creeper, also known in North America as cow itch vine or hummingbird vine), is a species of flowering plant of the family Bignoniaceae, native to the eastern United States and naturalized in parts of the western United States as well as in Ontario, parts of Europe, and scattered locations in Latin America. Growing to , it is a vigorous, deciduous woody vine, notable for its showy trumpet-shaped flowers. It inhabits woodlands and riverbanks, and is also a popular garden subject. The leaves are opposite, ovate, pinnate, 3–10 cm long, and emerald green",
+                  "id": "vidorag_doc_4",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                }
+              ],
+              "retrieval_scores": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.3,
+            "individual_scores": [
+              0.3
+            ],
+            "position_weights": [
+              0.4,
+              0.3,
+              0.2,
+              0.07,
+              0.03
+            ]
+          },
+          "pipeline_type": "vidorag"
+        },
+        {
+          "answer": "Answer generation failed",
+          "raw_prediction": "Answer generation failed",
+          "retrieved_docs": [
+            {
+              "contents": "Toy\nToy A toy is an item that is used in play, especially one designed for such use. Playing with toys can be an enjoyable means of training young children for life in society. Different materials like wood, clay, paper, and plastic are used to make toys. Many items are designed to serve as toys, but goods produced for other purposes can also be used. For instance, a small child may fold an ordinary piece of paper into an airplane shape and \"fly it\". Newer forms of toys include interactive digital entertainment. Some toys are produced primarily as collectors' items and",
+              "id": "vidorag_doc_0",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Yo-yo\nYo-yo A yo-yo (also spelled yoyo) is a toy consisting of an axle connected to two disks, and a string looped around the axle. It has some similarities to a slender spool. A yo-yo is played by holding the free end of the string known as the handle (by inserting one fingerusually the middle or index fingerinto a slip knot) allowing gravity (or the force of a throw and gravity) to spin the yo-yo and unwind the string (similar to how a pullstring works). The player then allows the yo-yo to wind itself back to the player's hand, exploiting its",
+              "id": "vidorag_doc_1",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Stuffed toy\nStuffed toy A stuffed toy is a toy with an outer fabric sewn from a textile and then stuffed with a flexible material. In North American English, they are variously referred to as plush toys, stuffed animals, plushies, snuggies, stuffies, or snuggled animals. In British English, they are soft toys or cuddly toys. The toys developed in their current form in the early years of the 20th century and have remained consistently popular with children throughout. Different fads have caused specific toys to surge in popularity among adults and collectors. Noticeable examples include Tickle Me Elmo and Beanie Babies. Textiles",
+              "id": "vidorag_doc_2",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Stuffed toy\nand robotic plush toys were fads when they were first released. These include Tickle Me Elmo, a laughing and shaking plush toy based on the character Elmo from the Sesame Street television show, released in 1996, Furby, a robotic talking plush toy with its own language, released in 1998 and Zhu Zhu Pets, a line of robotic plush hamsters released in 2009. Some brands of stuffed toys use marketing strategies to encourage the collection of a series of stuffed toys, such as Beanie Babies. They are very popular. Webkinz stuffed animals were created by Ganz in 2005. Each Webkinz toy",
+              "id": "vidorag_doc_3",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Toy\nthem. Sometimes intended as decorations, keepsakes, or collectibles for older children and adults, most dolls are intended as toys for children, usually girls, to play with. Dolls have been found in Egyptian tombs which date to as early as 2000 BCE. Dolls are usually miniatures, but baby dolls may be of true size and weight. A doll or stuffed animal of soft material is sometimes called a plush toy or plushie. A popular toy of this type is the Teddy Bear. A distinction is often made between dolls and action figures, which are generally of plastic or semi-metallic construction and",
+              "id": "vidorag_doc_4",
+              "title": "",
+              "source": "vidorag_retriever"
+            }
+          ],
+          "used_retrieval": true,
+          "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+          "method": "ViDoRAG",
+          "initial_retrieved": 5,
+          "selected_retrieved": 5,
+          "retrieved": true,
+          "correct": false,
+          "retrieval_result": [
+            {
+              "retrieved_docs": [
+                {
+                  "contents": "Toy\nToy A toy is an item that is used in play, especially one designed for such use. Playing with toys can be an enjoyable means of training young children for life in society. Different materials like wood, clay, paper, and plastic are used to make toys. Many items are designed to serve as toys, but goods produced for other purposes can also be used. For instance, a small child may fold an ordinary piece of paper into an airplane shape and \"fly it\". Newer forms of toys include interactive digital entertainment. Some toys are produced primarily as collectors' items and",
+                  "id": "vidorag_doc_0",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Yo-yo\nYo-yo A yo-yo (also spelled yoyo) is a toy consisting of an axle connected to two disks, and a string looped around the axle. It has some similarities to a slender spool. A yo-yo is played by holding the free end of the string known as the handle (by inserting one fingerusually the middle or index fingerinto a slip knot) allowing gravity (or the force of a throw and gravity) to spin the yo-yo and unwind the string (similar to how a pullstring works). The player then allows the yo-yo to wind itself back to the player's hand, exploiting its",
+                  "id": "vidorag_doc_1",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Stuffed toy\nStuffed toy A stuffed toy is a toy with an outer fabric sewn from a textile and then stuffed with a flexible material. In North American English, they are variously referred to as plush toys, stuffed animals, plushies, snuggies, stuffies, or snuggled animals. In British English, they are soft toys or cuddly toys. The toys developed in their current form in the early years of the 20th century and have remained consistently popular with children throughout. Different fads have caused specific toys to surge in popularity among adults and collectors. Noticeable examples include Tickle Me Elmo and Beanie Babies. Textiles",
+                  "id": "vidorag_doc_2",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Stuffed toy\nand robotic plush toys were fads when they were first released. These include Tickle Me Elmo, a laughing and shaking plush toy based on the character Elmo from the Sesame Street television show, released in 1996, Furby, a robotic talking plush toy with its own language, released in 1998 and Zhu Zhu Pets, a line of robotic plush hamsters released in 2009. Some brands of stuffed toys use marketing strategies to encourage the collection of a series of stuffed toys, such as Beanie Babies. They are very popular. Webkinz stuffed animals were created by Ganz in 2005. Each Webkinz toy",
+                  "id": "vidorag_doc_3",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                },
+                {
+                  "contents": "Toy\nthem. Sometimes intended as decorations, keepsakes, or collectibles for older children and adults, most dolls are intended as toys for children, usually girls, to play with. Dolls have been found in Egyptian tombs which date to as early as 2000 BCE. Dolls are usually miniatures, but baby dolls may be of true size and weight. A doll or stuffed animal of soft material is sometimes called a plush toy or plushie. A popular toy of this type is the Teddy Bear. A distinction is often made between dolls and action figures, which are generally of plastic or semi-metallic construction and",
+                  "id": "vidorag_doc_4",
+                  "title": "",
+                  "source": "vidorag_retriever"
+                }
+              ],
+              "retrieval_scores": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "retrieval_used": true
+            }
+          ],
+          "position_bias_results": {
+            "average_bias": 0.3,
+            "individual_scores": [
+              0.3
+            ],
+            "position_weights": [
+              0.4,
+              0.3,
+              0.2,
+              0.07,
+              0.03
+            ]
+          },
+          "pipeline_type": "vidorag"
+        }
+      ]
+    }
+  }
+}

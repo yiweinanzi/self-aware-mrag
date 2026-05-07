@@ -1,0 +1,215 @@
+# ✅ P1-4: 阈值扫参配置
+# 用于阈值敏感性分析实验
+
+# 实验名称
+experiment_name: "threshold_sensitivity_analysis"
+description: "不确定性阈值敏感性分析，寻找最优τ值"
+
+# 基础配置
+base_config:
+  # 数据集配置
+  dataset: "okvqa"  # 使用OK-VQA作为测试集
+  num_samples: 500   # 测试样本数
+  random_seed: 42
+  
+  # 模型配置
+  mllm_model: "llava-v1.5-7b"  # 或 "qwen3-vl-8b-instruct"
+  mllm_path: "/root/autodl-tmp/models/llava-v1.5-7b"
+  
+  # 检索配置
+  retriever_type: "bge"
+  retriever_path: "/root/autodl-tmp/models/bge-large-en-v1.5"
+  index_path: "/root/autodl-tmp/FlashRAG/indexes/wiki_5m"
+  top_k: 5
+  
+  # 不确定性估计配置
+  uncertainty:
+    text_weight: 0.4        # 文本不确定性权重
+    visual_weight: 0.3      # 视觉不确定性权重
+    alignment_weight: 0.3   # 对齐不确定性权重
+    eigen_threshold: -6.0   # SeaKR eigen阈值
+  
+  # Pipeline配置
+  use_position_fusion: true
+  use_attribution: true
+  use_multimodal_output: false  # 默认禁用
+  
+  # 生成配置
+  max_new_tokens: 100
+  temperature: 0.7
+  do_sample: true
+
+# 阈值扫参配置
+threshold_sweep:
+  # 阈值列表（按重要性排序）
+  values: [0.25, 0.30, 0.33, 0.35, 0.38, 0.40, 0.43, 0.45]
+  
+  # 更细粒度的扫参（可选）
+  # values: [0.25, 0.27, 0.30, 0.32, 0.33, 0.35, 0.37, 0.38, 0.40, 0.42, 0.43, 0.45]
+  
+  # 关键阈值说明
+  key_values:
+    0.25: "P10-P20百分位，预期检索率80-90%"
+    0.30: "P20-P40百分位，预期检索率60-80%"
+    0.33: "P50百分位（中位数），预期检索率50%"
+    0.35: "P60-P70百分位，预期检索率40-50%（优化后默认值）"
+    0.38: "P70-P80百分位，预期检索率25-35%"
+    0.40: "P80百分位，预期检索率20-30%"
+    0.43: "P92百分位，预期检索率8-12%（原默认值）"
+    0.45: "P95+百分位，预期检索率<5%"
+
+# 评估指标
+metrics:
+  # 核心指标（必须报告）
+  primary:
+    - "em"                    # Exact Match
+    - "f1"                    # F1 Score
+    - "retrieval_recall_top5" # Recall@5
+    - "vqa_score"             # VQA Score
+    - "faithfulness"          # 忠实度
+    - "attribution_precision" # 归因精度
+    - "position_bias_score"   # 位置偏差分数
+  
+  # 辅助指标（内部分析）
+  secondary:
+    - "retrieval_rate"        # 检索率（关键！）
+    - "precision"             # Precision
+    - "recall"                # Recall
+    - "avg_input_tokens"      # 平均token数
+  
+  # 统计指标
+  statistics:
+    - "mean"                  # 均值
+    - "std"                   # 标准差
+    - "confidence_interval"   # 95%置信区间
+
+# 输出配置
+output:
+  # 输出目录
+  save_dir: "/root/autodl-tmp/FlashRAG/experiments/threshold_sweep"
+  
+  # 文件格式
+  formats:
+    - "csv"       # 结果表格
+    - "json"      # 详细结果
+    - "png"       # 可视化图表
+  
+  # 可视化配置
+  visualization:
+    # 绘制的图表
+    plots:
+      - type: "line"
+        title: "Accuracy vs Threshold"
+        x: "threshold"
+        y: ["em", "f1", "vqa_score"]
+        save_as: "accuracy_vs_threshold.png"
+      
+      - type: "line"
+        title: "Retrieval Rate vs Threshold"
+        x: "threshold"
+        y: "retrieval_rate"
+        y2: "f1"  # 双Y轴
+        save_as: "retrieval_rate_vs_threshold.png"
+      
+      - type: "scatter"
+        title: "F1 vs Retrieval Rate"
+        x: "retrieval_rate"
+        y: "f1"
+        color: "threshold"
+        save_as: "f1_vs_retrieval_rate.png"
+      
+      - type: "heatmap"
+        title: "Metrics Heatmap"
+        metrics: ["em", "f1", "retrieval_recall_top5", "retrieval_rate"]
+        save_as: "metrics_heatmap.png"
+    
+    # 图表样式
+    style:
+      figure_size: [10, 6]
+      dpi: 300
+      font_size: 12
+      title_size: 14
+      legend_position: "best"
+
+# 运行配置
+runtime:
+  # 并行运行
+  parallel: false  # 顺序运行，避免资源冲突
+  
+  # GPU设置
+  gpu_id: 0
+  batch_size: 1
+  
+  # 日志级别
+  log_level: "INFO"
+  
+  # 保存中间结果
+  save_intermediate: true
+  checkpoint_frequency: 100  # 每100样本保存一次
+  
+  # 错误处理
+  continue_on_error: true
+  max_retries: 3
+
+# 对比基准
+baselines:
+  # 与这些基准对比
+  compare_with:
+    - name: "MuRAG"
+      description: "直接检索（检索率100%）"
+      threshold: 0.0
+    
+    - name: "Original"
+      description: "原配置（τ=0.43）"
+      threshold: 0.43
+    
+    - name: "Optimized"
+      description: "优化配置（τ=0.35）"
+      threshold: 0.35
+
+# 分析配置
+analysis:
+  # 自动寻找最优阈值
+  find_optimal:
+    # 优化目标
+    optimize_for: "f1"  # 或 "em", "vqa_score", "combined"
+    
+    # 约束条件
+    constraints:
+      min_retrieval_rate: 0.20  # 最低检索率20%
+      max_retrieval_rate: 0.60  # 最高检索率60%
+  
+  # 敏感性分析
+  sensitivity:
+    # 计算指标变化率
+    compute_derivatives: true
+    
+    # 识别拐点
+    find_inflection_points: true
+  
+  # 统计显著性检验
+  statistical_tests:
+    - "t_test"           # t检验
+    - "bootstrap"        # Bootstrap（1000次）
+    - "permutation"      # 置换检验
+
+# 报告配置
+report:
+  # 生成报告
+  generate: true
+  
+  # 报告格式
+  format: "markdown"
+  
+  # 报告内容
+  sections:
+    - "executive_summary"  # 执行摘要
+    - "methodology"        # 方法说明
+    - "results_table"      # 结果表格
+    - "visualization"      # 可视化图表
+    - "analysis"           # 分析讨论
+    - "recommendations"    # 建议
+  
+  # 报告文件名
+  filename: "THRESHOLD_SWEEP_REPORT.md"
+

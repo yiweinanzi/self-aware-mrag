@@ -1,0 +1,383 @@
+{
+  "samples": [
+    {
+      "id": "mmqa_0",
+      "question": "What is shown in the image?",
+      "answer": "cat",
+      "golden_answers": [
+        "cat",
+        "a cat",
+        "the cat"
+      ],
+      "question_type": "ImageQ",
+      "image": null,
+      "metadata": {
+        "table": null,
+        "text": null,
+        "answer_candidates": [
+          "cat",
+          "dog",
+          "bird",
+          "fish"
+        ]
+      }
+    },
+    {
+      "id": "mmqa_1",
+      "question": "Which country has the largest population?",
+      "answer": "China",
+      "golden_answers": [
+        "China",
+        "Chinese",
+        "People's Republic of China"
+      ],
+      "question_type": "TableQ",
+      "image": null,
+      "metadata": {
+        "table": "Country | Population | Capital\nChina | 1.4B | Beijing\nIndia | 1.3B | New Delhi\nUSA | 330M | Washington D.C.",
+        "text": null,
+        "answer_candidates": [
+          "China",
+          "India",
+          "USA",
+          "Indonesia"
+        ]
+      }
+    },
+    {
+      "id": "mmqa_2",
+      "question": "What is the capital of France according to the text?",
+      "answer": "Paris",
+      "golden_answers": [
+        "Paris",
+        "The capital is Paris"
+      ],
+      "question_type": "TextQ",
+      "image": null,
+      "metadata": {
+        "table": null,
+        "text": "France is a country in Western Europe. Its capital city is Paris. France is known for the Eiffel Tower and fine cuisine.",
+        "answer_candidates": [
+          "Paris",
+          "London",
+          "Berlin",
+          "Madrid"
+        ]
+      }
+    },
+    {
+      "id": "mmqa_3",
+      "question": "How many items are in the table?",
+      "answer": "3",
+      "golden_answers": [
+        "3",
+        "three",
+        "Three items"
+      ],
+      "question_type": "Compose",
+      "image": null,
+      "metadata": {
+        "table": "Item | Quantity\nApples | 5\nOranges | 3\nBananas | 7",
+        "text": "The table shows fruit quantities.",
+        "answer_candidates": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      }
+    },
+    {
+      "id": "mmqa_4",
+      "question": "What animal is depicted?",
+      "answer": "elephant",
+      "golden_answers": [
+        "elephant",
+        "an elephant",
+        "the elephant"
+      ],
+      "question_type": "ImageQ",
+      "image": null,
+      "metadata": {
+        "table": null,
+        "text": null,
+        "answer_candidates": [
+          "elephant",
+          "lion",
+          "tiger",
+          "bear"
+        ]
+      }
+    },
+    {
+      "id": "mmqa_5",
+      "question": "Which team won the championship?",
+      "answer": "Team A",
+      "golden_answers": [
+        "Team A",
+        "The winner is Team A"
+      ],
+      "question_type": "TableQ",
+      "image": null,
+      "metadata": {
+        "table": "Team | Score | Position\nTeam A | 85 | 1st\nTeam B | 78 | 2nd\nTeam C | 72 | 3rd",
+        "text": null,
+        "answer_candidates": [
+          "Team A",
+          "Team B",
+          "Team C",
+          "Team D"
+        ]
+      }
+    },
+    {
+      "id": "mmqa_6",
+      "question": "What year was the company founded according to the text?",
+      "answer": "2010",
+      "golden_answers": [
+        "2010",
+        "in 2010",
+        "Founded in 2010"
+      ],
+      "question_type": "TextQ",
+      "image": null,
+      "metadata": {
+        "table": null,
+        "text": "The company was founded in 2010 and has grown to over 1000 employees. It specializes in software development.",
+        "answer_candidates": [
+          "2010",
+          "2005",
+          "2015",
+          "2020"
+        ]
+      }
+    },
+    {
+      "id": "mmqa_7",
+      "question": "What is the total value shown in the table and text?",
+      "answer": "150",
+      "golden_answers": [
+        "150",
+        "$150",
+        "150 dollars"
+      ],
+      "question_type": "Compose",
+      "image": null,
+      "metadata": {
+        "table": "Item | Value ($)\nProduct A | 100\nProduct B | 50",
+        "text": "The total value of all products is $150.",
+        "answer_candidates": [
+          "150",
+          "200",
+          "250",
+          "300"
+        ]
+      }
+    },
+    {
+      "id": "mmqa_8",
+      "question": "Which fruit is mentioned in the text?",
+      "answer": "apple",
+      "golden_answers": [
+        "apple",
+        "apples",
+        "the apple"
+      ],
+      "question_type": "TextQ",
+      "image": null,
+      "metadata": {
+        "table": null,
+        "text": "The apple is a popular fruit. It comes in different colors like red, green, and yellow. Apples are rich in fiber and vitamins.",
+        "answer_candidates": [
+          "apple",
+          "banana",
+          "orange",
+          "grape"
+        ]
+      }
+    },
+    {
+      "id": "mmqa_9",
+      "question": "What color is the car in the image?",
+      "answer": "red",
+      "golden_answers": [
+        "red",
+        "a red car",
+        "the car is red"
+      ],
+      "question_type": "ImageQ",
+      "image": null,
+      "metadata": {
+        "table": null,
+        "text": null,
+        "answer_candidates": [
+          "red",
+          "blue",
+          "green",
+          "yellow"
+        ]
+      }
+    }
+  ],
+  "results": {
+    "Direct Answer": [
+      {
+        "answer": "The image shows a **ladybug** (also known as a ladybird or lady beetle) perched on a **leaf**. The ladybug has a distinctive red shell with black spots, which is typical for many species. It appears to be resting or possibly feeding on the leaf surface. The background is blurred, suggesting a shallow depth of field, which draws attention to the ladybug as the main subject. The overall scene conveys a natural, outdoor setting, likely in a garden or",
+        "retrieved_docs": [],
+        "question_type": "ImageQ",
+        "metadata": {
+          "table": null,
+          "text": null,
+          "answer_candidates": [
+            "cat",
+            "dog",
+            "bird",
+            "fish"
+          ]
+        }
+      },
+      {
+        "answer": "China has the largest population.",
+        "retrieved_docs": [],
+        "question_type": "TableQ",
+        "metadata": {
+          "table": "Country | Population | Capital\nChina | 1.4B | Beijing\nIndia | 1.3B | New Delhi\nUSA | 330M | Washington D.C.",
+          "text": null,
+          "answer_candidates": [
+            "China",
+            "India",
+            "USA",
+            "Indonesia"
+          ]
+        }
+      },
+      {
+        "answer": "According to the text, the capital of France is Paris.",
+        "retrieved_docs": [],
+        "question_type": "TextQ",
+        "metadata": {
+          "table": null,
+          "text": "France is a country in Western Europe. Its capital city is Paris. France is known for the Eiffel Tower and fine cuisine.",
+          "answer_candidates": [
+            "Paris",
+            "London",
+            "Berlin",
+            "Madrid"
+          ]
+        }
+      },
+      {
+        "answer": "The table lists three types of items: Apples, Oranges, and Bananas. Each item has a corresponding quantity, but the question asks for the number of **items**, not the total quantity.\n\nSo, the number of items in the table is **3**.\n\n✅ **Answer: 3**",
+        "retrieved_docs": [],
+        "question_type": "Compose",
+        "metadata": {
+          "table": "Item | Quantity\nApples | 5\nOranges | 3\nBananas | 7",
+          "text": "The table shows fruit quantities.",
+          "answer_candidates": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        }
+      },
+      {
+        "answer": "The animal depicted is a **koala**.\n\nKoalas are marsupials native to Australia, known for their fluffy grey fur, large round ears, and distinctive facial features. They primarily feed on eucalyptus leaves and are often associated with trees, especially eucalyptus. They are generally solitary and nocturnal, spending most of their time sleeping or resting in tree branches.\n\nIf you have a specific image or context in mind, feel free to provide more details —",
+        "retrieved_docs": [],
+        "question_type": "ImageQ",
+        "metadata": {
+          "table": null,
+          "text": null,
+          "answer_candidates": [
+            "elephant",
+            "lion",
+            "tiger",
+            "bear"
+          ]
+        }
+      },
+      {
+        "answer": "Team A won the championship.\n\n**Reasoning:**  \nIn most sports and competitions, the team with the highest score (or best performance) is awarded the championship. In this table, Team A has the highest score of **85** and is ranked **1st**, indicating they are the top-performing team. Therefore, Team A is the champion.\n\n✅ **Answer: Team A**",
+        "retrieved_docs": [],
+        "question_type": "TableQ",
+        "metadata": {
+          "table": "Team | Score | Position\nTeam A | 85 | 1st\nTeam B | 78 | 2nd\nTeam C | 72 | 3rd",
+          "text": null,
+          "answer_candidates": [
+            "Team A",
+            "Team B",
+            "Team C",
+            "Team D"
+          ]
+        }
+      },
+      {
+        "answer": "The company was founded in 2010.",
+        "retrieved_docs": [],
+        "question_type": "TextQ",
+        "metadata": {
+          "table": null,
+          "text": "The company was founded in 2010 and has grown to over 1000 employees. It specializes in software development.",
+          "answer_candidates": [
+            "2010",
+            "2005",
+            "2015",
+            "2020"
+          ]
+        }
+      },
+      {
+        "answer": "The total value shown in the table is:\n\n**Product A: $100**  \n**Product B: $50**  \n→ **Total = $100 + $50 = $150**\n\nThe text also states: **“The total value of all products is $150.”**\n\n✅ Therefore, the total value shown in both the table and the text is **$150**.",
+        "retrieved_docs": [],
+        "question_type": "Compose",
+        "metadata": {
+          "table": "Item | Value ($)\nProduct A | 100\nProduct B | 50",
+          "text": "The total value of all products is $150.",
+          "answer_candidates": [
+            "150",
+            "200",
+            "250",
+            "300"
+          ]
+        }
+      },
+      {
+        "answer": "The fruit mentioned in the text is the apple.",
+        "retrieved_docs": [],
+        "question_type": "TextQ",
+        "metadata": {
+          "table": null,
+          "text": "The apple is a popular fruit. It comes in different colors like red, green, and yellow. Apples are rich in fiber and vitamins.",
+          "answer_candidates": [
+            "apple",
+            "banana",
+            "orange",
+            "grape"
+          ]
+        }
+      },
+      {
+        "answer": "The car in the image is red.",
+        "retrieved_docs": [],
+        "question_type": "ImageQ",
+        "metadata": {
+          "table": null,
+          "text": null,
+          "answer_candidates": [
+            "red",
+            "blue",
+            "green",
+            "yellow"
+          ]
+        }
+      }
+    ]
+  },
+  "type_counts": {
+    "ImageQ": 3,
+    "TableQ": 2,
+    "TextQ": 3,
+    "Compose": 2
+  },
+  "timestamp": "2025-12-04T19:26:00.523292"
+}

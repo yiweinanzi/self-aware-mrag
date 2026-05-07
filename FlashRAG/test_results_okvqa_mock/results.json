@@ -1,0 +1,219 @@
+{
+  "samples": [
+    {
+      "id": "okvqa_0",
+      "question": "What color is the sky on a clear day?",
+      "answer": "blue",
+      "golden_answers": [
+        "blue",
+        "blue sky",
+        "light blue"
+      ],
+      "image": null
+    },
+    {
+      "id": "okvqa_1",
+      "question": "What do you use to write on paper?",
+      "answer": "pen",
+      "golden_answers": [
+        "pen",
+        "pencil",
+        "ballpoint pen"
+      ],
+      "image": null
+    },
+    {
+      "id": "okvqa_2",
+      "question": "What animal says \"woof\"?",
+      "answer": "dog",
+      "golden_answers": [
+        "dog",
+        "dogs",
+        "puppy"
+      ],
+      "image": null
+    },
+    {
+      "id": "okvqa_3",
+      "question": "What is the largest planet in our solar system?",
+      "answer": "jupiter",
+      "golden_answers": [
+        "jupiter",
+        "Jupiter"
+      ],
+      "image": null
+    },
+    {
+      "id": "okvqa_4",
+      "question": "How many days are in a week?",
+      "answer": "seven",
+      "golden_answers": [
+        "seven",
+        "7",
+        "seven days"
+      ],
+      "image": null
+    },
+    {
+      "id": "okvqa_5",
+      "question": "What do you drink when you are thirsty?",
+      "answer": "water",
+      "golden_answers": [
+        "water",
+        "drink",
+        "beverage"
+      ],
+      "image": null
+    },
+    {
+      "id": "okvqa_6",
+      "question": "What time of day is the sun at its highest?",
+      "answer": "noon",
+      "golden_answers": [
+        "noon",
+        "midday",
+        "12pm"
+      ],
+      "image": null
+    },
+    {
+      "id": "okvqa_7",
+      "question": "What season comes after summer?",
+      "answer": "autumn",
+      "golden_answers": [
+        "autumn",
+        "fall"
+      ],
+      "image": null
+    },
+    {
+      "id": "okvqa_8",
+      "question": "What do birds use to fly?",
+      "answer": "wings",
+      "golden_answers": [
+        "wings",
+        "feathers"
+      ],
+      "image": null
+    },
+    {
+      "id": "okvqa_9",
+      "question": "What color are leaves in autumn?",
+      "answer": "orange",
+      "golden_answers": [
+        "orange",
+        "brown",
+        "yellow",
+        "red"
+      ],
+      "image": null
+    }
+  ],
+  "results": {
+    "Direct Answer": [
+      {
+        "answer": "The sky is typically **blue** on a clear day.\n\nThis happens because of a phenomenon called **Rayleigh scattering**. Sunlight, which is made up of all colors, passes through the Earth’s atmosphere and interacts with molecules and small particles in the air. Shorter wavelengths of light — like blue and violet — are scattered more than longer wavelengths (like red and yellow). Although violet light is scattered even more than blue, our eyes are more sensitive to blue, and some violet light is absorbed",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "You use a **pen**, **pencil**, or **marker** to write on paper.  \nOther options include:\n- **Felt-tip pen** (marker)\n- **Ballpoint pen**\n- **Mechanical pencil**\n- **Graphite pencil**\n- **Chalk** (on special chalkboard paper or surfaces)\n- **Stylus** (on digital paper or tablets)\n\nThe most common tools for traditional writing on paper are **pens** and **pencils**.",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "The animal that says \"woof\" is a **dog**.\n\n\"Woof\" is a common onomatopoeic word used to represent the sound a dog makes, especially when barking. Dogs are known for their vocalizations, which include barks, whines, and growls — and \"woof\" is a playful, simplified version of a dog's bark.\n\n🐾 So, the answer is: **dog**.",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "The largest planet in our solar system is **Jupiter**.\n\nJupiter is a gas giant with a diameter of about **86,881 miles (139,822 kilometers)**, making it roughly 11 times wider than Earth. It has a mass more than two and a half times that of all the other planets in the solar system combined. Jupiter is known for its prominent Great Red Spot — a giant storm larger than Earth that has been raging for centuries —",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "There are **7 days** in a week.\n\nThe seven days are:\n- Monday\n- Tuesday\n- Wednesday\n- Thursday\n- Friday\n- Saturday\n- Sunday\n\nThis system is widely used across the globe and is based on the ancient Babylonian and Hebrew calendars, later standardized by the Gregorian calendar.",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "When I’m thirsty, I drink water — the best and healthiest choice for staying hydrated! 💧\n\nBut if you’re asking what *I* (as an AI) drink… well, I don’t actually drink anything — I’m not a living being! 😊\n\nSo, for humans: water is #1. You can also drink herbal teas, coconut water, or electrolyte drinks if needed — but water’s always the go-to for quenching thirst and keeping your body",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "The sun is at its highest point in the sky at **solar noon**, which typically occurs around **12:00 PM local solar time**.\n\nThis is when the sun reaches its maximum altitude in the sky for that day, directly overhead at the equator (around the equinoxes), and at an angle depending on your latitude and the time of year. At solar noon, the sun’s rays are most direct, resulting in the strongest sunlight and shortest shadows.\n\nNote: Solar noon",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "The season that comes after summer is **autumn** (also known as **fall** in North America).\n\nIn the Northern Hemisphere, the typical seasonal order is:\n- Spring → Summer → **Autumn** → Winter\n\nIn the Southern Hemisphere, the seasons are reversed, so autumn follows summer in the Southern Hemisphere as well — but the transition occurs at different times of the year due to Earth’s tilt and orbit.\n\nSo, regardless of hemisphere, **autumn** is the season that follows summer",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "Birds use their **wings** to fly.\n\nWings are specialized feathers attached to their arms (forelimbs), and they generate lift and thrust through coordinated flapping and gliding motions. The shape, size, and structure of a bird’s wings, along with its muscles, bones, and feathers, allow it to achieve and maintain flight.\n\nAdditionally, birds rely on:\n- **Feathers** (for aerodynamics and insulation),\n- **Strong chest muscles** (especially pectoralis",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "Leaves in autumn typically turn shades of **red, orange, yellow, and brown**, depending on the tree species and environmental conditions. This color change occurs because the green chlorophyll breaks down as days get shorter and temperatures drop, revealing other pigments that were present all along but masked by chlorophyll during the growing season. Some trees, like maples and oaks, are especially known for their vibrant fall colors.",
+        "retrieved_docs": [],
+        "context_used": false
+      }
+    ],
+    "Simple RAG": [
+      {
+        "answer": "The sky is typically **blue** on a clear day.\n\nThis happens because of a process called **Rayleigh scattering**. Sunlight, which appears white, is made up of all the colors of the spectrum. When sunlight enters Earth’s atmosphere, the shorter blue wavelengths are scattered in all directions by the gases and particles in the air. This scattered blue light is what our eyes see when we look up at the sky.\n\nOn a clear day with no clouds or pollution, the sky appears a bright",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "You use a **pen**, **pencil**, or **marker** to write on paper.\n\n- A **pen** (like a ballpoint or rollerball pen) uses ink and is ideal for permanent writing.\n- A **pencil** uses graphite and allows for easy erasing.\n- A **marker** uses thick ink and is great for bold, visible writing or drawing.\n\nOther options include:\n- **Felt-tip pens** (like Sharpies)\n- **Stylus** (",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "The animal that says \"woof\" is a **dog**.\n\n\"Woof\" is a common onomatopoeic word used to represent the sound a dog makes — often a bark. Dogs are known for barking, and \"woof\" is a playful, simplified version of their bark. Other variations include \"bark,\" \"woof-woof,\" or \"ruff!\"\n\n🐾 So, the answer is: **Dog**.",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "The largest planet in our solar system is **Jupiter**.\n\nJupiter is a gas giant with a diameter of about **139,820 kilometers** (86,881 miles), making it approximately **11 times wider** than Earth. It has a mass more than **2.5 times** that of all the other planets in the solar system combined. Jupiter is known for its prominent Great Red Spot — a giant storm larger than Earth that has been raging for",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "There are **7 days** in a week.\n\nThe days are:\n- Monday\n- Tuesday\n- Wednesday\n- Thursday\n- Friday\n- Saturday\n- Sunday\n\nThis 7-day cycle is used universally in calendars and is based on historical and astronomical traditions, including ancient Babylonian and Hebrew systems.",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "When I’m thirsty, I drink water — the best and healthiest choice for staying hydrated! 🚰💧\n\nWater helps maintain bodily functions, keeps your skin glowing, supports digestion, and keeps your energy up. While other drinks like tea, juice, or even coffee can quench thirst temporarily, water is the most reliable and pure option.\n\nPro tip: Keep a water bottle handy — you’ll thank yourself later!\n\n(And hey, if you’re asking this as a human, I’m",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "The sun is at its highest point in the sky at **local solar noon**.\n\nThis typically occurs around **12:00 PM** (noon) in most locations, though the exact time can vary slightly depending on your longitude and the time of year (due to the equation of time and daylight saving time adjustments).\n\nAt solar noon, the sun reaches its maximum altitude above the horizon — often called the “zenith” if directly overhead (which only happens at the equator on the equ",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "The season that comes after summer is **autumn** (also known as **fall** in North America).\n\nIn the Northern Hemisphere, the typical seasonal order is:\n- Spring → Summer → **Autumn** → Winter\n\nIn the Southern Hemisphere, the seasons are reversed due to the tilt of the Earth, so autumn follows summer in the Southern Hemisphere as well — but the calendar seasons are still based on the same astronomical definitions.\n\nSo, regardless of hemisphere, **autumn** is the season that",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "Birds use their **wings** to fly.\n\nWings are specialized structures covered in feathers, which generate lift and allow birds to soar, glide, or flap through the air. The shape and movement of the wings, combined with the bird’s body structure and powerful muscles (especially in the chest), enable flight. Additionally, birds use their **feathers** to control airflow, steer, and maintain balance during flight.\n\nSo, in summary:\n- **Primary tool for flight**: Wings\n-",
+        "retrieved_docs": [],
+        "context_used": false
+      },
+      {
+        "answer": "Leaves in autumn typically turn shades of **red, orange, yellow, and brown**, depending on the species of tree and environmental conditions. This color change occurs due to the breakdown of chlorophyll (the green pigment) as temperatures cool and daylight hours shorten, revealing other pigments that were previously masked.\n\nCommon examples:\n- **Maple trees**: Red, orange, and yellow\n- **Oak trees**: Reddish-brown or russet\n- **Birch trees**: Yellow or",
+        "retrieved_docs": [],
+        "context_used": false
+      }
+    ]
+  },
+  "timestamp": "2025-12-04T19:23:28.708473"
+}

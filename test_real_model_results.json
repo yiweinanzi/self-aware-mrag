@@ -1,0 +1,362 @@
+[
+  {
+    "question": "What sport can you use this for?",
+    "predicted": "",
+    "golden": [
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "race",
+      "motocross",
+      "motocross",
+      "ride",
+      "ride"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "Name the type of plant this is?",
+    "predicted": "",
+    "golden": [
+      "vine",
+      "vine",
+      "vine",
+      "vine",
+      "climb",
+      "climb",
+      "look like some kind of ivy",
+      "look like some kind of ivy",
+      "ficus",
+      "ficus"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "What toy is this?",
+    "predicted": "",
+    "golden": [
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "stuffed animal",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear",
+      "teddy bear"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "Which part of this animal would be in use of it was playing the game that is played with the items the man is holding?",
+    "predicted": "",
+    "golden": [
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "What could this gentleman be carrying in that red bag?",
+    "predicted": "",
+    "golden": [
+      "cloth",
+      "cloth",
+      "cloth",
+      "cloth",
+      "food",
+      "food",
+      "lunch",
+      "lunch",
+      "shoe",
+      "shoe"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "Who leaves a toilet like this?",
+    "predicted": "",
+    "golden": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "men",
+      "men",
+      "men",
+      "men"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "A center affixed unit like this one in a kitchen is called a what?",
+    "predicted": "",
+    "golden": [
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island",
+      "island"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "Why might someone go to this place?",
+    "predicted": "",
+    "golden": [
+      "shop",
+      "shop",
+      "shop",
+      "shop",
+      "nyc",
+      "nyc",
+      "shop",
+      "shop",
+      "business",
+      "business"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "What does this grow from?",
+    "predicted": "",
+    "golden": [
+      "ground",
+      "ground",
+      "ground",
+      "ground",
+      "plant",
+      "plant",
+      "hibiscus plant stem",
+      "hibiscus plant stem",
+      "root",
+      "root"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "What is that man doing with the bat?",
+    "predicted": "",
+    "golden": [
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "swing",
+      "hit",
+      "hit",
+      "try to hit hte ball",
+      "try to hit hte ball"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "Is this at a salt water beach or a lake?",
+    "predicted": "",
+    "golden": [
+      "salt water beach",
+      "salt water beach",
+      "salt water beach",
+      "salt water beach",
+      "salt water",
+      "salt water",
+      "lake",
+      "lake",
+      "beach",
+      "beach"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "Who designed the statues?",
+    "predicted": "",
+    "golden": [
+      "artist",
+      "artist",
+      "artist",
+      "artist",
+      "guell",
+      "guell",
+      "toscano",
+      "toscano",
+      "aritect",
+      "aritect"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "What is the name of the items the hot dog are topped with?",
+    "predicted": "",
+    "golden": [
+      "condiment",
+      "condiment",
+      "condiment",
+      "condiment",
+      "onion relish",
+      "onion relish",
+      "vegetable",
+      "vegetable",
+      "relish",
+      "relish"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "What is this desk used for?",
+    "predicted": "",
+    "golden": [
+      "work",
+      "work",
+      "work",
+      "work",
+      "compute",
+      "compute",
+      "work",
+      "work",
+      "office",
+      "office"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "What type of bike is on the ground?",
+    "predicted": "",
+    "golden": [
+      "bmx",
+      "bmx",
+      "bmx",
+      "bmx",
+      "bicycle",
+      "bicycle",
+      "bicycle",
+      "bicycle",
+      "10 speed",
+      "10 speed"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "What type of plane is that?",
+    "predicted": "",
+    "golden": [
+      "commercial",
+      "commercial",
+      "commercial",
+      "commercial",
+      "passenger",
+      "passenger",
+      "quanta",
+      "quanta",
+      "md 80",
+      "md 80"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "Is this a room for a boy or girl?",
+    "predicted": "",
+    "golden": [
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl",
+      "girl"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "In what year was this desert first introduced?",
+    "predicted": "",
+    "golden": [
+      "1847",
+      "1847",
+      "1847",
+      "1847",
+      "1860",
+      "1860",
+      "1934",
+      "1934",
+      "1900s",
+      "1900s"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "What is this surf trick called?",
+    "predicted": "",
+    "golden": [
+      "ride",
+      "ride",
+      "ride",
+      "ride",
+      "tube ride",
+      "tube ride",
+      "ollie",
+      "ollie",
+      "wave runner",
+      "wave runner"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  },
+  {
+    "question": "What do they call running around the bases on a single hit?",
+    "predicted": "",
+    "golden": [
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "homerun",
+      "home run",
+      "home run",
+      "home run",
+      "home run"
+    ],
+    "correct": false,
+    "error": "'Qwen3VLProcessor' object has no attribute 'fallback_llm'"
+  }
+]

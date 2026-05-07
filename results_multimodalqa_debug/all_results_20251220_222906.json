@@ -1,0 +1,671 @@
+{
+  "Self-Aware-MRAG": [
+    {
+      "question": "For which film did Ben Piazza play the role of Mr. Simms?",
+      "answer": "concorde airport",
+      "uncertainty": {
+        "text": 0.49,
+        "visual": 0.27541098022460936,
+        "alignment": 0.4,
+        "total": 0.4076232940673828
+      },
+      "retrieved": true,
+      "retrieved_docs": [
+        {
+          "id": "aead4258a97326ae15999e86d3a8aca1",
+          "contents": "Thomas Peter Shadyac (born December 11, 1958) is an American director, screenwriter, producer, and author. Shadyac, was the youngest joke-writer ever for comedian Bob Hope, is widely known for writing and directing the comedies \"\", \"The Nutty Professor\", \"Liar Liar\", \"Patch Adams\", and \"Bruce Almighty\". In 2010, Shadyac departed from comedic work to write, direct, and narrate his documentary film \"I Am\", in which he explores his abandonment of a materialistic lifestyle following a bicycle accident three years earlier.",
+          "title": "Tom Shadyac",
+          "source": "multimodalqa_text"
+        },
+        {
+          "id": "6319f60b0a581f4aa4c74183fdf2f6fb",
+          "contents": "José Terrón Peñaranda (5 July 1939 – 12 May 2019) was a Spanish film actor. He played Guy Callaway in \"For a Few Dollars More\" (1965), and Thomas 'Shorty' Larson in \"The Good, the Bad and the Ugly\" (1966).",
+          "title": "José Terrón",
+          "source": "multimodalqa_text"
+        },
+        {
+          "id": "1f0601b3bb39619f144d58d254de662b",
+          "contents": "Robin Lord Taylor (born June 4, 1978) is an American film and television actor and director, known for his role as Oswald Cobblepot in Fox's acclaimed TV series, \"Gotham\", as well as \"Accepted\" (2006), \"Another Earth\" (2011), \"Would You Rather\" (2012) and \"\" (2019). Recently, he starred as Will Bettelheim in the Netflix thriller series \"You\".",
+          "title": "Robin Lord Taylor",
+          "source": "multimodalqa_text"
+        },
+        {
+          "id": "61e3d62a2215eb387f1119568011382d",
+          "contents": "Richard Ronald Fancy (born August 2, 1943) is an American actor and Comedian known for his long recurring role on \"Seinfeld\" as publisher Mr. Elliott Lippman, Elaine Benes's first major employer on the series. He appeared on the third and fourth seasons of \"It's Garry Shandling's Show\" as network boss Mr. Stravely. He also plays the Priest in the 1991 film \"What About Bob?\", and was Kevin Arnold's high school principal, Dr. Valenti, in the fourth and fifth seasons of \"The Wonder Years\". He also appeared in Oliver Stone's \"Nixon\" (1995) and \"Primal Force\" (1999).",
+          "title": "Richard Fancy",
+          "source": "multimodalqa_text"
+        },
+        {
+          "id": "47f35474f0826d44962f0ba854a42c70",
+          "contents": "William David Daniels (born March 31, 1927) is an American actor, known for his roles as Dr. Mark Craig in the NBC drama \"St. Elsewhere\", for which he won two Emmy Awards, and as Mr. Feeny in the ABC sitcom \"Boy Meets World\". He was president of the Screen Actors Guild from 1999 to 2001.",
+          "title": "William Daniels",
+          "source": "multimodalqa_text"
+        },
+        {
+          "id": "8513db80c11ea439ab11eba406ec00d9",
+          "contents": "【表格信息】Ben Piazza\n==================================================\n\nYear (年份)           |Title (电影名)         |Role (角色名)          |Notes               \n------------------------------------------------------------------------------------\n1957                第1行:|A Dangerous Age     第1行:|David               第1行:|                    \n1959                第2行:|The Hanging Tree    第2行:|Rune                第2行:|                    第2行:| <-- 相关\n1962                第3行:|No Exit             第3行:|Camarero            第3行:|                    第3行:| <-- 相关\n1970                第4行:|Tell Me That You Love Me, Junie Moon第4行:|Jesse               第4行:|                    \n1972                第5行:|The Outside Man     第5行:|Desk Clerk          第5行:|                    第5行:| <-- 相关\n1973                第6行:|The Candy Snatchers 第6行:|Avery               第6行:|                    第6行:| <-- 相关\n1976                第7行:|The Bad News Bears  第7行:|Bob Whitewood       第7行:|                    第7行:| <-- 相关\n1977                第8行:|I Never Promised You a Rose Garden第8行:|Jay Blake           第8行:|                    第8行:| <-- 相关\n1979                第9行:|Nightwing           第9行:|Roger Piggott       第9行:|                    第9行:| <-- 相关\n1979                第10行:|The Concorde ... Airport '79第10行:|Associate           第10行:|TV version, Uncredited第10行:| <-- 相关\n1980                第11行:|The Blues Brothers  第11行:|Father              第11行:|                    第11行:| <-- 相关\n1982                第12行:|Waltz Across Texas  第12行:|Bill Wrather        第12行:|                    第12行:| <-- 相关\n1985                第13行:|Mask                第13行:|Mr. Simms           第13行:|                    第13行:| <-- 角色'{'text': 'Mr. Simms', 'links': []}'的电影是'{'text': 'Mask', 'links': [{'text': 'Mask', 'wiki_title': 'Mask (1985 film)', 'url': 'https://en.wikipedia.org/wiki/Mask_(1985_film)'}]}'\n1988                第14行:|Clean and Sober     第14行:|Kramer              第14行:|                    \n1990                第15行:|Rocky V             第15行:|Doctor              第15行:|Uncredited          \n1991                第16行:|Guilty by Suspicion 第16行:|Darryl Zanuck       第16行:|                    \n\n【查找提示】:\n- 在表格中查找与问题相关的年份、电影名或角色名\n- 注意角色名和电影名的对应关系\n- 仔细阅读每一行的完整信息",
+          "title": "Ben Piazza",
+          "source": "multimodalqa_table"
+        },
+        {
+          "id": "8b5a40ca458a36fb64a1785297b66fd8",
+          "contents": "[图像ID: 8b5a40ca458a36fb64a1785297b66fd8]",
+          "title": "The Concorde ... Airport '79",
+          "source": "multimodalqa_image"
+        },
+        {
+          "id": "7869011075ff671da6fd10497b262609",
+          "contents": "[图像ID: 7869011075ff671da6fd10497b262609]",
+          "title": "Mask (1985 film)",
+          "source": "multimodalqa_image"
+        },
+        {
+          "id": "1c0d30d5776bb8ee954667c5277f4bf7",
+          "contents": "[图像ID: 1c0d30d5776bb8ee954667c5277f4bf7]",
+          "title": "I Never Promised You a Rose Garden (film)",
+          "source": "multimodalqa_image"
+        },
+        {
+          "id": "ddf8b52a8400deaf05940c5cad8169cd",
+          "contents": "[图像ID: ddf8b52a8400deaf05940c5cad8169cd]",
+          "title": "Tell Me That You Love Me, Junie Moon",
+          "source": "multimodalqa_image"
+        },
+        {
+          "id": "4b6d3e469ff8395a0f8c1a13c0422937",
+          "contents": "[图像ID: 4b6d3e469ff8395a0f8c1a13c0422937]",
+          "title": "The Candy Snatchers",
+          "source": "multimodalqa_image"
+        }
+      ],
+      "raw_retrieved_docs": [
+        {
+          "id": "aead4258a97326ae15999e86d3a8aca1",
+          "contents": "Thomas Peter Shadyac (born December 11, 1958) is an American director, screenwriter, producer, and author. Shadyac, was the youngest joke-writer ever for comedian Bob Hope, is widely known for writing and directing the comedies \"\", \"The Nutty Professor\", \"Liar Liar\", \"Patch Adams\", and \"Bruce Almighty\". In 2010, Shadyac departed from comedic work to write, direct, and narrate his documentary film \"I Am\", in which he explores his abandonment of a materialistic lifestyle following a bicycle accident three years earlier.",
+          "title": "Tom Shadyac",
+          "source": "multimodalqa_text"
+        },
+        {
+          "id": "6319f60b0a581f4aa4c74183fdf2f6fb",
+          "contents": "José Terrón Peñaranda (5 July 1939 – 12 May 2019) was a Spanish film actor. He played Guy Callaway in \"For a Few Dollars More\" (1965), and Thomas 'Shorty' Larson in \"The Good, the Bad and the Ugly\" (1966).",
+          "title": "José Terrón",
+          "source": "multimodalqa_text"
+        },
+        {
+          "id": "1f0601b3bb39619f144d58d254de662b",
+          "contents": "Robin Lord Taylor (born June 4, 1978) is an American film and television actor and director, known for his role as Oswald Cobblepot in Fox's acclaimed TV series, \"Gotham\", as well as \"Accepted\" (2006), \"Another Earth\" (2011), \"Would You Rather\" (2012) and \"\" (2019). Recently, he starred as Will Bettelheim in the Netflix thriller series \"You\".",
+          "title": "Robin Lord Taylor",
+          "source": "multimodalqa_text"
+        },
+        {
+          "id": "61e3d62a2215eb387f1119568011382d",
+          "contents": "Richard Ronald Fancy (born August 2, 1943) is an American actor and Comedian known for his long recurring role on \"Seinfeld\" as publisher Mr. Elliott Lippman, Elaine Benes's first major employer on the series. He appeared on the third and fourth seasons of \"It's Garry Shandling's Show\" as network boss Mr. Stravely. He also plays the Priest in the 1991 film \"What About Bob?\", and was Kevin Arnold's high school principal, Dr. Valenti, in the fourth and fifth seasons of \"The Wonder Years\". He also appeared in Oliver Stone's \"Nixon\" (1995) and \"Primal Force\" (1999).",
+          "title": "Richard Fancy",
+          "source": "multimodalqa_text"
+        },
+        {
+          "id": "47f35474f0826d44962f0ba854a42c70",
+          "contents": "William David Daniels (born March 31, 1927) is an American actor, known for his roles as Dr. Mark Craig in the NBC drama \"St. Elsewhere\", for which he won two Emmy Awards, and as Mr. Feeny in the ABC sitcom \"Boy Meets World\". He was president of the Screen Actors Guild from 1999 to 2001.",
+          "title": "William Daniels",
+          "source": "multimodalqa_text"
+        },
+        {
+          "id": "8513db80c11ea439ab11eba406ec00d9",
+          "contents": "【表格信息】Ben Piazza\n==================================================\n\nYear (年份)           |Title (电影名)         |Role (角色名)          |Notes               \n------------------------------------------------------------------------------------\n1957                第1行:|A Dangerous Age     第1行:|David               第1行:|                    \n1959                第2行:|The Hanging Tree    第2行:|Rune                第2行:|                    第2行:| <-- 相关\n1962                第3行:|No Exit             第3行:|Camarero            第3行:|                    第3行:| <-- 相关\n1970                第4行:|Tell Me That You Love Me, Junie Moon第4行:|Jesse               第4行:|                    \n1972                第5行:|The Outside Man     第5行:|Desk Clerk          第5行:|                    第5行:| <-- 相关\n1973                第6行:|The Candy Snatchers 第6行:|Avery               第6行:|                    第6行:| <-- 相关\n1976                第7行:|The Bad News Bears  第7行:|Bob Whitewood       第7行:|                    第7行:| <-- 相关\n1977                第8行:|I Never Promised You a Rose Garden第8行:|Jay Blake           第8行:|                    第8行:| <-- 相关\n1979                第9行:|Nightwing           第9行:|Roger Piggott       第9行:|                    第9行:| <-- 相关\n1979                第10行:|The Concorde ... Airport '79第10行:|Associate           第10行:|TV version, Uncredited第10行:| <-- 相关\n1980                第11行:|The Blues Brothers  第11行:|Father              第11行:|                    第11行:| <-- 相关\n1982                第12行:|Waltz Across Texas  第12行:|Bill Wrather        第12行:|                    第12行:| <-- 相关\n1985                第13行:|Mask                第13行:|Mr. Simms           第13行:|                    第13行:| <-- 角色'{'text': 'Mr. Simms', 'links': []}'的电影是'{'text': 'Mask', 'links': [{'text': 'Mask', 'wiki_title': 'Mask (1985 film)', 'url': 'https://en.wikipedia.org/wiki/Mask_(1985_film)'}]}'\n1988                第14行:|Clean and Sober     第14行:|Kramer              第14行:|                    \n1990                第15行:|Rocky V             第15行:|Doctor              第15行:|Uncredited          \n1991                第16行:|Guilty by Suspicion 第16行:|Darryl Zanuck       第16行:|                    \n\n【查找提示】:\n- 在表格中查找与问题相关的年份、电影名或角色名\n- 注意角色名和电影名的对应关系\n- 仔细阅读每一行的完整信息",
+          "title": "Ben Piazza",
+          "source": "multimodalqa_table"
+        },
+        {
+          "id": "8b5a40ca458a36fb64a1785297b66fd8",
+          "contents": "[图像ID: 8b5a40ca458a36fb64a1785297b66fd8]",
+          "title": "The Concorde ... Airport '79",
+          "source": "multimodalqa_image"
+        },
+        {
+          "id": "7869011075ff671da6fd10497b262609",
+          "contents": "[图像ID: 7869011075ff671da6fd10497b262609]",
+          "title": "Mask (1985 film)",
+          "source": "multimodalqa_image"
+        },
+        {
+          "id": "1c0d30d5776bb8ee954667c5277f4bf7",
+          "contents": "[图像ID: 1c0d30d5776bb8ee954667c5277f4bf7]",
+          "title": "I Never Promised You a Rose Garden (film)",
+          "source": "multimodalqa_image"
+        },
+        {
+          "id": "ddf8b52a8400deaf05940c5cad8169cd",
+          "contents": "[图像ID: ddf8b52a8400deaf05940c5cad8169cd]",
+          "title": "Tell Me That You Love Me, Junie Moon",
+          "source": "multimodalqa_image"
+        },
+        {
+          "id": "4b6d3e469ff8395a0f8c1a13c0422937",
+          "contents": "[图像ID: 4b6d3e469ff8395a0f8c1a13c0422937]",
+          "title": "The Candy Snatchers",
+          "source": "multimodalqa_image"
+        }
+      ],
+      "n_retrieved_docs": 11,
+      "n_fused_docs": 0,
+      "attributions": null,
+      "golden_answers": [
+        "Mask"
+      ],
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            {
+              "id": "aead4258a97326ae15999e86d3a8aca1",
+              "contents": "Thomas Peter Shadyac (born December 11, 1958) is an American director, screenwriter, producer, and author. Shadyac, was the youngest joke-writer ever for comedian Bob Hope, is widely known for writing and directing the comedies \"\", \"The Nutty Professor\", \"Liar Liar\", \"Patch Adams\", and \"Bruce Almighty\". In 2010, Shadyac departed from comedic work to write, direct, and narrate his documentary film \"I Am\", in which he explores his abandonment of a materialistic lifestyle following a bicycle accident three years earlier.",
+              "title": "Tom Shadyac",
+              "source": "multimodalqa_text"
+            },
+            {
+              "id": "6319f60b0a581f4aa4c74183fdf2f6fb",
+              "contents": "José Terrón Peñaranda (5 July 1939 – 12 May 2019) was a Spanish film actor. He played Guy Callaway in \"For a Few Dollars More\" (1965), and Thomas 'Shorty' Larson in \"The Good, the Bad and the Ugly\" (1966).",
+              "title": "José Terrón",
+              "source": "multimodalqa_text"
+            },
+            {
+              "id": "1f0601b3bb39619f144d58d254de662b",
+              "contents": "Robin Lord Taylor (born June 4, 1978) is an American film and television actor and director, known for his role as Oswald Cobblepot in Fox's acclaimed TV series, \"Gotham\", as well as \"Accepted\" (2006), \"Another Earth\" (2011), \"Would You Rather\" (2012) and \"\" (2019). Recently, he starred as Will Bettelheim in the Netflix thriller series \"You\".",
+              "title": "Robin Lord Taylor",
+              "source": "multimodalqa_text"
+            },
+            {
+              "id": "61e3d62a2215eb387f1119568011382d",
+              "contents": "Richard Ronald Fancy (born August 2, 1943) is an American actor and Comedian known for his long recurring role on \"Seinfeld\" as publisher Mr. Elliott Lippman, Elaine Benes's first major employer on the series. He appeared on the third and fourth seasons of \"It's Garry Shandling's Show\" as network boss Mr. Stravely. He also plays the Priest in the 1991 film \"What About Bob?\", and was Kevin Arnold's high school principal, Dr. Valenti, in the fourth and fifth seasons of \"The Wonder Years\". He also appeared in Oliver Stone's \"Nixon\" (1995) and \"Primal Force\" (1999).",
+              "title": "Richard Fancy",
+              "source": "multimodalqa_text"
+            },
+            {
+              "id": "47f35474f0826d44962f0ba854a42c70",
+              "contents": "William David Daniels (born March 31, 1927) is an American actor, known for his roles as Dr. Mark Craig in the NBC drama \"St. Elsewhere\", for which he won two Emmy Awards, and as Mr. Feeny in the ABC sitcom \"Boy Meets World\". He was president of the Screen Actors Guild from 1999 to 2001.",
+              "title": "William Daniels",
+              "source": "multimodalqa_text"
+            },
+            {
+              "id": "8513db80c11ea439ab11eba406ec00d9",
+              "contents": "【表格信息】Ben Piazza\n==================================================\n\nYear (年份)           |Title (电影名)         |Role (角色名)          |Notes               \n------------------------------------------------------------------------------------\n1957                第1行:|A Dangerous Age     第1行:|David               第1行:|                    \n1959                第2行:|The Hanging Tree    第2行:|Rune                第2行:|                    第2行:| <-- 相关\n1962                第3行:|No Exit             第3行:|Camarero            第3行:|                    第3行:| <-- 相关\n1970                第4行:|Tell Me That You Love Me, Junie Moon第4行:|Jesse               第4行:|                    \n1972                第5行:|The Outside Man     第5行:|Desk Clerk          第5行:|                    第5行:| <-- 相关\n1973                第6行:|The Candy Snatchers 第6行:|Avery               第6行:|                    第6行:| <-- 相关\n1976                第7行:|The Bad News Bears  第7行:|Bob Whitewood       第7行:|                    第7行:| <-- 相关\n1977                第8行:|I Never Promised You a Rose Garden第8行:|Jay Blake           第8行:|                    第8行:| <-- 相关\n1979                第9行:|Nightwing           第9行:|Roger Piggott       第9行:|                    第9行:| <-- 相关\n1979                第10行:|The Concorde ... Airport '79第10行:|Associate           第10行:|TV version, Uncredited第10行:| <-- 相关\n1980                第11行:|The Blues Brothers  第11行:|Father              第11行:|                    第11行:| <-- 相关\n1982                第12行:|Waltz Across Texas  第12行:|Bill Wrather        第12行:|                    第12行:| <-- 相关\n1985                第13行:|Mask                第13行:|Mr. Simms           第13行:|                    第13行:| <-- 角色'{'text': 'Mr. Simms', 'links': []}'的电影是'{'text': 'Mask', 'links': [{'text': 'Mask', 'wiki_title': 'Mask (1985 film)', 'url': 'https://en.wikipedia.org/wiki/Mask_(1985_film)'}]}'\n1988                第14行:|Clean and Sober     第14行:|Kramer              第14行:|                    \n1990                第15行:|Rocky V             第15行:|Doctor              第15行:|Uncredited          \n1991                第16行:|Guilty by Suspicion 第16行:|Darryl Zanuck       第16行:|                    \n\n【查找提示】:\n- 在表格中查找与问题相关的年份、电影名或角色名\n- 注意角色名和电影名的对应关系\n- 仔细阅读每一行的完整信息",
+              "title": "Ben Piazza",
+              "source": "multimodalqa_table"
+            },
+            {
+              "id": "8b5a40ca458a36fb64a1785297b66fd8",
+              "contents": "[图像ID: 8b5a40ca458a36fb64a1785297b66fd8]",
+              "title": "The Concorde ... Airport '79",
+              "source": "multimodalqa_image"
+            },
+            {
+              "id": "7869011075ff671da6fd10497b262609",
+              "contents": "[图像ID: 7869011075ff671da6fd10497b262609]",
+              "title": "Mask (1985 film)",
+              "source": "multimodalqa_image"
+            },
+            {
+              "id": "1c0d30d5776bb8ee954667c5277f4bf7",
+              "contents": "[图像ID: 1c0d30d5776bb8ee954667c5277f4bf7]",
+              "title": "I Never Promised You a Rose Garden (film)",
+              "source": "multimodalqa_image"
+            },
+            {
+              "id": "ddf8b52a8400deaf05940c5cad8169cd",
+              "contents": "[图像ID: ddf8b52a8400deaf05940c5cad8169cd]",
+              "title": "Tell Me That You Love Me, Junie Moon",
+              "source": "multimodalqa_image"
+            },
+            {
+              "id": "4b6d3e469ff8395a0f8c1a13c0422937",
+              "contents": "[图像ID: 4b6d3e469ff8395a0f8c1a13c0422937]",
+              "title": "The Candy Snatchers",
+              "source": "multimodalqa_image"
+            }
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.0,
+        "individual_scores": [
+          0.0
+        ],
+        "position_weights": [
+          0.3950839581232198,
+          0.23963053376235496,
+          0.14534326573017164,
+          0.08815514684810957,
+          0.05346879937484798,
+          0.03243046615886899,
+          0.019670072034127038,
+          0.011930501767454096,
+          0.0072362151077166705,
+          0.004388986323105916,
+          0.0026620547700231573
+        ]
+      },
+      "selected_modality": "both",
+      "modality_weights": {
+        "text": 0.5,
+        "image": 0.5
+      },
+      "query_enhanced": false,
+      "position_bias_stats": {
+        "original_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "reordered_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "position_weights": [
+          0.3950839581232198,
+          0.23963053376235496,
+          0.14534326573017164,
+          0.08815514684810957,
+          0.05346879937484798,
+          0.03243046615886899,
+          0.019670072034127038,
+          0.011930501767454096,
+          0.0072362151077166705,
+          0.004388986323105916,
+          0.0026620547700231573
+        ],
+        "base_position_weights": [
+          0.3950839581232199,
+          0.23963053376235502,
+          0.14534326573017167,
+          0.0881551468481096,
+          0.053468799374848,
+          0.032430466158869,
+          0.019670072034127045,
+          0.011930501767454098,
+          0.007236215107716672,
+          0.004388986323105918,
+          0.002662054770023158
+        ],
+        "uncertainty_modulation": 0.9538116470336914,
+        "total_uncertainty": 0.4076232940673828,
+        "original_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "combined_scores": [
+          0.035916723465420734,
+          0.021784593978197864,
+          0.013213024157168213,
+          0.008014104258846197,
+          0.004860799943123809,
+          0.0029482241962340153,
+          0.0017881883667225653,
+          0.0010845910697586942,
+          0.0006578377370591715,
+          0.0003989987566423651,
+          0.00024200497909081424
+        ],
+        "reordering_magnitude": 0.0,
+        "top1_changed": 0
+      },
+      "ground_truth": "Mask"
+    }
+  ],
+  "SAM-RAG": [
+    {
+      "question": "For which film did Ben Piazza play the role of Mr. Simms?",
+      "answer": "mask",
+      "retrieved_docs": [
+        {
+          "title": "Ben Piazza",
+          "text": "标题: Ben Piazza\nYear | Title | Role | Notes\n--------------------------------------------------\n1957 | A Dangerous Age | David | \n1959 | The Hanging Tree | Rune | \n1962 | No Exit | Camarero | \n1970 | Tell Me That You Love Me, Junie Moon | Jesse | \n1972 | The Outside Man | Desk Clerk | \n1973 | The Candy Snatchers | Avery | \n1976 | The Bad News Bears | Bob Whitewood | \n1977 | I Never Promised You a Rose Garden | Jay Blake | \n1979 | Nightwing | Roger Piggott | \n1979 | The Concorde ... Airport '79 | Associate | TV version, Uncredited\n1980 | The Blues Brothers | Father | \n1982 | Waltz Across Texas | Bill Wrather | \n1985 | Mask | Mr. Simms | \n1988 | Clean and Sober | Kramer | \n1990 | Rocky V | Doctor | Uncredited\n1991 | Guilty by Suspicion | Darryl Zanuck | ",
+          "contents": "Ben Piazza\n\n标题: Ben Piazza\nYear | Title | Role | Notes\n--------------------------------------------------\n1957 | A Dangerous Age | David | \n1959 | The Hanging Tree | Rune | \n1962 | No Exit | Camarero | \n1970 | Tell Me That You Love Me, Junie Moon | Jesse | \n1972 | The Outside Man | Desk Clerk | \n1973 | The Candy Snatchers | Avery | \n1976 | The Bad News Bears | Bob Whitewood | \n1977 | I Never Promised You a Rose Garden | Jay Blake | \n1979 | Nightwing | Roger Piggott | \n1979 | The Concorde ... Airport '79 | Associate | TV version, Uncredited\n1980 | The Blues Brothers | Father | \n1982 | Waltz Across Texas | Bill Wrather | \n1985 | Mask | Mr. Simms | \n1988 | Clean and Sober | Kramer | \n1990 | Rocky V | Doctor | Uncredited\n1991 | Guilty by Suspicion | Darryl Zanuck | "
+        },
+        {
+          "title": "Rocky Balboa (film)",
+          "text": "Rocky Balboa is a 2006 American sports drama film written, directed by, and starring Sylvester Stallone. The film, which features Stallone as underdog boxer Rocky Balboa, is the sequel to the 1990 film \"Rocky V\", and the sixth installment in the \"Rocky\" series that began with the Academy Award-winning \"Rocky\" thirty years earlier in 1976. The film portrays an aging Balboa in retirement, a widower living in Philadelphia, and the owner and operator of a local Italian restaurant called \"Adrian's,\" named after his late wife.",
+          "contents": "Rocky Balboa (film)\n\nRocky Balboa is a 2006 American sports drama film written, directed by, and starring Sylvester Stallone. The film, which features Stallone as underdog boxer Rocky Balboa, is the sequel to the 1990 film \"Rocky V\", and the sixth installment in the \"Rocky\" series that began with the Academy Award-winning \"Rocky\" thirty years earlier in 1976. The film portrays an aging Balboa in retirement, a widower living in Philadelphia, and the owner and operator of a local Italian restaurant called \"Adrian's,\" named after his late wife."
+        },
+        {
+          "title": "Rocky",
+          "text": "Rocky is a 1976 American sports drama film directed by John G. Avildsen, written by and starring Sylvester Stallone. It tells the rags to riches American Dream story of Rocky Balboa, an uneducated, but kind-hearted working class Italian-American boxer, working as a debt collector for a loan shark in the slums of Philadelphia. Rocky, a small-time club fighter, gets a shot at the world heavyweight championship. The film also stars Talia Shire as Adrian, Burt Young as Adrian's brother Paulie, Burgess Meredith as Rocky's trainer Mickey Goldmill, and Carl Weathers as the reigning champion, Apollo Creed.",
+          "contents": "Rocky\n\nRocky is a 1976 American sports drama film directed by John G. Avildsen, written by and starring Sylvester Stallone. It tells the rags to riches American Dream story of Rocky Balboa, an uneducated, but kind-hearted working class Italian-American boxer, working as a debt collector for a loan shark in the slums of Philadelphia. Rocky, a small-time club fighter, gets a shot at the world heavyweight championship. The film also stars Talia Shire as Adrian, Burt Young as Adrian's brother Paulie, Burgess Meredith as Rocky's trainer Mickey Goldmill, and Carl Weathers as the reigning champion, Apollo Creed."
+        },
+        {
+          "title": "Grown Ups (film)",
+          "text": "Grown Ups is a 2010 American comedy film directed by Dennis Dugan. It stars Adam Sandler, Kevin James, Chris Rock, David Spade, and Rob Schneider as five lifelong friends who reunite for a July Fourth weekend with their families after learning about the sudden death of their middle school basketball coach.",
+          "contents": "Grown Ups (film)\n\nGrown Ups is a 2010 American comedy film directed by Dennis Dugan. It stars Adam Sandler, Kevin James, Chris Rock, David Spade, and Rob Schneider as five lifelong friends who reunite for a July Fourth weekend with their families after learning about the sudden death of their middle school basketball coach."
+        },
+        {
+          "title": "Grown Ups (film)",
+          "text": "Grown Ups is a 2010 American comedy film directed by Dennis Dugan and stars Adam Sandler, Kevin James, Chris Rock, David Spade and Rob Schneider. It depicts five friends of a high school basketball team reuniting for a holiday weekend after learning of the passing of their coach.",
+          "contents": "Grown Ups (film)\n\nGrown Ups is a 2010 American comedy film directed by Dennis Dugan and stars Adam Sandler, Kevin James, Chris Rock, David Spade and Rob Schneider. It depicts five friends of a high school basketball team reuniting for a holiday weekend after learning of the passing of their coach."
+        }
+      ],
+      "retrieved": true,
+      "memory_size": 1,
+      "golden_answers": [
+        "Mask"
+      ],
+      "correct": true,
+      "ground_truth": "Mask"
+    }
+  ],
+  "mR2AG": [
+    {
+      "question": "For which film did Ben Piazza play the role of Mr. Simms?",
+      "answer": "concorde",
+      "retrieved_docs": [
+        {
+          "contents": "Ben Piazza\n\n标题: Ben Piazza\nYear | Title | Role | Notes\n--------------------------------------------------\n1957 | A Dangerous Age | David | \n1959 | The Hanging Tree | Rune | \n1962 | No Exit | Camarero | \n1970 | Tell Me That You Love Me, Junie Moon | Jesse | \n1972 | The Outside Man | Desk Clerk | \n1973 | The Candy Snatchers | Avery | \n1976 | The Bad News Bears | Bob Whitewood | \n1977 | I Never Promised You a Rose Garden | Jay Blake | \n1979 | Nightwing | Roger Piggott | \n1979 | The Concorde ... Airport '79 | Associate | TV version, Uncredited\n1980 | The Blues Brothers | Father | \n1982 | Waltz Across Texas | Bill Wrather | \n1985 | Mask | Mr. Simms | \n1988 | Clean and Sober | Kramer | \n1990 | Rocky V | Doctor | Uncredited\n1991 | Guilty by Suspicion | Darryl Zanuck | ",
+          "id": "mr2ag_doc_0",
+          "title": "",
+          "source": "mr2ag_retriever"
+        },
+        {
+          "contents": "Rocky Balboa (film)\n\nRocky Balboa is a 2006 American sports drama film written, directed by, and starring Sylvester Stallone. The film, which features Stallone as underdog boxer Rocky Balboa, is the sequel to the 1990 film \"Rocky V\", and the sixth installment in the \"Rocky\" series that began with the Academy Award-winning \"Rocky\" thirty years earlier in 1976. The film portrays an aging Balboa in retirement, a widower living in Philadelphia, and the owner and operator of a local Italian restaurant called \"Adrian's,\" named after his late wife.",
+          "id": "mr2ag_doc_1",
+          "title": "",
+          "source": "mr2ag_retriever"
+        },
+        {
+          "contents": "Rocky\n\nRocky is a 1976 American sports drama film directed by John G. Avildsen, written by and starring Sylvester Stallone. It tells the rags to riches American Dream story of Rocky Balboa, an uneducated, but kind-hearted working class Italian-American boxer, working as a debt collector for a loan shark in the slums of Philadelphia. Rocky, a small-time club fighter, gets a shot at the world heavyweight championship. The film also stars Talia Shire as Adrian, Burt Young as Adrian's brother Paulie, Burgess Meredith as Rocky's trainer Mickey Goldmill, and Carl Weathers as the reigning champion, Apollo Creed.",
+          "id": "mr2ag_doc_2",
+          "title": "",
+          "source": "mr2ag_retriever"
+        },
+        {
+          "contents": "Grown Ups (film)\n\nGrown Ups is a 2010 American comedy film directed by Dennis Dugan. It stars Adam Sandler, Kevin James, Chris Rock, David Spade, and Rob Schneider as five lifelong friends who reunite for a July Fourth weekend with their families after learning about the sudden death of their middle school basketball coach.",
+          "id": "mr2ag_doc_3",
+          "title": "",
+          "source": "mr2ag_retriever"
+        },
+        {
+          "contents": "Grown Ups (film)\n\nGrown Ups is a 2010 American comedy film directed by Dennis Dugan and stars Adam Sandler, Kevin James, Chris Rock, David Spade and Rob Schneider. It depicts five friends of a high school basketball team reuniting for a holiday weekend after learning of the passing of their coach.",
+          "id": "mr2ag_doc_4",
+          "title": "",
+          "source": "mr2ag_retriever"
+        }
+      ],
+      "retrieved": true,
+      "retrieval_decision": "Retrieval",
+      "total_paragraphs": 14,
+      "relevant_paragraphs": 1,
+      "golden_answers": [
+        "Mask"
+      ],
+      "correct": false,
+      "ground_truth": "Mask"
+    }
+  ],
+  "VisRAG": [
+    {
+      "question": "For which film did Ben Piazza play the role of Mr. Simms?",
+      "answer": "mask",
+      "retrieved_docs": [
+        {
+          "title": "Ben Piazza",
+          "text": "标题: Ben Piazza\nYear | Title | Role | Notes\n--------------------------------------------------\n1957 | A Dangerous Age | David | \n1959 | The Hanging Tree | Rune | \n1962 | No Exit | Camarero | \n1970 | Tell Me That You Love Me, Junie Moon | Jesse | \n1972 | The Outside Man | Desk Clerk | \n1973 | The Candy Snatchers | Avery | \n1976 | The Bad News Bears | Bob Whitewood | \n1977 | I Never Promised You a Rose Garden | Jay Blake | \n1979 | Nightwing | Roger Piggott | \n1979 | The Concorde ... Airport '79 | Associate | TV version, Uncredited\n1980 | The Blues Brothers | Father | \n1982 | Waltz Across Texas | Bill Wrather | \n1985 | Mask | Mr. Simms | \n1988 | Clean and Sober | Kramer | \n1990 | Rocky V | Doctor | Uncredited\n1991 | Guilty by Suspicion | Darryl Zanuck | ",
+          "contents": "Ben Piazza\n\n标题: Ben Piazza\nYear | Title | Role | Notes\n--------------------------------------------------\n1957 | A Dangerous Age | David | \n1959 | The Hanging Tree | Rune | \n1962 | No Exit | Camarero | \n1970 | Tell Me That You Love Me, Junie Moon | Jesse | \n1972 | The Outside Man | Desk Clerk | \n1973 | The Candy Snatchers | Avery | \n1976 | The Bad News Bears | Bob Whitewood | \n1977 | I Never Promised You a Rose Garden | Jay Blake | \n1979 | Nightwing | Roger Piggott | \n1979 | The Concorde ... Airport '79 | Associate | TV version, Uncredited\n1980 | The Blues Brothers | Father | \n1982 | Waltz Across Texas | Bill Wrather | \n1985 | Mask | Mr. Simms | \n1988 | Clean and Sober | Kramer | \n1990 | Rocky V | Doctor | Uncredited\n1991 | Guilty by Suspicion | Darryl Zanuck | "
+        },
+        {
+          "title": "Ben Piazza",
+          "text": "Piazza made his film debut in Sidney J. Furie's Canadian film \"A Dangerous Age\" (1959) followed by his Hollywood debut in \"The Hanging Tree\" (1959). Though he signed contracts with Warner Bros. and Gary Cooper's production companies for five years he didn't make another film until \"No Exit\" (1962).",
+          "contents": "Ben Piazza\n\nPiazza made his film debut in Sidney J. Furie's Canadian film \"A Dangerous Age\" (1959) followed by his Hollywood debut in \"The Hanging Tree\" (1959). Though he signed contracts with Warner Bros. and Gary Cooper's production companies for five years he didn't make another film until \"No Exit\" (1962)."
+        },
+        {
+          "title": "Monsters, Inc.",
+          "text": "Monsters, Inc. is a 2001 American computer-animated comedy film produced by Pixar Animation Studios and distributed by Walt Disney Pictures. Featuring the voices of John Goodman, Billy Crystal, Steve Buscemi, James Coburn, and Jennifer Tilly, the film was directed by Pete Docter in his directorial debut, and executive produced by John Lasseter and Andrew Stanton. The film centers on two monsters – James P. \"Sulley\" Sullivan and his one-eyed partner and best friend Mike Wazowski – employed at the titular energy-producing factory Monsters, Inc, which generates power by scaring human children. The monster world believes that children are toxic, and when a small child enters the factory, Sulley and Mike must return her home before it is too late.",
+          "contents": "Monsters, Inc.\n\nMonsters, Inc. is a 2001 American computer-animated comedy film produced by Pixar Animation Studios and distributed by Walt Disney Pictures. Featuring the voices of John Goodman, Billy Crystal, Steve Buscemi, James Coburn, and Jennifer Tilly, the film was directed by Pete Docter in his directorial debut, and executive produced by John Lasseter and Andrew Stanton. The film centers on two monsters – James P. \"Sulley\" Sullivan and his one-eyed partner and best friend Mike Wazowski – employed at the titular energy-producing factory Monsters, Inc, which generates power by scaring human children. The monster world believes that children are toxic, and when a small child enters the factory, Sulley and Mike must return her home before it is too late."
+        },
+        {
+          "title": "Rocky Balboa (film)",
+          "text": "Rocky Balboa is a 2006 American sports drama film written, directed by, and starring Sylvester Stallone. The film, which features Stallone as underdog boxer Rocky Balboa, is the sequel to the 1990 film \"Rocky V\", and the sixth installment in the \"Rocky\" series that began with the Academy Award-winning \"Rocky\" thirty years earlier in 1976. The film portrays an aging Balboa in retirement, a widower living in Philadelphia, and the owner and operator of a local Italian restaurant called \"Adrian's,\" named after his late wife.",
+          "contents": "Rocky Balboa (film)\n\nRocky Balboa is a 2006 American sports drama film written, directed by, and starring Sylvester Stallone. The film, which features Stallone as underdog boxer Rocky Balboa, is the sequel to the 1990 film \"Rocky V\", and the sixth installment in the \"Rocky\" series that began with the Academy Award-winning \"Rocky\" thirty years earlier in 1976. The film portrays an aging Balboa in retirement, a widower living in Philadelphia, and the owner and operator of a local Italian restaurant called \"Adrian's,\" named after his late wife."
+        },
+        {
+          "title": "Creed (film)",
+          "text": "Creed is a 2015 American sports drama film directed by Ryan Coogler and written by Coogler and Aaron Covington. Both a spin-off and sequel in the \"Rocky\" film series, Michael B. Jordan stars as Adonis Johnson Creed, Apollo Creed's son, with Sylvester Stallone reprising the role of Rocky Balboa. It also features Tessa Thompson, Phylicia Rashad, Tony Bellew, and Graham McTavish. The film reunites Jordan with \"Fruitvale Station\" writer-director Coogler, as well as Wood Harris, with whom Jordan had worked on \"The Wire\".",
+          "contents": "Creed (film)\n\nCreed is a 2015 American sports drama film directed by Ryan Coogler and written by Coogler and Aaron Covington. Both a spin-off and sequel in the \"Rocky\" film series, Michael B. Jordan stars as Adonis Johnson Creed, Apollo Creed's son, with Sylvester Stallone reprising the role of Rocky Balboa. It also features Tessa Thompson, Phylicia Rashad, Tony Bellew, and Graham McTavish. The film reunites Jordan with \"Fruitvale Station\" writer-director Coogler, as well as Wood Harris, with whom Jordan had worked on \"The Wire\"."
+        }
+      ],
+      "reranked_docs": [
+        {
+          "title": "Ben Piazza",
+          "text": "标题: Ben Piazza\nYear | Title | Role | Notes\n--------------------------------------------------\n1957 | A Dangerous Age | David | \n1959 | The Hanging Tree | Rune | \n1962 | No Exit | Camarero | \n1970 | Tell Me That You Love Me, Junie Moon | Jesse | \n1972 | The Outside Man | Desk Clerk | \n1973 | The Candy Snatchers | Avery | \n1976 | The Bad News Bears | Bob Whitewood | \n1977 | I Never Promised You a Rose Garden | Jay Blake | \n1979 | Nightwing | Roger Piggott | \n1979 | The Concorde ... Airport '79 | Associate | TV version, Uncredited\n1980 | The Blues Brothers | Father | \n1982 | Waltz Across Texas | Bill Wrather | \n1985 | Mask | Mr. Simms | \n1988 | Clean and Sober | Kramer | \n1990 | Rocky V | Doctor | Uncredited\n1991 | Guilty by Suspicion | Darryl Zanuck | ",
+          "contents": "Ben Piazza\n\n标题: Ben Piazza\nYear | Title | Role | Notes\n--------------------------------------------------\n1957 | A Dangerous Age | David | \n1959 | The Hanging Tree | Rune | \n1962 | No Exit | Camarero | \n1970 | Tell Me That You Love Me, Junie Moon | Jesse | \n1972 | The Outside Man | Desk Clerk | \n1973 | The Candy Snatchers | Avery | \n1976 | The Bad News Bears | Bob Whitewood | \n1977 | I Never Promised You a Rose Garden | Jay Blake | \n1979 | Nightwing | Roger Piggott | \n1979 | The Concorde ... Airport '79 | Associate | TV version, Uncredited\n1980 | The Blues Brothers | Father | \n1982 | Waltz Across Texas | Bill Wrather | \n1985 | Mask | Mr. Simms | \n1988 | Clean and Sober | Kramer | \n1990 | Rocky V | Doctor | Uncredited\n1991 | Guilty by Suspicion | Darryl Zanuck | "
+        },
+        {
+          "title": "Ben Piazza",
+          "text": "Piazza made his film debut in Sidney J. Furie's Canadian film \"A Dangerous Age\" (1959) followed by his Hollywood debut in \"The Hanging Tree\" (1959). Though he signed contracts with Warner Bros. and Gary Cooper's production companies for five years he didn't make another film until \"No Exit\" (1962).",
+          "contents": "Ben Piazza\n\nPiazza made his film debut in Sidney J. Furie's Canadian film \"A Dangerous Age\" (1959) followed by his Hollywood debut in \"The Hanging Tree\" (1959). Though he signed contracts with Warner Bros. and Gary Cooper's production companies for five years he didn't make another film until \"No Exit\" (1962)."
+        },
+        {
+          "title": "Monsters, Inc.",
+          "text": "Monsters, Inc. is a 2001 American computer-animated comedy film produced by Pixar Animation Studios and distributed by Walt Disney Pictures. Featuring the voices of John Goodman, Billy Crystal, Steve Buscemi, James Coburn, and Jennifer Tilly, the film was directed by Pete Docter in his directorial debut, and executive produced by John Lasseter and Andrew Stanton. The film centers on two monsters – James P. \"Sulley\" Sullivan and his one-eyed partner and best friend Mike Wazowski – employed at the titular energy-producing factory Monsters, Inc, which generates power by scaring human children. The monster world believes that children are toxic, and when a small child enters the factory, Sulley and Mike must return her home before it is too late.",
+          "contents": "Monsters, Inc.\n\nMonsters, Inc. is a 2001 American computer-animated comedy film produced by Pixar Animation Studios and distributed by Walt Disney Pictures. Featuring the voices of John Goodman, Billy Crystal, Steve Buscemi, James Coburn, and Jennifer Tilly, the film was directed by Pete Docter in his directorial debut, and executive produced by John Lasseter and Andrew Stanton. The film centers on two monsters – James P. \"Sulley\" Sullivan and his one-eyed partner and best friend Mike Wazowski – employed at the titular energy-producing factory Monsters, Inc, which generates power by scaring human children. The monster world believes that children are toxic, and when a small child enters the factory, Sulley and Mike must return her home before it is too late."
+        },
+        {
+          "title": "Rocky Balboa (film)",
+          "text": "Rocky Balboa is a 2006 American sports drama film written, directed by, and starring Sylvester Stallone. The film, which features Stallone as underdog boxer Rocky Balboa, is the sequel to the 1990 film \"Rocky V\", and the sixth installment in the \"Rocky\" series that began with the Academy Award-winning \"Rocky\" thirty years earlier in 1976. The film portrays an aging Balboa in retirement, a widower living in Philadelphia, and the owner and operator of a local Italian restaurant called \"Adrian's,\" named after his late wife.",
+          "contents": "Rocky Balboa (film)\n\nRocky Balboa is a 2006 American sports drama film written, directed by, and starring Sylvester Stallone. The film, which features Stallone as underdog boxer Rocky Balboa, is the sequel to the 1990 film \"Rocky V\", and the sixth installment in the \"Rocky\" series that began with the Academy Award-winning \"Rocky\" thirty years earlier in 1976. The film portrays an aging Balboa in retirement, a widower living in Philadelphia, and the owner and operator of a local Italian restaurant called \"Adrian's,\" named after his late wife."
+        },
+        {
+          "title": "Creed (film)",
+          "text": "Creed is a 2015 American sports drama film directed by Ryan Coogler and written by Coogler and Aaron Covington. Both a spin-off and sequel in the \"Rocky\" film series, Michael B. Jordan stars as Adonis Johnson Creed, Apollo Creed's son, with Sylvester Stallone reprising the role of Rocky Balboa. It also features Tessa Thompson, Phylicia Rashad, Tony Bellew, and Graham McTavish. The film reunites Jordan with \"Fruitvale Station\" writer-director Coogler, as well as Wood Harris, with whom Jordan had worked on \"The Wire\".",
+          "contents": "Creed (film)\n\nCreed is a 2015 American sports drama film directed by Ryan Coogler and written by Coogler and Aaron Covington. Both a spin-off and sequel in the \"Rocky\" film series, Michael B. Jordan stars as Adonis Johnson Creed, Apollo Creed's son, with Sylvester Stallone reprising the role of Rocky Balboa. It also features Tessa Thompson, Phylicia Rashad, Tony Bellew, and Graham McTavish. The film reunites Jordan with \"Fruitvale Station\" writer-director Coogler, as well as Wood Harris, with whom Jordan had worked on \"The Wire\"."
+        }
+      ],
+      "retrieved": true,
+      "reranker_used": true,
+      "golden_answers": [
+        "Mask"
+      ],
+      "correct": true,
+      "ground_truth": "Mask"
+    }
+  ],
+  "ViDoRAG": [
+    {
+      "answer": "mask",
+      "raw_prediction": "mask",
+      "retrieved_docs": [
+        {
+          "contents": "Ben Piazza\n\n标题: Ben Piazza\nYear | Title | Role | Notes\n--------------------------------------------------\n1957 | A Dangerous Age | David | \n1959 | The Hanging Tree | Rune | \n1962 | No Exit | Camarero | \n1970 | Tell Me That You Love Me, Junie Moon | Jesse | \n1972 | The Outside Man | Desk Clerk | \n1973 | The Candy Snatchers | Avery | \n1976 | The Bad News Bears | Bob Whitewood | \n1977 | I Never Promised You a Rose Garden | Jay Blake | \n1979 | Nightwing | Roger Piggott | \n1979 | The Concorde ... Airport '79 | Associate | TV version, Uncredited\n1980 | The Blues Brothers | Father | \n1982 | Waltz Across Texas | Bill Wrather | \n1985 | Mask | Mr. Simms | \n1988 | Clean and Sober | Kramer | \n1990 | Rocky V | Doctor | Uncredited\n1991 | Guilty by Suspicion | Darryl Zanuck | ",
+          "id": "vidorag_doc_0",
+          "title": "",
+          "source": "vidorag_retriever"
+        },
+        {
+          "contents": "Rocky Balboa (film)\n\nRocky Balboa is a 2006 American sports drama film written, directed by, and starring Sylvester Stallone. The film, which features Stallone as underdog boxer Rocky Balboa, is the sequel to the 1990 film \"Rocky V\", and the sixth installment in the \"Rocky\" series that began with the Academy Award-winning \"Rocky\" thirty years earlier in 1976. The film portrays an aging Balboa in retirement, a widower living in Philadelphia, and the owner and operator of a local Italian restaurant called \"Adrian's,\" named after his late wife.",
+          "id": "vidorag_doc_1",
+          "title": "",
+          "source": "vidorag_retriever"
+        },
+        {
+          "contents": "Rocky\n\nRocky is a 1976 American sports drama film directed by John G. Avildsen, written by and starring Sylvester Stallone. It tells the rags to riches American Dream story of Rocky Balboa, an uneducated, but kind-hearted working class Italian-American boxer, working as a debt collector for a loan shark in the slums of Philadelphia. Rocky, a small-time club fighter, gets a shot at the world heavyweight championship. The film also stars Talia Shire as Adrian, Burt Young as Adrian's brother Paulie, Burgess Meredith as Rocky's trainer Mickey Goldmill, and Carl Weathers as the reigning champion, Apollo Creed.",
+          "id": "vidorag_doc_2",
+          "title": "",
+          "source": "vidorag_retriever"
+        },
+        {
+          "contents": "Grown Ups (film)\n\nGrown Ups is a 2010 American comedy film directed by Dennis Dugan. It stars Adam Sandler, Kevin James, Chris Rock, David Spade, and Rob Schneider as five lifelong friends who reunite for a July Fourth weekend with their families after learning about the sudden death of their middle school basketball coach.",
+          "id": "vidorag_doc_3",
+          "title": "",
+          "source": "vidorag_retriever"
+        },
+        {
+          "contents": "Grown Ups (film)\n\nGrown Ups is a 2010 American comedy film directed by Dennis Dugan and stars Adam Sandler, Kevin James, Chris Rock, David Spade and Rob Schneider. It depicts five friends of a high school basketball team reuniting for a holiday weekend after learning of the passing of their coach.",
+          "id": "vidorag_doc_4",
+          "title": "",
+          "source": "vidorag_retriever"
+        }
+      ],
+      "used_retrieval": true,
+      "reasoning": "ViDoRAG processed 5 documents from initial retrieval of 5 documents",
+      "method": "ViDoRAG",
+      "initial_retrieved": 5,
+      "selected_retrieved": 5,
+      "golden_answers": [
+        "Mask"
+      ],
+      "question": "For which film did Ben Piazza play the role of Mr. Simms?",
+      "retrieved": true,
+      "correct": true,
+      "retrieval_result": [
+        {
+          "retrieved_docs": [
+            {
+              "contents": "Ben Piazza\n\n标题: Ben Piazza\nYear | Title | Role | Notes\n--------------------------------------------------\n1957 | A Dangerous Age | David | \n1959 | The Hanging Tree | Rune | \n1962 | No Exit | Camarero | \n1970 | Tell Me That You Love Me, Junie Moon | Jesse | \n1972 | The Outside Man | Desk Clerk | \n1973 | The Candy Snatchers | Avery | \n1976 | The Bad News Bears | Bob Whitewood | \n1977 | I Never Promised You a Rose Garden | Jay Blake | \n1979 | Nightwing | Roger Piggott | \n1979 | The Concorde ... Airport '79 | Associate | TV version, Uncredited\n1980 | The Blues Brothers | Father | \n1982 | Waltz Across Texas | Bill Wrather | \n1985 | Mask | Mr. Simms | \n1988 | Clean and Sober | Kramer | \n1990 | Rocky V | Doctor | Uncredited\n1991 | Guilty by Suspicion | Darryl Zanuck | ",
+              "id": "vidorag_doc_0",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Rocky Balboa (film)\n\nRocky Balboa is a 2006 American sports drama film written, directed by, and starring Sylvester Stallone. The film, which features Stallone as underdog boxer Rocky Balboa, is the sequel to the 1990 film \"Rocky V\", and the sixth installment in the \"Rocky\" series that began with the Academy Award-winning \"Rocky\" thirty years earlier in 1976. The film portrays an aging Balboa in retirement, a widower living in Philadelphia, and the owner and operator of a local Italian restaurant called \"Adrian's,\" named after his late wife.",
+              "id": "vidorag_doc_1",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Rocky\n\nRocky is a 1976 American sports drama film directed by John G. Avildsen, written by and starring Sylvester Stallone. It tells the rags to riches American Dream story of Rocky Balboa, an uneducated, but kind-hearted working class Italian-American boxer, working as a debt collector for a loan shark in the slums of Philadelphia. Rocky, a small-time club fighter, gets a shot at the world heavyweight championship. The film also stars Talia Shire as Adrian, Burt Young as Adrian's brother Paulie, Burgess Meredith as Rocky's trainer Mickey Goldmill, and Carl Weathers as the reigning champion, Apollo Creed.",
+              "id": "vidorag_doc_2",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Grown Ups (film)\n\nGrown Ups is a 2010 American comedy film directed by Dennis Dugan. It stars Adam Sandler, Kevin James, Chris Rock, David Spade, and Rob Schneider as five lifelong friends who reunite for a July Fourth weekend with their families after learning about the sudden death of their middle school basketball coach.",
+              "id": "vidorag_doc_3",
+              "title": "",
+              "source": "vidorag_retriever"
+            },
+            {
+              "contents": "Grown Ups (film)\n\nGrown Ups is a 2010 American comedy film directed by Dennis Dugan and stars Adam Sandler, Kevin James, Chris Rock, David Spade and Rob Schneider. It depicts five friends of a high school basketball team reuniting for a holiday weekend after learning of the passing of their coach.",
+              "id": "vidorag_doc_4",
+              "title": "",
+              "source": "vidorag_retriever"
+            }
+          ],
+          "retrieval_scores": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retrieval_used": true
+        }
+      ],
+      "position_bias_results": {
+        "average_bias": 0.3,
+        "individual_scores": [
+          0.3
+        ],
+        "position_weights": [
+          0.4,
+          0.3,
+          0.2,
+          0.07,
+          0.03
+        ]
+      },
+      "pipeline_type": "vidorag",
+      "ground_truth": "Mask"
+    }
+  ],
+  "RagVL": [
+    {
+      "question": "For which film did Ben Piazza play the role of Mr. Simms?",
+      "answer": "concorde airport '79",
+      "retrieved_docs": [],
+      "retrieved": false,
+      "used_reranking": false,
+      "ground_truth": "Mask"
+    }
+  ],
+  "MuRAG": [
+    {
+      "question": "For which film did Ben Piazza play the role of Mr. Simms?",
+      "answer": "grown ups",
+      "sub_answers": [
+        "outside man",
+        "rocky balboa",
+        "rocky",
+        "grown ups",
+        "grown ups"
+      ],
+      "retrieved_docs": [
+        {
+          "title": "Ben Piazza",
+          "text": "标题: Ben Piazza\nYear | Title | Role | Notes\n--------------------------------------------------\n1957 | A Dangerous Age | David | \n1959 | The Hanging Tree | Rune | \n1962 | No Exit | Camarero | \n1970 | Tell Me That You Love Me, Junie Moon | Jesse | \n1972 | The Outside Man | Desk Clerk | \n1973 | The Candy Snatchers | Avery | \n1976 | The Bad News Bears | Bob Whitewood | \n1977 | I Never Promised You a Rose Garden | Jay Blake | \n1979 | Nightwing | Roger Piggott | \n1979 | The Concorde ... Airport '79 | Associate | TV version, Uncredited\n1980 | The Blues Brothers | Father | \n1982 | Waltz Across Texas | Bill Wrather | \n1985 | Mask | Mr. Simms | \n1988 | Clean and Sober | Kramer | \n1990 | Rocky V | Doctor | Uncredited\n1991 | Guilty by Suspicion | Darryl Zanuck | ",
+          "contents": "Ben Piazza\n\n标题: Ben Piazza\nYear | Title | Role | Notes\n--------------------------------------------------\n1957 | A Dangerous Age | David | \n1959 | The Hanging Tree | Rune | \n1962 | No Exit | Camarero | \n1970 | Tell Me That You Love Me, Junie Moon | Jesse | \n1972 | The Outside Man | Desk Clerk | \n1973 | The Candy Snatchers | Avery | \n1976 | The Bad News Bears | Bob Whitewood | \n1977 | I Never Promised You a Rose Garden | Jay Blake | \n1979 | Nightwing | Roger Piggott | \n1979 | The Concorde ... Airport '79 | Associate | TV version, Uncredited\n1980 | The Blues Brothers | Father | \n1982 | Waltz Across Texas | Bill Wrather | \n1985 | Mask | Mr. Simms | \n1988 | Clean and Sober | Kramer | \n1990 | Rocky V | Doctor | Uncredited\n1991 | Guilty by Suspicion | Darryl Zanuck | "
+        },
+        {
+          "title": "Rocky Balboa (film)",
+          "text": "Rocky Balboa is a 2006 American sports drama film written, directed by, and starring Sylvester Stallone. The film, which features Stallone as underdog boxer Rocky Balboa, is the sequel to the 1990 film \"Rocky V\", and the sixth installment in the \"Rocky\" series that began with the Academy Award-winning \"Rocky\" thirty years earlier in 1976. The film portrays an aging Balboa in retirement, a widower living in Philadelphia, and the owner and operator of a local Italian restaurant called \"Adrian's,\" named after his late wife.",
+          "contents": "Rocky Balboa (film)\n\nRocky Balboa is a 2006 American sports drama film written, directed by, and starring Sylvester Stallone. The film, which features Stallone as underdog boxer Rocky Balboa, is the sequel to the 1990 film \"Rocky V\", and the sixth installment in the \"Rocky\" series that began with the Academy Award-winning \"Rocky\" thirty years earlier in 1976. The film portrays an aging Balboa in retirement, a widower living in Philadelphia, and the owner and operator of a local Italian restaurant called \"Adrian's,\" named after his late wife."
+        },
+        {
+          "title": "Rocky",
+          "text": "Rocky is a 1976 American sports drama film directed by John G. Avildsen, written by and starring Sylvester Stallone. It tells the rags to riches American Dream story of Rocky Balboa, an uneducated, but kind-hearted working class Italian-American boxer, working as a debt collector for a loan shark in the slums of Philadelphia. Rocky, a small-time club fighter, gets a shot at the world heavyweight championship. The film also stars Talia Shire as Adrian, Burt Young as Adrian's brother Paulie, Burgess Meredith as Rocky's trainer Mickey Goldmill, and Carl Weathers as the reigning champion, Apollo Creed.",
+          "contents": "Rocky\n\nRocky is a 1976 American sports drama film directed by John G. Avildsen, written by and starring Sylvester Stallone. It tells the rags to riches American Dream story of Rocky Balboa, an uneducated, but kind-hearted working class Italian-American boxer, working as a debt collector for a loan shark in the slums of Philadelphia. Rocky, a small-time club fighter, gets a shot at the world heavyweight championship. The film also stars Talia Shire as Adrian, Burt Young as Adrian's brother Paulie, Burgess Meredith as Rocky's trainer Mickey Goldmill, and Carl Weathers as the reigning champion, Apollo Creed."
+        },
+        {
+          "title": "Grown Ups (film)",
+          "text": "Grown Ups is a 2010 American comedy film directed by Dennis Dugan. It stars Adam Sandler, Kevin James, Chris Rock, David Spade, and Rob Schneider as five lifelong friends who reunite for a July Fourth weekend with their families after learning about the sudden death of their middle school basketball coach.",
+          "contents": "Grown Ups (film)\n\nGrown Ups is a 2010 American comedy film directed by Dennis Dugan. It stars Adam Sandler, Kevin James, Chris Rock, David Spade, and Rob Schneider as five lifelong friends who reunite for a July Fourth weekend with their families after learning about the sudden death of their middle school basketball coach."
+        },
+        {
+          "title": "Grown Ups (film)",
+          "text": "Grown Ups is a 2010 American comedy film directed by Dennis Dugan and stars Adam Sandler, Kevin James, Chris Rock, David Spade and Rob Schneider. It depicts five friends of a high school basketball team reuniting for a holiday weekend after learning of the passing of their coach.",
+          "contents": "Grown Ups (film)\n\nGrown Ups is a 2010 American comedy film directed by Dennis Dugan and stars Adam Sandler, Kevin James, Chris Rock, David Spade and Rob Schneider. It depicts five friends of a high school basketball team reuniting for a holiday weekend after learning of the passing of their coach."
+        }
+      ],
+      "retrieved": true,
+      "golden_answers": [
+        "Mask"
+      ],
+      "correct": false,
+      "ground_truth": "Mask"
+    }
+  ]
+}

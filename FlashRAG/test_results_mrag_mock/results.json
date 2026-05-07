@@ -1,0 +1,329 @@
+{
+  "samples": [
+    {
+      "id": "mrag_0",
+      "question": "What animal is shown in the image?",
+      "answer": "D",
+      "answer_text": "dog",
+      "choices": [
+        "cat",
+        "bird",
+        "fish",
+        "dog"
+      ],
+      "A": "cat",
+      "B": "bird",
+      "C": "fish",
+      "D": "dog",
+      "correct_choice_idx": 3,
+      "scenario": "Basic",
+      "golden_answers": [
+        "D"
+      ]
+    },
+    {
+      "id": "mrag_1",
+      "question": "Which object is larger?",
+      "answer": "A",
+      "answer_text": "elephant",
+      "choices": [
+        "elephant",
+        "mouse",
+        "cat",
+        "dog"
+      ],
+      "A": "elephant",
+      "B": "mouse",
+      "C": "cat",
+      "D": "dog",
+      "correct_choice_idx": 0,
+      "scenario": "Comparison",
+      "golden_answers": [
+        "A"
+      ]
+    },
+    {
+      "id": "mrag_2",
+      "question": "What color is the apple?",
+      "answer": "B",
+      "answer_text": "red",
+      "choices": [
+        "yellow",
+        "red",
+        "green",
+        "blue"
+      ],
+      "A": "yellow",
+      "B": "red",
+      "C": "green",
+      "D": "blue",
+      "correct_choice_idx": 1,
+      "scenario": "Color",
+      "golden_answers": [
+        "B"
+      ]
+    },
+    {
+      "id": "mrag_3",
+      "question": "How many objects are there?",
+      "answer": "C",
+      "answer_text": "three",
+      "choices": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "A": "one",
+      "B": "two",
+      "C": "three",
+      "D": "four",
+      "correct_choice_idx": 2,
+      "scenario": "Counting",
+      "golden_answers": [
+        "C"
+      ]
+    },
+    {
+      "id": "mrag_4",
+      "question": "Where is the object located?",
+      "answer": "B",
+      "answer_text": "indoors",
+      "choices": [
+        "outdoors",
+        "indoors",
+        "left",
+        "right"
+      ],
+      "A": "outdoors",
+      "B": "indoors",
+      "C": "left",
+      "D": "right",
+      "correct_choice_idx": 1,
+      "scenario": "Location",
+      "golden_answers": [
+        "B"
+      ]
+    },
+    {
+      "id": "mrag_5",
+      "question": "What time of day is shown?",
+      "answer": "A",
+      "answer_text": "morning",
+      "choices": [
+        "morning",
+        "afternoon",
+        "evening",
+        "night"
+      ],
+      "A": "morning",
+      "point_mrag": "afternoon",
+      "C": "evening",
+      "D": "night",
+      "correct_choice_idx": 0,
+      "scenario": "Time",
+      "golden_answers": [
+        "A"
+      ]
+    },
+    {
+      "id": "mrag_6",
+      "question": "What season is depicted?",
+      "answer": "C",
+      "answer_text": "winter",
+      "choices": [
+        "spring",
+        "summer",
+        "winter",
+        "fall"
+      ],
+      "A": "spring",
+      "B": "summer",
+      "C": "winter",
+      "D": "fall",
+      "correct_choice_idx": 2,
+      "scenario": "Season",
+      "golden_answers": [
+        "C"
+      ]
+    },
+    {
+      "id": "mrag_7",
+      "question": "Which direction is the object facing?",
+      "answer": "D",
+      "answer_text": "right",
+      "choices": [
+        "left",
+        "right",
+        "up",
+        "right"
+      ],
+      "A": "left",
+      "B": "right",
+      "C": "up",
+      "D": "right",
+      "correct_choice_idx": 1,
+      "scenario": "Direction",
+      "golden_answers": [
+        "D"
+      ]
+    },
+    {
+      "id": "mrag_8",
+      "question": "What is the material of the object?",
+      "answer": "B",
+      "answer_text": "wood",
+      "choices": [
+        "metal",
+        "wood",
+        "plastic",
+        "glass"
+      ],
+      "A": "metal",
+      "B": "wood",
+      "C": "plastic",
+      "D": "glass",
+      "correct_choice_idx": 1,
+      "scenario": "Material",
+      "golden_answers": [
+        "B"
+      ]
+    },
+    {
+      "id": "mrag_9",
+      "question": "What action is being performed?",
+      "answer": "C",
+      "answer_text": "jumping",
+      "choices": [
+        "running",
+        "walking",
+        "jumping",
+        "sitting"
+      ],
+      "A": "running",
+      "B": "walking",
+      "C": "jumping",
+      "D": "sitting",
+      "correct_choice_idx": 2,
+      "scenario": "Action",
+      "golden_answers": [
+        "C"
+      ]
+    }
+  ],
+  "results": {
+    "Direct Answer": [
+      {
+        "answer": "D",
+        "retrieved_docs": [],
+        "choices": [
+          "cat",
+          "bird",
+          "fish",
+          "dog"
+        ],
+        "correct_choice_idx": 3
+      },
+      {
+        "answer": "B",
+        "retrieved_docs": [],
+        "choices": [
+          "elephant",
+          "mouse",
+          "cat",
+          "dog"
+        ],
+        "correct_choice_idx": 0
+      },
+      {
+        "answer": "B",
+        "retrieved_docs": [],
+        "choices": [
+          "yellow",
+          "red",
+          "green",
+          "blue"
+        ],
+        "correct_choice_idx": 1
+      },
+      {
+        "answer": "A",
+        "retrieved_docs": [],
+        "choices": [
+          "one",
+          "two",
+          "three",
+          "four"
+        ],
+        "correct_choice_idx": 2
+      },
+      {
+        "answer": "B",
+        "retrieved_docs": [],
+        "choices": [
+          "outdoors",
+          "indoors",
+          "left",
+          "right"
+        ],
+        "correct_choice_idx": 1
+      },
+      {
+        "answer": "C",
+        "retrieved_docs": [],
+        "choices": [
+          "morning",
+          "afternoon",
+          "evening",
+          "night"
+        ],
+        "correct_choice_idx": 0
+      },
+      {
+        "answer": "A",
+        "retrieved_docs": [],
+        "choices": [
+          "spring",
+          "summer",
+          "winter",
+          "fall"
+        ],
+        "correct_choice_idx": 2
+      },
+      {
+        "answer": "D",
+        "retrieved_docs": [],
+        "choices": [
+          "left",
+          "right",
+          "up",
+          "right"
+        ],
+        "correct_choice_idx": 1
+      },
+      {
+        "answer": "C",
+        "retrieved_docs": [],
+        "choices": [
+          "metal",
+          "wood",
+          "plastic",
+          "glass"
+        ],
+        "correct_choice_idx": 1
+      },
+      {
+        "answer": "D",
+        "retrieved_docs": [],
+        "choices": [
+          "running",
+          "walking",
+          "jumping",
+          "sitting"
+        ],
+        "correct_choice_idx": 2
+      }
+    ]
+  },
+  "timestamp": "2025-12-04T19:25:06.163754"
+}
